@@ -1,0 +1,4586 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+% Necessary Commands
+\usepackage{autobreak}
+\usepackage[T1]{fontenc}
+
+% Set space between words to be wider:
+\spaceskip=1.3\fontdimen2\font plus 1\fontdimen3\font minus 1.5\fontdimen4\font
+
+% This Part convert the Lyx colors into more pleasent colors
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{0, 0, 140}
+\definecolor{green}{RGB}{0, 140, 0}
+\definecolor{red}{RGB}{220, 0, 0}
+
+% Convert the QED Symbol at the end of proofs to a solid black square (credit: Yakir Oz)
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+% This part makes the layout more similar to Hebrew Article, which I am more used to
+\renewcommand*{\@seccntformat}[1]{\hspace{0.5cm}\csname the#1\endcsname\hspace{0.5cm}} 
+\usepackage{titlesec}
+\titleformat{\section}{\fontsize{20}{20}\bfseries}{\thesection}{10pt}{}
+\titleformat{\subsection}{\fontsize{15}{15}\bfseries}{\thesubsection}{10pt}{}
+\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{10pt}{}
+
+% This part corrects the reversed parentheses in labels
+\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\newfontfamily{\hebrewfont}{David}
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\LRE{#1}}}
+\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip)}}
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+enumitem
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Style Section
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size       Larger
+	  Series     Bold
+	EndFont
+	TocLevel 1
+End
+
+
+Style Section*
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size      Larger
+	  Series     Bold
+	EndFont
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "David"
+\font_sans "cmss" "David"
+\font_typewriter "cmtt" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth -2
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+
+\end_inset
+
+
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "20pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing double
+\align center
+
+\series bold
+\size huge
+תכונות גלים במדמה גלי פיתול מכנים - גלים מחזוריים, גלים חוזרים, סופרוזיציה,
+ גלים עומדים, תיאום עכבות 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: נתיב מאור | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+319002911
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{nativ.maor@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: דור חי שחם | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+318258555
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{dor-hay.sha@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תקציר
+\end_layout
+
+\begin_layout Standard
+בדוח זה נתאר חמישה ניסויים שבוצעו בנושא גלי פיתול מכנים - הניסויים נערכו
+ על מדמה תנועת גלים מכנים שניתן לחברו למנוע.
+ 
+\end_layout
+
+\begin_layout Standard
+הניסוים כללו תחילה מדידות איכותיות של יחס הדיספרסיה בגלים מחזוריים- התבוננו
+ בצורה איכותית כיצד שינוי של תדר המנוע משפיע על אורך הגל, פעם אחת עבור היחידה
+ הצרה ופעם אחת היחידה הרחבה של המדמה.
+ לאחר מכן התבוננו בשתי המערכות, הצרה והרחבה שהונעו באותו תדר.
+ אלה התופעות שנחקרו בניסוי 1.
+ 
+\end_layout
+
+\begin_layout Standard
+לאחר מכן בניסוי 2, בחנו איכותית את התופעה של גלים חוזרים.
+ יצרנו שני פולסים ביחידה הרחבה, פעם אחת כאשר היא חופשית בקצה ופעם אחת כאשר
+ היא מוחזקת בקצה ובחנו את הגל החוזר והגל הפוגע באופן איכותי מבחנית אמפליטודה
+ וכיוון.
+ 
+\end_layout
+
+\begin_layout Standard
+בניסוי 3, צפינו איכותית בתופעת ההתאבכות של הגלים, לשם כך יצרנו פולסים משני
+ צידי המדמה בכיוונים מנוגדים והסתכלנו על צורת ההפרעה לפני ,אחרי ובזמן המפגש
+ של הפולסים.
+ פעם אחת כשהפולסים שניהם חיוביים )התאבכות בונה( ופעם שניה כשאחד חיובי והשני
+ שלילי )התאבכות הורסת(.
+ 
+\end_layout
+
+\begin_layout Standard
+לאחר מכן בניסוי 4, חקרנו את התופעה של גלים עומדים.
+ חיברנו את היחידה הרחבה למנוע בקצה אחד ובקצה השני פעם אחת השארנו חופשי ובפעם
+ השנייה קיבענו.
+ לאחר מכן יצרנו גלים מחזוריים בתדירויות שונות עד אשר נוצרו גלים עומדים מסדרים
+ שונים ובדקנו התאמה של התדירויות שהתקבלו לתדירויות המתקבלות בתאוריה.
+ לבסוף בניסוי 5, צפינו את התופעה של תיאום עכבות, עשינו זאת על ידי חיבור
+ היחידה הרחבה לצרה ושיגור פולס מהרחבה והתבוננות בגל העובר והמוחזר במעבר
+ בינהן.
+ לאחר מכן, עשינו את אותו ניסוי כאשר בין היחידות חיברנו את יחידת המעבר וצפינו
+ בהבדלים בגל המוחזר והמועבר שהופיעו לאחר תיאום העכבות.
+ ניסויים 2 עד 5 צולמו בעזרת מצלמות וידאו, נציג פריימים נבחרים במקומות המתאימים.
+ 
+\end_layout
+
+\begin_layout Section*
+מבוא
+\end_layout
+
+\begin_layout Standard
+מדמה הגלים בו השתמשנו בחמש הניסויים מורכב מסדרת מוטות פלדה באורכים שונים.
+ הוא מורכב משלושה חלקים : מקטע "רחב" - עם מוטות ארוכים.
+ מקטע "צר" - עם מוטות קצרים, שאורכם כחצי משל המוטות הארוכים, וכך גם המסה
+ שלהם.
+ מקטע "מעבר" - בצורת טרפז עם מוטות בעלי אורך משתנה מאורך המוטות הקצרים לאורך
+ השל המוטות הארוכים.
+ המרווח בין כל זוג מוטות בכל אחד מהמקטעים הוא 
+\begin_inset Formula $d=1.27\cdot10^{-2}m$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+המוטות בכל מקטע מחוברים במרכזם לחוט פיתול, ניתן לחבר מקטעים שונים בעזרת
+ מצמד המחבר בין מוטות הפיתול של המקטעים.
+ כאשר מוט פלדה מוסט ממצב מאוזן, מעצם חיבורו לחוט הפיתול הוא גורם גם למוט
+ שבא אחריו לזוז באותו כיוון, באותו אופן, זה משפיע על המוט שבא אחריו וכך
+ נוצר גל מישורי המתקדם לאורך המדמה.
+ 
+\end_layout
+
+\begin_layout Standard
+התיאוריה אומרת שמהירות התפשטות הגל על המדמה היא: 
+\end_layout
+
+\begin_layout Standard
+נוסחה מס' 1 )מהירות גל במכולל הגלים( :
+\begin_inset Formula 
+\begin{equation}
+v=\sqrt{\frac{k}{I}}\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $k$
+\end_inset
+
+ הוא קבוע הקפיץ ו
+\begin_inset Formula $I$
+\end_inset
+
+ הוא מומנט האינרציה של מוט כפי שיוצגו בהמשך ו
+\begin_inset Formula $v$
+\end_inset
+
+ היא מהירות הגל ב
+\begin_inset Formula $\frac{m}{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמו כן, ידוע באופן כללי שבגלים מישוריים )אנו מניחים שהמערכת מדמה בקירוב
+ גל מישורי(: 
+\end_layout
+
+\begin_layout Standard
+נוסחה מס 2 )מהירות גל מישורי - יחס דספרסיה לינארי(: 
+\begin_inset Formula 
+\begin{equation}
+v=\lambda f\label{eq:2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא אורך הגל ב
+\begin_inset Formula $m$
+\end_inset
+
+ ו
+\begin_inset Formula $f$
+\end_inset
+
+ היא התדירות ב
+\begin_inset Formula $Hz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=1.0156\frac{N\cdot m}{\nicefrac{rad}{bar}}$
+\end_inset
+
+ הוא קבוע הקפיץ של מוט הפיתול ו 
+\begin_inset Formula $I$
+\end_inset
+
+ הוא ממומנט האנרציה למוט ונתון על ידי נוסחה מס' 3 )מומנט אנרציה של מוט סביב
+ מרכזו(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+I=\frac{m\ell^{2}}{12}\label{eq:3}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ היא מסת מוט ב
+\begin_inset Formula $\frac{kg}{bar}$
+\end_inset
+
+, 
+\begin_inset Formula $\ell$
+\end_inset
+
+ אורך המוט ב
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מומנט האנרציה של מוט ארוך הוא 
+\begin_inset Formula $I=7.485\cdot10^{-4}\frac{kg\cdot m^{2}}{bar}$
+\end_inset
+
+ ואורכו של כל המקטע הרחב הוא 
+\begin_inset Formula $L=0.92m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי ליצור פולס במדמה הורם והורד ידנית )פעם אחת( מוט קיצוני של אחד המקטעים.
+ כדי ליצור גל מחזורי, חובר מנוע מכני מעגלי שמעלה ומוריד מוט שחובר בעזרת
+ מגנט לקצה של מוט פלדה קיצוני באחד המקטעים.
+ ניתן לשלוט בתדר/זמן המחזור המנוע בעזרת חוגה עם דיוק של 
+\begin_inset Formula $\pm10^{-4}Hz$
+\end_inset
+
+ )נציין שלצורכי קביעת התדר, הדיוק של קביעת התדרים הנמוכים )פחות מ
+\begin_inset Formula $1Hz$
+\end_inset
+
+( היה 
+\begin_inset Formula $\pm10^{-4}Hz$
+\end_inset
+
+ ובתדרים הגבוהים )יותר מ
+\numeric on
+
+\begin_inset Formula $1Hz$
+\end_inset
+
+
+\numeric off
+( היה 
+\begin_inset Formula $\pm5\cdot10^{-4}Hz$
+\end_inset
+
+(.
+ 
+\end_layout
+
+\begin_layout Standard
+על מנת ליצור תנאי שפה, השתמשנו בגורמים הבאים: 
+\end_layout
+
+\begin_layout Standard
+מהדק משקולות - כאשר הוא מחובר למוט הוא מקבע אותו למקומו וגורם להחזרות הגלים
+ הפוגעים בו; בבוכנה קלת משקל ומיכל מים - כאשר מחוברת למוט מפזר את הגל ומצמצם
+ החזרות.
+ כמו כן, חיבור מקטעים שונים גם הם מהווים תנאי קצה.
+ תנאי שפה מסוגיהם השונים יכולים להוות נקודות אי-רציפות.
+ עכבת מדמה הגלים מחושבת לפי נוסחה מס 4 )עכבת הגל של מדמה הגלים( : 
+\begin_inset Formula 
+\begin{equation}
+Z=\sqrt{Ik}\label{eq:4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $I,k$
+\end_inset
+
+ כפי שהוצגו קודם לכן ו
+\begin_inset Formula $Z$
+\end_inset
+
+ ביחידות של 
+\begin_inset Formula $\frac{kg\cdot m^{2}}{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בעזרתה ניתן לתאר את התנהגות מדמה הגלים בנק האי רציפות: 
+\end_layout
+
+\begin_layout Standard
+נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5-6
+\numeric off
+ )מקדמי העברה והחזרה(: 
+\begin_inset Formula 
+\begin{equation}
+Y_{r}=\frac{Z_{1}-Z_{2}}{Z_{1}+Z_{2}}\label{eq:5}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+Y_{t}=\frac{2Z_{1}}{Z_{1}+Z_{2}}\label{eq:6}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $Y_{r},Y_{t}$
+\end_inset
+
+ הם מקדמי העברה וההחזרה )חסרי יחידות(, 
+\begin_inset Formula $Z_{1}$
+\end_inset
+
+ עכבת התווך ממנו הגל מגיע ו
+\begin_inset Formula $Z_{2}$
+\end_inset
+
+ עכבת התווך אליו הגל עובר ביחידות של 
+\begin_inset Formula $\frac{kg\cdot m^{2}}{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתיחס אל שני מקרי קיצון, אם גל עובר מתווך עם 
+\begin_inset Formula $Z_{1}$
+\end_inset
+
+, כשהגל נתקל בקצה פתוח 
+\begin_inset Formula $Z_{2}=0$
+\end_inset
+
+, כשהגל נתקע בקצה המהודק על ידי משקולת 
+\begin_inset Formula $Z_{2}=\infty$
+\end_inset
+
+ וכשהגל נתקל בקצה עם בוכנה - הבוכנה נועדה 
+\begin_inset Formula $Z_{2}=Z_{1}$
+\end_inset
+
+ כך שלא יוחזר גל והאנרגיה של הגל תתפוגג.
+\end_layout
+
+\begin_layout Standard
+בניסוי 4, בו יצרנו גלים עומדים במדמה, לפי התיאוריה צריכים להתקיים הקשרים:
+ 
+\end_layout
+
+\begin_layout Standard
+כאשר תנאי השפה הוא שהקצה הלא מונע מקובע - 
+\begin_inset Formula $L=\frac{n\lambda}{2}$
+\end_inset
+
+ מקשר זה ונוסחאות 1 ו2 ניתן לגזור את הנוסחה: 
+\end_layout
+
+\begin_layout Standard
+נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+ )תדר 
+\begin_inset Formula $f$
+\end_inset
+
+ של גל עומד 
+\begin_inset Formula $n$
+\end_inset
+
+ עם קצה סגור(:
+\begin_inset Formula 
+\begin{equation}
+f_{n}=\frac{nd}{2L}\sqrt{\frac{k}{I}}\label{eq:7}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא מספר הגל )חסר יחידות(, 
+\begin_inset Formula $d,k,I,L$
+\end_inset
+
+ כפי שהוזכר קודם לכן.
+\end_layout
+
+\begin_layout Standard
+אם תנאי השפה הוא שהקצה הלא מונע חופשי - 
+\begin_inset Formula $L=\frac{(2n-1)\lambda}{4}$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+נוסחא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+ )תדר 
+\begin_inset Formula $f$
+\end_inset
+
+ של גל עומד 
+\begin_inset Formula $n$
+\end_inset
+
+ עם קצה חופשי(: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+f_{n}=\frac{\left(2n-1\right)}{4L}d\sqrt{\frac{k}{I}}\label{eq:8}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא מספר הגל )חסר יחידות(, 
+\begin_inset Formula $d,k,I,L$
+\end_inset
+
+ כפי שהוזכר קודם לכן.
+\end_layout
+
+\begin_layout Standard
+נציין שהמודל התיאורטי מניח מערכת אידאלית כך שהיא אחידה )קבוע הקפיץ אחיד,
+ מוטות מסודרים במרווחים שווים ומאוזנים בשיווי משקל וכו'( וחסרת חיכוך כך
+ שהגל לא מאבד אנרגיה במהלך תנועתו לאורך המדמה.
+ זאת בעוד שהמערכת איתה עבדנו אינה אידאלית ומכילה פגמים ביחס למערכת אידאלית.
+ 
+\end_layout
+
+\begin_layout Section*
+תוצאות הניסוי
+\end_layout
+
+\begin_layout Standard
+בניסויים 2-5, בהם השתמשנו במצלמה שתתעד את התופעה הנמדדת.
+ כיוונו את המצלמה כך שתהיה מאוזנת אל מול המדמה - כך שבמצב שאין בו הפרעה
+ המוטות נראים כנקודות )רק החלק הרדיאלי שלהן נראה במצלמה(.
+\end_layout
+
+\begin_layout Standard
+נציג את תוצאות הניסויים השונים בנפרד:
+\end_layout
+
+\begin_layout Subsection*
+ניסוי מספר
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גלים מחזוריים
+\end_layout
+
+\begin_layout Standard
+תחילה חיברנו ליחידה הרחבה את המנוע בקצה אחד ובקצה השני את בוכנת הריסון.
+ לאחר מכן יצרנו הפרעות מחזוריות בתדרים שונים ובחנו את אורך הגלים הנוצרים.
+ אחר כך, חזרנו על ניסוי זה עבור היחידה הצרה.
+ הבחנו שבשתי היחידות ככל שהתדר גדל אורך הגל מתקצר בהתאם לתאוריה לפי נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ לבסוף, חיברנו בו זמנית את היחידה הרחבה למנוע אחד ואת היחידה הצרה למנוע
+ אחר )והשארנו את הקצוות השניים של שתי היחידות חופשיים( וכיוונו את המנועים
+ ליצור הפרעות באותם תדרים.
+ אורכי הגל ביחידה הצרה היו ארוכים יותר מאורכי הגל של הגלים ביחידה הרחבה,
+ גם כן, בהתאם לתאוריה משום שלפי נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מומנט האינרציה של היחידה הצרה קטן יותר ולכן לפי נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מהירות הגל ביחידה הצרה גדולה יותר ומכאן שלפי נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+אורך הגל ביחידה הצרה יהיה ארוך יותר.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי מספר
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גלים חוזרים
+\end_layout
+
+\begin_layout Standard
+בניסוי זה יצרנו פולס בקצה השמאלי של היחידה הרחבה כאשר היא חופשייה בשני צידיה.
+ הסרטנו את הפולס בהגיעו לקצה החופשי ואת הפולס המוחזר מהקצה.
+ להלן צילומים של הפולס והפולס המוחזר: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל חוזר - קצה פתוח 1.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס הנשלח - נשלח מהקצה השמאלי אל הימני בתנועה ימינה כאשר הקצה הימני חופשי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל חוזר - קצה פתוח 2.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס החוזר - לאחר פגיעה בקצה הימני מוחזר בתנועה שמאלה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפולס חזר עם אמפליטודה חיובית )האמפליטודה באותו כיוון כמו הפולס המקורי(
+ במהירות בכיוון ההפוך ובצורה דומה לפולס הנשלח.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן חזרנו על הניסוי כאשר הקצה הימני של היחידה הרחבה מקובע בעזרת המדהק
+ עם המשקולת.
+ להלן צילומים של הפולס והפולס המוחזר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל חוזר - קצה סגור 1.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס הנשלח - נשלח מהקצה השמאלי אל הימני בתנועה ימינה כאשר הקצה הימני המקובע.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל חוזר - קצה סגור 2.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס החוזר - לאחר פגיעה בקצה הימני מוחזר בתנועה שמאלה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפולס חזר עם אמפליטודה שלילית )האמפליטודה בכיוון נגדי ביחס לפולס המקורי(
+ במהירות בכיוון ההפוך.
+\end_layout
+
+\begin_layout Standard
+לפי התאוריה ההבדל נובע מכך שבקצה החופשי העכבה של הקצה מתנהגת לפי 
+\begin_inset Formula $Z=0$
+\end_inset
+
+ ולכן לפי נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+ מתקיים 
+\begin_inset Formula $Y_{r}=1$
+\end_inset
+
+ ולכן האמפליטודה של הגל החוזר תהיה זהה לאמפליטודה של הגל המקורי ואילו כאשר
+ הקצה מקובע העכבה מתנהגת לפי 
+\begin_inset Formula $Z=\infty$
+\end_inset
+
+ ולכן לפי הנוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\numeric off
+ מתקיים 
+\begin_inset Formula $Y_{r}=-1$
+\end_inset
+
+ ולכן האמפליטודה של הגל החוזר הפוכה לאמפליטודה של הגל המקורי.
+\end_layout
+
+\begin_layout Standard
+בנוסף, נשים לב שבשני המקרים האמפליטודה של הגל המוחזר קטנה )בגודלה( משל הגל
+ המקורי בניגוד לתאוריה, זאת מכיוון שיש איבודי אנרגיה במדמה שלא נלקחו בחשבון
+ במודל ונגרם בין היתר מכך ש 
+\begin_inset Formula $Z=0,\infty$
+\end_inset
+
+ הם קירובים.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי מספר
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סופרפוזיציה - התאבכות בונה והורסת
+\end_layout
+
+\begin_layout Standard
+בניסוי יצרנו שני פולסים חיוביים ביחידה הרחבה, אחד מצד שמאל והשני מצד ימין.
+ להלן תמונה של הפולסים לפני המפגש, בעת המפגש ולאחר המפגש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/התאבכות בונה 1.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולסים לפני המפגש
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/התאבכות בונה 2.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולסים בזמן המפגש
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/התאבכות בונה 3.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולסים לאחר המפגש
+\end_layout
+
+\end_inset
+
+לאחר מכן חזרנו על הניסוי כאשר הפלוסים מנוגדים, כלומר הפולס השמאלי הינו פולס
+ חיובי ואילו הימני הוא שלילי.
+ להלן תמונה של הפולסים לפני המפגש, בעת המפגש ולאחר המפגש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/התאבכות הורסת 1.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולסים לפני המפגש
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/התאבכות הורסת 2.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולסים בזמן המפגש
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/התאבכות הורסת 3.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולסים לאחר המפגש
+\end_layout
+
+\end_inset
+
+נשים לב שבהתאם לעיקרון הסופרפוזיציה האמפליטודה של ההפרעה במהלך המפגש שווה
+ לסכום האמפליטודות של הפולסים, לכן עבור שני הפולסים החיוביים מתקיימת התאבכות
+ בונה וקיבלנו במפגש הפרעה עם אמפליטודה גדולה מהאמפילטודה של הפולסים ואילו
+ עבור הפולסים המנוגדים מתקיימת התאבכות הורסת וקיבלנו שבמפגש הפולסים מבטלים
+ אחד את השני כמעט לגמרי.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי מספר
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גלים עומדים
+\end_layout
+
+\begin_layout Standard
+בניסוי זה, מדדנו את התדרים עבורים נוצרים גלים עומדים ביחידה הרחבה כאשר הקצה
+ מקבוע וכאשר הוא חופשי.
+\end_layout
+
+\begin_layout Standard
+תחילה חיברנו ליחידה הרחבה את המהדק עם המשקולת בצד ימין ואת המנוע בצד שמאל
+ וחוללנו תדירויות שונות עד אשר נוצרו גלים עומדים.
+ כאשר יצרנו תדרים שונים בעזרת המנוע, ניסינו לקלוע בצורה איכותית לתדרים בהם
+ נצפים צמתים - נקודות נייחות של מוטות שלא זזים.
+ אומנם, קביעת התדרים נעשתה על ידי סיבוב המחוג הקובע את התדרים במנוע ולכן
+ כדי להגיע לתדר מסויים, בדרך בהכרח אילצנו את המערכת בתדרים משתנים.
+ כיוון שהמערכת לא אידיאלית ויש בה ריסון מסוים ואיבוד של אנרגיה - כשחיכינו
+ זמן מה מרגע הגעה לתדר שנראה מתאים לגל עומד, כדי ששאר התדרים, מלבד התדר
+ המועמד להיות מתאים לגל העומד, דעכו.
+ 
+\end_layout
+
+\begin_layout Standard
+בתדר 
+\begin_inset Formula $n=1$
+\end_inset
+
+ לא יכולנו להימנע מכך שהמוטות פגעו בבסיס המדמה כיוון שלא מצאנו דרך להקטין
+ את האמפליטודה באמצעות המנוע )האמפליטודה נבחרה להיות הקטנה ביותר שהמנוע(.
+ התופעה משפיעה כמובן על צורת הגל )כפי שניתן לראות בתמונות( אך מבחינת מדידת
+ תדר הגל העומד לא אומרה להיות השפעה גדולה, ולכן לקחנו את המדידה הזו.
+\end_layout
+
+\begin_layout Standard
+להלן תיעוד של הגלים שקיבלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 10.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=1$
+\end_inset
+
+ עם קצה סגור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 11.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=1$
+\end_inset
+
+ עם קצה סגור לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 20.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=2$
+\end_inset
+
+ עם קצה סגור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 21.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=2$
+\end_inset
+
+ עם קצה סגור אחרי חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 30.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=3$
+\end_inset
+
+ עם קצה סגור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 31.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=3$
+\end_inset
+
+ עם קצה סגור לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 40.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=4$
+\end_inset
+
+ עם קצה סגור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 41.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=4$
+\end_inset
+
+ עם קצה סגור לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 50.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=5$
+\end_inset
+
+ עם קצה סגור 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 51.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=5$
+\end_inset
+
+ עם קצה סגור לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 60.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=6$
+\end_inset
+
+ עם קצה סגור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 61.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=6$
+\end_inset
+
+ עם קצה סגור לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 70.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=7$
+\end_inset
+
+ עם קצה סגור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/גל עומד קצה סגור 71.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=7$
+\end_inset
+
+ עם קצה סגור לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+להלן גרף של התדרים כתלות במספר הגל העומד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/plot1.png
+	lyxscale 200
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\bar under
+גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תדירות המנוע בהרץ כתלות באינדקס הגל העומד המתאים כאשר הקצה מקובע
+\bar default
+:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אינדקס הגל העומד 
+\begin_inset Formula $\left(n\right)$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ מייצג את תדירות המנוע בהרץ 
+\begin_inset Formula $\left(f\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+המדידות מסומנות בעיגולים כחולים עם קווי שגיאה )השיגאות קטנות ביחס לנתונים
+ ולכן קווי השגיאה כמעט ולא נראים(.
+ לנתונים ביצענו רגרסיה לינארית כאשר המקדם החופשי קובע ל
+\numeric on
+0
+\numeric off
+ וקיבלנו את הפונקציה 
+\begin_inset Formula $y=0.247x$
+\end_inset
+
+.
+ ניתן לראות את גרף הרגרסיה בקו המקווקו השחור.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+כמו כן הוספנו גרף של ציפייה תיאורטית על פי נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\numeric off
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נשים לב שישנה התאמה טובה של הנתונים לגרף לינארי, כמו כן הנתונים מתאימים
+ לגרף התאוריטי, לפי מדד 
+\begin_inset Formula $Least\ Squres$
+\end_inset
+
+ השגיאה בין הנתונים לתצפיות היא 
+\begin_inset Formula $0.140$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לאחר מכן, ניתקנו את המהדק עם המשקולות וחזרנו על הניסוי כאשר הקצה הימני חופשי.
+ 
+\end_layout
+
+\begin_layout Standard
+לא הצלחנו למצוא תדר שבו נצפה גל עומד 
+\begin_inset Formula $n=1$
+\end_inset
+
+ כאשר הקצה היה פתוח.
+ אנו משערים שיתכן והסיבה לכך היא שבתדרים נמוכים האנרגיה שהמאלץ מעביר למערכת
+ היא קטנה יותר )נעשית פחות עבודה( ולכן אפקטים של עיבוד אנרגיה משמעותיים
+ יותר.
+\end_layout
+
+\begin_layout Standard
+להלן תיעוד של הגלים שקיבלנו:
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 2 down.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=2$
+\end_inset
+
+ עם קצה פתוח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 2 up.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=2$
+\end_inset
+
+ עם קצה פתוח אחרי חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 3 down.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=3$
+\end_inset
+
+ עם קצה פתוח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 3 up.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=3$
+\end_inset
+
+ עם קצה פתוח לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 4 down.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=4$
+\end_inset
+
+ עם קצה פתוח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 4 up.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=4$
+\end_inset
+
+ עם קצה פתוח לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 5 down.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=5$
+\end_inset
+
+ עם קצה פתוח
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 5 up.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=5$
+\end_inset
+
+ עם קצה פתוח לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 6 down.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=6$
+\end_inset
+
+ עם קצה פתוח
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 6 up.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=6$
+\end_inset
+
+ עם קצה פתוח לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 7 down.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=7$
+\end_inset
+
+ עם קצה פתוח
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 7 up.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=7$
+\end_inset
+
+ עם קצה פתוח לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 8 down.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=8$
+\end_inset
+
+ עם קצה פתוח
+\end_layout
+
+\end_inset
+
+
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/open_end_n_pics/open 8 up.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+גל עומד בעל 
+\begin_inset Formula $n=8$
+\end_inset
+
+ עם קצה פתוח לאחר חצי מחזור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+להלן גרף של התדרים כתלות במספר הגל העומד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/plot2.png
+	lyxscale 200
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\bar under
+גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תדירות המנוע בהרץ כתלות באינדקס הגל העומד המתאים כאשר הקצה חופשי
+\bar default
+:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+ציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ מייצג את אינדקס הגל העומד 
+\begin_inset Formula $\left(n\right)$
+\end_inset
+
+ וציר ה
+\begin_inset Formula $y$
+\end_inset
+
+ מייצג את תדירות המנוע בהרץ 
+\begin_inset Formula $\left(f\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+המדידות מסומנות בעיגולים כחולים עם קווי שגיאה )השיגאות קטנות ביחס לנתונים
+ ולכן קווי השגיאה כמעט ולא נראים(.
+ לנתונים ביצענו רגרסיה לינארית וקיבלנו את הפונקציה 
+\begin_inset Formula $y=0.265x-0.155$
+\end_inset
+
+.
+ ניתן לראות את גרף הרגרסיה בקו המקווקו השחור.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+כמו כן הוספנו גרף של ציפייה תיאורטית על פי נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שישנה התאמה טובה של הנתונים לגרף לינארי, כמו כן הנתונים מתאימים
+ לגרף התאוריטי בצורה טובה אך פחות טובה מבמקרה שבו הקצה מקובע.
+ לפי מדד 
+\begin_inset Formula $Least\ Squres$
+\end_inset
+
+ השגיאה בין הנתונים לתצפיות היא 
+\begin_inset Formula $0.372$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ניסוי מספר
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תיאום עכבות
+\end_layout
+
+\begin_layout Standard
+בניסוי זה חיברנו את היחידה הרחבה ליחידה הצרה באמצעות מצמד ויצרנו פולס חיובי
+ ביחידה הרחבה )היחידה הרחבה מימין ליחידה הצרה(.
+ לאחר המעבר בין היחידה הרחבה לצרה נוצר פולס חוזר ביחידה הרחבה ופולס שהמשיך
+ את תנועתו ביחידה הצרה.
+ להלן תיעוד של פולסים אלו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/תיאום עכבות 1 פולס מקורי.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס המקורי - שוגר מהיחידה הרחבה בצד ימין אל היחידה הצרה בצד שמאל.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/תיאום עכבות 1 פולס עובר.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס העובר -הפולס נמצא ביחידה הצרה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/תיאום עכבות 1 פולס חוזר.jpg
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס החוזר - הפולס נמצא ביחידה הרחבה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לשים לב שמשום שהעכבה של היחידה הרחבה אינה זהה לעכבה של היחידה הצרה
+ בהתאם לנוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)משום שכפי שראינו מומנט האינרציה של היחידה הצרה קטן ממומנט האינרציה של היחידה
+ הרחבה( יש מקדם החזרה שלילי ומקדם העברה חיובי לפי נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5,6
+\numeric off
+.
+ כמו כן ניתן לראות שרוחב הפולס ביחידה הצרה ארוך בהרבה אורך הפולס של הפולס
+ המקורי וזאת מפני שמומנט האינרציה של היחידה הצרה קטן יותר ולכן מהירות הגל
+ ביחידה זו גדולה יותר ומכאן שאורכו גדול יותר בהתאם לצפייה לתאוריה )כפי שהוסבר
+ בניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+(.
+\end_layout
+
+\begin_layout Standard
+לאחר מכן נעזרנו ביחידת הביניים אשר שימשה כמתאם עכבות, חיברנו אותה בצד ימין
+ ליחידה הרחבה ובצד שמאל ליחידה הצרה באמצעות מצמדים.
+ אחר כך ייצרנו עוד פולס חיובי ביחידה הרחבה וקיבלנו שלא נוצר פולס חוזר כמתועד
+ להלן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/תיאום עכבות 2 פולס מקורי.jpg
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס המקורי ביחידה הרחבה מימין
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/תיאום עכבות 2 פולס עובר.jpg
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הפולס העובר ביחידה הצרה משמאל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בחלק זה משום שיחידת הביניים גישרה בין העכבות ולכן לפי נוסחאות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5,6
+\numeric off
+ מקדם ההחזרה הוא אפס ולא נוצר פולס חוזר ומקדם ההעברה הוא אחד וכל הפולס עובר.
+ גם כאן בדומה להסבר ממקודם אורך הגל גדל כאשר הוא עובר ליחידה הצרה.
+\end_layout
+
+\begin_layout Section*
+דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+נדון בתוצאות כל אחד מהניסויים בנפרד.
+ 
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+ניסוי
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גלים מחזוריים
+\end_layout
+
+\begin_layout Standard
+בניסוי זה ראינו שאכן יש לגל מהירות מוגדרת - כפי שציפינו מגל מישורי , בהתאם
+ לתיאוריה .
+ בנוסף ראינו שמהירות הגל גדולה במקטע בו המוטות הם בעלי מומנט אנרציה קטן
+ ביחס למקטע בו מומנט האנרציה גדול יותר.
+ ישנה התאמה מגמתית )אותו כיוון( כפי שהתיאוריה צופה - מנוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ אך כיוון שההתבוננות הייתה איכותית בלבד אין לנו דרך להעריך רק מניסוי זה
+ האם הקשר הכמותי התיאורתי בין מהירות הגל לקבוע הקפיץ ומומנט האנרציה )נוסחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+( הוא מדויק.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גלים חוזרים
+\end_layout
+
+\begin_layout Standard
+ראינו שאופי הגל החוזר משתנה בהתאם לאילוץ הקצה.
+ בקצה פתוח ראינו שאפקט ההחזרה מקצה פתוח תואם לזה של גל עובר אל תווך בעל
+ עכבה עם ערך קטן ביחס לעכבה של התווך ממנו הגיע - מתאים לקירוב 
+\begin_inset Formula $Z_{2}\thickapprox0$
+\end_inset
+
+.
+ ראינו גם שכאשר הקצה היה מאולץ אפקט ההחזרה מתאים למעבר לתווך בעל 
+\begin_inset Formula $Z_{2}\thickapprox\infty$
+\end_inset
+
+.
+ גם בניסוי זה ההתבוננויות היו איכותיות לכן אין לנו דרך להעריך עד כמה הקירוב
+ של העכבות טוב.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+ניסוי
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- סופרפוזיציה
+\end_layout
+
+\begin_layout Standard
+בניסוי ראינו שתופעת ההתאבכות - גם בונה וגם הורסת אכן מתרחשת במודל המדמה.
+ לכן יש התאמה לתיאוריה הטוענת שמדמה הגלים אכן מדמה גלים, לפחות מהבחינה שמתקיימת
+ בו תופעה הכרחית לגלים, תכונת הסופרפוזיציה.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גלים עומדים
+\end_layout
+
+\begin_layout Standard
+במדידות בהן הקצה היה מקובע קיבלנו שהגרפים מתלכדים בקירוב, השגיאה היחסית
+ בין השיפוע שהתקבל מהרגרסיה לערך שמתקבל מנתוני המערכת היא:
+\begin_inset Formula 
+\[
+\left|\frac{regression\ slope-theoretical\ slope}{theoretical\ slope}\right|\cdot100=3.348\%
+\]
+
+\end_inset
+
+ כלומר הייתה התאמה טובה לתאוריה.
+ 
+\end_layout
+
+\begin_layout Standard
+במדידות בהן הקצה היה חופשי קיבלנו שהגרפים מתלכדים בקירוב פחות טוב, השגיאה
+ היחסית בין השיפוע שהתקבל מהרגרסיה לערך שמתקבל מנתוני המערכת היא:
+\begin_inset Formula 
+\[
+\left|\frac{regression\ slope-theoretical\ slope}{theoretical\ slope}\right|\cdot100=3.696\%
+\]
+
+\end_inset
+
+השגיאה היחסית בערך המקדם החופשי היא:
+\begin_inset Formula 
+\[
+\left|\frac{regression\ intercept-theoretical\ intercept}{theoretical\ intercept}\right|\cdot100=21.498\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנו מעריכים שהפערים בין התאוריה לניסוי עלולים לנבוע מעצם כך שזיהוי של גל
+ עומד נעשה בצורה איכותית מהתבוננות בצמתים.
+ מכאן שהיה מאוד קשה לקבוע תדרים בהם היו צמתים מובהקים ולכן נצפה לשגיאה בין
+ התאוריה לתוצאות.
+ אחת הסיבות לקושי היא שבמהלך הגעה לתדר של גל עומד, המערכת נאלצה לעבור בתדרים
+ אחרים אשר ישפיעו עליה וייתכן שלא דעכו במהלך המדידה )קשה לזהות אותם בצורה
+ איכותית(.
+ סיבה נוספת לפערים יכולה לנבוע מכך שתאורטית הקצה בו המנוע מחובר אמור להיות
+ צומת אך במערכת הניסוי הוא מאולץ על ידי המנוע לזוז.
+\end_layout
+
+\begin_layout Standard
+כמו כן, משום שההתבוננות היא איכותית, לא ניתן להעריך את השגיאה של רמת הקירבה
+ לגל עומד.
+\end_layout
+
+\begin_layout Subsection*
+
+\series bold
+ניסוי
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- תיאום עכבות
+\end_layout
+
+\begin_layout Standard
+ראינו בניסוי שבמקרה שבו הייתה אי רציפות מובהקת בתכונות המקטעים בהם עובר
+ הגל, המאופיינת על ידי שינוי חד באורך המוטות, הייתה החזרה נראית לעין.
+ בעוד שבמקרה שבו היה שינוי בקירוב רציף, בעזרת מקטע המעבר ותיאום אימפדנסים,
+ לא הייתה החזרה מהותית בנקודות המעבר בין המקטעים.
+ זה תואם לציפיה שמקטע המעבר מהווה מקטע המתאם אימפדנסים וכתוצאה מכך מקדם
+ ההחזרה בנקודות המעבר הוא בקירוב 
+\begin_inset Formula $Y_{r}\thickapprox0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section*
+מסקנות
+\end_layout
+
+\begin_layout Standard
+מטרתו הכללית של ניסוי זה הייתה לבדוק האם מדמה הגלים שאיתו עבדנו תואם בתכונותיו
+ השונות למדמה גלים תיאורטי.
+\end_layout
+
+\begin_layout Standard
+בניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בדקנו האם מתקיימות תכונות של גל מישורי, כלומר יחס דיספרסיה לינארי וראינו
+ שמבחינה איכותית הדבר אכן מתקיים.
+ בניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בדקנו את תופעת ההחזרה וראינו שבשני המקרים של קצה חופשי וקצה מקובע מתנהגים
+ באופן שונה ולפחות מבחינה איכותית הגל הפוגע והחוזר מתאימים לתאוריה מבחינת
+ אמפליטודה וכיוון.
+ נציין שכחלק מהצפייה האיכותית ראינו שהמערכת לא משמרת אנרגיה לגמרי כצפוי
+ ממערכת פיזקלית ולא אידאלית.
+ בניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בדקנו את תכונת הסופרפוזציה בעזרת התאבכות בונה והורסת, וראינו שאכן מתקיימת
+ בצורה איכותית.
+ בניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ בחנו את תופעת הגלים העומדים וראינו שאכן יש תדרים שבהם נראה שהמערכת מתנהגת
+ כגל עומד.
+ ממדידת התדרים והשוואה לתאוריה ראינו שיש התאמה חלקית, עבור הניסוי בו הקצה
+ מקובע קיבלנו שגיאה יחסית של כ
+\begin_inset Formula $3.3\%$
+\end_inset
+
+ בין השיפוע התיאורטי לשיפוע הרגרסיה ובניסוי שבו הקצה חופשי קיבלנו התאמה
+ של כ
+\begin_inset Formula $3.7\%$
+\end_inset
+
+ בשיפוע גם כן, אך השגיאה היחסית במקדם החופשי הייתה כ
+\begin_inset Formula $21.5\%$
+\end_inset
+
+.
+ אנו מייחסים שגיאות אלו לכך שההתבוננות בגלים הייתה איכותית.
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+דרך אפשרית, להעריך את השגיאה ואולי אף להקטינה היא מעבר מקריטריון איכותי
+ לקריטריון כמותי.
+ לדוגמה, מעקב בעזרת תוכנה ממוחשבת )לדוגמה 
+\begin_inset Formula $Tracker$
+\end_inset
+
+( אחר נקודת סטציונריות על המדמה ובכך לזהות צמתים ומכאן גלים עומדים.
+ בצורה זו, גם ניתן להעריך 
+\begin_inset Quotes eld
+\end_inset
+
+כמה
+\begin_inset Quotes erd
+\end_inset
+
+ הנקודה סטטית.
+ ולבסוף בניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בדקנו את תופעת תיאום העכבות וקיבלנו שכאשר המעבר הוא לא רציף )אין תיאום עכבות(
+ יש גל חוזר וכאשר נעזרים במתאם עכבות הגל החוזר דועך משמעותית ולכן יש התאמה
+ טובה לתאוריה מבחינה איכותית כלומר התופעה של הקריטריון של עכבה בא לידי ביטוי
+ בצורה טובה במדמה הגלים.
+\end_layout
+
+\begin_layout Standard
+בסך הכל ראינו שכל התופעות אותן חקרנו מתקיימות בצורה איכותית במדמה הגלים.
+ עם זאת, המערכת אינה אידאלית ולכן על מנת לכמת את הפערים נדרשות מדידות כמותית
+ ולא איכותית.
+\end_layout
+
+\end_body
+\end_document

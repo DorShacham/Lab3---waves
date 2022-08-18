@@ -1,0 +1,6 @@
+*.lyx~
+*.lyx#
+*__pycache__
+*.pdf
+*.docx
+exp1 - mechanical waves/121_1008/
