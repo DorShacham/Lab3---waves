@@ -21,6 +21,10 @@ def prop(a,x):
 def liner_curve(a,b,x):
     return a*x+b
 
+def r_squre(data,fit):
+    RSS  = np.sum((data-fit)**2)
+    TSS = np.sum(data**2)
+    return 1 - RSS/TSS
 
 theta_min_value = np.array([-48.42,-31.86,-15.75,0,15.84,31.86,48.64]) * np.pi/180
 theta_min_err = np.array([0.1,0.75,0.05,0.05,0.05,0.75,0.1])  * np.pi/180
@@ -50,6 +54,9 @@ m = Valerr(m_val,m_err)
 d = m * lambda_Hg / 2
 
 print("d=",d) # need to calculte error
+
+R_squre = r_squre(n,prop(fit1[0],sin_alpha.val))
+print("R^2 =",R_squre)
 
 
 # part 2
@@ -140,6 +147,7 @@ E = f*h
 n = np.array(range(3,(len(E.val)+3)))
 R = E / (1/2**2 - 1/n**2)
 R_mean = np.mean(R.val)
+R_err = np.mean(R.err)
 print("R=",R_mean,"eV")
 
 R_theory = scipy.constants.physical_constants["Rydberg constant times hc in eV"][0] # in eV

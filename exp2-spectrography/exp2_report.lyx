@@ -757,7 +757,12 @@ status open
  היא הזווית שבה מתרחשת נקודת המפנה בהזזת הסריג, לשם מציאת זווית זו הזזנו
  את הסריג בזמן התבוננת בפס עד הגעה לנקודה שבה הסריג נמצא בזווית מינימלית.
  הערכת שגיאת המדידה של הזווית נקבעה לפי ההזזה המינימלית של זווית המשקפת
- שהיה ניתן היה לבצע סביב הנקודה בה הצלב היה במרכז פס האור.
+ שהיה ניתן היה לבצע סביב הנקודה בה הצלב היה במרכז פס האור.נציין שבמדידה של
+ הסדר ה
+\begin_inset Formula $\pm3$
+\end_inset
+
+ היה מאוד קשה לראות את הפס ולכן שגיאת המדידה שניתה למדידה זו יותר משמעותית.
  להלן תוצאות המדידה:
 \end_layout
 
@@ -1752,11 +1757,28 @@ noprefix "false"
 \end_inset
 
  וקבועי המנסרה שמצאנו חישבנו את אורכי הגל.
+ בעזרת אורכי הגל שנמצאו חושבו הפרשי האנרגיות המתאימים בעזרת 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ובכך קיבלנו את סדרת באלמר.
+ לכל איבר בסדרה חישבנו את קבוע רידברג המתאים 
+\begin_inset Formula $R_{y}$
+\end_inset
+
+ - חישבנו את הממוצע שלהם וקיבלנו ערך ממוצע של קבוע רידברג המתקבל מהמדידות.
  להלן התוצאות:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
+placement H
 wide false
 sideways false
 status open
@@ -1860,24 +1882,85 @@ status open
 \end_layout
 
 \begin_layout Standard
-בעזרת אורכי הגל שנמצאו חושבו הפרשי האנרגיות המתאימים בעזרת 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "eq:5"
-plural "false"
-caps "false"
-noprefix "false"
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/balmer_fig.png
+	scale 60
 
 \end_inset
 
- ובכך קיבלנו את סדרת באלמר.
- לכל איבר בסדרה חישבנו את קבוע רידברג המתאים 
-\begin_inset Formula $R_{y}$
+
+\end_layout
+
 \end_inset
 
- - חישבנו את הממוצע שלהם וקיבלנו ערך ממוצע של קבוע רידברג המתקבל מהמדידות.
- הקבוע שקיבלנו הוא 
-\begin_inset Formula $R_{y,measured}=12.46\,[eV]$
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\bar under
+סולם רמות האנרגיה של מימן התורמים לסדרת באלמר
+\bar default
+:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+באיור מוצגים המעברים כאשר הרמות מייוצגות על ידי הפסים השחורים הממוספרים
+ והחצים מייצגים את המעברים עצמם.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקבוע שקיבלנו הוא 
+\begin_inset Formula $R_{y,measured}=12.4\pm0.2\,[eV]$
 \end_inset
 
  , בעוד שהערך המקובל בספרות הוא
@@ -1898,7 +1981,7 @@ noprefix "false"
 \end_inset
 
  פער של כ
-\begin_inset Formula $8.4\%$
+\begin_inset Formula $10\%$
 \end_inset
 
 , על השערות לפער זה נדון בדיון ותוצאות.
@@ -1936,16 +2019,130 @@ noprefix "false"
 \begin_layout Standard
 קבוע הסריג שנקבע מהמדידות והטווח השגיאה שלו לא מכילים את הערך שרשום על הסריג
  : 
-\begin_inset Formula $2\notin1.991\pm0.003$
+\begin_inset Formula $2\cdot10^{-6}m\notin\left(1.991\pm0.003\right)\cdot10^{-6}m$
 \end_inset
 
- , אך יש לציין שלקבוע סריג הנתון לא נקבע טווח שגיאה .נוסף על כך השגיאה היחסית
- בין הערך הנצפה לתיאורטי הוא בין
+ , אך יש לציין שלקבוע סריג הנתון לא נקבע טווח שגיאה.
+ נוסף על כך השגיאה היחסית בין הערך הנצפה לתיאורטי חסומה על ידי 
+\begin_inset Formula $0.6\%$
+\end_inset
+
+ , 
+\begin_inset Formula 
+\[
+\frac{\left|d_{theory}-d_{messured}\right|}{d_{theory}}=\frac{\delta d}{d}=\frac{2-1.991\pm0.003}{2}=\frac{0.009\pm0.003}{2}=0.0045\pm0.0015\leq0.6\%
+\]
+
+\end_inset
+
+ ולכן נגיד שההתאמה היא טובה יחסית ולא נצפה שפערים אלו ישתקפו בתוצאות הניסו.
+ מעצם ההתאמה הטובה של המדידות מהן הסקנו את קבוע הסריג לרגרסיה הלינארית )
+\begin_inset Formula $R^{2}=0.999$
+\end_inset
+
+( נייחס את מקור הפער הקטן בין הערך הצפוי לנמדד לבלאי של הסריג עם הזמן או
+ פגם בייצור.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+אורכי הגל של אטום ההליום:
+\end_layout
+
+\begin_layout Standard
+אורכי הגל שהוסקו מהמדידות ותחומי השגיאה שלהם מכילים את אורכי הגל התיאורטים
+ מלבד בפסים 
+\begin_inset Formula $n=8,13$
+\end_inset
+
+ שבהן השגיאה היחסית לערך התיאורטי היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\delta\lambda_{8}}{\lambda_{8}}=0.67\%,\,\frac{\delta\lambda_{13}}{\lambda_{13}}=2.2\%
+\]
+
+\end_inset
+
+שגיאה יחסית קטנה.
+ לכן נגיד שההתאמה של המדידות לתיאוריה טובה יחסית.
+ ייתכן שהפער הקיים הוא בגלל הערכת שגיאת מדידה לא נכונה במדידות 
+\begin_inset Formula $8$
+\end_inset
+
+ ו 
+\begin_inset Formula $13$
+\end_inset
+
+, לקראת סוף הניסוי עלה החשד שמד הזווית לקוי כיוון שגם ללא הזזה של המשקפת
+ התוצאה על הצג השתנתה, ייתכן שהבעיה התחילה כבר בשלב זה.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+כיול המנסרה:
+\end_layout
+
+\begin_layout Standard
+בחלק של כיול המנסרה קבלנו תוצאה בלתי צפויה, כפי שניתן לראות בגרף 2 , הנתונים
+ לא מתאימים לגרף לינארי כפי שציפנו מנוסחה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ - תחום השגיאה הבר סמך 
+\begin_inset Formula $95\%$
+\end_inset
+
+ של השיפוע של הרגרסיה הוא
 \family roman
 \series medium
 \shape up
 \size normal
 \emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $26\%$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
 \bar no
 \strikeout off
 \xout off
@@ -1966,65 +2163,91 @@ noprefix "false"
 \uwave default
 \noun default
 \color inherit
-
-\begin_inset Formula $0.3\%$
-\end_inset
-
- ל 
-\begin_inset Formula $0.6\%$
-\end_inset
-
- , 
-\begin_inset Formula $\frac{\delta d}{d}=\frac{2-1.991\pm0.003}{2}=\frac{0.009\pm0.003}{2}=0.0045\pm0.0015$
-\end_inset
-
- ולכן נגיד שההתאמה היא טובה יחסית ולא נצפה שפערים אלו ישתקפו בתוצאות הניסו.
- מעצם ההתאמה הטובה של המדידות מהן הסקנו את קבוע הסריג לרגרסיה הלינארית )
-\begin_inset Formula $R^{2}=$
-\end_inset
-
-( נייחס את מקור הפער הקטן בין הערך הצפוי לנמדד לבלאי של הסריג עם הזמן או
- פגם בייצור.
+מערך השיפוע שהתקבל.
+ גם לאחר לקיחת תתי קבוצות שונות של המדידות לא הצלחנו לקבל התאמה טובה לתאוריה
+ )מבחינת קבוע רידברג שהתקבל בסוף הניסוי לאחר חילוץ קבועי המנסרה שהתקבלו
+ בשלב זה(.
+ לכן אנו מניחים שהייתה שגיאה בכיול המנסרה וחולצו מקדמים לא נכונים.
+ ייתכן שהשגיאה בכיול המנסרה נגרמה מכך שחלק מהקווים שנמדדו היו החזרי אור
+ מקו האפס של המנסרה ולכן הייתה התאמה לא נכונה בין הזוויות שנלקחו לקווים
+ במנסרה לאורכי הגל שחושבו בעזרת הסריג.
 \end_layout
 
 \begin_layout Standard
 
 \series bold
-אורכי הגל של אטום ההליום:
-\end_layout
-
-\begin_layout Standard
-אורכי הגל שהוסקו מהמדידות ותחומי השגיאה שלהם מכילים את אורכי הגל התיאורטים
- מלבד בפסים 
-\begin_inset Formula $n=8,13$
-\end_inset
-
- שבהן השגיאה היחסית היא
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $\frac{\delta\lambda_{8}}{\lambda_{8}}=,\,\frac{\delta\lambda_{13}}{\lambda_{13}}=$
-\end_inset
-
-, שגיאה יחסית קטנה.
- לכן נגיד שההתאמה של המדידות לתיאוריה טובה יחסית.
- יתכן שהפער הקיים הוא בגלל זיהוי לא נכון של פסים עקב אפקטים של החזרה או
- ראייה לקויה.
- יתכן ופערים ותוצאות בלתי צפויות בהמשך הניסוי יושפעו מהפערים בחלק זה.
-\end_layout
-
-\begin_layout Standard
-
-\series bold
-כיול המנסרה:
-\end_layout
-
-\begin_layout Standard
 אטום המימן במנסרה:
+\end_layout
+
+\begin_layout Standard
+כפי שניתן לראות בטבלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, סדרת באלמר שהתקבלה בניסוי )מבחנית אורכי גל והפרשי אנרגיות( רחוקה מהערכים
+ המקובלים בספרות )ומחוץ לטווח השגיאה(.
+ כמו כן קבוע רידברג הממוצע המתקבל מהמדידות הוא 
+\begin_inset Formula 
+\[
+R_{y}=12.4\pm0.2\ eV
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השגיאה היחסית לערך המקובל בספרות היא
+\begin_inset Formula 
+\[
+\frac{\delta R_{y}}{R}=10\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציין שהפסים בשלב זה היו ברורים ולכן שגיאת המדידה שייחסנו להם הייתה קטנה.
+ יחד עם זאת, קבוע רידברג עבור כל אחד מאורכי הגל בנפרד לא מתאים לתאוריה.
+ משני אלה נסיק שהפער בקבוע רידברג כנראה נובע כטעות נגררת משלב כיול המנסרה.
+ 
 \end_layout
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+כמסקנה מהחלק העוסק בקביעת קבוע הסריג נראה ששיטת המדידה של צפייה בעזרת עין
+ אנושית 
 \end_layout
 
 \begin_layout Section*
