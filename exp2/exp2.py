@@ -44,8 +44,13 @@ plt.ylabel("n - order",fontsize=10)
 plt.xlabel(r"$sin(\frac{\theta_{min}}{2})$",fontsize=10)
 plt.show()
 
-d  = fit1[0][0] * lambda_Hg / 2
+m_val = fit1[0][0]
+m_err =  np.sqrt(fit1[1][0][0]) * 2
+m = Valerr(m_val,m_err)
+d = m * lambda_Hg / 2
+
 print("d=",d) # need to calculte error
+
 
 # part 2
 theta_min_value = np.array([20.5,19.35,17.01,14.6,14.49,14.2,13.63,12.96,12.69,11.25]) * np.pi/180
@@ -55,8 +60,9 @@ theta_min_err = np.array([0.1,0.05,0.05,0.1,0.05,0.1,0.05,0.05,0.1,0.1]) * np.pi
 theta_min = Valerr(theta_min_value,theta_min_err)
 
 n = -1
-f = lambda x: (2 * d * np.sin(x/2) / n) 
-wave_len = Valerr.general_funcion(f,theta_min)
+f = lambda d,x: (2 * d * np.sin(x/2) / n) 
+d = Valerr(d.val*np.ones(len(theta_min.val)),d.err*np.ones(len(theta_min.val)))
+wave_len = Valerr.general_funcion(f,d,theta_min)
 print("wave_len:",wave_len)
 
 
@@ -67,14 +73,16 @@ fig.patch.set_visible(False)
 ax.axis('off')
 ax.axis('tight')
 
-wave_for_table = -wave_len.val * 1e11
-wave_for_table = np.round(wave_for_table) /1e2
-
+# wave_for_table = -wave_len.val * 1e11
+# wave_for_table = np.round(wave_for_table) /1e2
+f = lambda w: np.round(-w*1e11) /1e2
+wave_for_table = Valerr.general_funcion(f, wave_len)
 
 col1 = list(range(1,10)) + [13]
 col1 = [str(x) for x in col1]
-col2 = wave_for_table
-col3 = np.array([706.52,667.82,587.56,504.77,501.57,492.19,471.31,447.15,438.79,396.47])
+col2 = [str(r"$%d\pm%d$"%(wave_for_table.val[i],wave_for_table.err[i])) for i in range(len(wave_for_table.val))]
+col3 = np.round(np.array([706.52,667.82,587.56,504.77,501.57,492.19,471.31,447.15,438.79,396.47]))
+col3 = [str(int(x)) for x in col3]
 data = {"n" :col1, r"$\lambda_{Messured}$ $[nm]$":col2,r"$\lambda_{Theory}$ $[nm]$":col3}
 df = pd.DataFrame(data)
 
@@ -101,8 +109,8 @@ x = wave_len**(-2)
 
 fit2 = linregress(x.val,delta_min.val)
 fig2 = plt.figure("fig2",dpi=200)
-plt.errorbar(x.val,-delta_min.val,yerr=delta_min.err,xerr=x.err,fmt=".",label="Data")
-plt.plot(x.val,-liner_curve(fit2.slope,fit2.intercept,x.val),"-.",label="Regression")
+plt.errorbar(x.val,delta_min.val,yerr=delta_min.err,xerr=x.err,fmt=".",label="Data")
+plt.plot(x.val,liner_curve(fit2.slope,fit2.intercept,x.val),"-.",label="Regression")
 plt.grid()
 plt.legend()
 plt.xlabel(r"$\frac{1}{\lambda^2}[m^{-2}]$",fontsize=10)
@@ -131,9 +139,34 @@ E = f*h
 
 n = np.array(range(3,(len(E.val)+3)))
 R = E / (1/2**2 - 1/n**2)
-R = np.mean(R.val)
-print("R=",R,"eV")
+R_mean = np.mean(R.val)
+print("R=",R_mean,"eV")
 
 R_theory = scipy.constants.physical_constants["Rydberg constant times hc in eV"][0] # in eV
-R_rel_err = abs(R-R_theory) / R_theory *100
+R_rel_err = abs(R_mean-R_theory) / R_theory *100
 print("in presicion of:",R_rel_err,"%")
+
+wave_len = wave_len *1e9
+wave_len_theory = [656.279,486.135,434.0472,410.1734]
+E_theory = [1.89,2.55,2.86,3.03]
+data = { "Transition of n" : ["Wavelength [nm]          ","Energy difference [eV]  ","Rydberg constant          ", "WAVELENGTH THEORY [nm]","ENERGY DIFFERENCE [eV]"],
+        r"$3\rightarrow2$": [str(r"$%d\pm%d$"%(wave_len.val[0],wave_len.err[0])),str(r"$%.2f\pm%.2f$"%(E.val[0],E.err[0])),str(r"$%.1f\pm%.1f$"%(R.val[0],0.3)),wave_len_theory[0],E_theory[0]],
+        r"$4\rightarrow2$": [str(r"$%d\pm%d$"%(wave_len.val[1],wave_len.err[1])),str(r"$%.2f\pm%.2f$"%(E.val[1],E.err[1])),str(r"$%.2f\pm%.2f$"%(R.val[1],R.err[1])),wave_len_theory[1],E_theory[1]],
+        r"$5\rightarrow2$": [str(r"$%d\pm%d$"%(wave_len.val[2],wave_len.err[2])),str(r"$%.2f\pm%.2f$"%(E.val[2],E.err[2])),str(r"$%.1f\pm%.1f$"%(R.val[2],R.err[2])),wave_len_theory[2],E_theory[2]],
+        r"$6\rightarrow2$": [str(r"$%d\pm%d$"%(wave_len.val[3],wave_len.err[3])),str(r"$%.2f\pm%.2f$"%(E.val[3],E.err[3])),str(r"$%.1f\pm%.1f$"%(R.val[3],R.err[3])),wave_len_theory[3],E_theory[3]] 
+        }
+        
+fig, ax = plt.subplots(dpi=400)
+
+# hide axes
+fig.patch.set_visible(False)
+ax.axis('off')
+ax.axis('tight')
+df = pd.DataFrame(data)
+
+
+ax.table(cellText=df.values, colLabels=df.columns,loc='center')
+
+fig.tight_layout()
+
+plt.show()

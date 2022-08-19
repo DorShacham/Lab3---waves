@@ -220,6 +220,41 @@ status open
 \noun default
 \color inherit
 319002911
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{nativ.maor@campus.technion.ac.il}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -256,6 +291,41 @@ status open
 \noun default
 \color inherit
 318258555
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{dor-hay.sha@campus.technion.ac.il}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -1284,7 +1354,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-כפי שנמדד וכפי שמוצג בתאוריה )ונלקח מהתדריך(.
+כפי שנמדד יחד עם שגיאות המדידה הנגררות וכפי שמוצג בתאוריה )ונלקח מהתדריך(.
 \end_layout
 
 \begin_layout Plain Layout
@@ -1304,6 +1374,15 @@ status open
 \end_layout
 
 \begin_layout Standard
+ניתן לשים לב שמלבד המדידות 
+\begin_inset Formula $n=8,13$
+\end_inset
+
+ כל אורכי הגל שנמדדו נופלים מכילים את הערך התיאורטי בתחום השגיאה.
+ לכן נגיד שההתאמה לתאוריה טובה.
+\end_layout
+
+\begin_layout Standard
 \begin_inset space \space{}
 \end_inset
 
@@ -1311,6 +1390,10 @@ status open
 \begin_inset Newline newline
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 לאחר מכן, על מנת למדוד את ספקטרום אטום המימן דרך מנסרה, כיילנו את המנסרה
  באמצעות אורכי הגל שמצאנו במדידות בסריג.
  החלפנו את אלמנט הפיזור מסריג למנסרה, כאשר קודקוד אחד של המנסרה נמצא בכיוון
@@ -1677,10 +1760,103 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\[
-\text{insert graph 3}
-\]
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/table2.png
+	lyxscale 40
+	scale 120
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\bar under
+טבלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: אורכי הגל, הפרשי האנרגיות וקבוע רידברג הנובעים ממעבר האנרגיות באטום המימן
+ אל מול התאוריה
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+בטבלה זו אנו מציגים את אורכי הגל, הפרשי האנרגיות וקבוע רידברג כתוצאה מהמעברים
+ השונים.
+ בנוסף הוספנו את הערכים התיאורטים שאמורים להתקבל.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

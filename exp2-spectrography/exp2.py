@@ -44,8 +44,13 @@ plt.ylabel("n - order",fontsize=10)
 plt.xlabel(r"$sin(\frac{\theta_{min}}{2})$",fontsize=10)
 plt.show()
 
-d  = fit1[0][0] * lambda_Hg / 2
+m_val = fit1[0][0]
+m_err =  np.sqrt(fit1[1][0][0]) * 2
+m = Valerr(m_val,m_err)
+d = m * lambda_Hg / 2
+
 print("d=",d) # need to calculte error
+
 
 # part 2
 theta_min_value = np.array([20.5,19.35,17.01,14.6,14.49,14.2,13.63,12.96,12.69,11.25]) * np.pi/180
@@ -55,8 +60,9 @@ theta_min_err = np.array([0.1,0.05,0.05,0.1,0.05,0.1,0.05,0.05,0.1,0.1]) * np.pi
 theta_min = Valerr(theta_min_value,theta_min_err)
 
 n = -1
-f = lambda x: (2 * d * np.sin(x/2) / n) 
-wave_len = Valerr.general_funcion(f,theta_min)
+f = lambda d,x: (2 * d * np.sin(x/2) / n) 
+d = Valerr(d.val*np.ones(len(theta_min.val)),d.err*np.ones(len(theta_min.val)))
+wave_len = Valerr.general_funcion(f,d,theta_min)
 print("wave_len:",wave_len)
 
 
@@ -67,14 +73,16 @@ fig.patch.set_visible(False)
 ax.axis('off')
 ax.axis('tight')
 
-wave_for_table = -wave_len.val * 1e11
-wave_for_table = np.round(wave_for_table) /1e2
-
+# wave_for_table = -wave_len.val * 1e11
+# wave_for_table = np.round(wave_for_table) /1e2
+f = lambda w: np.round(-w*1e11) /1e2
+wave_for_table = Valerr.general_funcion(f, wave_len)
 
 col1 = list(range(1,10)) + [13]
 col1 = [str(x) for x in col1]
-col2 = wave_for_table
-col3 = np.array([706.52,667.82,587.56,504.77,501.57,492.19,471.31,447.15,438.79,396.47])
+col2 = [str(r"$%d\pm%d$"%(wave_for_table.val[i],wave_for_table.err[i])) for i in range(len(wave_for_table.val))]
+col3 = np.round(np.array([706.52,667.82,587.56,504.77,501.57,492.19,471.31,447.15,438.79,396.47]))
+col3 = [str(int(x)) for x in col3]
 data = {"n" :col1, r"$\lambda_{Messured}$ $[nm]$":col2,r"$\lambda_{Theory}$ $[nm]$":col3}
 df = pd.DataFrame(data)
 
@@ -101,8 +109,8 @@ x = wave_len**(-2)
 
 fit2 = linregress(x.val,delta_min.val)
 fig2 = plt.figure("fig2",dpi=200)
-plt.errorbar(x.val,-delta_min.val,yerr=delta_min.err,xerr=x.err,fmt=".",label="Data")
-plt.plot(x.val,-liner_curve(fit2.slope,fit2.intercept,x.val),"-.",label="Regression")
+plt.errorbar(x.val,delta_min.val,yerr=delta_min.err,xerr=x.err,fmt=".",label="Data")
+plt.plot(x.val,liner_curve(fit2.slope,fit2.intercept,x.val),"-.",label="Regression")
 plt.grid()
 plt.legend()
 plt.xlabel(r"$\frac{1}{\lambda^2}[m^{-2}]$",fontsize=10)
