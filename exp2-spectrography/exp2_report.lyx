@@ -1179,11 +1179,7 @@ noprefix "false"
 \noun default
 \color inherit
 לא הצלחנו לקבוע זווית עקב העוצמה היחסית הנמוכה שלהם.
- נציג את התוצאות בטבלה הבאה 
-\series bold
-יש להוסיף שגיאה לאורך הגל הנמדד
-\series default
-:
+ נציג את התוצאות בטבלה הבאה:
 \end_layout
 
 \begin_layout Standard
@@ -1925,6 +1921,106 @@ noprefix "false"
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+נדון בתוצאות החלקים השונים של הניסוי.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+קבוע הסריג:
+\end_layout
+
+\begin_layout Standard
+קבוע הסריג שנקבע מהמדידות והטווח השגיאה שלו לא מכילים את הערך שרשום על הסריג
+ : 
+\begin_inset Formula $2\notin1.991\pm0.003$
+\end_inset
+
+ , אך יש לציין שלקבוע סריג הנתון לא נקבע טווח שגיאה .נוסף על כך השגיאה היחסית
+ בין הערך הנצפה לתיאורטי הוא בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $0.3\%$
+\end_inset
+
+ ל 
+\begin_inset Formula $0.6\%$
+\end_inset
+
+ , 
+\begin_inset Formula $\frac{\delta d}{d}=\frac{2-1.991\pm0.003}{2}=\frac{0.009\pm0.003}{2}=0.0045\pm0.0015$
+\end_inset
+
+ ולכן נגיד שההתאמה היא טובה יחסית ולא נצפה שפערים אלו ישתקפו בתוצאות הניסו.
+ מעצם ההתאמה הטובה של המדידות מהן הסקנו את קבוע הסריג לרגרסיה הלינארית )
+\begin_inset Formula $R^{2}=$
+\end_inset
+
+( נייחס את מקור הפער הקטן בין הערך הצפוי לנמדד לבלאי של הסריג עם הזמן או
+ פגם בייצור.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+אורכי הגל של אטום ההליום:
+\end_layout
+
+\begin_layout Standard
+אורכי הגל שהוסקו מהמדידות ותחומי השגיאה שלהם מכילים את אורכי הגל התיאורטים
+ מלבד בפסים 
+\begin_inset Formula $n=8,13$
+\end_inset
+
+ שבהן השגיאה היחסית היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\delta\lambda_{8}}{\lambda_{8}}=,\,\frac{\delta\lambda_{13}}{\lambda_{13}}=$
+\end_inset
+
+, שגיאה יחסית קטנה.
+ לכן נגיד שההתאמה של המדידות לתיאוריה טובה יחסית.
+ יתכן שהפער הקיים הוא בגלל זיהוי לא נכון של פסים עקב אפקטים של החזרה או
+ ראייה לקויה.
+ יתכן ופערים ותוצאות בלתי צפויות בהמשך הניסוי יושפעו מהפערים בחלק זה.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+כיול המנסרה:
+\end_layout
+
+\begin_layout Standard
+אטום המימן במנסרה:
 \end_layout
 
 \begin_layout Section*
