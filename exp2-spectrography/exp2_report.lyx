@@ -182,7 +182,8 @@ status open
 
 \series bold
 \size huge
-מדידת סידרת באלמר באור הנראה של אטום המימן בעזרת מנסרה
+מדידת סידרת באלמר באור הנראה של אטום המימן בעזרת מנסרה וממנה קביעת קבוע
+ רידברג
 \end_layout
 
 \begin_layout Plain Layout
@@ -304,7 +305,8 @@ today
  הסקנו את אורכי הגל של אטום ההליום.
  בעזרת אורכי הגל שמצאנו, הסקנו את קבועי המנסרה.
  לבסוף, מפיזור אור של נורת מימן דרך אותה מנסרה וקבועי המנסרה מדדנו את סדרת
- באלמר באור הנראה של אטום המימן וממנו הסקנו את קבוע רידברג והשוונו לתאוריה.
+ באלמר באור הנראה של אטום המימן וממנו הסקנו את קבוע רידברג והשוונו לקבוע
+ המקובל בספרות.
 \end_layout
 
 \begin_layout Section*
@@ -314,7 +316,8 @@ today
 \begin_layout Standard
 מערכת הניסוי מורכבת מספקטרומטר המורכב ממקור אור )אור לבן, כספית ,הליום ומימן(,
  קולימטור וצמצם הממקדים את האור לכיוון מפזר )סריג או מנסרה(.
- זוויות הפיזור נמדדות דרך משקפת המחוברת לתוכנת מחשב המציגה את זווית המשקפת.
+ זוויות הפיזור נמדדות דרך משקפת המחוברת לתוכנת מחשב המציגה את זווית המשקפת,
+ זווית המשקפת ניתן לקביעה על ידי סיבוב המשקפת סביב המפזר.
  התוכנה מאפשרת הצגה של דיוק של עד אלפית המעלה, אך בפועל נמדדו שגיאות של
 \family roman
 \series medium
@@ -612,13 +615,21 @@ status open
 \end_layout
 
 \begin_layout Standard
-תחילה כיילנו את המכשירים, בעזרת אור לבן - התבוננו תמונת הסדק דרך המשקפת
- ודאגנו שהצלב יהיה כמה שיותר מאוזן.
+תחילה כיילנו את המכשירים.
+ קבענו את מקור האור להיות אור לבן - התבוננו בתמונת הסדק דרך המשקפת ודאגנו
+ שהצלב יהיה כמה שיותר מאוזן.
  בנוסף, כיוונו את רוחב הסדק בעזרת הקולימטר כך שהתקבל פס אור צר ודאגנו שהצופה
  יראה את האור המרכזי בצורה מפוקסת בעזרת כיוונון העינית.
 \end_layout
 
 \begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
 לאחר מכן מדדנו את קבוע הסריג.
  לשם כך החלפנו את מקור האור למנורת כספית והצבנו את הסריג במרכז הספקטרומטר,
  אתחלנו את זווית ה
@@ -674,7 +685,9 @@ status open
 \end_inset
 
  היא הזווית שבה מתרחשת נקודת המפנה בהזזת הסריג, לשם מציאת זווית זו הזזנו
- את הסריג בזמן התבוננת בפס עד הגעה לנקודה שבה סיבוב הסריג נמצא בזווית מינימלית.
+ את הסריג בזמן התבוננת בפס עד הגעה לנקודה שבה הסריג נמצא בזווית מינימלית.
+ הערכת שגיאת המדידה של הזווית נקבעה לפי ההזזה המינימלית של זווית המשקפת
+ שהיה ניתן היה לבצע סביב הנקודה בה הצלב היה במרכז פס האור.
  להלן תוצאות המדידה:
 \end_layout
 
@@ -805,6 +818,68 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+שגיאת המדידה הנגררת של 
+\begin_inset Formula $\sin\left(\frac{\theta_{min}}{2}\right)$
+\end_inset
+
+ נקבעה לפי חישוב מס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בנספח.
+\end_layout
+
+\begin_layout Standard
 מנוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -819,7 +894,7 @@ noprefix "false"
 \begin_inset Formula $\frac{2d}{\lambda}$
 \end_inset
 
- בנוסף נתון שאורך הגל של האור הירוק היה נתון 
+ בנוסף נתון שאורך הגל של האור הירוק הוא 
 \begin_inset Formula $\lambda_{green}^{Hg}=546.074\cdot10^{-9}m$
 \end_inset
 
@@ -897,7 +972,7 @@ d=\left(1.991\pm0.003\right)\cdot10^{-6}m
 \begin_inset Formula $2\cdot10^{-6}m$
 \end_inset
 
-.
+, השגיאה אודות נתון זה איננה ידועה.
 \end_layout
 
 \begin_layout Standard
@@ -925,7 +1000,7 @@ noprefix "false"
 \end_inset
 
  התאמנו את הפסים שהבחנו בהם אל הפסים הצפויים מהתיאוריה.
- בפסים
+ עבור פסים
 \family roman
 \series medium
 \shape up
@@ -1033,8 +1108,12 @@ noprefix "false"
 \uwave default
 \noun default
 \color inherit
-לא הצלחנו להבחין.
- נציג את התוצאות בטבלה הבאה:
+לא הצלחנו לקבוע זווית עקב העוצמה היחסית הנמוכה שלהם.
+ נציג את התוצאות בטבלה הבאה 
+\series bold
+יש להוסיף שגיאה לאורך הגל הנמדד
+\series default
+:
 \end_layout
 
 \begin_layout Standard
@@ -1446,10 +1525,10 @@ noprefix "false"
 
 \begin_layout Standard
 ניתן לשים לב, שההתאמה לגרף אינה טובה במיוחד, הן ממבט איכותי - קו הרגרסיה
- נמצא מחוץ לקווי השגיאה והן מתחום השגיאה של הרגרסיה -תחום השגיאה גדול ביחס
- לגודל הנמדד.
- ניתן לייחס את השגיאה, למיפוי לא נכון של הקווים אשר נמדדו בעזרת המנסרה לקווים
- אשר נמדדו בעזרת הסריג ולכן התאמה לא נכונה של זוויות לאורכי גל.
+ נמצא מחוץ לקווי השגיאה והן מתחום השגיאה של הרגרסיה -תחום השגיאה של שיפוע
+ הגרף גדול ביחס לגודל הנמדד.
+ אנו משערים שהמקור לשגיאה הוא מיפוי לא נכון של הפסים שנצפו לאורכי הגל המתאימים
+ להם.
  על הסיבות לכך נדון בהמשך.
 \end_layout
 
@@ -1484,6 +1563,221 @@ C^{\prime}=-0.80\pm0.02\ [Rad\cdot m^{2}]
 \begin_inset Formula 
 \[
 B^{\prime}=-\left(1.9\pm0.5\right)\cdot10^{-14}\ [Rad]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לבסוף, החלפנו את מקור האור מנורת הליום לנורת מימן תוך כדי הקפדה לא להזיז
+ את המנסרה כך שלא תצא מכיול בהשוואה למדידה הקודמת של קבועי המנסרה.
+ מיקדנו את המשקפת בנקודה בה הוצג פס ה
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ואיפסנו את מד הזווית שיציג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $0^{\circ}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עליו.
+ כעת מדדנו את זוויות הפסים הבולטים, אדום - תכלת - כחול וסגול.
+ בעזרת 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:6"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ וקבועי המנסרה שמצאנו חישבנו את אורכי הגל.
+ להלן התוצאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\text{insert graph 3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעזרת אורכי הגל שנמצאו חושבו הפרשי האנרגיות המתאימים בעזרת 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ובכך קיבלנו את סדרת באלמר.
+ לכל איבר בסדרה חישבנו את קבוע רידברג המתאים 
+\begin_inset Formula $R_{y}$
+\end_inset
+
+ - חישבנו את הממוצע שלהם וקיבלנו ערך ממוצע של קבוע רידברג המתקבל מהמדידות.
+ הקבוע שקיבלנו הוא 
+\begin_inset Formula $R_{y,measured}=12.46\,[eV]$
+\end_inset
+
+ , בעוד שהערך המקובל בספרות הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $R_{y,Thoery}=13.6\,[eV]$
+\end_inset
+
+ פער של כ
+\begin_inset Formula $8.4\%$
+\end_inset
+
+, על השערות לפער זה נדון בדיון ותוצאות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נציין שבמהלך מדידות זוויות פסי האור בשלבים השונים, על מנת להבחין בפסים שעוצמתם
+ נמוכה התאמצנו לצמצם הפרעות מהסביבה על ידי כיבוי אורות מכל מקור אפשרי אשר
+ היה בשליטתנו.
+ נציין שלמרות מאמצים אלו החדר לא היה אטום לחלוטין כיוון שאור מהחדר הסמוך
+ נכנס דרך חריצי הדלת.
+\end_layout
+
+\begin_layout Section*
+דיון בתוצאות
+\end_layout
+
+\begin_layout Section*
+מסקנות
+\end_layout
+
+\begin_layout Section*
+נספח
+\end_layout
+
+\begin_layout Subsection*
+חישובי שגיאות מדידה נגררות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(1)\,\delta\sin\left(\frac{\theta_{min}}{2}\right)=\frac{1}{2}\cdot\cos\left(\frac{\theta_{min}}{2}\right)\cdot\delta\theta_{min}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(2)\,\delta\lambda=\sqrt{(d\cdot\cos\left(\frac{\theta_{min}}{2}\right)\cdot\delta\theta_{min})^{2}+(2\cdot\sin\left(\frac{\theta_{min}}{2}\right)\cdot\delta d)^{2}}
 \]
 
 \end_inset
