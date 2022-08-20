@@ -830,8 +830,25 @@ status open
 
 \begin_layout Plain Layout
 \align center
-הנקודות הכחולות מייצגות את המדידות עם קווי שגיאה )קווי השגיאה קטנים מדי
- בשביל להיראות בגרף(.
+הנקודות הכחולות מייצגות את המדידות עם קווי שגיאה )לפי 
+\begin_inset Formula $n$
+\end_inset
+
+ אין קווי שגיאה וקווי השגיאה לפי 
+\begin_inset Formula $\sin\left(\frac{\theta_{min}}{2}\right)$
+\end_inset
+
+ חושבו לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error - sin(theta/2)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח אך קטנים מכדי להיראות בגרף(.
  הקו המקווקו הכתום מייצג את הרגרסיה הלינארית לפי נוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -893,68 +910,6 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-שגיאת המדידה הנגררת של 
-\begin_inset Formula $\sin\left(\frac{\theta_{min}}{2}\right)$
-\end_inset
-
- נקבעה לפי חישוב מס
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-1
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-בנספח.
-\end_layout
-
-\begin_layout Standard
 מנוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -985,7 +940,21 @@ d=\left(1.991\pm0.003\right)\cdot10^{-6}m
 \end_layout
 
 \begin_layout Standard
-כאשר נציין שהערך הרשום על הסריג הוא
+כאשר השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error - d"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח.
+\end_layout
+
+\begin_layout Standard
+נציין שהערך הרשום על הסריג הוא
 \family roman
 \series medium
 \shape up
@@ -1355,7 +1324,17 @@ status open
 \uwave default
 \noun default
 \color inherit
-כפי שנמדד יחד עם שגיאות המדידה הנגררות וכפי שמוצג בתאוריה )ונלקח מהתדריך(.
+כפי שנמדד יחד עם שגיאות המדידה הנגררות )כפי שחושבו לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error lambda - 1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( וכפי שמוצג בתאוריה )ונלקח מהתדריך(.
 \end_layout
 
 \begin_layout Plain Layout
@@ -1571,7 +1550,25 @@ status open
 
 \begin_layout Plain Layout
 \align center
-הנקודות הכחולות מייצגות את המדידות עם קווי שגיאה.
+הנקודות הכחולות מייצגות את המדידות עם קווי שגיאה )כאשר השגיאות ב
+\begin_inset Formula $\delta_{min}$
+\end_inset
+
+ הן שגיאות המדידה והשגיאות ב
+\begin_inset Formula $\frac{1}{\lambda^{2}}$
+\end_inset
+
+ חושבו לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error - 1/lambda^2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(.
  הקו המקווקו הכתום מייצג את הרגרסיה הלינארית לפי נוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1862,8 +1859,89 @@ status open
 
 \begin_layout Plain Layout
 \align center
-בטבלה זו אנו מציגים את אורכי הגל, הפרשי האנרגיות וקבוע רידברג כתוצאה מהמעברים
- השונים.
+בטבלה זו אנו מציגים את אורכי הגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+, הפרשי האנרגיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+וקבוע רידברג כתוצאה מהמעברים השונים )השגיאות חושבו לפי חישובים 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error - R(n)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error - E"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error - lambda - 2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(.
  בנוסף הוספנו את הערכים התיאורטים שאמורים להתקבל.
 \end_layout
 
@@ -1960,10 +2038,46 @@ status open
 
 \begin_layout Standard
 הקבוע שקיבלנו הוא 
-\begin_inset Formula $R_{y,measured}=12.4\pm0.2\,[eV]$
+\begin_inset Formula $R_{y,measured}=12.4\pm0.08\,[eV]$
 \end_inset
 
- , בעוד שהערך המקובל בספרות הוא
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:error - R"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(, בעוד שהערך המקובל בספרות הוא
 \family roman
 \series medium
 \shape up
@@ -2027,15 +2141,44 @@ status open
 \begin_inset Formula $0.6\%$
 \end_inset
 
- , 
-\begin_inset Formula 
-\[
-\frac{\left|d_{theory}-d_{messured}\right|}{d_{theory}}=\frac{\delta d}{d}=\frac{2-1.991\pm0.003}{2}=\frac{0.009\pm0.003}{2}=0.0045\pm0.0015\leq0.6\%
-\]
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)השגיאה חושבו לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relative error d"
+plural "false"
+caps "false"
+noprefix "false"
 
 \end_inset
 
- ולכן נגיד שההתאמה היא טובה יחסית ולא נצפה שפערים אלו ישתקפו בתוצאות הניסו.
+ בנספח(, ולכן נגיד שההתאמה היא טובה יחסית ולא נצפה שפערים אלו ישתקפו בתוצאות
+ הניסו.
  מעצם ההתאמה הטובה של המדידות מהן הסקנו את קבוע הסריג לרגרסיה הלינארית )
 \begin_inset Formula $R^{2}=0.999$
 \end_inset
@@ -2068,6 +2211,35 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאות חושבו לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relative error lambda 13"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+,
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relative error lambda 8"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(
+\end_layout
+
+\begin_layout Standard
 שגיאה יחסית קטנה.
  לכן נגיד שההתאמה של המדידות לתיאוריה טובה יחסית.
  ייתכן שהפער הקיים הוא בגלל הערכת שגיאת מדידה לא נכונה במדידות 
@@ -2214,7 +2386,7 @@ noprefix "false"
  כמו כן קבוע רידברג הממוצע המתקבל מהמדידות הוא 
 \begin_inset Formula 
 \[
-R_{y}=12.4\pm0.2\ eV
+R_{y}=12.4\pm0.08\ eV
 \]
 
 \end_inset
@@ -2232,6 +2404,21 @@ R_{y}=12.4\pm0.2\ eV
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאות חושבו לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:relative error R"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(
 \end_layout
 
 \begin_layout Standard
@@ -2358,7 +2545,7 @@ R_{y}=12.4\pm0.2\ eV
 \end_inset
 
  והערך הממוצע הנגזר מהמדידות שלנו היה 
-\begin_inset Formula $12.4eV$
+\begin_inset Formula $12.4\pm0.08eV$
 \end_inset
 
 .
@@ -2389,9 +2576,9 @@ R_{y}=12.4\pm0.2\ eV
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(1)\,\delta\sin\left(\frac{\theta_{min}}{2}\right)=\frac{1}{2}\cdot\cos\left(\frac{\theta_{min}}{2}\right)\cdot\delta\theta_{min}
-\]
+\begin{equation}
+\delta\sin\left(\frac{\theta_{min}}{2}\right)=\frac{1}{2}\cdot\left|\cos\left(\frac{\theta_{min}}{2}\right)\cdot\right|\delta\theta_{min}\label{eq:error - sin(theta/2)}
+\end{equation}
 
 \end_inset
 
@@ -2400,13 +2587,209 @@ R_{y}=12.4\pm0.2\ eV
 
 \begin_layout Standard
 \begin_inset Formula 
-\[
-(2)\,\delta\lambda=\sqrt{(d\cdot\cos\left(\frac{\theta_{min}}{2}\right)\cdot\delta\theta_{min})^{2}+(2\cdot\sin\left(\frac{\theta_{min}}{2}\right)\cdot\delta d)^{2}}
-\]
+\begin{equation}
+\delta d=\frac{\lambda_{green}^{Hg}}{2}\delta m\label{eq:error - d}
+\end{equation}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\delta m$
+\end_inset
+
+ היא השגיאה בשיפוע מהרגרסיה הלינארית )תחום הבר סמך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $95\%$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- שתי סטיות תקן(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\lambda=\sqrt{(d\cdot\cos\left(\frac{\theta_{min}}{2}\right)\cdot\delta\theta_{min})^{2}+(2\cdot\sin\left(\frac{\theta_{min}}{2}\right)\cdot\delta d)^{2}}\label{eq:error lambda - 1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\frac{1}{\lambda^{2}}=\frac{2\delta\lambda}{\lambda^{3}}\label{eq:error - 1/lambda^2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\lambda=\sqrt{\left(\frac{1}{\sqrt{\delta_{min}-B^{\prime}}}\cdot\frac{\delta C^{\prime}}{2\sqrt{C^{\prime}}}\right)^{2}+\left(\sqrt{C^{\prime}}\frac{\delta B^{\prime}}{2\left(\delta_{min}-B^{\prime}\right)^{\nicefrac{3}{2}}}\right)^{2}+\left(\sqrt{C^{\prime}}\frac{\delta\delta_{min}}{2\left(\delta_{min}-B\right)^{\nicefrac{3}{2}}}\right)^{2}}\label{eq:error - lambda - 2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta E=hc\frac{\delta\lambda}{\lambda^{2}}\label{eq:error - E}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\delta R_{y}\left(n\right)=\frac{\delta E}{\frac{1}{2^{2}}-\frac{1}{n^{2}}}\label{eq:error - R(n)}
+\end{equation}
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $R_{y}\left(n\right)$
+\end_inset
+
+ הוא קבוע רידברג שחושב מהניסוי על ידי מעבר מהרמה ה
+\begin_inset Formula $n$
+\end_inset
+
+ ל
+\begin_inset Formula $2$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{equation}
+\delta R_{y}=\frac{1}{4}\sqrt{\delta R_{y}^{2}\left(3\right)+\delta R_{y}^{2}\left(4\right)+\delta R_{y}^{2}\left(5\right)+\delta R_{y}^{2}\left(6\right)}\label{eq:error - R}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\delta R_{y}$
+\end_inset
+
+ היא השגיאה של 
+\begin_inset Formula $R_{y}$
+\end_inset
+
+ הממוצע שחושב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\left|d_{theory}-d_{messured}\right|}{d_{theory}}=\frac{\delta d}{d}=\frac{2-1.991\pm0.003}{2}=\frac{0.009\pm0.003}{2}=0.0045\pm0.0015\leq0.6\%\label{eq:relative error d}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\left|\lambda_{8}^{theory}-\lambda_{8}^{messured}\right|}{\lambda_{8}^{theory}}=\frac{\delta\lambda_{8}}{\lambda_{8}}\leq0.67\%\label{eq:relative error lambda 8}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\frac{\left|\lambda_{13}^{theory}-\lambda_{13}^{messured}\right|}{\lambda_{13}^{theory}}=\frac{\delta\lambda_{13}}{\lambda_{13}}\leq2.2\%\label{eq:relative error lambda 13}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\frac{\left|R_{y}^{theory}-R_{y}^{messured}\right|}{R_{y}^{theory}}=\frac{\delta R_{y}}{R}\leq10\%\label{eq:relative error R}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציין שבחישוב השגיאה היחסית לתאוריה, נעזרנו בטווח שגיאת המדידה בשביל לחסום
+ את השגיאה התיאורטית.
 \end_layout
 
 \end_body

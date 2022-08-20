@@ -147,7 +147,7 @@ E = f*h
 n = np.array(range(3,(len(E.val)+3)))
 R = E / (1/2**2 - 1/n**2)
 R_mean = np.mean(R.val)
-R_err = np.mean(R.err)
+R_err = Valerr._dist(*R.err) /4
 print("R=",R_mean,"eV")
 
 R_theory = scipy.constants.physical_constants["Rydberg constant times hc in eV"][0] # in eV
