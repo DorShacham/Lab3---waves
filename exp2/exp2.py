@@ -157,7 +157,7 @@ print("in presicion of:",R_rel_err,"%")
 wave_len = wave_len *1e9
 wave_len_theory = [656.279,486.135,434.0472,410.1734]
 E_theory = [1.89,2.55,2.86,3.03]
-data = { "Transition of n" : ["Wavelength [nm]          ","Energy difference [eV]  ","Rydberg constant          ", "WAVELENGTH THEORY [nm]","ENERGY DIFFERENCE [eV]"],
+data = { "Transition of n" : ["Wavelength [nm]          ","Energy difference [eV]  ","Rydberg constant[eV]       ", "WAVELENGTH THEORY [nm]","ENERGY DIFFERENCE [eV]"],
         r"$3\rightarrow2$": [str(r"$%d\pm%d$"%(wave_len.val[0],wave_len.err[0])),str(r"$%.2f\pm%.2f$"%(E.val[0],E.err[0])),str(r"$%.1f\pm%.1f$"%(R.val[0],0.3)),wave_len_theory[0],E_theory[0]],
         r"$4\rightarrow2$": [str(r"$%d\pm%d$"%(wave_len.val[1],wave_len.err[1])),str(r"$%.2f\pm%.2f$"%(E.val[1],E.err[1])),str(r"$%.2f\pm%.2f$"%(R.val[1],R.err[1])),wave_len_theory[1],E_theory[1]],
         r"$5\rightarrow2$": [str(r"$%d\pm%d$"%(wave_len.val[2],wave_len.err[2])),str(r"$%.2f\pm%.2f$"%(E.val[2],E.err[2])),str(r"$%.1f\pm%.1f$"%(R.val[2],R.err[2])),wave_len_theory[2],E_theory[2]],
@@ -173,7 +173,7 @@ ax.axis('tight')
 df = pd.DataFrame(data)
 
 
-ax.table(cellText=df.values, colLabels=df.columns,loc='center')
+ax.table(cellText=df.values, colLabels=df.columns,loc='center',fontsize=30,colWidths=[0.5]*len(df.columns))
 
 fig.tight_layout()
 

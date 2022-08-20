@@ -364,19 +364,25 @@ today
 \end_layout
 
 \begin_layout Standard
-ניסוי זה היה מורכב ממספר שלבים שמטרתם הסופית היא מדידת ספקטרום אטום המימן
- - סדרת באלמר - ובעזרתה את קבוע רידברג.
+ניסוי זה היה מורכב ממספר שלבים שמטרתם הסופית היא מדידת הספקטרום הנראה של
+ אטום המימן - סדרת באלמר - ובעזרתה את קבוע רידברג.
 \end_layout
 
 \begin_layout Standard
-תחילה מדדנו את זוויות הפיזור מסריג של אור ירוק מנורת כספית בסדרים ראשונים
+תחילה מדדנו את זוויות הפיזור מסריג של אור ירוק ממנורת כספית בסדרים ראשונים
  וממנה הסקנו את קבוע הסריג.
  על ידי מדידת זוויות פיזור האור של נורת הליום דרך הסריג וקבוע הסריג שמצאנו,
  הסקנו את אורכי הגל של אטום ההליום.
- בעזרת אורכי הגל שמצאנו, הסקנו את קבועי המנסרה.
+ בעזרת אורכי הגל שמצאנו, בפיזור של אור ממנורת ההליום דרך מנסרה והתאמה של
+ הקווים שזיהינו משתי ההתבוננויות הסקנו את קבועי המנסרה.
  לבסוף, מפיזור אור של נורת מימן דרך אותה מנסרה וקבועי המנסרה מדדנו את סדרת
- באלמר באור הנראה של אטום המימן וממנו הסקנו את קבוע רידברג והשוונו לקבוע
+ באלמר באור הנראה של אטום המימן וממנה הסקנו את קבוע רידברג והשוונו לקבוע
  המקובל בספרות.
+ בניסוי נצפו פערים מהתאוריה אותם אנו מייחסים לכשלים עליהם נדון במהלך דו
+\begin_inset Quotes erd
+\end_inset
+
+ח זה.
 \end_layout
 
 \begin_layout Section*
@@ -401,7 +407,7 @@ today
 \uwave off
 \noun off
 \color none
- בין
+ בין 
 \begin_inset Formula $0.05^{\circ}$
 \end_inset
 
@@ -418,7 +424,7 @@ today
 \uwave default
 \noun default
 \color inherit
-ל
+ ל
 \family roman
 \series medium
 \shape up
@@ -680,6 +686,75 @@ status open
 .
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/balmer_fig.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\bar under
+סולם רמות האנרגיה של מימן התורמים לסדרת באלמר
+\bar default
+:
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+באיור מוצגים המעברים כאשר הרמות מייוצגות על ידי הפסים השחורים הממוספרים
+ והחצים מייצגים את המעברים עצמם.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 תוצאות הניסוי
 \end_layout
@@ -702,10 +777,10 @@ status open
 
 לאחר מכן מדדנו את קבוע הסריג.
  לשם כך החלפנו את מקור האור למנורת כספית והצבנו את הסריג במרכז הספקטרומטר,
- אתחלנו את זווית ה
+ אתחלנו את זווית ה 
 \numeric on
 
-\begin_inset Formula $0$
+\begin_inset Formula $0^{\circ}$
 \end_inset
 
 
@@ -757,8 +832,8 @@ status open
  היא הזווית שבה מתרחשת נקודת המפנה בהזזת הסריג, לשם מציאת זווית זו הזזנו
  את הסריג בזמן התבוננת בפס עד הגעה לנקודה שבה הסריג נמצא בזווית מינימלית.
  הערכת שגיאת המדידה של הזווית נקבעה לפי ההזזה המינימלית של זווית המשקפת
- שהיה ניתן היה לבצע סביב הנקודה בה הצלב היה במרכז פס האור.נציין שבמדידה של
- הסדר ה
+ שהיה ניתן היה לבצע סביב הנקודה בה הצלב היה במרכז פס האור.
+ נציין שבמדידה של הסדר ה
 \begin_inset Formula $\pm3$
 \end_inset
 
@@ -940,7 +1015,8 @@ d=\left(1.991\pm0.003\right)\cdot10^{-6}m
 \end_layout
 
 \begin_layout Standard
-כאשר השגיאה חושבה לפי חישוב 
+\align center
+)כאשר השגיאה חושבה לפי חישוב 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:error - d"
@@ -950,7 +1026,7 @@ noprefix "false"
 
 \end_inset
 
- בנספח.
+ בנספח(
 \end_layout
 
 \begin_layout Standard
@@ -1358,7 +1434,7 @@ noprefix "false"
 \begin_inset Formula $n=8,13$
 \end_inset
 
- כל אורכי הגל שנמדדו נופלים מכילים את הערך התיאורטי בתחום השגיאה.
+ כל אורכי הגל שנמדדו מכילים את הערך התיאורטי בתחום השגיאה.
  לכן נגיד שההתאמה לתאוריה טובה.
 \end_layout
 
@@ -1442,7 +1518,7 @@ noprefix "false"
 \uwave default
 \noun default
 \color inherit
-הקווים הראשונים.
+הקווים הראשונים על הסיבות לקושי בזיוהי הפסים נדון בדיון בתוצאות.
  בעזרת מדידות אלה ונוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -1605,9 +1681,9 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-ניתן לשים לב, שההתאמה לגרף אינה טובה במיוחד, הן ממבט איכותי - קו הרגרסיה
- נמצא מחוץ לקווי השגיאה והן מתחום השגיאה של הרגרסיה -תחום השגיאה של שיפוע
- הגרף גדול ביחס לגודל הנמדד.
+ניתן לשים לב, שההתאמה של הנתונים לגרף הרגרסיה אינה טובה במיוחד, הן ממבט
+ איכותי - קו הרגרסיה נמצא מחוץ לקווי השגיאה והן מתחום השגיאה של הרגרסיה
+ -תחום השגיאה של שיפוע הגרף גדול ביחס לגודל הנמדד.
  אנו משערים שהמקור לשגיאה הוא מיפוי לא נכון של הפסים שנצפו לאורכי הגל המתאימים
  להם.
  על הסיבות לכך נדון בהמשך.
@@ -1653,7 +1729,7 @@ B^{\prime}=-\left(1.9\pm0.5\right)\cdot10^{-14}\ [Rad]
 
 \begin_layout Standard
 לבסוף, החלפנו את מקור האור מנורת הליום לנורת מימן תוך כדי הקפדה לא להזיז
- את המנסרה כך שלא תצא מכיול בהשוואה למדידה הקודמת של קבועי המנסרה.
+ את המנסרה כך שלא תצא מכיול בהשוואה למדידה הקודמת ממנה הסקנו את קבועי המנסרה.
  מיקדנו את המשקפת בנקודה בה הוצג פס ה
 \numeric on
 0
@@ -1743,7 +1819,14 @@ B^{\prime}=-\left(1.9\pm0.5\right)\cdot10^{-14}\ [Rad]
 \color inherit
 עליו.
  כעת מדדנו את זוויות הפסים הבולטים, אדום - תכלת - כחול וסגול.
- בעזרת 
+ נציין שמעבר לפסים הבולטים הבחנו בשני פסים ורודים בזוויות שבין זווית ה
+\begin_inset Formula $0^{\circ}$
+\end_inset
+
+ לפסים הבולטים שייתכן שנגרמו מהחזרות מהמנסרה.
+ אם אפקטים של החזרות יכולים ליצור פסים לא צפויים ייתכן שהן הסיבה לכך שמדידות
+ הכיול לא הניבו תוצאה שמתאימה לתיאוריה.
+ בעזרת נוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:6"
@@ -1754,7 +1837,7 @@ noprefix "false"
 \end_inset
 
  וקבועי המנסרה שמצאנו חישבנו את אורכי הגל.
- בעזרת אורכי הגל שנמצאו חושבו הפרשי האנרגיות המתאימים בעזרת 
+ בעזרת אורכי הגל שנמצאו חושבו הפרשי האנרגיות המתאימים בעזרת נוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:5"
@@ -1781,17 +1864,13 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename fig/table2.png
 	lyxscale 40
-	scale 120
+	scale 60
 
 \end_inset
 
@@ -1942,84 +2021,11 @@ noprefix "false"
 \end_inset
 
  בנספח(.
- בנוסף הוספנו את הערכים התיאורטים שאמורים להתקבל.
-\end_layout
-
+ בנוסף הוספנו בשתי השורות האחרונות את הערכים התיאורטים המופיעים בספרות )
+\begin_inset Formula $\text{L. Banet 1966}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename fig/balmer_fig.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\bar under
-סולם רמות האנרגיה של מימן התורמים לסדרת באלמר
-\bar default
-:
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-באיור מוצגים המעברים כאשר הרמות מייוצגות על ידי הפסים השחורים הממוספרים
- והחצים מייצגים את המעברים עצמם.
+(.
 \end_layout
 
 \end_inset
@@ -2038,7 +2044,7 @@ status open
 
 \begin_layout Standard
 הקבוע שקיבלנו הוא 
-\begin_inset Formula $R_{y,measured}=12.4\pm0.08\,[eV]$
+\begin_inset Formula $R_{y,measured}=12.40\pm0.08\,[eV]$
 \end_inset
 
 
@@ -2133,10 +2139,14 @@ noprefix "false"
 \begin_layout Standard
 קבוע הסריג שנקבע מהמדידות והטווח השגיאה שלו לא מכילים את הערך שרשום על הסריג
  : 
-\begin_inset Formula $2\cdot10^{-6}m\notin\left(1.991\pm0.003\right)\cdot10^{-6}m$
+\begin_inset Formula 
+\[
+2\cdot10^{-6}m\notin\left(1.991\pm0.003\right)\cdot10^{-6}m
+\]
+
 \end_inset
 
- , אך יש לציין שלקבוע סריג הנתון לא נקבע טווח שגיאה.
+ אך יש לציין שלקבוע הרשום על הסריג לא נקבע טווח שגיאה.
  נוסף על כך השגיאה היחסית בין הערך הנצפה לתיאורטי חסומה על ידי 
 \begin_inset Formula $0.6\%$
 \end_inset
@@ -2178,13 +2188,13 @@ noprefix "false"
 \end_inset
 
  בנספח(, ולכן נגיד שההתאמה היא טובה יחסית ולא נצפה שפערים אלו ישתקפו בתוצאות
- הניסו.
+ הניסוי.
  מעצם ההתאמה הטובה של המדידות מהן הסקנו את קבוע הסריג לרגרסיה הלינארית )
 \begin_inset Formula $R^{2}=0.999$
 \end_inset
 
-( נייחס את מקור הפער הקטן בין הערך הצפוי לנמדד לבלאי של הסריג עם הזמן או
- פגם בייצור.
+( נייחס את מקור הפער הקטן בין הערך הרשום על הסריג לערך הנמדד לבלאי של הסריג
+ עם הזמן או פגם בייצור.
  
 \end_layout
 
@@ -2263,7 +2273,7 @@ noprefix "false"
 
 \begin_layout Standard
 בחלק של כיול המנסרה קבלנו תוצאה בלתי צפויה, כפי שניתן לראות בגרף 2 , הנתונים
- לא מתאימים לגרף לינארי כפי שציפנו מנוסחה 
+ לא מתאימים לגרף לינארי כפי שציפנו מנוסחא 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:6"
@@ -2343,6 +2353,13 @@ noprefix "false"
  ייתכן שהשגיאה בכיול המנסרה נגרמה מכך שחלק מהקווים שנמדדו היו החזרי אור
  מקו האפס של המנסרה ולכן הייתה התאמה לא נכונה בין הזוויות שנלקחו לקווים
  במנסרה לאורכי הגל שחושבו בעזרת הסריג.
+ הסיבה שאנחנו מייחסים את הטעות בכיול לפסי אור מחזרים היא שעבור פסי אור שעוצמתם
+ נמוכה קשה להבחין האם מקורם הוא החזר אור או פס פיזור.
+ בשלב שבו הבטנו בפיזור מנורת המימן דרך המנסרה ראינו שני פסים ורודים שהסבר
+ אפשרי להיווצרותם הוא אפקטי החזרה מהמנסרה.
+ לכן יתכן שאפקטים מסוג זה גרמו גם להופעת פסי אור שהזווית שלהם נמדדה במקום
+ זווית של פסי אור עם אורך גל אליהם התכוונו.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -2386,7 +2403,7 @@ noprefix "false"
  כמו כן קבוע רידברג הממוצע המתקבל מהמדידות הוא 
 \begin_inset Formula 
 \[
-R_{y}=12.4\pm0.08\ eV
+R_{y}=12.40\pm0.08\ eV
 \]
 
 \end_inset
@@ -2408,7 +2425,7 @@ R_{y}=12.4\pm0.08\ eV
 
 \begin_layout Standard
 \align center
-)השגיאות חושבו לפי חישוב 
+)השגיאה חושבה לפי חישוב 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:relative error R"
@@ -2426,6 +2443,39 @@ noprefix "false"
  יחד עם זאת, קבוע רידברג עבור כל אחד מאורכי הגל בנפרד לא מתאים לתאוריה.
  משני אלה נסיק שהפער בקבוע רידברג כנראה נובע כטעות נגררת משלב כיול המנסרה.
  
+\end_layout
+
+\begin_layout Subsection*
+דיון כללי על מקור השגיאה:
+\end_layout
+
+\begin_layout Standard
+אין לנו מסקנה חד משמעית אודות הסיבה לפערים שהתקבלו החל משלב הכיול, אך אנו
+ מעלים שתי השערות עיקריות:
+\end_layout
+
+\begin_layout Standard
+השערה אחת היא שמד הזווית היה תקול.
+ במהלך המדידות דאגנו לכך שהחדר יהיה חשוך, לשם כך כיבינו את האור ואת מסכי
+ המחשב שהיו בחדר בזמן הצפיה בפסי האור דרך המשקפת.
+ ברגע שזיהינו קו, הדלקנו את צג המחשב רגעית כדי לראות את הזווית שהתקבלה,
+ ומיד לאחר מכן הזזנו את המשקפת כדי לקבוע את הערכת שגיאת המדידה.
+ בהמשך הניסוי, כאשר לא נדרש חושך מלא בחדר, השארנו את המסך דולק, אז שמנו
+ לב שהזווית המוצגת בתוכנת המחשב משתנה גם ללא הזזה של המשקפת.
+ כמובן שכאשר הבחנו בתופעה זו קראנו למדריך והוא סידר את הבעיה.
+ לא נלקחו מדידות בזמן שהיינו מודעים לבעיה.
+ בזמן עריכת הניסוי עצמו התייחסנו אל הבעיה כנקודתית שהופיעה רק ברגעים שבהם
+ לא נלקחה מדידה.
+\end_layout
+
+\begin_layout Standard
+השערה שניה היא שעקב קושי אנושי בזיהוי קווים ואפקטים של החזרה במנסרה גרמו
+ לכך שההתאמה של הפסים לאורכי הגל מהמדידות בסריג למדידות במנסרה הייתה שגויה
+ בחלקה וגרמה ללקחית מדידות שגויות שהשליכו על המדידות הבאות בהמשך הניסוי.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -2515,37 +2565,21 @@ noprefix "false"
 \end_inset
 
  מהערך שהתקבל.
- אין לנו מסקנה חד משמעית אודות הסיבה לפער זה, אך אנו מעלים שתי השערות עיקריות:
+ אנו משערים שמקור השגיאות הוא במד זווית תקול או במיפוי לא נכון של קווים
+ בשלב הכיול.
+ מסקנות מחלק זה הן שבמהלך לקיחת מדידה יש לוודא שאכן מד הזווית מראה זווית
+ באופן יציב ושהצופה יכיר את התופעה של החזרים מהמנסרה בשביל למנוע בלבול בין
+ קווים אלו לקווים הנמדדים בניסוי.
 \end_layout
 
 \begin_layout Standard
-השערה אחת היא שמד הזווית היה תקול.
- במהלך המדידות דאגנו לכך שהחדר יהיה חשוך, לשם כך כיבינו את האור ואת מסכי
- המחשב שהיו בחדר בזמן הצפיה בפסי האור דרך המשקפת.
- ברגע שזיהינו קו, הדלקנו את צג המחשב רגעית כדי לראות את הזווית שהתקבלה,
- ומיד לאחר מכן הזזנו את המשקפת כדי לקבוע את הערכת שגיאת המדידה.
- בהמשך הניסוי, כאשר לא נדרש חושך מלא בחדר, השארנו את המסך דולק, אז שמנו
- לב שהזווית המוצגת בתוכנת המחשב משתנה גם ללא הזזה של המשקפת.
- כמובן שכאשר הבחנו בתופעה זו קראנו למדריך והוא סידר את הבעיה.
- לא נלקחו מדידות בזמן שהיינו מודעים לבעיה.
- בזמן עריכת הניסוי עצמו התייחסנו אל הבעיה כנקודתית שהופיעה רק ברגעים שבהם
- לא נלקחה מדידה.
-\end_layout
-
-\begin_layout Standard
-השערה שניה היא שעקב קושי אנושי בזיהוי קווים ואפקטים של החזרה במנסרה גרמו
- לכך שההתאמה של הפסים לאורכי הגל מהמדידות בסריג למדידות במנסרה הייתה שגויה
- בחלקה וגרמה ללקחית מדידות שגויות שהשליכו על המדידות הבאות בהמשך הניסוי.
-\begin_inset Newline newline
-\end_inset
-
 לבסוף, בשלב שבו קבענו את קבוע רידברג קיבלנו ערך שונה מהמקובל בספרות.
  בספרות מקובל הערך 
 \begin_inset Formula $13.6eV$
 \end_inset
 
  והערך הממוצע הנגזר מהמדידות שלנו היה 
-\begin_inset Formula $12.4\pm0.08eV$
+\begin_inset Formula $12.40\pm0.08eV$
 \end_inset
 
 .
@@ -2563,7 +2597,21 @@ noprefix "false"
  עד לרמה של אובדן עצות.
  היכרות טובה יותר עם מכשירי המדידה והתנסות מוקדמת איתם עשויות להביא לתוצאות
  טובות בהרבה.
- 
+\end_layout
+
+\begin_layout Section*
+רשימת מקורות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\text{Leo Banet , "Evolution of the Balmer Series", American Journal of Physics 34, 496-503 (1966) https://doi.org/10.1119/1.1973077}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תדריך ספקטרוסקופיה.
 \end_layout
 
 \begin_layout Section*
@@ -2726,7 +2774,7 @@ noprefix "false"
 .
 \begin_inset Formula 
 \begin{equation}
-\delta R_{y}=\frac{1}{4}\sqrt{\delta R_{y}^{2}\left(3\right)+\delta R_{y}^{2}\left(4\right)+\delta R_{y}^{2}\left(5\right)+\delta R_{y}^{2}\left(6\right)}\label{eq:error - R}
+\delta R_{y}=\frac{1}{4}\sqrt{\left(\delta R_{y}\left(3\right)\right)^{2}+\left(\delta R_{y}\left(4\right)\right)^{2}+\left(\delta R_{y}\left(5\right)\right)^{2}+\left(\delta R_{y}\left(6\right)\right)^{2}}\label{eq:error - R}
 \end{equation}
 
 \end_inset
