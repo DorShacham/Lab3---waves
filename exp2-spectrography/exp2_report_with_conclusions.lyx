@@ -385,6 +385,13 @@ today
 ח זה.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 מבוא
 \end_layout
@@ -687,69 +694,7 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename fig/balmer_fig.png
-	scale 60
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\bar under
-סולם רמות האנרגיה של מימן התורמים לסדרת באלמר
-\bar default
-:
-\end_layout
-
-\begin_layout Plain Layout
-\align center
-באיור מוצגים המעברים כאשר הרמות מייוצגות על ידי הפסים השחורים הממוספרים
- והחצים מייצגים את המעברים עצמם.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1446,10 +1391,6 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 לאחר מכן, על מנת למדוד את ספקטרום אטום המימן דרך מנסרה, כיילנו את המנסרה
  באמצעות אורכי הגל שמצאנו במדידות בסריג.
  החלפנו את אלמנט הפיזור מסריג למנסרה, כאשר קודקוד אחד של המנסרה נמצא בכיוון
@@ -2021,10 +1962,19 @@ noprefix "false"
 \end_inset
 
  בנספח(.
- בנוסף הוספנו בשתי השורות האחרונות את הערכים התיאורטים המופיעים בספרות )
-\begin_inset Formula $\text{L. Banet 1966}$
+ בנוסף הוספנו בשתי השורות האחרונות את הערכים התיאורטים המופיעים בספרות
+\begin_inset space \space{}
 \end_inset
 
+
+\begin_inset Newline newline
+\end_inset
+
+ )
+\lang english
+L.
+ Banet 1966
+\lang hebrew
 (.
 \end_layout
 
@@ -2034,6 +1984,81 @@ noprefix "false"
 \end_layout
 
 \begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפרשי האנרגיות שהתקבלו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename fig/6raba.jpg
+	scale 130
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\bar under
+סולם רמות האנרגיה של מימן התורמים לסדרת באלמר שהתקבלו בניסוי
+\bar default
+ :
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+באיור מוצגים המעברים כאשר הרמות מייוצגות על ידי הפסים השחורים הממוספרים
+ והחצים מייצגים את המעברים בין הרמות השונות כאשר הצבע של החץ מתאים לצבע
+ הפס שנפלט.
+ בנוסף, האנרגיה שנפלטת במעבר כתובה משמאל בצבע המתאים למעבר.
+\end_layout
+
+\end_inset
+
 
 \end_layout
 
@@ -2105,13 +2130,20 @@ noprefix "false"
 \end_inset
 
 , על השערות לפער זה נדון בדיון ותוצאות.
-\end_layout
 
-\begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
 \begin_inset Newline newline
 \end_inset
 
@@ -2120,6 +2152,13 @@ noprefix "false"
  היה בשליטתנו.
  נציין שלמרות מאמצים אלו החדר לא היה אטום לחלוטין כיוון שאור מהחדר הסמוך
  נכנס דרך חריצי הדלת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -2137,15 +2176,44 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-קבוע הסריג שנקבע מהמדידות והטווח השגיאה שלו לא מכילים את הערך שרשום על הסריג
- : 
-\begin_inset Formula 
-\[
-2\cdot10^{-6}m\notin\left(1.991\pm0.003\right)\cdot10^{-6}m
-\]
-
+קבוע הסריג שנקבע מהמדידות הוא 
+\begin_inset Formula $\left(1.991\pm0.003\right)\cdot10^{-6}m$
 \end_inset
 
+ ואינו מכיל את הערך שניתן להסיק מהרשום על הסריג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $2\cdot10^{-6}m$
+\end_inset
+
+
+\numeric off
+.
  אך יש לציין שלקבוע הרשום על הסריג לא נקבע טווח שגיאה.
  נוסף על כך השגיאה היחסית בין הערך הנצפה לתיאורטי חסומה על ידי 
 \begin_inset Formula $0.6\%$
@@ -2210,10 +2278,16 @@ noprefix "false"
 \begin_inset Formula $n=8,13$
 \end_inset
 
- שבהן השגיאה היחסית לערך התיאורטי היא
-\end_layout
+ שבהן הערכים שנמדדו הם 
+\begin_inset Formula $490\pm1\ nm,390\pm3\ nm$
+\end_inset
 
-\begin_layout Standard
+ בהתאמה ואילו הערכים על פי התדריך הם 
+\begin_inset Formula $447\ nm,396\ nm$
+\end_inset
+
+ בהתאמה.
+ לכן השגיאות היחסיות הן:
 \begin_inset Formula 
 \[
 \frac{\delta\lambda_{8}}{\lambda_{8}}=0.67\%,\,\frac{\delta\lambda_{13}}{\lambda_{13}}=2.2\%
@@ -2250,7 +2324,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-שגיאה יחסית קטנה.
+השגיאות יחסיות קטנות.
  לכן נגיד שההתאמה של המדידות לתיאוריה טובה יחסית.
  ייתכן שהפער הקיים הוא בגלל הערכת שגיאת מדידה לא נכונה במדידות 
 \begin_inset Formula $8$
@@ -2261,7 +2335,8 @@ noprefix "false"
 \end_inset
 
 , לקראת סוף הניסוי עלה החשד שמד הזווית לקוי כיוון שגם ללא הזזה של המשקפת
- התוצאה על הצג השתנתה, ייתכן שהבעיה התחילה כבר בשלב זה.
+ התוצאה על הצג השתנתה, ייתכן שהבעיה התחילה כבר בשלב זה, נרחיב על כך בסוף
+ הדיון.
  
 \end_layout
 
@@ -2287,7 +2362,11 @@ noprefix "false"
 \begin_inset Formula $95\%$
 \end_inset
 
- של השיפוע של הרגרסיה הוא
+ של השיפוע של הרגרסיה הוא 
+\begin_inset Formula $\left(-\left(1.9\pm0.5\right)\cdot10^{-14}\right)$
+\end_inset
+
+ כאשר השגיאה מהווה
 \family roman
 \series medium
 \shape up
@@ -2345,16 +2424,15 @@ noprefix "false"
 \uwave default
 \noun default
 \color inherit
-מערך השיפוע שהתקבל.
- גם לאחר לקיחת תתי קבוצות שונות של המדידות לא הצלחנו לקבל התאמה טובה לתאוריה
- )מבחינת קבוע רידברג שהתקבל בסוף הניסוי לאחר חילוץ קבועי המנסרה שהתקבלו
- בשלב זה(.
+מערך שהתקבל.
  לכן אנו מניחים שהייתה שגיאה בכיול המנסרה וחולצו מקדמים לא נכונים.
+ סיבות אפשרויות לשגיאה בכיול הן אי התאמה נכונה של פסי האור או מד זווית תקול.
  ייתכן שהשגיאה בכיול המנסרה נגרמה מכך שחלק מהקווים שנמדדו היו החזרי אור
  מקו האפס של המנסרה ולכן הייתה התאמה לא נכונה בין הזוויות שנלקחו לקווים
  במנסרה לאורכי הגל שחושבו בעזרת הסריג.
- הסיבה שאנחנו מייחסים את הטעות בכיול לפסי אור מחזרים היא שעבור פסי אור שעוצמתם
- נמוכה קשה להבחין האם מקורם הוא החזר אור או פס פיזור.
+ אומנם החזרי האור אמורים להיות בעוצמה חלשה כראוי לתופעה מסדר שני אך הסיבה
+ שאנחנו מייחסים את הטעות בכיול לפסי אור מוחזרים היא שעבור פסי אור שעוצמתם
+ נמוכה מאוד קשה להבחין האם מקורם הוא החזר אור או פס פיזור.
  בשלב שבו הבטנו בפיזור מנורת המימן דרך המנסרה ראינו שני פסים ורודים שהסבר
  אפשרי להיווצרותם הוא אפקטי החזרה מהמנסרה.
  לכן יתכן שאפקטים מסוג זה גרמו גם להופעת פסי אור שהזווית שלהם נמדדה במקום
@@ -2412,7 +2490,11 @@ R_{y}=12.40\pm0.08\ eV
 \end_layout
 
 \begin_layout Standard
-השגיאה היחסית לערך המקובל בספרות היא
+השגיאה היחסית לערך המקובל בספרות 
+\begin_inset Formula $\left(13.6\ eV\right)$
+\end_inset
+
+ .היא
 \begin_inset Formula 
 \[
 \frac{\delta R_{y}}{R}=10\%
@@ -2476,6 +2558,10 @@ noprefix "false"
 \end_inset
 
 
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*
@@ -2498,7 +2584,23 @@ noprefix "false"
 
  .
  אורכי הגל של אטום ההליום שנמדדו בסריג תאמו לערכים המקובלים בספרות מלבד
- לשני פסים שבהם הייתה חריגה קלה מהמצופה.
+ לשני פסים שבהם הייתה חריגה קלה )של 
+\begin_inset Formula $0.67\%$
+\end_inset
+
+ של הקו ה
+\numeric on
+8
+\numeric off
+ ו
+\begin_inset Formula $2.2\%$
+\end_inset
+
+ של הקו ה
+\numeric on
+13
+\numeric off
+( מהמצופה.
  
 \begin_inset Newline newline
 \end_inset
@@ -2597,6 +2699,13 @@ noprefix "false"
  עד לרמה של אובדן עצות.
  היכרות טובה יותר עם מכשירי המדידה והתנסות מוקדמת איתם עשויות להביא לתוצאות
  טובות בהרבה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section*

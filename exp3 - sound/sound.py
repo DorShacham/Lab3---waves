@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 21 08:47:10 2022
+
+@author: Lab3
+"""
+
 import numpy as np
 import scipy
 import matplotlib.pyplot as plt
@@ -12,49 +19,58 @@ def linearCurve_ZeroIntercept(a,x):
     return linearCurve(a,0,x)
 
 def speed_of_sound_calc(T,gamma,M,R=8.31):
-    return np.sqrt(gamma*R*T/M)
+    return np.sqrt(gamma*R*(T+273)/M)
 
 # part 0 
 def part0_get_to_know_the_equipment_exp():
-    f = []
-    f_err = [] # may be obislite
-    amplitude = []
-    amplitude_err = []
+    f = [ 3303 , 3600,  4000 , 5000 , 4502, 4103, 5498 , 6000, 6498, 7001] # hz
+    f_err = [ 1 , 10 ,1, 1, 1, 1, 1, 1, 1, 1] # may be obislite
+    amplitude = [3.7 , 8.2, 46, 24, 25.5, 87, 65, 45, 57, 41] #mV
+    amplitude_err = [0.1 , 0.1, 2, 0.1 , 0.5, 1 ,1 ,1, 1, 1]
     
     plt.figure("figure0",dpi=300)
     plt.errorbar(f,amplitude,yerr=amplitude_err,xerr=f_err,fmt='o')
     plt.grid()
     plt.xlabel("f [Hz]")
-    plt.ylabel("Amplitude [m]")
+    plt.ylabel("Amplitude [mV]")
     plt.show()
     
-     '''
+    '''
     explain results:
-
-
     '''
     
     
 
 #air speed of sound experiment
 def part1_speed_of_sound_air_exp():
-    dphi=[]
-    dphi_err=[]
-    dx=[] # [m]
-    dx_err=[] #[m]
-    f=1 # [Hz] --- update f
+    x0=43
+    #x0 of buzzer is 30cm
+    '''
+    previous results
+    dphi=[ 0 , 180 , 360 , 540 , 720] # degrees
+    dphi_err=[ 2 , 1,  ]
+    dx=[35 , 40 ] # [cm]
+    dx_err=[0.5, 0.5  ] #[cm]
+    '''
     
-    dphi = np.array(dphi)
-    dphi_err = np.array(dphi_err)
-    dx=np.array(dx)
-    dx_err=np.array(dx_err)
+    f=4103 # [Hz] --- update f
+    dphi=[ 0 , 180 , 360 , 540 , 720 , 1080] # degrees
+    dphi_err=[ 2, 5 , 5 ,  5 , 5 ,5]
+    dx=[43 , 47 , 50.9, 55, 58.5 ,63.5] # [cm]
+    dx_err=[0.5, 0.5,  0.5 , 0.5 ,0.5 ,0.5] #[cm]
+    dphi = np.array(dphi) * np.pi /180
+    dphi_err = np.array(dphi_err) * np.pi/180
+    dx=(np.array(dx)-x0) *1e-2
+    dx_err=np.array(dx_err) *1e-2
 
     #dx_err=np.array([]) - why?
-    fit1 = cfit(linearCurve_ZeroIntercept,dx,dphi)
-    lambda_regression=2*np.pi/fit1[0]
+    #fit1 = cfit(linearCurve_ZeroIntercept,dx,dphi)
+    fit1 = linregress(dx,dphi)
+    lambda_regression=2*np.pi/fit1.slope
     fig1=plt.figure("figure1",dpi=300)
-    plt.errorbar(dx,dphi,yerr=dphi_err,xerr=dx_err,fmt='o',label="Data")
-    plt.plot(dx,linearCurve_ZeroIntercept(fit1[0],dx),fmt="-.",label="Regression")
+    plt.errorbar(dx[:-1],dphi[:-1],yerr=dphi_err[:-1],xerr=dx_err[:-1],fmt='o',label="Data")
+    plt.plot(dx[:-1],linearCurve(fit1.slope,fit1.intercept,dx[:-1]),"-.",label="Regression")
+    #plt.plot(dx[:-1],linearCurve_ZeroIntercept(fit1[0][0],dx[:-1]),"-.",label="Regression")
     plt.grid()
     plt.legend()
     plt.xlabel(r"$\Delta x[m]$")
@@ -63,17 +79,18 @@ def part1_speed_of_sound_air_exp():
 
     print("the wave length is: ", lambda_regression , " [m]")
     v_air=lambda_regression*f
-    print("the speed of sound measured is ", v , " [m/sec]")
-    T = 20 #temperature in the lab in Celcius
+    print("the speed of sound measured is ", v_air , " [m/sec]")
+    T = 23.1 #temperature in the lab in Celcius
     v_air_theory = 313.7*np.sqrt((T+273)/273) #[ m/sec]
     v_air_relative_error= abs(v_air_theory-v_air)/v_air_theory
-    print("The relative error is: ", v_air_relative_error*100)
+    print("The relative error is: ", v_air_relative_error*100,"%")
 
 
 
 def part2_speed_of_sound_gas_exp():
-    L=1 # length of pipe in [m] 
-    T = 20 # update
+    L=0.980 # length of pipe in [m] 
+    L_err=0.001
+    T = 22.4 # update
     print("f air > 687.26 Hz")
     print("f He > 2010.94 Hz")
     print("f CO2 > 537.386 Hz")
@@ -81,8 +98,8 @@ def part2_speed_of_sound_gas_exp():
 
     # we can calculte the mean value of the first and the secondry wave hit
     # air
-    t_air = 0 # sec
-    t_air_err = 0
+    t_air = 2.946e-3 # sec
+    t_air_err = 0.001e-3
   
     v_air = L / t_air
     print("\nthe speed of sound measured in air is ", v_air , " [m/sec]")
@@ -91,8 +108,8 @@ def part2_speed_of_sound_gas_exp():
     print("The relative error is: ", v_air_relative_error*100)
     
     # He
-    t_He = 0 # sec
-    t_He_err = 0
+    t_He = 1.009e-3
+    t_He_err = 0.1
   
     v_He = L / t_He
     print("\nthe speed of sound measured in He is ", v_He , " [m/sec]")
@@ -101,8 +118,8 @@ def part2_speed_of_sound_gas_exp():
     print("The relative error is: ", v_He_relative_error*100)
     
     # CO2
-    t_CO2 = 0 # sec
-    t_CO2_err = 0
+    t_CO2 = 3.74e-3
+    t_CO2_err = 0.01e-3
   
     v_CO2 = L / t_CO2
     print("\nthe speed of sound measured in CO2 is ", v_CO2 , " [m/sec]")
@@ -162,7 +179,7 @@ def part3_find_resunance_exp(gas):
     plt.xlabel("n")
     plt.ylabel("$\lambda[m]$")
     plt.show()    
-def 
+
 
 def part4_interference_and_standing_wave():
     L = 0 # [m]
@@ -188,10 +205,9 @@ def part4_interference_and_standing_wave():
     # to be finished
 
 def main():
-    speed_of_sound_air()
-
-    
-    #
+    part0_get_to_know_the_equipment_exp()
+    part1_speed_of_sound_air_exp()
+    part2_speed_of_sound_gas_exp()
 
 
 
@@ -200,5 +216,4 @@ def main():
 
     return
 
-
-main
+main()
