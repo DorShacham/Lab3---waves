@@ -15,6 +15,7 @@ class Valerr:
         self.val = value
         self.err = err
         self.is_array = False
+        self.iter_index = 0
         if type(value) == Valerr:
             if err != 0:
                 raise TypeError
@@ -79,9 +80,20 @@ class Valerr:
         return Valerr(val,err)
 
     def __setitem__(obj,index,value):
-        if not obj.is_array:
+        if (type(value) == int) or (type(value) == float):
+            value = Valerr(value)
+        if (not obj.is_array) or (type(value) != Valerr):
             raise TypeError
-        
+        obj.val[index] = value.val
+        obj.err[index] = value.err
+        return value
+
+    def __getitem__(obj,index):
+        if (not obj.is_array):
+            raise TypeError
+        return Valerr(obj.val[index],obj.err[index])
+
+
 
     
     def _general_funcion_singel(f,*f_arg):
@@ -121,3 +133,7 @@ class Valerr:
         return str(self.val) + "+-" + str(self.err)
 
 
+a = Valerr(np.array([1,2,3]),np.array([0.1,0.2,0.3]))
+print(a[2])
+for x in a:
+    print(x)
