@@ -78,6 +78,11 @@ class Valerr:
         err = val * b * a.rel_err()
         return Valerr(val,err)
 
+    def __setitem__(obj,index,value):
+        if not obj.is_array:
+            raise TypeError
+        
+
     
     def _general_funcion_singel(f,*f_arg):
         arg = []

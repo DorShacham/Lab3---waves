@@ -11,6 +11,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from scipy.stats import linregress
 from scipy.optimize import curve_fit as cfit
+from uncertainties import unumpy
+from uncertainties import ufloat
+from uncertainties.umath import *
+
 
 
 def linearCurve(a,b,x):
@@ -19,7 +23,7 @@ def linearCurve_ZeroIntercept(a,x):
     return linearCurve(a,0,x)
 
 def speed_of_sound_calc(T,gamma,M,R=8.31):
-    return np.sqrt(gamma*R*(T+273)/M)
+    return sqrt(gamma*R*(T+273)/M)
 
 # part 0 
 def part0_get_to_know_the_equipment_exp():
@@ -53,23 +57,27 @@ def part1_speed_of_sound_air_exp():
     dx_err=[0.5, 0.5  ] #[cm]
     '''
     
-    f=4103 # [Hz] --- update f
-    dphi=[ 0 , 180 , 360 , 540 , 720 , 1080] # degrees
+    f=ufloat(4103,1) # [Hz] --- update f
+    dphi=[ 0 , 180 , 360 , 540 , 720 , 900] # degrees
     dphi_err=[ 2, 5 , 5 ,  5 , 5 ,5]
     dx=[43 , 47 , 50.9, 55, 58.5 ,63.5] # [cm]
     dx_err=[0.5, 0.5,  0.5 , 0.5 ,0.5 ,0.5] #[cm]
     dphi = np.array(dphi) * np.pi /180
     dphi_err = np.array(dphi_err) * np.pi/180
+    dphi = unumpy.uarray(dphi,dphi_err)
+    
     dx=(np.array(dx)-x0) *1e-2
     dx_err=np.array(dx_err) *1e-2
+    dx = unumpy.uarray(dx,dx_err)
 
     #dx_err=np.array([]) - why?
-    #fit1 = cfit(linearCurve_ZeroIntercept,dx,dphi)
-    fit1 = linregress(dx,dphi)
-    lambda_regression=2*np.pi/fit1.slope
+    #fit2 = cfit(linearCurve_ZeroIntercept,dx,dphi)
+    fit1 = linregress(unumpy.nominal_values(dx),unumpy.nominal_values(dphi))
+    slope = ufloat(fit1.slope,2*fit1.stderr)
+    lambda_regression=2*np.pi/slope
     fig1=plt.figure("figure1",dpi=300)
-    plt.errorbar(dx[:-1],dphi[:-1],yerr=dphi_err[:-1],xerr=dx_err[:-1],fmt='o',label="Data")
-    plt.plot(dx[:-1],linearCurve(fit1.slope,fit1.intercept,dx[:-1]),"-.",label="Regression")
+    plt.errorbar(unumpy.nominal_values(dx),unumpy.nominal_values(dphi),yerr=unumpy.std_devs(dphi),xerr=unumpy.std_devs(dx),fmt='o',label="Data")
+    plt.plot(unumpy.nominal_values(dx),linearCurve(fit1.slope,fit1.intercept,unumpy.nominal_values(dx)),"-.",label="Regression")
     #plt.plot(dx[:-1],linearCurve_ZeroIntercept(fit1[0][0],dx[:-1]),"-.",label="Regression")
     plt.grid()
     plt.legend()
@@ -80,52 +88,56 @@ def part1_speed_of_sound_air_exp():
     print("the wave length is: ", lambda_regression , " [m]")
     v_air=lambda_regression*f
     print("the speed of sound measured is ", v_air , " [m/sec]")
-    T = 23.1 #temperature in the lab in Celcius
-    v_air_theory = 313.7*np.sqrt((T+273)/273) #[ m/sec]
+    T = ufloat(23.1,0.1) #temperature in the lab in Celcius
+    v_air_theory = ufloat(331.7,0.1)*sqrt((T+273.15)/273.15) #[ m/sec]
     v_air_relative_error= abs(v_air_theory-v_air)/v_air_theory
-    print("The relative error is: ", v_air_relative_error*100,"%")
+    print("The relative error is: ", (v_air_relative_error.n+v_air_relative_error.s)*100,"%")
 
 
 
 def part2_speed_of_sound_gas_exp():
     L=0.980 # length of pipe in [m] 
     L_err=0.001
-    T = 22.4 # update
-    print("f air > 687.26 Hz")
-    print("f He > 2010.94 Hz")
-    print("f CO2 > 537.386 Hz")
-    print("f is a lower bound")
+    L = ufloat(L,L_err)
+    
+    T = ufloat(22.4,0.1) # update
+    print("f air < 165.810 Hz")
+    print("f He < 514.960 Hz")
+    print("f CO2 < 137.613 Hz")
+    print("f is a upper bound")
 
     # we can calculte the mean value of the first and the secondry wave hit
     # air
     t_air = 2.946e-3 # sec
-    t_air_err = 0.001e-3
+    t_air_err = 0.01e-3
+    t_air = ufloat(t_air,t_air_err)
   
     v_air = L / t_air
     print("\nthe speed of sound measured in air is ", v_air , " [m/sec]")
-    v_air_theory = 313.7*np.sqrt((T+273)/273) #[ m/sec]
+    v_air_theory = ufloat(331.7,0.1)*sqrt((T+273.15)/273.15) #[ m/sec]
     v_air_relative_error= abs(v_air_theory-v_air)/v_air_theory
-    print("The relative error is: ", v_air_relative_error*100)
-    
+    print("The relative error is: ", (v_air_relative_error.n+v_air_relative_error.s)*100,"%")
     # He
     t_He = 1.009e-3
-    t_He_err = 0.1
-  
+    t_He_err = 0.01e-3
+    t_He = ufloat(t_He,t_He_err)
+    
     v_He = L / t_He
     print("\nthe speed of sound measured in He is ", v_He , " [m/sec]")
     v_He_theory = speed_of_sound_calc(T,1.66,4e-3) #[ m/sec]
     v_He_relative_error= abs(v_He_theory-v_He)/v_He_theory
-    print("The relative error is: ", v_He_relative_error*100)
+    print("The relative error is: ", (v_He_relative_error.n+v_He_relative_error.s)*100,"%")
     
     # CO2
     t_CO2 = 3.74e-3
-    t_CO2_err = 0.01e-3
+    t_CO2_err = 0.1e-3
+    t_CO2 = ufloat(t_CO2,t_CO2_err)
   
     v_CO2 = L / t_CO2
     print("\nthe speed of sound measured in CO2 is ", v_CO2 , " [m/sec]")
     v_CO2_theory = speed_of_sound_calc(T,1.304,44e-3) #[ m/sec]
     v_CO2_relative_error= abs(v_CO2_theory-v_CO2)/v_CO2_theory
-    print("The relative error is: ", v_CO2_relative_error*100)
+    print("The relative error is: ", (v_CO2_relative_error.n+v_CO2_relative_error.s)*100,"%")
     
 
     return
@@ -163,7 +175,7 @@ def part3_find_resunance_exp(gas):
     v_mesasured = 2 * L * fit1[0][0]
     T=293 # temperature in kelvin
     # v_theory= speed_of_sound_calc(T,gas.gamma,gas.mass)
-    v_theory = 313.7*np.sqrt((T)/273) #[ m/sec]
+    v_theory = 331.7*np.sqrt((T)/273) #[ m/sec]
     v_relative_err= (v_theory-v_measured)/v_measured
     print("v relative error is: ", v_relative_err)
     
