@@ -40,10 +40,12 @@
 \makeatother
 \end_preamble
 \use_default_options true
-\begin_modules
-theorems-ams
+\begin_removed_modules
 eqs-within-sections
 figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
 enumitem
 fixltx2e
 \end_modules
@@ -92,6 +94,7 @@ End
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement H
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
@@ -180,8 +183,7 @@ status open
 
 \series bold
 \size huge
-[מדידת ספקטרום אטום ההליום בעזרת סריג ו]מדידת סידרת בלמר באור הנראה של אטום
- המימן בעזרת מנסרה
+כותרת
 \end_layout
 
 \begin_layout Plain Layout
@@ -218,6 +220,41 @@ status open
 \noun default
 \color inherit
 319002911
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{nativ.maor@campus.technion.ac.il}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -254,6 +291,41 @@ status open
 \noun default
 \color inherit
 318258555
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{dor-hay.sha@campus.technion.ac.il}$
+\end_inset
+
+
 \end_layout
 
 \begin_layout Plain Layout
@@ -288,22 +360,7 @@ today
 \end_layout
 
 \begin_layout Subsection*
-תקציר
-\end_layout
 
-\begin_layout Standard
-ניסוי זה היה מורכב ממספר שלבים שמטרתם הסופית היא מדידת ספקטרום אטום המימן
- - סדרת באלמר - ובעזרתה את קבוע רידברג.
-\end_layout
-
-\begin_layout Standard
-תחילה מדדנו את קבוע הסריג בעזרת הסדרים הראשונים של פיזור אור ירוק עם אורך
- גל ידוע מנורת כספית.
- על ידי פיזור אור של נורת הליום דרך הסריג וקבוע הסריג, מדדנו את אורכי הגל
- של אטום ההליום.
- בעזרת אורכי הגל שמצאנו מצאנו את קבועי המנסרה.
- מפיזור אור של נורת מימן דרך אותה מנסרה וקבועי המנסרה מדדנו את סדרת בלמר
- באור הנראה של אטום המימן וממנו הסקנו את קבוע רידברג והשוונו לתאוריה.
 \end_layout
 
 \end_body
