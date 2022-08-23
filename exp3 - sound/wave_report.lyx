@@ -390,8 +390,8 @@ today
 \end_layout
 
 \begin_layout Standard
-מערכות הניסוי הורכבו שתיהן ממיקרופון, זמזם, אוסילוסקופ ומחולל גלים.
- הזמזם וערוץ 1 של האוסילוסקופ חוברו למחולל גלים וערץ 2 אל המיקרופון.
+מערכות הניסוי הורכבו שתיהן ממיקרופון, זמזם, אוסצילוסקופ ומחולל גלים.
+ הזמזם וערוץ 1 של האוסצילוסקופ חוברו למחולל גלים וערץ 2 אל המיקרופון.
  הגל מהמחולל מגיע אל הזמזם וערוץ 1, כשהוא מגיע אל הזמזם הזמזם יוצר גל קול
  באותה תדירות ובאותה פאזה של גל המחולל.
  אנו מניחים שגל המחולל מגיע אל ערוץ 1 והזמזם בו-זמנית.
@@ -903,7 +903,334 @@ v_{air}\left(T\right)=\left(331.7\pm0.1\right)\sqrt{\frac{T+273.15}{273.15}}\lab
 \end_layout
 
 \begin_layout Standard
-בניסוי השני חיברנו את המיקרופון והזמזם לצדדים שונים של צינור באורך 
+ניסוי זה מורכב משני חלקים, נתאר תחילה את תוצאות הניסוי הראשון - מדידת מהירות
+ גלי קול באוויר החדר ולאחר מכן את תוצאות הניסוי השני - מדידת מהירות גלי
+ קול בגזים שונים דרך צינור.
+ 
+\end_layout
+
+\begin_layout Subsection*
+ניסוי 1 - גלי קול באוויר החדר בעזרת הפרשי פאזה 
+\end_layout
+
+\begin_layout Standard
+תחילה, חברנו את המיקרופון לערוץ 2 של האוסצילוסקופ בעזרת כבל קואקסיאלי ואת
+ האות ממחולל הגלים שבאוסילסקופ לערוץ 1 והזמזם במקביל.
+ על מנת למצוא תדירות שבה היענות המערכת היא גבוהה, קבענו את אות המחולל להיות
+ גל סינוס ובדקנו את השפעת תדירות הגל היוצא על אמפליטודת הגל המתקבל במיקרופון.
+ גרף ההיענות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/plot1.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף 1:
+\series default
+ אמפליטודת האות בערוץ 2 כתלות בתדר הגל מהמחולל 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הנקודות הכחולת מייצגות את המדידות עם קווי השגיאה שלהן )קווי השגיאה קטנים
+ מכדי להבחין בהם(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לפי מדידות אלו הסקנו שתדירות עבורה יש היענות טובה של המערכת היא 
+\begin_inset Formula $f=4103\ HZ$
+\end_inset
+
+ ובה השתמשנו בהמשך הניסוי.
+\end_layout
+
+\begin_layout Standard
+כעת, קבענו את תדירות המחולל ל 
+\begin_inset Formula $f=4103\ HZ$
+\end_inset
+
+, הזזנו את המיקרופון לאורך הסרגל ולקחנו מדידות של המרחקים עבורם מתקבל הפרש
+ פאזה שהוא כפולה שלמה של 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+.
+ הפרשי פאזה הם בין האות שהתקבל במיקרופון ומוצג בערוץ 2 של הסקופ והאות שיצא
+ מהמחולל ומוצג בערוץ 1 של הסקופ.
+ כיוון שהסביבה בה נעשה הניסוי הייתה רועשת )ניסויים דומים נערכו במקביל בעמדה
+ והזמזמים שלהם יצרו רעשים, אנשים דיברו וכו'( לקחנו מדידת הפרש הפאזה כמיצוע
+ לאורך זמן - מתוך הנחה שמיצוע לאורך זמן יצמצם את השפעת רעשים אקראיים ולא
+ מתמשכים על המדידה.
+ לקחנו מדידה רק כשהפרש הפאזה בין האותות התייצב לאורך זמן של כ
+\begin_inset Formula $10$
+\end_inset
+
+ שניות על טווח של 
+\begin_inset Formula $\pm5^{\circ}$
+\end_inset
+
+ מהפאזה הרצויה.
+ כדי להגדיר את המרחק 
+\begin_inset Formula $x=0$
+\end_inset
+
+ ו פאזה 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+ הזזנו את המיקרופון עד לנקודה בה מקסימום של האות בערוץ 2 התלכד בקירוב עם
+ מקסימום של אות המחולל - נקודה זו הוגדרה להיות 
+\begin_inset Formula $x=0$
+\end_inset
+
+ והפאזה הוגדרה כ
+\begin_inset Formula $\phi=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+המדידות מוצגות בגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/plot2.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ הפרש הפאזה 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ כתלות במרחק 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית שבוצעה 
+\begin_inset Formula $y=(78\pm3)x+(0.1\pm0.4)$
+\end_inset
+
+ כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+יש התאמה טובה של הרגרסיה לנתונים הן מבחינה כמותית - מפני ש 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
+
+ והן מבחינה איכותית שכן גרף הרגרסיה נמצא בתחום קווי השגיאה של כל המדידות.
+\end_layout
+
+\begin_layout Standard
+משיפוע הגרף ומנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ הסקנו ש 
+\begin_inset Formula $\lambda_{air}=0.080\pm0.003m$
+\end_inset
+
+ ולכן מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נקבל ש 
+\begin_inset Formula 
+\[
+v_{air}^{measured}=331\pm14\frac{m}{s}
+\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מדידת הטמפרטורה במעבדה בזמן עריכת הניסוי הייתה )לאחר המרה לקלווין( 
+\begin_inset Formula $296.1^{\circ}\pm0.1^{\circ}K$
+\end_inset
+
+, לכן מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:v(t)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ניתן לגזור את ערך מהירות הקול התיאורטית באוויר להיות: 
+\begin_inset Formula 
+\[
+v_{air}^{theory}=345.4\pm0.1\frac{m}{s}
+\]
+
+\end_inset
+
+ערך מהירות הקול הנמדד ותחום השגיאה שלו לא חופפים עם ערך מהירות הקול הצפוי
+ ותחום השגיאה שלו.
+ על פערים אלו נדון בהרחבה בדיון בתוצאות.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ניסוי השני - מהירות הקול בגזים שונים דרך צינור
+\end_layout
+
+\begin_layout Standard
+חיברנו את המיקרופון והזמזם לצדדים שונים של צינור באורך 
 \begin_inset Formula $L=0.980\pm0.001m$
 \end_inset
 
@@ -991,7 +1318,7 @@ v_{air}\left(T\right)=\left(331.7\pm0.1\right)\sqrt{\frac{T+273.15}{273.15}}\lab
 \uwave default
 \noun default
 \color inherit
-ולמחולל הגלים באוסילוסקופ ואת המיקרופון לערוץ
+ולמחולל הגלים באוסצילוסקופ ואת המיקרופון לערוץ
 \family roman
 \series medium
 \shape up
@@ -1020,9 +1347,9 @@ v_{air}\left(T\right)=\left(331.7\pm0.1\right)\sqrt{\frac{T+273.15}{273.15}}\lab
 \color inherit
 2
 \numeric off
- באוסילוסקופ.
+ באוסצילוסקופ.
  לאחר מכן מדדנו את הטמפ' בעזרת מד הטמפ' וקיבלנו )לאחר המרה לקלווין( 
-\begin_inset Formula $T=295.54^{\circ}\pm0.1^{\circ}K$
+\begin_inset Formula $T=295.5^{\circ}\pm0.1^{\circ}K$
 \end_inset
 
 .
@@ -1075,11 +1402,7 @@ f_{air}^{pulse}=176.0\pm0.2\ Hz
 \begin_inset Formula $175.8\ Hz$
 \end_inset
 
- - 
-\begin_inset Formula $\left(100Hz??\right)$
-\end_inset
-
-.
+ )החסם התחתון על תדירות הסף(.
  זיהנו בעזרת ערוץ
 \family roman
 \series medium
@@ -1134,12 +1457,12 @@ f_{air}^{pulse}=176.0\pm0.2\ Hz
 \uwave default
 \noun default
 \color inherit
-באוסילוסקופ )אשר מחובר למיקרופון( את הפולסים המתקבלים.
+באוסצילוסקופ )אשר מחובר למיקרופון( את הפולסים המתקבלים.
  בעזרת פונקציית ה
 \begin_inset Formula $cursor$
 \end_inset
 
- של האוסילוסקופ מדדנו את הפרש הזמנים בין תחילת הפולס הנשלח לתחילת הפולס
+ של האוסצילוסקופ מדדנו את הפרש הזמנים בין תחילת הפולס הנשלח לתחילת הפולס
  המתקבל וקיבלנו 
 \begin_inset Formula $\Delta t_{air}=2.96\pm0.01ms$
 \end_inset
@@ -1170,7 +1493,7 @@ v_{air}^{measured}=333\pm1\frac{m}{s}
 \end_layout
 
 \begin_layout Standard
-ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון בכך בדיון.
+ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון על כך בדיון.
 \end_layout
 
 \begin_layout Standard
@@ -1182,7 +1505,8 @@ v_{air}^{measured}=333\pm1\frac{m}{s}
 \end_inset
 
 לאחר מכן, מילאנו את הצינור בהליום וחזרנו על הניסוי - על ידי הצפת הצינור
- בהליום מפתח יעודי ושחרור האוויר מהצינור מפתח אחר.
+ בהליום מפתח יעודי ושחרור האוויר מהצינור מפתח אחר, ביצענו תהליך זה כמה פעמים
+ בשביל להבטיח שהגז בצינור יהיה בעיקרו הליום.
  עבור הליום 
 \begin_inset Formula $\gamma=1.66$
 \end_inset
@@ -1294,11 +1618,7 @@ f_{He}^{pulse}=514.9\pm0.5\ Hz
 \begin_inset Formula $514.4\ Hz$
 \end_inset
 
- - 
-\begin_inset Formula $\left(100Hz??\right)$
-\end_inset
-
-.
+ )החסם התחתון על תדירות הסף(.
  קיבלנו שהפרש הזמנים בין תחילת הפולס בזמזם לתחילת קליטת הפולס במיקרופון
  הוא 
 \begin_inset Formula $\Delta t_{He}=1.00\pm0.01ms$
@@ -1326,7 +1646,7 @@ v_{He}^{measured}=970\pm10\frac{m}{s}
 \end_layout
 
 \begin_layout Standard
-גם כן ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון בכך בדיון.
+גם כן ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון על כך בדיון.
 \end_layout
 
 \begin_layout Standard
@@ -1338,7 +1658,8 @@ v_{He}^{measured}=970\pm10\frac{m}{s}
 \end_inset
 
 באופן דומה, מילאנו את הצינור בפחמן דו-חמצני וחזרנו על הניסוי - על ידי הצפת
- הצינור בפחמן דו-חמצני מפתח יעודי ושחרור האוויר מהצינור מפתח אחר.
+ הצינור בפחמן דו-חמצני מפתח יעודי ושחרור האוויר מהצינור מפתח אחר, ביצענו
+ תהליך זה כמה פעמים בשביל להבטיח שהגז בצינור יהיה בעיקרו פחמן דו-חמצני.
  עבור פחמן דו-חמצני 
 \begin_inset Formula $\gamma=1.304$
 \end_inset
@@ -1450,11 +1771,7 @@ f_{He}^{pulse}=137.6\pm0.1\ Hz
 \begin_inset Formula $137.5\ Hz$
 \end_inset
 
- - 
-\begin_inset Formula $\left(100Hz??\right)$
-\end_inset
-
-.
+ )החסם התחתון על תדירות הסף(.
  קיבלנו שהפרש הזמנים בין תחילת הפולס בזמזם לתחילת קליטת הפולס במיקרופון
  הוא 
 \begin_inset Formula $\Delta t_{CO2}=3.7\pm0.1ms$
@@ -1482,7 +1799,7 @@ v_{CO2}^{measured}=262\pm7\frac{m}{s}
 \end_layout
 
 \begin_layout Standard
-גם כן ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון בכך בדיון.
+גם כן ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון על כך בדיון.
 \end_layout
 
 \begin_layout Section*
