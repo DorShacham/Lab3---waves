@@ -4,7 +4,17 @@ Created on Thu Aug 25 22:39:55 2022
 
 @author: dorsh
 """
-def one4all(xdata,ydata,yerr,xerr,mode="general function",f=None,xlabel="x",ylabel="y"):
+
+
+import numpy as np
+import scipy
+import matplotlib.pyplot as plt
+import pandas as pd
+from scipy.stats import linregress
+from scipy.optimize import curve_fit as cfit
+
+
+def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",ylabel="y"):
     fig = plt.figure(dpi=300)
     plt.errorbar(xdata,ydata,yerr,xerr,"o",label="Data")
 
@@ -46,3 +56,5 @@ def one4all(xdata,ydata,yerr,xerr,mode="general function",f=None,xlabel="x",ylab
     plt.show()
     
     return (fig,fit)
+
+
