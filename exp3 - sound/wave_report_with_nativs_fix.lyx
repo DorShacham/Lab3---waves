@@ -1,0 +1,2886 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass amsart
+\begin_preamble
+% Necessary Commands
+\usepackage{autobreak}
+\usepackage[T1]{fontenc}
+
+% Set space between words to be wider:
+\spaceskip=1.3\fontdimen2\font plus 1\fontdimen3\font minus 1.5\fontdimen4\font
+
+% This Part convert the Lyx colors into more pleasent colors
+\usepackage{xcolor}
+\definecolor{blue}{RGB}{0, 0, 140}
+\definecolor{green}{RGB}{0, 140, 0}
+\definecolor{red}{RGB}{220, 0, 0}
+
+% Convert the QED Symbol at the end of proofs to a solid black square (credit: Yakir Oz)
+\usepackage{amssymb}
+\renewcommand{\qedsymbol}{$\blacksquare$}
+
+% This part makes the layout more similar to Hebrew Article, which I am more used to
+\renewcommand*{\@seccntformat}[1]{\hspace{0.5cm}\csname the#1\endcsname\hspace{0.5cm}} 
+\usepackage{titlesec}
+\titleformat{\section}{\fontsize{20}{20}\bfseries}{\thesection}{10pt}{}
+\titleformat{\subsection}{\fontsize{15}{15}\bfseries}{\thesubsection}{10pt}{}
+\titleformat{\subsubsection}{\bfseries}{\thesubsubsection}{10pt}{}
+
+% This part corrects the reversed parentheses in labels
+\usepackage{polyglossia}
+\setmainlanguage{hebrew}
+\newfontfamily{\hebrewfont}{David}
+\makeatletter
+\def\maketag@@@#1{\hbox{\m@th\normalfont\LRE{#1}}}
+\def\tagform@#1{\maketag@@@{(\ignorespaces#1\unskip)}}
+\makeatother
+\end_preamble
+\use_default_options true
+\begin_removed_modules
+eqs-within-sections
+figs-within-sections
+\end_removed_modules
+\begin_modules
+theorems-ams
+enumitem
+fixltx2e
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Style Section
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size       Larger
+	  Series     Bold
+	EndFont
+	TocLevel 1
+End
+
+
+Style Section*
+	Align        Right
+	Font
+	  Series     Medium
+	  Shape      Smallcaps
+	  Size      Larger
+	  Series     Bold
+	EndFont
+End
+\end_local_layout
+\language hebrew
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "cmr" "David"
+\font_sans "cmss" "David"
+\font_typewriter "cmtt" "David"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype true
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 3cm
+\headheight 0cm
+\headsep 0cm
+\footskip 2cm
+\secnumdepth -2
+\tocdepth -2
+\paragraph_separation indent
+\paragraph_indentation 0bp
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset CommandInset include
+LatexCommand include
+filename "C:/Program Files (x86)/LyX 2.3/Resources/templates/MacrosHeb.lyx"
+
+\end_inset
+
+
+\begin_inset Box Doublebox
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "20pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\paragraph_spacing double
+\align center
+
+\series bold
+\size huge
+מדידת מהירות גלי קול באוויר החדר
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size huge
+ומדידת מהירות גלי קול באוויר, בהליום ובפחמן דו חמצני בצינור 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: נתיב מאור | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+319002911
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{nativ.maor@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+שם: דור חי שחם | ת
+\begin_inset Quotes erd
+\end_inset
+
+ז:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+318258555
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+| דוא
+\begin_inset Quotes erd
+\end_inset
+
+ל: 
+\begin_inset Formula $\text{dor-hay.sha@campus.technion.ac.il}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תקציר
+\end_layout
+
+\begin_layout Standard
+בדוח זה נתאר מדידות של מהירות גלי קול בתווכים שונים - באוויר, בגז הליום
+ ובפחמן דו חמצני.
+ נערכו שני ניסויים, בראשון נמדדה מהירות הקול באוויר ובשני נמדדה מהירות הקול
+ באוויר, בהליום ובפחמן דו-חמצני.
+ בניסוי הראשון הסקנו את מהירות הקול באוויר בעזרת מדידת הפרש הפאזה כתלות
+ במרחק שבין זמזם למיקרופון הנמצאים באוויר החדר.
+ בניסוי השני, מילאנו צינור כל פעם בגז אחר ויצרנו פולס בעזרת זמזם בקצה אחד
+ של הצינור ומדדנו כמה זמן לקח לפולס להגיע למיקרופון שמוקם בקצהו השני.
+ בעזרת אורך הצינור והפרש הזמנים הסקנו את מהירות הקול בכל גז.
+ לבסוף השוונו את מהירויות הקול שמצאנו בשני הניסויים עם הערכים המתקבלים לפי
+ התיאוריה - המנבאת את מהירות הקול כתלות בטמפרטורה וסוג הגז המהווה את התווך.
+ מצאנו שמהירות הקול באוויר ותחום השגיאה שלה המתקבל מהניסוי הראשון מכילים
+ את תחום השגיאה של מהירות הקול המתקבלת מהניסוי השני אך שני אלה לא חופפים
+ לערך התיאורטי אם כי קרובים אליו באופן יחסי.
+ כמו כן, גם מהירות הקול בגזים השונים דרך הצינור נמצאו לא חופפים לערכים הצפויים
+ מהתיאוריה אך קרובים באופן יחסי גם הם.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מבוא
+\end_layout
+
+\begin_layout Standard
+מערכות הניסוי הורכבו שתיהן ממיקרופון, זמזם, אוסצילוסקופ ומחולל גלים.
+ הזמזם וערוץ 1 של האוסצילוסקופ חוברו למחולל גלים וערץ 2 אל המיקרופון.
+ הגל מהמחולל מגיע אל הזמזם וערוץ 1, כשהוא מגיע אל הזמזם הזמזם יוצר גל קול
+ באותה תדירות ובאותה פאזה של גל המחולל.
+ אנו מניחים שגל המחולל מגיע אל ערוץ 1 והזמזם בו-זמנית.
+ בנוסף אנו מניחים שגל הקול הוא גל מישורי ולכן מהירות גלי הקול מקיימת: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v=\lambda f\label{eq:5}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $v$
+\end_inset
+
+ - מהירות הקול ב
+\begin_inset Formula $\frac{m}{s}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ - אורך גל הקול ב
+\begin_inset Formula $m$
+\end_inset
+
+ ו
+\begin_inset Formula $f$
+\end_inset
+
+ - תדירות גל הקול ב
+\begin_inset Formula $Hz$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בניסוי הראשון מערכת הניסוי סודרה כפי שמתואר באיור 1:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/system1.jpg
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\series default
+ מערכת ניסוי עבור הניסוי הראשון בו נמדדה מהירות הקול באוויר בעזרת הפרש פאזה.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+האיור נלקח מתדריך הניסוי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בניסוי זה נמדד הפרש הפאזה בין הגל המתקבל במיקרופון לגל היוצא מהזמזם )בעזרת
+ אוסילסקופ( כתלות במרחק בין המיקרופון לזמזם.
+ כשהמרחק נמדד על ידי סרגל עם דיוק של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1\ mm$
+\end_inset
+
+ מתקיים הקשר הבא:
+\begin_inset Formula 
+\begin{equation}
+\frac{\Delta\phi}{\Delta x}=\frac{2\pi}{\lambda}\label{eq:4}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ - הפרש הפאזה בין הפאזה של הגל המתקבל על ידי המיקרופון לפאזה של הגל היוצא
+ מהזמזם ב
+\begin_inset Formula $rad$
+\end_inset
+
+, 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+ - המרחק בין המיקרופון לזמזם ב
+\begin_inset Formula $m$
+\end_inset
+
+ ו
+\begin_inset Formula $\lambda$
+\end_inset
+
+ אורך גל הקול שמייצר הזמזם ב
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בניסוי השני, המיקרופון והזמזם חוברו לשתי קצוות צינור המכיל את הגז שרצינו
+ למדוד את מהירות הקול דרכו.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי סודרה כפי שמתואר באיור 2:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/system2.jpg
+	lyxscale 60
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ מערכת ניסוי עבור הניסוי השני בו נמדדו מהירויות הקול באוויר, בהליום ובפחמן
+ דו-חמצני בעזרת הפרש זמנים.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+האיור נלקח מתדריך הניסוי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בשביל להסיק את מהירות הקול בעזרת פולס בצינור.
+ ניתן בעזרת קינמטיקה לקבל:
+\begin_inset Formula 
+\begin{equation}
+\Delta t=\frac{L}{v}\label{eq:trivial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+ - הפרש הזמנים בשניות, 
+\begin_inset Formula $L$
+\end_inset
+
+ - אורך הצינור במטרים ו
+\begin_inset Formula $v$
+\end_inset
+
+ - מהירות הקול בגז )הנמצא בצינור( ב
+\begin_inset Formula $\frac{m}{s}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תדירות הפולסים צריכה לאפשר פגיעה של גל הקול במיקרופון וחזרה )לפי התדריך
+ שני מחזורים( ולכן נדרוש שתדירות הסף תקיים:
+\begin_inset Formula 
+\begin{equation}
+f=\frac{v}{2L}\label{eq:upper f}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $v$
+\end_inset
+
+ - היא מהירות הקול התיאורטית ב
+\begin_inset Formula $\frac{m}{s}$
+\end_inset
+
+ ו
+\begin_inset Formula $L$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- אורך הצינור ב
+\begin_inset Formula $m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מהירות הקול בתווכים שונים תלויה בטמפרטורה )אשר נמדדה בעזרת מד טמפ' עם דיוק
+ של 
+\begin_inset Formula $0.1^{\circ}K$
+\end_inset
+
+( וסוג התווך לפי הקשר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+v=\sqrt{\frac{\gamma RT}{M}}\label{eq:7}
+\end{equation}
+
+\end_inset
+
+כאשר 
+\begin_inset Formula $v$
+\end_inset
+
+ - מהירות הקול בגז )הנמצא בצינור( ב
+\begin_inset Formula $\frac{m}{s}$
+\end_inset
+
+, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ - היחס בין החום הסגולי בלחץ קבוע לחום הסגולי בנפח קבוע של הגז )חסר יחידות(,
+ 
+\begin_inset Formula $T$
+\end_inset
+
+ - טמפ' הגז ב
+\begin_inset Formula $K$
+\end_inset
+
+, 
+\begin_inset Formula $M$
+\end_inset
+
+ - המסה המולרית של הגז ב
+\begin_inset Formula $\frac{kg}{mol}$
+\end_inset
+
+ ו
+\begin_inset Formula $R$
+\end_inset
+
+ - קבוע הגזים המקיים 
+\begin_inset Formula $R=8.31\frac{J}{mol\cdot K}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמו כן, נתון בתדריך שמהירות הקול באוויר בטמפ' 
+\begin_inset Formula $T=0^{\circ}C=273.15^{\circ}K$
+\end_inset
+
+ היא 
+\begin_inset Formula $331.7\pm0.1\frac{m}{s}$
+\end_inset
+
+ ולכן מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נקבל את מהירות הקול באוויר כתלות בטמפ' 
+\begin_inset Formula 
+\begin{equation}
+v_{air}\left(T\right)=\left(331.7\pm0.1\right)\sqrt{\frac{T}{273.15}}\label{eq:v(t)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $T$
+\end_inset
+
+ - טמפ' האוויר במעלות 
+\begin_inset Formula $K$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+תוצאות הניסוי
+\end_layout
+
+\begin_layout Standard
+ניסוי זה מורכב משני חלקים, נתאר תחילה את תוצאות הניסוי הראשון - מדידת מהירות
+ גלי קול באוויר החדר ולאחר מכן את תוצאות הניסוי השני - מדידת מהירות גלי
+ קול בגזים שונים דרך צינור.
+ 
+\end_layout
+
+\begin_layout Subsection*
+ניסוי 1 - גלי קול באוויר החדר בעזרת הפרשי פאזה 
+\end_layout
+
+\begin_layout Standard
+תחילה, חברנו את המיקרופון לערוץ 2 של האוסצילוסקופ בעזרת כבל קואקסיאלי ואת
+ האות ממחולל הגלים שבאוסילסקופ לערוץ 1 והזמזם במקביל.
+ על מנת למצוא תדירות שבה היענות המערכת היא גבוהה, קבענו את אות המחולל להיות
+ גל סינוס ובדקנו את השפעת תדירות הגל היוצא על אמפליטודת הגל המתקבל במיקרופון.
+ גרף ההיענות:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/plot1.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף 1:
+\series default
+ אמפליטודת האות בערוץ 2 כתלות בתדר הגל מהמחולל 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הנקודות הכחולת מייצגות את המדידות עם קווי השגיאה שלהן )קווי השגיאה קטנים
+ מכדי להבחין בהם(.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לפי מדידות אלו הסקנו שתדירות עבורה יש היענות טובה של המערכת היא 
+\begin_inset Formula $f=4103\ HZ$
+\end_inset
+
+ ובה השתמשנו בהמשך הניסוי.
+\end_layout
+
+\begin_layout Standard
+כעת, קבענו את תדירות המחולל ל 
+\begin_inset Formula $f=4103\ HZ$
+\end_inset
+
+, הזזנו את המיקרופון לאורך הסרגל ולקחנו מדידות של המרחקים עבורם מתקבל הפרש
+ פאזה שהוא כפולה שלמה של 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+.
+ הפרשי פאזה הם בין האות שהתקבל במיקרופון ומוצג בערוץ 2 של הסקופ והאות שיצא
+ מהמחולל ומוצג בערוץ 1 של הסקופ.
+ כיוון שהסביבה בה נעשה הניסוי הייתה רועשת )ניסויים דומים נערכו במקביל בעמדות
+ קרובות והזמזמים שלהם יצרו רעשים, אנשים דיברו וכו'( לקחנו מדידת הפרש הפאזה
+ כמיצוע לאורך זמן - מתוך הנחה שמיצוע לאורך זמן יצמצם את השפעת רעשים אקראיים
+ ולא מתמשכים על המדידה.
+ לקחנו מדידה רק כשהפרש הפאזה בין האותות התייצב לאורך זמן של כ
+\begin_inset Formula $10$
+\end_inset
+
+ שניות על טווח של 
+\begin_inset Formula $\pm5^{\circ}$
+\end_inset
+
+ מהפאזה הרצויה וכך נקבעה הערכת שגיאת המדידה.
+ הערכת שגיאת המדידה של המיקום נקבעה לפי רזולוצית ההבחנה של הנסיין המתבונן
+ בסרגל כ
+\begin_inset Formula $\pm5mm$
+\end_inset
+
+.
+ כדי להגדיר את המרחק 
+\begin_inset Formula $x=0$
+\end_inset
+
+ ו פאזה 
+\begin_inset Formula $\phi=0$
+\end_inset
+
+ הזזנו את המיקרופון עד לנקודה בה מקסימום של האות בערוץ 2 התלכד בקירוב עם
+ מקסימום של אות המחולל - נקודה זו הוגדרה להיות 
+\begin_inset Formula $x=0$
+\end_inset
+
+ והפאזה הוגדרה כ
+\begin_inset Formula $\phi=0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+המדידות מוצגות בגרף הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/plot2.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ הפרש הפאזה 
+\begin_inset Formula $\Delta\phi$
+\end_inset
+
+ כתלות במרחק 
+\begin_inset Formula $\Delta x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית שבוצעה 
+\begin_inset Formula $y=(78\pm3)x+(0.1\pm0.4)$
+\end_inset
+
+ כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+יש התאמה טובה של הרגרסיה לנתונים הן מבחינה כמותית - מפני ש 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
+
+ והן מבחינה איכותית שכן גרף הרגרסיה נמצא בתחום קווי השגיאה של כל המדידות.
+\end_layout
+
+\begin_layout Standard
+משיפוע הגרף ומנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ הסקנו ש 
+\begin_inset Formula $\lambda_{air}=0.080\pm0.003m$
+\end_inset
+
+ )שגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: wavelen"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( ולכן מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:5"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נקבל ש 
+\begin_inset Formula 
+\[
+v_{air}^{measured}=331.4\pm13.8\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v air"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+מדידת הטמפרטורה במעבדה בזמן עריכת הניסוי הייתה )לאחר המרה לקלווין( 
+\begin_inset Formula $296.1^{\circ}\pm0.1^{\circ}K$
+\end_inset
+
+, לכן מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:v(t)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ניתן לגזור את ערך מהירות הקול התיאורטית באוויר להיות: 
+\begin_inset Formula 
+\[
+v_{air}^{theory}=345.4\pm0.1\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v air theory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+ערך מהירות הקול הנמדד ותחום השגיאה שלו לא חופפים עם ערך מהירות הקול הצפוי
+ ותחום השגיאה שלו.
+ על פערים אלו נדון בהרחבה בדיון בתוצאות.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ניסוי
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ - מהירות הקול בגזים שונים דרך צינור
+\end_layout
+
+\begin_layout Standard
+חיברנו את המיקרופון והזמזם לצדדים שונים של צינור באורך 
+\begin_inset Formula $L=0.980\pm0.001m$
+\end_inset
+
+ בהתאם לאיור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ בנוסף חיברנו את הזמזם לערוץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ולמחולל הגלים באוסצילוסקופ ואת המיקרופון לערוץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+ באוסצילוסקופ.
+ לאחר מכן מדדנו את הטמפ' בעזרת מד הטמפ' וקיבלנו )לאחר המרה לקלווין( 
+\begin_inset Formula $T=295.5^{\circ}\pm0.1^{\circ}K$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+על פי הטמפ' ונוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:v(t)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, נקבל שמהירות הקול באוויר התיאורטית היא:
+\begin_inset Formula 
+\[
+v_{air}^{theory}=345.0\pm0.1\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v air theory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:upper f"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, נקבל שתדירות הסף היא:
+\begin_inset Formula 
+\[
+f_{air}^{pulse}=176.0\pm0.2\ Hz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc:f"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+תדירות זו היא גבול עליון ולכן בעזרת מחולל הגלים יצרנו פולסים תדירות קטנה
+ מ
+\begin_inset Formula $175.8\ Hz$
+\end_inset
+
+ )החסם התחתון על תדירות הסף(.
+ זיהנו בעזרת ערוץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+באוסצילוסקופ )אשר מחובר למיקרופון( את הפולסים המתקבלים.
+ בעזרת פונקציית ה
+\begin_inset Formula $cursor$
+\end_inset
+
+ של האוסצילוסקופ מדדנו את הפרש הזמנים בין תחילת הפולס הנשלח לתחילת הפולס
+ המתקבל וקיבלנו 
+\begin_inset Formula $\Delta t_{air}=2.96\pm0.01ms$
+\end_inset
+
+ ) כשהערכת שגיאת המדידה נקבעה לפי הערכה באיזה חלון זמן מתרחשת פגיעת חזית
+ הפולס במיקרופון תוך התעלמות מגלים חוזרים - כך גם עבור המדידות בהליום ובפחמן
+ דו חמצני(.
+\end_layout
+
+\begin_layout Standard
+בעזרת הפרש הזמנים, נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:trivial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ואורך הצינור קיבלנו שמהירות הקול באוויר היא:
+\begin_inset Formula 
+\[
+v_{air}^{measured}=332.6\pm1.1\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v trivial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון על כך בדיון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן, מילאנו את הצינור בהליום וחזרנו על הניסוי - על ידי הצפת הצינור
+ בהליום בעזרת בלון שמולא בהליום מפתח יעודי ושחרור האוויר מהצינור מפתח אחר,
+ ביצענו תהליך זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פעמים בשביל שהגז בצינור יהיה בעיקרו הליום.
+ עבור הליום 
+\begin_inset Formula $\gamma=1.66$
+\end_inset
+
+ ומספר מסה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $4\frac{g}{mol}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)על פי הנתונים בתדריך(, הטמפ' הנמדדה ונוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, נקבל שמהירות הקול בהליום התיאורטית היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{He}^{theory}=1009.3\pm0.2\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc:v2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:upper f"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, נקבל שתדירות הסף היא:
+\begin_inset Formula 
+\[
+f_{He}^{pulse}=514.9\pm0.5\ Hz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v air theory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+תדירות זו היא גבול עליון ולכן בעזרת מחולל הגלים יצרנו פולסים תדירות קטנה
+ מ
+\begin_inset Formula $514.4\ Hz$
+\end_inset
+
+ )החסם התחתון על תדירות הסף(.
+ קיבלנו שהפרש הזמנים בין תחילת הפולס בזמזם לתחילת קליטת הפולס במיקרופון
+ הוא 
+\begin_inset Formula $\Delta t_{He}=1.00\pm0.01ms$
+\end_inset
+
+ ועל פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:trivial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ קיבלנו שמהירות הקול בהליום היא:
+\begin_inset Formula 
+\[
+v_{He}^{measured}=971.2\pm9.7\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v trivial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+גם כן ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי, נדון על כך בדיון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+באופן דומה, מילאנו את הצינור בפחמן דו-חמצני וחזרנו על הניסוי - על ידי הצפת
+ הצינור בפחמן דו-חמצני מפתח יעודי ושחרור האוויר מהצינור מפתח אחר, ביצענו
+ תהליך זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+ פעמים בשביל להבטיח שהגז בצינור יהיה בעיקרו פחמן דו-חמצני.
+ עבור פחמן דו-חמצני 
+\begin_inset Formula $\gamma=1.304$
+\end_inset
+
+ ומספר מסה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $44\frac{g}{mol}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)על פי הנתונים בתדריך(, הטמפ' הנמדדה ונוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:7"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, נקבל שמהירות הקול בפחמן דו-חמצני התיאורטית היא:
+\begin_inset Formula 
+\[
+v_{CO2}^{theory}=269.72\pm0.04\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc:v2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:upper f"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, נקבל שתדירות הסף היא:
+\begin_inset Formula 
+\[
+f_{He}^{pulse}=137.6\pm0.1\ Hz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v air theory"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+תדירות זו היא גבול עליון ולכן בעזרת מחולל הגלים יצרנו פולסים תדירות קטנה
+ מ
+\begin_inset Formula $137.5\ Hz$
+\end_inset
+
+ )החסם התחתון על תדירות הסף(.
+ קיבלנו שהפרש הזמנים בין תחילת הפולס בזמזם לתחילת קליטת הפולס במיקרופון
+ הוא 
+\begin_inset Formula $\Delta t_{CO2}=3.7\pm0.1ms$
+\end_inset
+
+ )נציין שבמדידה זו היה קושי בהבחנה בזמן הפגיעה של הפולס לכן נלקחה הערכת
+ שגיאה גדולה מבשאר הגזים( ועל פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:trivial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ קיבלנו שמהירות הקול בפחמן דו-חמצני היא:
+\begin_inset Formula 
+\[
+v_{CO2}^{measured}=262.0\pm7.0\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc: v trivial"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+גם כאן, בדומה לגזים הקודמים, ניתן לראות כי אין התאמה בין הערך הנמדד לתאורטי,
+ נדון על פער זה בדיון.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+נדון בתוצאות כל אחד מהניסויים בנפרד.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- גלי קול באוויר החדר בעזרת הפרש פאזה
+\end_layout
+
+\begin_layout Standard
+מהירות הקול שהתקבלה מהמדידות היא 
+\begin_inset Formula 
+\[
+v_{air}^{measured}=331.4\pm13.8\frac{m}{s}
+\]
+
+\end_inset
+
+ בעוד שמהירות הקול התיאורטית בטמפרטורה שנמדדה בחדר היא 
+\begin_inset Formula 
+\[
+v_{air}^{theory}=345.4\pm0.1\frac{m}{s}
+\]
+
+\end_inset
+
+תחומי השגיאה של הערכים אומנם לא חופפים אך השגיאה היחסית בין הערך התיאורטי
+ לערך המדוד של מהירות הקול חסומה על ידי 
+\begin_inset Formula $8\%$
+\end_inset
+
+ )כל חישובי השגיאות היחסיות חושבו לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "error calc:relative"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(, כשהחישוב נקבע לפי החסם התחתון של תחום השגיאה מהערך המדוד והחסם העליון
+ של תחום השגיאה מהערך התיאורטי.
+ עבור מרכזי התחומים נקבל תחום שגיאה של כ 
+\begin_inset Formula $4\%$
+\end_inset
+
+.
+ נציין גם שהתחומים קרובים לחפיפה, כפי שניתן לראות מחישוב שגיאה יחסית כשהערך
+ הנמדד נקבע להיות החסם העליון של תחום השגיאה שלו והערך התיאורטי נקבע להיות
+ החסם התחתון, אז נקבל שגיאה יחסית של 
+\begin_inset Formula $0.09\%$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+ואומנם, המדידות מהן הסקנו את מהירות הקול מוצגות בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+, לפי התיאוריה מדידות אלה צריכות להתאים לגרף לינארי שעובר בראשית, ואכן רגסיה
+ לינארית לנתונים נותנת גרף לינארי שעובר קרוב לראשית בהתאמה טובה של 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
+
+.
+ כלומר מבחינה איכותית יש התאמה לתיאוריה - היחס בין הפרש הפאזה והפרש המיקום
+ הוא לינארי.
+\end_layout
+
+\begin_layout Standard
+נציין מספר סיבות אפשרית לפערים שהתקבלו בין הערך התיאורטי של מהירות הקול
+ לערך המדוד.
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+סיבה אפשרית אחת היא שהסביבה בה נערך הניסוי הייתה רועשת, הסביבה הייתה רועשת
+ כי נערכו מספר ניסויים דומים במקביל שגרמו לרעש, הרעש בא לידי ביטוי במדידות
+ בכך שהפרש הפאזה בין גל המחולל לאות הנמדד על ידי המיקרופון לא נשאר קבוע
+ עבור מרחק קבוע.
+ כדי לצמצם את השפעת הרעש על המדידות נלקחה מדידת הפרש הפאזה במוד של מיצוע
+ - מתוך הנחה שמיצוע על מדידות גורם לרעשים אקראיים להיות זניחים.
+ עם זאת, חלק מהרעשים בסביבה לא היו אקראיים והתמידו לאורך הניסוי, למשל רעשים
+ מהמזגן שפעל קרוב לעמדת המדידה לא יבוטלו במיצוע אך עלולים להשפיע על המדידה
+ בכך שיגרמו להסחה שהשפעתה לא נלקחת בחשבון בהערכת השגיאה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+סיבה אפשרית נוספת היא שיתכן שהייתה השפעה של אוויר נע בכיוון מנוגד למהירות
+ גל הקול.
+ אנו חושדים שזו סיבה אפשרית כי מיקום עמדת המדידה היה מתחת למזגן המוציא אוויר
+ בכיוון מטה, כלומר אוויר נע בכיוון מנוגד לכיוון התקדמות גל הקול אל המיקרופון.
+ מבדיקה במרשתת מהירות אופיינית לתעלות מיזוג סטדנרטית היא בסדר גודל של 
+\begin_inset Formula $10\frac{m}{s}$
+\end_inset
+
+.
+ אם נניח מודל פשטני מאוד של מהירות אוויר קבועה בחדר ושמהירות הקול היא המהירות
+ של התפשטות הגל ביחס לאוויר בו הוא נע.
+ נקבל שמהירות אוויר של כ 
+\begin_inset Formula $10\frac{m}{s}$
+\end_inset
+
+ הייתה יכולה לגשר על הפערים בין התיאוריה לנמדד.
+ זאת מפני שלפי מודל זה מהירות האוויר שאמורה להימדד בחדר היא 
+\begin_inset Formula 
+\[
+v\approx v_{air}^{theory}-10=345.4-10=335.5\frac{m}{s}
+\]
+
+\end_inset
+
+אולם יש לציין שהמודל המוצע לעיל פשטני ביותר, שכן ברור שמהירות האוויר בחדר
+ בכיוון שבין המיקרופון לזמזם קטנה מ 
+\begin_inset Formula $10\dfrac{m}{s}$
+\end_inset
+
+ ושהאפקט במציאות מסובך יותר.
+ לכן, כדי לבדוק את האם אכן יש השפעה של האוויר היוצא מהמזגן על המדידות יש
+ לערוך את ניסוי בשנית כאשר המזגן לא מופעל, שעמדת המדידה מרוחקת ממנו או מבודדת
+ מהסביבה.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- מהירות הקול בגזים שונים דרך צינור
+\end_layout
+
+\begin_layout Standard
+כשמדדנו את מהירות הקול באוויר, קיבלנו את הערך 
+\begin_inset Formula 
+\[
+v_{air}^{measured}=332.6\pm1.1\frac{m}{s}
+\]
+
+\end_inset
+
+ בעוד שלפי התאוריה הערך המתאים לטמפ' בחדר באותו הזמן הוא
+\begin_inset Formula 
+\[
+v_{air}^{theory}=345.0\pm0.1\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למרות שאין חפיפה בין התחומים נשים לב שהשגיאה היחסית המקסימלית בין הערכים
+ היא 
+\begin_inset Formula $3.94\%$
+\end_inset
+
+ אשר מעידה על כך שהפער בין המדידה לתאוריה קטן.
+ 
+\end_layout
+
+\begin_layout Standard
+במהלך הניסוי לקחנו את הפרש הזמנים בין הפולס היוצא לפולס המגיע, בדרך זו הניסוי
+ חשוף לשגיאות אקראיות בהגעת הפולס וייתכן שאלו גרמו לפער בין התאוריה לניסוי.
+ דרך שבה יכלנו להגדיל את הדיוק היה לחשב את הזמן הדרוש עבור אחד הפולסים החוזרים
+ להגיע אל המיקרופון )ולחלק במרחק הכולל שהפולס עבר( ובכך להקטין את השגיאות
+ האקראיות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כשמדדנו את מהירות הקול בהליום, קיבלנו את הערך 
+\begin_inset Formula 
+\[
+v_{He}^{measured}=971.2\pm9.7\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעוד שלפי התאוריה הערך המתאים לטמפ' בחדר באותו הזמן הוא
+\begin_inset Formula 
+\[
+v_{He}^{theory}=1009.3\pm0.2\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למרות שאין חפיפה בין התחומים נשים לב שהשגיאה היחסית המקסימלית בין הערכים
+ היא 
+\begin_inset Formula $4.75\%$
+\end_inset
+
+, שגיאה המעידה על כך שהפער בין התוצאות לתאוריה קטן.
+ 
+\end_layout
+
+\begin_layout Standard
+בנוסף לסיבה לפער שצוינה קודם לכן עבור המדידה של המהירות באוויר, סיבה אפשרית
+ נוספת לפער היא שייתכן שהצינור לא הכיל רק הליום אלה גם אוויר.
+ היות ולא הייתה לנו דרך לבדוק בצורה איכותית או כמותית שהצינור אכן מלא בהליום
+ ייתכן שנשארה כמות כלשהי של אוויר בצינור.
+ משום שמהירות הקול באוויר נמוכה מבהליום, התערובת של אוויר והליום תהיה בעלת
+ מהירות קול קטנה משל הליום בלבד, דבר המתיישב עם תוצאות הניסוי.
+ כדי לשפר את הניסוי ניתן להוסיף אינדקציה לכמות ההליום בצינור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בחלק השלישי מדדנו את מהירות הקול בפחמן דו-חמצני, קיבלנו את הערך 
+\begin_inset Formula 
+\[
+v_{CO2}^{measured}=262.0\pm7.0\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעוד שלפי התאוריה הערך המתאים לטמפ' בחדר באותו הזמן הוא
+\begin_inset Formula 
+\[
+v_{CO2}^{theory}=269.72\pm0.04\frac{m}{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למרות שאין חפיפה יש כמעט השקה בין התחומים.
+ נשים לב שהשגיאה היחסית המקסימלית )כאשר הערכים נלקחים בקצוות טווח השגיאה
+ להיות רחוקים ככל האפשר( בין הערכים היא 
+\begin_inset Formula $5.40\%$
+\end_inset
+
+ אשר מעידה על כך שהפער בין המדידה לתאוריה קטן.
+ נשים לב שעבור השגיאה היחסית המינמלית )כאשר הערכים נלקחים בקצוות טווח השגיאה
+ להיות קרובים ככל האפשר( בין הערכים היא 
+\begin_inset Formula $0.25\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשים לב שבניגוד למדידה עם ההליום, אילו היה נשאר בצינור הליום ו/או היה חודר
+ אוויר לצינור כך שהצינור לא היה מלא בפחמן דו-חמצני מהירות הקול הייתה אמורה
+ להיות גדולה מהמהירות התיאורטית )מהסיבות שהסברנו מקודם והיות שמהירות הקול
+ באוויר ובהליום גדולות ממהירות הקול בפחמן דו-חמצני(.
+ ואילו התוצאות שקיבלנו מעידות על כך שמהירות הקול הנמדדת קטנה ממהירות הקול
+ התיאורטית.
+ לכן, סיבה זו אינה יכול להיות הסיבה המרכזית שגרמה לפער זה.
+\end_layout
+
+\begin_layout Standard
+אנו סבורים שבדומה למדידה של האוויר, ייתכן ושגיאה במדידה השפיעה על התוצאות
+ ושבמידה והיינו מבצעים את המדידה על פולס חוזר היינו יכולים להקטין את השגיאה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+מסקנות
+\end_layout
+
+\begin_layout Standard
+בשני הניסויים נמדדה מהירות הקול בתווכים שונים ובשיטות שונות.
+ 
+\end_layout
+
+\begin_layout Standard
+בניסוי 1, בו נמדדה מהירות גל קול באוויר החדר בעזרת הפרשי פאזה, מצאנו שמהירות
+ הקול היא 
+\begin_inset Formula $331.4\pm13.8\frac{m}{s}$
+\end_inset
+
+ בעוד שמהירות הקול התיאורטית בטמפרטורה שנמדדה בחדר היא 
+\begin_inset Formula $345.4\pm0.1\frac{m}{s}$
+\end_inset
+
+ .
+ תחומי הערכים לא חופפים.
+ את הסיבה לפערים אנו מייחסים לשיטת המדידה, שכן היא פגיעה לרעשים מהסביבה
+ והשפעות חיצוניות כמו אוויר זורם בחדר.
+ כדי להמנע מהפרעות אלו יש לחזור על הניסוי בסביבה מבודדת מרעשים ומבודדת ממקורות
+ זרימת אוויר.
+ 
+\end_layout
+
+\begin_layout Standard
+בניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בו נמדדו מהירות הקול בגזים שונים דרך צינור קיבלנו שמהירות הקול באוויר היא
+ 
+\begin_inset Formula $v_{air}^{measured}=332.6\pm1.1\frac{m}{s}$
+\end_inset
+
+ עם פער של עד 
+\begin_inset Formula $3.94\%$
+\end_inset
+
+ מהערך התיאורטי, מהירות הקול בהליום היא 
+\begin_inset Formula $v_{He}^{measured}=971.2\pm9.7\frac{m}{s}$
+\end_inset
+
+ עם פער של עד 
+\begin_inset Formula $4.75\%$
+\end_inset
+
+ מהערך התיאורטי ומהירות הקול בפחמן דו-חמצני היא 
+\begin_inset Formula $v_{CO2}^{measured}=262.0\pm7.0\frac{m}{s}$
+\end_inset
+
+ פעם פער של עד 
+\begin_inset Formula $5.4\%$
+\end_inset
+
+ מהערך התיאורטי.
+ מתוצאות אלו ניתן להסיק שדרך מדידה זו מביאה לדיוק יחסי טוב של עד 
+\begin_inset Formula $6\%$
+\end_inset
+
+ מגודל הערך הנמדד אך מכילה פערים למרות זאת.
+ כפי שציינו בדיון, ניתן לשפר את דיוק התוצאות על ידי שימוש בפולסים החוזרים
+ כמה פעמים בתוך הצינור ולחלק את הזמן שבו הפולס נע במרחק הכולל שהוא עבר.
+ בצורה זו מתבצע מעין מיצוע ולכן שגיאות אקראיות יקטנו.
+ כמו כן, ניתן להוסיף אינדקציה כלשהי על כמות האוויר, הליום ופחמן דו-חמצני
+ בצינור בכדי להגדיל את הסיכוי שהצינור אכן מלא בגז המבוקש בתחילת המדידה.
+\end_layout
+
+\begin_layout Standard
+נציין שבשני הניסויים נמדדה מהירות הקול באוויר והתקבלה מהירות דומה, 
+\begin_inset Formula $331\pm13.9\frac{m}{s}$
+\end_inset
+
+ בניסוי 1 ו 
+\begin_inset Formula $332.6\pm1.1\frac{m}{s}$
+\end_inset
+
+ בניסוי השני כשתחום השגיאה של המהירות מהניסוי השני מוכל בתחום של הניסוי
+ הראשון.
+ ייתכן ויש סיבה לקשר זה אך לעת זו אנו חושדים שקירבת הערכים היא מיקרית בלבד.
+ אילו היו נערכים ניסויים נוספים למדידת מהירות הקול בשיטות שונות והערכים
+ היו דומים גם בהם היינו חושדים בקשר עמוק יותר.
+ נציין גם שתחום הערכת שגיאת המדידה של הניסוי השני קטן בסדרי גודל משל הניסוי
+ הראשון - כלומר באופן כללי הניסוי השני מאפשר מדידה מדויקת יותר.
+ 
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+רשימת מקורות
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+( תדריך גלי קול.
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+נספח
+\end_layout
+
+\begin_layout Subsection*
+חישובי שגיאות מדידה נגררות ושגיאה יחסית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\lambda=\frac{2\pi}{m^{2}}\delta m\label{error calc: wavelen}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ הוא השיפוע שהתקבל מהרגרסיה הלינארית בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\begin_inset Formula $\delta m$
+\end_inset
+
+ היא תחום השגיאה שהתקבל מהרגרסיה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta v=v\sqrt{\left(\frac{\delta\lambda}{\lambda}\right)^{2}+\left(\frac{\delta f}{f}\right)^{2}}\label{error calc: v air}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta v=\sqrt{\left(0.1\sqrt{\frac{T}{273.15}}\right)^{2}\left(331.7\frac{\delta T}{2\sqrt{T\cdot273.15}}\right)^{2}}\label{error calc: v air theory}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta f=\frac{f}{2}\sqrt{\left(\frac{\delta v}{v}\right)^{2}+\left(\frac{\delta L}{L}\right)^{2}}\label{error calc:f}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta v=v\sqrt{\left(\frac{\delta L}{L}\right)^{2}+\left(\frac{\delta t}{t}\right)^{2}}\label{error calc: v trivial}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta v=\sqrt{\frac{\gamma R}{M}}\delta T\label{error calc:v2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Relative\ error=\frac{\left|v_{theory}-v_{measured}\right|}{v_{theory}}\label{error calc:relative}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
