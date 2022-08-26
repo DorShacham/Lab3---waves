@@ -63,6 +63,7 @@ n = -1
 f = lambda d,x: (2 * d * np.sin(x/2) / n) 
 d = Valerr(d.val*np.ones(len(theta_min.val)),d.err*np.ones(len(theta_min.val)))
 wave_len = Valerr.general_funcion(f,d,theta_min)
+wave_len_err = np.sqrt((d.val*np.cos(theta_min_value/2)*theta_min_err)**2 + (2*np.sin(theta_min_value/2)*d.err)**2)
 print("wave_len:",wave_len)
 
 

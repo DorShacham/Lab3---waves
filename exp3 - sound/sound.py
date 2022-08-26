@@ -263,7 +263,7 @@ def part4_interference_and_standing_wave():
     print("v measured:",v,"m/s")
 
 def main():
-   part3_find_resunance_exp()
+   part1_speed_of_sound_air_exp()
 
 
 
