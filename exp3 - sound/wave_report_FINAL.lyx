@@ -154,7 +154,7 @@ End
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "C:/Users/dorsh/AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+filename "C:/Program Files (x86)/LyX 2.3/Resources/templates/MacrosHeb.lyx"
 
 \end_inset
 
@@ -407,7 +407,7 @@ today
  הגל מהמחולל מגיע אל הזמזם וערוץ 1, כשהוא מגיע אל הזמזם הזמזם יוצר גל קול
  באותה תדירות ובאותה פאזה של גל המחולל.
  אנו מניחים שגל המחולל מגיע אל ערוץ 1 והזמזם בו-זמנית.
- בנוסף אנו מניחים שגל הקול הוא גל מישורי ולכן מהירות גלי הקול מקיימת: 
+ בנוסף אנו מניחים שלגל קול מהירות מוגדרת המקיימת: 
 \end_layout
 
 \begin_layout Standard
