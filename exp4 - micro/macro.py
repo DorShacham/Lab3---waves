@@ -76,7 +76,7 @@ theta_err= np.array(theta_err)*np.pi/180
 cos_theta_squared = np.array(np.cos(theta)**2)
 cos_theta_squared_err=theta_err*np.sin(2*theta)
 
-(fig1,fit1)=one4all(cos_theta_squared,intensity,intensity_err,cos_theta_squared_err,"linear",None,"cos(theta)**2","intensity [W/m^2]")
+(fig1,fit1)=one4all(cos_theta_squared,intensity,intensity_err,cos_theta_squared_err,"linear",None,r"$cos(\theta)^2$","intensity [W/m^2]")
 print(fit1)
 
 # with lattice
@@ -90,7 +90,7 @@ theta_err= np.array(theta_err)*np.pi/180
 cos_theta_pow_4= np.array(np.cos(theta)**4)
 cos_theta_squared_err=theta_err*2*np.sin(2*theta)**3
 
-(fig2,fit2)=one4all(cos_theta_pow_4,intensity,intensity_err,cos_theta_pow_4,"linear",None,"cos(theta)**4","intensity [W/m^2]")
+(fig2,fit2)=one4all(cos_theta_pow_4,intensity,intensity_err,cos_theta_pow_4,"linear",None,r"$cos(\theta)^4$","intensity [W/m^2]")
 print(fit2)
 
 #part 2 waveguide properties
@@ -100,7 +100,7 @@ d = []
 d_err = []
 intensity = []
 intensity_err = []
-fig3= plt.figure()
+fig3= plt.figure(dpi=300)
 plt.errorbar(d,intensity,intensity_err,d_err,fmt="o",label="Data")
 plt.xlabel("d [m]", fontsize=12)
 plt.ylabel("intensity [W/m^2]", fontsize=12)
@@ -148,8 +148,14 @@ lambda_for_d = 2*d_min
 #10
 distance_between_nodes = np.array([])
 distance_between_nodes_err=np.array([])
+I = np.array([])
+I_err = np.array([])
+
+one4all(distance_between_nodes, I,I_err,distance_between_nodes_err,mode="none",None,"X","I")
+
 distance_between_nodes= distance_between_nodes.mean()
 lambda_g_from_distance_between_nodes=distance_between_nodes*2
+
 
 #12
 distance_between_peaks = np.array([])
