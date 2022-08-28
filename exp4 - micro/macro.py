@@ -5,6 +5,13 @@ import pandas as pd
 from scipy.stats import linregress
 from scipy.optimize import curve_fit as cfit
 
+from uncertainties import unumpy
+from uncertainties import ufloat
+from uncertainties.umath import *
+from uncertainties.unumpy import nominal_values as uval
+from uncertainties.unumpy import std_devs as uerr
+
+
 # helper function for plotting data and regression
 def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",ylabel="y"):
     fig = plt.figure(dpi=300)
@@ -13,6 +20,7 @@ def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",
     
     if mode == "none":
         fit= []
+        
         
     
     elif mode == "linear":
@@ -41,10 +49,11 @@ def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",
         raise TypeError
 
 
-    plt.xlabel(xlabel, fontsize=12)
-    plt.ylabel(ylabel, fontsize=12)
+    plt.xlabel(xlabel, fontsize=14)
+    plt.ylabel(ylabel, fontsize=14)
     plt.grid()
-    plt.legend()
+    if mode != "none":
+        plt.legend()
     plt.show()
     
     return (fig,fit)
@@ -66,6 +75,7 @@ plt.show()
 
 # part 1 - lattice as a polarizor
 # wo lattice
+#%%
 L = 55 #cm 
 zeroth_intensity = 0.014 #intensity when the power is off in V
 zeroth_intensity_err=0.001
@@ -73,33 +83,43 @@ theta = [0,5,10,15,20,25,30,35,40,50,60,70,90,105,120,135,150,165,180,195,210,22
 theta_err= [5] * len(theta) 
 intensity = np.array([5.15,5.10,5.10,5.02,4.9,4.75,4.62,4.44,4.17,3.90,3.3,1.9,0.43,1.53,3,3.97,4.65,5.02,5.14,5.02,4.55,3.72,2.63,1.24,0.55,1.9,3,4.01,4.66,4.95,5.15])/10 #V
 intensity_err= [0.05/10] * len(theta)
+intensity = unumpy.uarray(intensity,intensity_err)
+
 
 theta= np.array(theta)*np.pi/180
 theta_err= np.array(theta_err)*np.pi/180
-cos_theta_squared = np.cos(theta)**2
-cos_theta_squared_err=theta_err*np.sin(2*theta)
+theta = unumpy.uarray(theta,theta_err) 
+
+cos_theta_squared = unumpy.cos(theta)**2
+#cos_theta_squared_err=theta_err*np.sin(2*theta)
 
 
-(fig1,fit1)=one4all(cos_theta_squared[-5:],intensity[-5:],intensity_err[-5:],cos_theta_squared_err[-5:],"linear",None,r"$cos(\theta)^2$","intensity [W/m^2]")
+(fig1,fit1)=one4all(uval(cos_theta_squared),uval(intensity),uerr(intensity),uerr(cos_theta_squared),"linear",None,r"$cos(\theta)^2$","$V [V]$")
 print(fit1)
-(fig12,fit12)=one4all(theta,intensity,intensity_err,theta_err,"none",None,r"$\theta$","intensity [W/m^2]")
-
+(fig12,fit12)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta [rad]$","$V [V]$")
+#%%
 
 # with lattice
 theta = [0,10,20,30,40,50,60,70,80,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,360] #dgree
 theta_err= [5] * len(theta) 
 intensity = [0.007,0.077,0.082,0.105,0.156,0.253,0.337,0.424,0.495,0.522,0.497,0.405,0.277,0.15,0.066,0.05,0.058,0.085,0.147,0.317,0.43,0.44,0.464,0.361,0.27,0.099,0.052,0.06]
 intensity_err= [0.05/10] * len(theta)
+intensity = unumpy.uarray(intensity,intensity_err)
+
 
 theta= np.array(theta)*np.pi/180
 theta_err= np.array(theta_err)*np.pi/180
-cos_theta_pow_4= np.array(np.cos(theta)**4)
-cos_theta_squared_err=theta_err*2*np.sin(2*theta)*np.cos(theta)**2
+theta = unumpy.uarray(theta,theta_err) 
 
-(fig2,fit2)=one4all(cos_theta_pow_4[9:16],intensity[9:16],intensity_err[9:16],cos_theta_pow_4[9:16],"linear",None,r"$cos(\theta)^4$","intensity [W/m^2]")
+
+cos_theta_pow_4= unumpy.cos(theta)**4
+
+#cos_theta_squared_err=theta_err*2*np.size_of_En(2*theta)*np.cos(theta)**2
+
+(fig2,fit2)=one4all(uval(cos_theta_pow_4),uval(intensity),uerr(intensity),uerr(cos_theta_pow_4),"linear",None,r"$cos(\theta)^4$","$V [V]$")
 print(fit2)
-(fig22,fit22)=one4all(theta,intensity,intensity_err,theta_err,"none",None,r"$\theta$","intensity [W/m^2]")
-
+(fig22,fit22)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta[rad]$","$V [V]$")
+#%%
 #part 2 waveguide properties
 
 # #3.
@@ -109,10 +129,9 @@ intensity = [0.319,0.319,0.321,0.346,0.407,0.45,0.507,0.548,0.608,0.678,0.714] #
 intensity_err = 0.005
 fig3= plt.figure(dpi=300)
 plt.errorbar(d,intensity,intensity_err,d_err,fmt="o",label="Data")
-plt.xlabel("d [m]", fontsize=12)
-plt.ylabel("intensity [W/m^2]", fontsize=12)
+plt.xlabel("d [m]", fontsize=14)
+plt.ylabel("$V [V]$", fontsize=14)
 plt.grid()
-plt.legend()
 plt.show()
 
 #%%
@@ -144,10 +163,9 @@ intensity = [0.012,0.015,0.504,0.441,0.45,0.5,0.52,0.527,0.567,0.577,0.592,0.58,
 intensity_err = 0.005
 fig3= plt.figure(dpi=300)
 plt.errorbar(d,intensity,intensity_err,d_err,fmt="o",label="Data")
-plt.xlabel("d [m]", fontsize=12)
-plt.ylabel("intensity [W/m^2]", fontsize=12)
+plt.xlabel("d [m]", fontsize=14)
+plt.ylabel("$V [V]$", fontsize=14)
 plt.grid()
-plt.legend()
 plt.show()
 
 #%%
@@ -155,29 +173,35 @@ plt.show()
 
 #7 
 # find the minimum width d_min for which the intensity drops drasticly at
-d_min = 1.4e-2 #fill currect d_min
+d_min = ufloat(1.4e-2,1e-3) #fill currect d_min
 lambda_for_d = 2*d_min
+print("d min is", d_min,"m")
+print("The wavelen is",lambda_for_d,"m")
 
 #10
 d = 2e-2 # meter
 x_err = 2e-3
 x = np.array([12,10.2,8.5,6.6,4.6]) *1e-2 #meter
 distance_between_nodes = np.abs(np.diff(x))
-distance_between_nodes_err=np.array([])
+distance_between_nodes_err= sqrt(2) * x_err
 I = np.array([0.383,0.39,0.395,0.395,0.395])
 I_err =0.005
 
 #one4all(distance_between_nodes, I,I_err,distance_between_nodes_err,mode="none",None,"X","I")
 
 distance_between_nodes= distance_between_nodes.mean()
+distance_between_nodes_err = distance_between_nodes_err/np.sqrt(np.size(distance_between_nodes))
+distance_between_nodes = ufloat(distance_between_nodes,distance_between_nodes_err)
 lambda_g_from_distance_between_nodes=distance_between_nodes*2
-print(lambda_g_from_distance_between_nodes)
+print("Lambda g according to the diff in nodes is",lambda_g_from_distance_between_nodes,"m")
 
 
 d = 2e-2 # meter
 x_err = 2e-3
 x = np.array([14.8,13,11.1,9.3,7.4,5.6]) *1e-2 #meter
 distance_between_max = np.abs(np.diff(x))
+distance_between_max_err= sqrt(2) * x_err
+
 distance_between_nodes_max=np.array([])
 I = np.array([0.528,0.522,0.512,0.503,0.504,0.51])
 I_err =0.005
@@ -185,8 +209,12 @@ I_err =0.005
 #one4all(distance_between_nodes, I,I_err,distance_between_nodes_err,mode="none",None,"X","I")
 
 distance_between_max= distance_between_max.mean()
+distance_between_max_err = distance_between_max_err/np.sqrt(np.size(distance_between_max))
+distance_between_max = ufloat(distance_between_max,distance_between_max_err)
+
+
 lambda_g_from_distance_between_max=distance_between_max*2
-print(lambda_g_from_distance_between_max)
+print("Lambda g according to the diff in picks is",lambda_g_from_distance_between_max,"m")
 
 #%%
 
@@ -194,6 +222,7 @@ print(lambda_g_from_distance_between_max)
 #13
 d=np.array([1.6,2.3,2.5,2.7]) * 1e-2 #meter
 d_err=1e-3 #meter
+d = unumpy.uarray(d,d_err)
 distance_between_nodes = np.array([
     np.abs(np.diff(np.array([13,10.3,7.5]))).mean(),
     np.abs(np.diff(np.array([13.5,12.6,10,8.3]))).mean(),
@@ -201,16 +230,18 @@ distance_between_nodes = np.array([
     np.abs(np.diff(np.array([12.3,10.7,9,7.4]))).mean()
    ]
     ) * 1e-2
-distance_between_nodes_err = np.array([2e-3,3e-3,3e-3,3e-3])
+distance_between_nodes_err = np.array([2e-3,3e-3,3e-3,3e-3]) * sqrt(2) / np.sqrt(np.array([3,4,4,4])) # the sqrt(2) is from the diff and the other is from the mean
+distance_between_nodes = unumpy.uarray(distance_between_nodes,distance_between_nodes_err)
 lambda_g= distance_between_nodes*2
 y = 1/lambda_g**2
-y_err= 2*1/lambda_g**3
+#y_err= 2*1/lambda_g**3
 x=1/(2*d)**2
 x_err=4/(2*d)**3
 
-(fig13,fit13)= one4all(x,y,0,0,"linear",None,"1/lambda_g**2","1/(2*d)**2")
-lambda_found = 1/np.sqrt(fit13.intercept)
-print("lambda found=",lambda_found)
+(fig13,fit13)= one4all(uval(x),uval(y),uerr(y),uerr(y),"linear",None,r"$\frac{1}{\lambda_g^2}[\frac{1}{m^2}]$",r"$\frac{1}{(2d)^2}[\frac{1}{m^2}]$")
+m = ufloat(fit13.intercept,2*fit13.intercept_stderr)
+lambda_found = 1/sqrt(m)
+print("lambda found=",lambda_found,"m")
 #check if slope makes sense - needs to be -1
 #%%
 
