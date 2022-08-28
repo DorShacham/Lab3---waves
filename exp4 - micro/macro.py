@@ -186,7 +186,12 @@ lambda_found = 1/np.sqrt(fit13.intercept)
 
 #16 ????????
 #cyclic polarization
-d= 1
+L = 15e-2
+L_err = 0
+wavelen = 2.8e-2
+wavelen_err = 0
+
+d= 1/ (2*np.sqrt(1/(2*L*wavelen)-1/(4*L)**2))
 
 fig16a=plt.figure()
 ax16a=plt.axes(polar=True)
@@ -201,7 +206,14 @@ plt.grid()
 plt.show()
 
 #linear polarization
-d= 1
+L = 15e-2
+L_err = 0
+wavelen = 2.8e-2
+wavelen_err = 0
+
+d= 1/ (2*np.sqrt(2/(L*wavelen)-1/L**2))
+
+
 fig16b=plt.figure()
 ax16b=plt.axes(polar=True)
 theta = np.array(theta)*np.pi/180
