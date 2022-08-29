@@ -234,11 +234,12 @@ distance_between_nodes_err = np.array([2e-3,3e-3,3e-3,3e-3]) * sqrt(2) / np.sqrt
 distance_between_nodes = unumpy.uarray(distance_between_nodes,distance_between_nodes_err)
 lambda_g= distance_between_nodes*2
 y = 1/lambda_g**2
-#y_err= 2*1/lambda_g**3
-x=1/(2*d)**2
-x_err=4/(2*d)**3
+y_err= 2*uerr(lambda_g)/uval(lambda_g)**3
 
-(fig13,fit13)= one4all(uval(x),uval(y),uerr(y),uerr(y),"linear",None,r"$\frac{1}{\lambda_g^2}[\frac{1}{m^2}]$",r"$\frac{1}{(2d)^2}[\frac{1}{m^2}]$")
+x=1/(2*d)**2
+x_err=4*d_err/(2*d)**3
+
+(fig13,fit13)= one4all(uval(x),uval(y),uerr(y),uerr(x),"linear",None,r"$\frac{1}{(2d)^2}[\frac{1}{m^2}]$",r"$\frac{1}{\lambda_g^2}[\frac{1}{m^2}]$")
 m = ufloat(fit13.intercept,2*fit13.intercept_stderr)
 lambda_found = 1/sqrt(m)
 print("lambda found=",lambda_found,"m")
