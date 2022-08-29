@@ -90,6 +90,9 @@ theta= np.array(theta)*np.pi/180
 theta_err= np.array(theta_err)*np.pi/180
 theta = unumpy.uarray(theta,theta_err) 
 
+
+theta_array = np.array([theta[theta<=np.pi/2],theta[(theta>=np.pi/2) * (theta <=np.pi)],theta[(theta>=np.pi/2) * (theta <=np.pi)])
+
 cos_theta_squared = unumpy.cos(theta)**2
 #cos_theta_squared_err=theta_err*np.sin(2*theta)
 
@@ -230,7 +233,7 @@ distance_between_nodes = np.array([
     np.abs(np.diff(np.array([12.3,10.7,9,7.4]))).mean()
    ]
     ) * 1e-2
-distance_between_nodes_err = np.array([2e-3,3e-3,3e-3,3e-3]) * sqrt(2) / np.sqrt(np.array([3,4,4,4])) # the sqrt(2) is from the diff and the other is from the mean
+distance_between_nodes_err = np.array([2e-3,3e-3,3e-3,3e-3]) * sqrt(2) / np.sqrt(np.array([3,4,4,4])-1) # the sqrt(2) is from the diff and the other is from the mean
 distance_between_nodes = unumpy.uarray(distance_between_nodes,distance_between_nodes_err)
 lambda_g= distance_between_nodes*2
 y = 1/lambda_g**2
