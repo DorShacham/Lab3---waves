@@ -133,7 +133,8 @@ for (theta_i,intensity_i) in zip(theta_array,intensity_array):
     cos_theta_pow_4 = unumpy.cos(theta_i*np.pi/180)**4
     print("\n-----\n",theta_i,"\n-----\n")
     (fig,fit)=one4all(uval(cos_theta_squared),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_squared),"linear",None,r"$cos(\theta)^2$","$V [V]$")
-    (fig_4,fit_4)=one4all(uval(cos_theta_pow_4),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_pow_4),"linear",None,r"$cos(\theta)^2$","$V [V]$")
+    (fig_4,fit_4)=one4all(uval(cos_theta_pow_4),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_pow_4),"linear",None,r"$cos(\theta)^4$","$V [V]$")
+    fig_array.append(fig)
     fig_array.append(fig)
     fit_array.append(fit)
     print(fit)
@@ -261,17 +262,18 @@ print("Lambda g according to the diff in picks is",lambda_g_from_distance_betwee
 
 
 #13
-d=np.array([1.6,2.3,2.5,2.7]) * 1e-2 #meter
+d=np.array([1.6,2,2.3,2.5,2.7]) * 1e-2 #meter
 d_err=1e-3 #meter
 d = unumpy.uarray(d,d_err)
 distance_between_nodes = np.array([
     np.abs(np.diff(np.array([13,10.3,7.5]))).mean(),
+    np.abs(np.diff(np.array([12,10.2,8.5,6.6,4.6]))).mean(),
     np.abs(np.diff(np.array([13.5,12.6,10,8.3]))).mean(),
     np.abs(np.diff(np.array([12.5,11.7,9,7.5]))).mean(),
     np.abs(np.diff(np.array([12.3,10.7,9,7.4]))).mean()
    ]
     ) * 1e-2
-distance_between_nodes_err = np.array([2e-3,3e-3,3e-3,3e-3]) * sqrt(2) / np.sqrt(np.array([3,4,4,4])-1) # the sqrt(2) is from the diff and the other is from the mean
+distance_between_nodes_err = np.array([2e-3,2e-3,3e-3,3e-3,3e-3]) * sqrt(2) / np.sqrt(np.array([3,5,4,4,4])-1) # the sqrt(2) is from the diff and the other is from the mean
 distance_between_nodes = unumpy.uarray(distance_between_nodes,distance_between_nodes_err)
 lambda_g= distance_between_nodes*2
 y = 1/lambda_g**2
@@ -288,13 +290,14 @@ print("lambda found=",lambda_found,"m")
 #%%
 
 # #16 ????????
-# #cyclic polarization
-# L = 15e-2
-# L_err = 0
-# wavelen = 2.8e-2
-# wavelen_err = 0
+#cyclic polarization
+L = 15e-2
+L_err = 0
+wavelen = 2.8e-2
+wavelen_err = 0
+d_of_phi = lambda phi : 1/(2*np.sqrt(phi/(np.pi*L*wavelen)-(phi/(2*np.pi*L))**2))
 
-# d= 1/ (2*np.sqrt(1/(2*L*wavelen)-1/(4*L)**2))
+d_linear = np.array([d_of_phi(2*np.pi),d_of_phi(2*2*np.pi),d_of_phi(3*2*np.pi)])
 
 # fig16a=plt.figure()
 # ax16a=plt.axes(polar=True)
@@ -309,12 +312,12 @@ print("lambda found=",lambda_found,"m")
 # plt.show()
 
 # #linear polarization
-# L = 15e-2
-# L_err = 0
-# wavelen = 2.8e-2
-# wavelen_err = 0
+L = 15e-2
+L_err = 0
+wavelen = 2.8e-2
+wavelen_err = 0
+d_circler = np.array([d_of_phi(np.pi/2),d_of_phi(3*np.pi/2),d_of_phi(5*np.pi/2)])
 
-# d= 1/ (2*np.sqrt(2/(L*wavelen)-1/L**2))
 
 
 # fig16b=plt.figure()
