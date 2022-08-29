@@ -84,25 +84,62 @@ theta_err= [5] * len(theta)
 intensity = np.array([5.15,5.10,5.10,5.02,4.9,4.75,4.62,4.44,4.17,3.90,3.3,1.9,0.43,1.53,3,3.97,4.65,5.02,5.14,5.02,4.55,3.72,2.63,1.24,0.55,1.9,3,4.01,4.66,4.95,5.15])/10 #V
 intensity_err= [0.05/10] * len(theta)
 intensity = unumpy.uarray(intensity,intensity_err)
-
-
-theta= np.array(theta)*np.pi/180
-theta_err= np.array(theta_err)*np.pi/180
 theta = unumpy.uarray(theta,theta_err) 
 
+theta_array = [theta[uval(theta)<=90],theta[(uval(theta)>=90) * (uval(theta) <=180)],theta[(uval(theta)>=180) * (uval(theta) <=270)],theta[(uval(theta)>=270) * (uval(theta) <=360)]]
+intensity_array = [intensity[uval(theta)<=90],intensity[(uval(theta)>=90) * (uval(theta) <=180)],intensity[(uval(theta)>=180) * (uval(theta) <=270)],intensity[(uval(theta)>=270) * (uval(theta) <=360)]]
 
-theta_array = np.array([theta[theta<=np.pi/2],theta[(theta>=np.pi/2) * (theta <=np.pi)],theta[(theta>=np.pi/2) * (theta <=np.pi)])
 
-cos_theta_squared = unumpy.cos(theta)**2
+
+fig_array=[]
+fit_array=[]
+for (theta_i,intensity_i) in zip(theta_array,intensity_array):
+    cos_theta_squared = abs(unumpy.cos(theta_i*np.pi/180))
+    print("\n-----\n",theta_i,"\n-----\n")
+    (fig,fit)=one4all(uval(cos_theta_squared),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_squared),"linear",None,r"$cos(\theta)^2$","$V [V]$")
+    fig_array.append(fig)
+    fit_array.append(fit)
+    print(fit)
+
 #cos_theta_squared_err=theta_err*np.sin(2*theta)
+fig4=plt.figure()
+ax4=plt.axes(polar=True)
+ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
+ax4.plot(uval(theta*np.pi/180),0.52*abs(np.cos(uval(theta*np.pi/180))))
+ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180))
+plt.grid(True)
+plt.show()
 
 
-(fig1,fit1)=one4all(uval(cos_theta_squared),uval(intensity),uerr(intensity),uerr(cos_theta_squared),"linear",None,r"$cos(\theta)^2$","$V [V]$")
-print(fit1)
+
 (fig12,fit12)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta [rad]$","$V [V]$")
 #%%
 
 # with lattice
+theta = [0,10,20,30,40,50,60,70,80,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,360] #dgree
+theta_err= [5] * len(theta) 
+intensity = [0.007,0.077,0.082,0.105,0.156,0.253,0.337,0.424,0.495,0.522,0.497,0.405,0.277,0.15,0.066,0.05,0.058,0.085,0.147,0.317,0.43,0.44,0.464,0.361,0.27,0.099,0.052,0.06]
+intensity_err= [0.05/10] * len(theta)
+intensity = unumpy.uarray(intensity,intensity_err)
+theta = unumpy.uarray(theta,theta_err)
+
+theta_array = [theta[uval(theta)<=90],theta[(uval(theta)>=90) * (uval(theta) <=180)],theta[(uval(theta)>=180) * (uval(theta) <=270)],theta[(uval(theta)>=270) * (uval(theta) <=360)]]
+intensity_array = [intensity[uval(theta)<=90],intensity[(uval(theta)>=90) * (uval(theta) <=180)],intensity[(uval(theta)>=180) * (uval(theta) <=270)],intensity[(uval(theta)>=270) * (uval(theta) <=360)]]
+
+fig_array=[]
+fit_array=[]
+for (theta_i,intensity_i) in zip(theta_array,intensity_array):
+    cos_theta_squared = unumpy.cos(theta_i*np.pi/180)**2
+    cos_theta_pow_4 = unumpy.cos(theta_i*np.pi/180)**4
+    print("\n-----\n",theta_i,"\n-----\n")
+    (fig,fit)=one4all(uval(cos_theta_squared),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_squared),"linear",None,r"$cos(\theta)^2$","$V [V]$")
+    (fig_4,fit_4)=one4all(uval(cos_theta_pow_4),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_pow_4),"linear",None,r"$cos(\theta)^2$","$V [V]$")
+    fig_array.append(fig)
+    fit_array.append(fit)
+    print(fit)
+    print(fit_4)
+'''
+
 theta = [0,10,20,30,40,50,60,70,80,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,360] #dgree
 theta_err= [5] * len(theta) 
 intensity = [0.007,0.077,0.082,0.105,0.156,0.253,0.337,0.424,0.495,0.522,0.497,0.405,0.277,0.15,0.066,0.05,0.058,0.085,0.147,0.317,0.43,0.44,0.464,0.361,0.27,0.099,0.052,0.06]
@@ -122,6 +159,7 @@ cos_theta_pow_4= unumpy.cos(theta)**4
 (fig2,fit2)=one4all(uval(cos_theta_pow_4),uval(intensity),uerr(intensity),uerr(cos_theta_pow_4),"linear",None,r"$cos(\theta)^4$","$V [V]$")
 print(fit2)
 (fig22,fit22)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta[rad]$","$V [V]$")
+'''
 #%%
 #part 2 waveguide properties
 
@@ -145,7 +183,7 @@ fig4=plt.figure()
 ax4=plt.axes(polar=True)
 theta=[0,15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255,270,300,330,360]
 theta_err = 5
-intensity= [0.45,0.443,0.432,0.433,0.393,0.292,0.09,0.245,0.343,0.403,0.438,0.44,0.454,0.447,0.438,0.428,0.383,0.295,0.112,0.339,0.448,0.442]
+intensity= np.array([0.45,0.443,0.432,0.433,0.393,0.292,0.09,0.245,0.343,0.403,0.438,0.44,0.454,0.447,0.438,0.428,0.383,0.295,0.112,0.339,0.448,0.442])-0.09
 intensity_err =0.005
 
 theta = np.array(theta)*np.pi/180
