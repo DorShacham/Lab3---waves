@@ -400,13 +400,6 @@ today
  
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage newpage
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section*
 מבוא
 \end_layout
@@ -477,8 +470,8 @@ I=I_{0}\cos^{2}\left(\theta_{1}\right)\label{eq:cos^2}
 \end_inset
 
  קריאת הוולטמטר המחובר לגלאי(.
- בין המשדר והגלאי מוקמו בכל ניסוי אלמנטים שונים המשפיעים על התקדמות הגל
- בדרכו בין המשדר והגלאי.
+ בין המשדר והגלאי מוקמו בכל ניסוי אלמנטים שונים )סריג, גלבו ופרספקס( המשפיעים
+ על התקדמות הגל בדרכו בין המשדר והגלאי.
  בניסוי הראשון מוקם סריג מתכתי, אשר בחנו האם מתנהג כמקטב לינארי - כלומר
  מעביר גלים המקוטבים בכיוון ניצב לחריצי הסריג וחוסם גלים המקוטבים במקביל.
  על פי התאוריה צפוי שיתקיים הקשר הבא:
@@ -664,6 +657,108 @@ status open
 \end_layout
 
 \begin_layout Standard
+בחלק מניסוי 2, כאשר הקיטוב הוא בכיוון 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+, עקב החזרה של גלים שיש להם רכיב התקדמות גם בכיוון 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ מהלוחות, בזוויות התקדמות מסוימות נוצרת תמונה של גלים עומדים כלומר ניתן
+ למצוא מישורים הניצבים לציר 
+\begin_inset Formula $z$
+\end_inset
+
+ כך שבמרכז הלוחות תתקבל אקסטרימה או צומת של הגל העומד.
+ את האקסטרימה והצמתים אנו מזהים על ידי מיקום של פרספקס על הגלבו, והזזה שלו
+ לאורך ציר ה
+\begin_inset Formula $z$
+\end_inset
+
+.
+ ההחזרה של קרינה מלוח הפרספקס תהיה מרבית במישור אקסטרימה ומינימלית במישור
+ צומת.
+ לשם כך המערכת סודרה כפי שמתואר באיור הבא:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename fig/fig2.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+איור
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\series default
+ תרשים מערכת הניסוי עם גלבו ולוח הפרספקס.
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+נלקח מהתדריך.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 בנוסף, כאשר משודר גל המקוטב גם בכיוון 
 \begin_inset Formula $\hat{x}$
 \end_inset
@@ -801,6 +896,2020 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 
 \begin_layout Section*
 תוצאות הניסוי
+\end_layout
+
+\begin_layout Standard
+תחילה מיקמנו גלבו באורך 
+\begin_inset Formula $L=0.15m$
+\end_inset
+
+ בין הגלאי למשדר וקירבנו את המשדר לגלאי כך שהשפופרות שלהם קרובות ככל הניתן
+ ללוחות הגלבו.
+ כמו כן וידאנו שהמרכז השפופרות עובר במחצית גובה הגלבו.
+ כיוונו את קיטוב המשדר להיות בניצב ללוח )ודאגנו לכך שהגלאי יהיה באותה זווית
+ כמוהו( ומדדנו את המתח כתלות במפתח לוחות הגלבו 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ את 
+\begin_inset Formula $d$
+\end_inset
+
+ מדדנו בעזרת סרגל עם הערכת שגיאת מדידה ברזולוצית המדידה של הסרגל - כ
+\begin_inset Formula $1mm$
+\end_inset
+
+.
+ מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot13.png
+	lyxscale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\numeric off
+: מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות במרחק בין לוחות הגלבו ב
+\begin_inset Formula $m$
+\end_inset
+
+ עבור גל מקוטב בניצב ללוחות הגלבו
+\end_layout
+
+\begin_layout Plain Layout
+המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן, עבור מפתח קבוע 
+\begin_inset Formula $d=0.04m$
+\end_inset
+
+ מדדנו את העוצמה הנקלטת כתלות בזווית היחסית בין המשדר והגלאי.
+ נציג את העוצמה הנקלטת כתלות בזווית בגרף פולארי: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot14.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14
+\numeric off
+: מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות בזווית היחסית בין המשדר לגלאי
+\end_layout
+
+\begin_layout Plain Layout
+בגרף פולרי זה המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ניתן לראות שהגרף תואם לגרף לינארי בהצגה הפולרית, שכן צורתו היא 
+\begin_inset Formula $\cos\left(\theta\right)$
+\end_inset
+
+ מבחינה איכותית, וגרף לינארי בהצגה פולרית פרופורציוני ל
+\begin_inset Formula $\cos\left(\theta\right)$
+\end_inset
+
+ .
+ לאחר מכך כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון x ומדדנו את המתח
+ כתלות במפתח לוחות הגלבו.
+ מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים: (עוצמה כתלות בd עבור
+ גל מקוטב בכיוון x) קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה 
+\end_layout
+
+\begin_layout Standard
+ניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בלי סריג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot1.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף 1:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $0\leq\theta\leq\frac{\pi}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלינארית: 
+\begin_inset Formula $y=(0.39\pm0.09)x+(0.16\pm0.06)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.881$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot2.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף 2:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\frac{\pi}{2}\leq\theta\leq\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלינארית: 
+\begin_inset Formula $y=(0.43\pm0.12)x+(0.13\pm0.07)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.914$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot3.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף 3:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\pi\leq\theta\leq\frac{3}{2}\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלניארית: 
+\begin_inset Formula $y=(0.44\pm0.08)x+(0.11\pm0.05)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.957$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot4.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף 4:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\frac{3}{2}\pi\leq\theta\leq2\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלניארית: 
+\begin_inset Formula $y=(0.40\pm0.11)x+(0.14\pm0.07)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.908$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרפים 
+\numeric on
+1-4
+\numeric off
+:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית שבוצעה כאשר תחום השגיאה הוא
+ תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot6.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fig/plot5.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרפים
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5-6
+\numeric off
+: מתח בגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\theta$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)השמאלי( ובגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה,המדידות מיוצגות בנקודות כחולות
+ עם קווי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+ניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- עם סריג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot7.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף
+\family roman
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\numeric off
+:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{4}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $0\leq\theta\leq\frac{\pi}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלינארית: 
+\begin_inset Formula $y=(-0.43\pm0.13)x+(0.41\pm0.07)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.841$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot8.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף
+\family roman
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\numeric off
+:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{4}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\frac{\pi}{2}\leq\theta\leq\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלינארית: 
+\begin_inset Formula $y=(-0.43\pm0.13)x+(0.41\pm0.07)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.932$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot9.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף
+\family roman
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{4}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\pi\leq\theta\leq\frac{3}{2}\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלניארית: 
+\begin_inset Formula $y=(-0.37\pm0.16)x+(0.36\pm0.09)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.807$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "40col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot10.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "95col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+\size tiny
+גרף
+\family roman
+\shape up
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\numeric off
+:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{4}\theta$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\frac{3}{2}\pi\leq\theta\leq2\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+
+\size tiny
+הרגרסיה הלניארית: 
+\begin_inset Formula $y=(-0.41\pm0.11)x+(0.41\pm0.06)$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.916$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרפים 
+\numeric on
+1-4
+\numeric off
+:
+\series default
+ 
+\series bold
+מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\cos^{4}\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית שבוצעה כאשר תחום השגיאה הוא
+ תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot12.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename fig/plot11.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרפים
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10-11
+\numeric off
+: מתח בגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)השמאלי( ובגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה,המדידות מיוצגות בנקודות כחולות
+ עם קווי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot13.png
+	lyxscale 20
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\numeric off
+: 
+\begin_inset Formula $\frac{1}{\lambda_{g}^{2}}$
+\end_inset
+
+ ב
+\begin_inset Formula $\frac{1}{m^{2}}$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\frac{1}{\left(2d\right)^{2}}$
+\end_inset
+
+ ב
+\begin_inset Formula $\frac{1}{m^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית:
+\begin_inset Formula 
+\[
+y=(-0.96\pm0.12)x+(1.29\pm0.07)10^{3}
+\]
+
+\end_inset
+
+ כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה ומתקיים 
+\begin_inset Formula $R^{2}=0.988$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

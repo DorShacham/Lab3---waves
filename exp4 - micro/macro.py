@@ -54,6 +54,7 @@ def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",
     plt.grid()
     if mode != "none":
         plt.legend()
+
     plt.show()
     
     return (fig,fit)
@@ -81,7 +82,7 @@ zeroth_intensity = 0.014 #intensity when the power is off in V
 zeroth_intensity_err=0.001
 theta = [0,5,10,15,20,25,30,35,40,50,60,70,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,360] #dg ee  
 theta_err= [5] * len(theta) 
-intensity = np.array([5.15,5.10,5.10,5.02,4.9,4.75,4.62,4.44,4.17,3.90,3.3,1.9,0.43,1.53,3,3.97,4.65,5.02,5.14,5.02,4.55,3.72,2.63,1.24,0.55,1.9,3,4.01,4.66,4.95,5.15])/10 #V
+intensity = (np.array([5.15,5.10,5.10,5.02,4.9,4.75,4.62,4.44,4.17,3.90,3.3,1.9,0.43,1.53,3,3.97,4.65,5.02,5.14,5.02,4.55,3.72,2.63,1.24,0.55,1.9,3,4.01,4.66,4.95,5.15])/10)**2 #V
 intensity_err= [0.05/10] * len(theta)
 intensity = unumpy.uarray(intensity,intensity_err)
 theta = unumpy.uarray(theta,theta_err) 
@@ -94,33 +95,37 @@ intensity_array = [intensity[uval(theta)<=90],intensity[(uval(theta)>=90) * (uva
 fig_array=[]
 fit_array=[]
 for (theta_i,intensity_i) in zip(theta_array,intensity_array):
-    cos_theta_squared = abs(unumpy.cos(theta_i*np.pi/180))
-    print("\n-----\n",theta_i,"\n-----\n")
+    cos_theta_squared = (unumpy.cos(theta_i*np.pi/180))**2
+    print("\n-----\n")
     (fig,fit)=one4all(uval(cos_theta_squared),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_squared),"linear",None,r"$cos(\theta)^2$","$V [V]$")
     fig_array.append(fig)
     fit_array.append(fit)
-    print(fit)
+    slope = ufloat(fit.slope,2*fit.stderr)
+    intercept = ufloat(fit.intercept,2*fit.intercept_stderr)
+    print(fit_array.index(fit)+1,"==> ","y=(",slope,")x","+(",intercept,")"," R^2=",fit.rvalue**2)
+
+for fig in fig_array:
+    fname =str( "fig/plot" + str(fig_array.index(fig) + 1))
+    fig.savefig(fname)
 
 #cos_theta_squared_err=theta_err*np.sin(2*theta)
 fig4=plt.figure()
 ax4=plt.axes(polar=True)
-ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
-ax4.plot(uval(theta*np.pi/180),0.52*abs(np.cos(uval(theta*np.pi/180))))
-ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180))
+#ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
+ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"o")
 plt.grid(True)
 plt.show()
 
-
-
 (fig12,fit12)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta [rad]$","$V [V]$")
+fig12.savefig("fig/plot5")
 #%%
 
 # with lattice
 theta = [0,10,20,30,40,50,60,70,80,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,360] #dgree
 theta_err= [5] * len(theta) 
-intensity = [0.007,0.077,0.082,0.105,0.156,0.253,0.337,0.424,0.495,0.522,0.497,0.405,0.277,0.15,0.066,0.05,0.058,0.085,0.147,0.317,0.43,0.44,0.464,0.361,0.27,0.099,0.052,0.06]
-intensity_err= [0.05/10] * len(theta)
-intensity = unumpy.uarray(intensity,intensity_err)
+V = (np.array([0.07,0.077,0.082,0.105,0.156,0.253,0.337,0.424,0.495,0.522,0.497,0.405,0.277,0.15,0.066,0.05,0.058,0.085,0.147,0.317,0.43,0.44,0.464,0.361,0.27,0.099,0.052,0.06])-0.014)
+V_err= [0.05/10] * len(theta)
+intensity = unumpy.uarray(V,V_err)**2
 theta = unumpy.uarray(theta,theta_err)
 
 theta_array = [theta[uval(theta)<=90],theta[(uval(theta)>=90) * (uval(theta) <=180)],theta[(uval(theta)>=180) * (uval(theta) <=270)],theta[(uval(theta)>=270) * (uval(theta) <=360)]]
@@ -129,17 +134,35 @@ intensity_array = [intensity[uval(theta)<=90],intensity[(uval(theta)>=90) * (uva
 fig_array=[]
 fit_array=[]
 for (theta_i,intensity_i) in zip(theta_array,intensity_array):
-    cos_theta_squared = unumpy.cos(theta_i*np.pi/180)**2
-    cos_theta_pow_4 = unumpy.cos(theta_i*np.pi/180)**4
-    print("\n-----\n",theta_i,"\n-----\n")
-    (fig,fit)=one4all(uval(cos_theta_squared),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_squared),"linear",None,r"$cos(\theta)^2$","$V [V]$")
-    (fig_4,fit_4)=one4all(uval(cos_theta_pow_4),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_pow_4),"linear",None,r"$cos(\theta)^4$","$V [V]$")
-    fig_array.append(fig)
-    fig_array.append(fig)
-    fit_array.append(fit)
-    print(fit)
-    print(fit_4)
+   cos_theta_power4 =(unumpy.cos((theta_i+90)*np.pi/180))**4
+   print("\n-----\n")
+   (fig,fit)=one4all(uval(cos_theta_power4),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_power4),"linear",None,r"$cos(\theta)^4$","$V [V]$")
+   fig_array.append(fig)
+   fit_array.append(fit)
+   slope = ufloat(fit.slope,2*fit.stderr)
+   intercept = ufloat(fit.intercept,2*fit.intercept_stderr)
+   print(fit_array.index(fit)+1,"==> ","y=(",slope,")x","+(",intercept,")"," R^2=",fit.rvalue**2)
+plt.show()
+
+for fig in fig_array:
+    fname =str( "fig/plot" + str(fig_array.index(fig) + 7))
+    fig.savefig(fname)
+
+fig4=plt.figure()
+ax4=plt.axes(polar=True)
+#ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
+ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"o")
+plt.grid(True)
+plt.show()
+
+
+
+(fig12,fit12)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta [rad]$","$V [V]$")
+fig12.savefig("fig/plot11")
+
 '''
+
+
 
 theta = [0,10,20,30,40,50,60,70,80,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,360] #dgree
 theta_err= [5] * len(theta) 
@@ -167,14 +190,23 @@ print(fit2)
 # #3.
 d = np.array([1.5,2,2.5,3,3.5,4,4.5,5,5.5,6,6.5])*1e-2 #meter
 d_err = 1e-3 #meter
-intensity = [0.319,0.319,0.321,0.346,0.407,0.45,0.507,0.548,0.608,0.678,0.714] # V
+V = np.array([0.319,0.319,0.321,0.346,0.407,0.45,0.507,0.548,0.608,0.678,0.714]) # V
+intensity = (V**2)/d
 intensity_err = 0.005
 fig3= plt.figure(dpi=300)
 plt.errorbar(d,intensity,intensity_err,d_err,fmt="o",label="Data")
+
+
 plt.xlabel("d [m]", fontsize=14)
 plt.ylabel("$V [V]$", fontsize=14)
 plt.grid()
 plt.show()
+
+(fig,fit) = one4all(d[3:],intensity[3:],0,0,"linear")
+slope = ufloat(fit.slope,2*fit.stderr)
+intercept = ufloat(fit.intercept,2*fit.intercept_stderr)
+print("==> ","y=(",slope,")x","+(",intercept,")"," R^2=",fit.rvalue**2)
+fig.savefig("/fig/plot13")
 
 #%%
 # #4.
@@ -184,7 +216,8 @@ fig4=plt.figure()
 ax4=plt.axes(polar=True)
 theta=[0,15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255,270,300,330,360]
 theta_err = 5
-intensity= np.array([0.45,0.443,0.432,0.433,0.393,0.292,0.09,0.245,0.343,0.403,0.438,0.44,0.454,0.447,0.438,0.428,0.383,0.295,0.112,0.339,0.448,0.442])-0.09
+V= (np.array([0.45,0.443,0.432,0.433,0.393,0.292,0.09,0.245,0.343,0.403,0.438,0.44,0.454,0.447,0.438,0.428,0.383,0.295,0.112,0.339,0.448,0.442])-0.09)
+intensity = (V**2)/d
 intensity_err =0.005
 
 theta = np.array(theta)*np.pi/180
@@ -192,16 +225,17 @@ theta_err = np.array(theta_err)*np.pi/180
 intensity= np.array(intensity)
 intensity_err= np.array(intensity_err)
 
-ax4.plot(theta,intensity,"ro")
-ax4.errorbar(theta,intensity,intensity_err,theta_err)
+ax4.errorbar(theta,intensity,intensity_err,theta_err,"o")
 plt.grid(True)
 plt.show()
+fig4.savefig("fig/plot14")
 
 #%%
 # #6
 d = np.array([1,1.3,1.4,1.5,1.7,2,2.5,3,3.5,4,4.5,5,5.5])*1e-2 #meter
 d_err = 1e-3 #meter
-intensity = [0.012,0.015,0.504,0.441,0.45,0.5,0.52,0.527,0.567,0.577,0.592,0.58,0.575,]# V
+V = np.array([0.012,0.015,0.504,0.441,0.45,0.5,0.52,0.527,0.567,0.577,0.592,0.58,0.575])-0.012# V
+intensity = (V**2)/d
 intensity_err = 0.005
 fig3= plt.figure(dpi=300)
 plt.errorbar(d,intensity,intensity_err,d_err,fmt="o",label="Data")
@@ -283,14 +317,17 @@ x=1/(2*d)**2
 x_err=4*d_err/(2*d)**3
 
 (fig13,fit13)= one4all(uval(x),uval(y),uerr(y),uerr(x),"linear",None,r"$\frac{1}{(2d)^2}[\frac{1}{m^2}]$",r"$\frac{1}{\lambda_g^2}[\frac{1}{m^2}]$")
-m = ufloat(fit13.intercept,2*fit13.intercept_stderr)
-lambda_found = 1/sqrt(m)
+slope = ufloat(fit13.slope,2*fit13.stderr)
+intercept = ufloat(fit13.intercept,2*fit13.intercept_stderr)
+print("==> ","y=(",slope,")x","+(",intercept,")"," R^2=",fit13.rvalue**2)
+
+lambda_found = 1/sqrt(intercept)
 print("lambda found=",lambda_found,"m")
 #check if slope makes sense - needs to be -1
 #%%
 
-# #16 ????????
-#cyclic polarization
+# #16 
+
 L = 15e-2
 L_err = 0
 wavelen = 2.8e-2
@@ -299,37 +336,90 @@ d_of_phi = lambda phi : 1/(2*np.sqrt(phi/(np.pi*L*wavelen)-(phi/(2*np.pi*L))**2)
 
 d_linear = np.array([d_of_phi(2*np.pi),d_of_phi(2*2*np.pi),d_of_phi(3*2*np.pi)])
 
-# fig16a=plt.figure()
-# ax16a=plt.axes(polar=True)
-# theta = np.array(theta)*np.pi/180
-# theta_err = np.array(theta_err)*np.pi/180
-# intensity= np.array(intensity)
-# intensity_err= np.array(intensity_err)
+#linear polarization
 
-# ax16a.plot(theta,intensity,"ro")
-# ax16a.errorbar(theta,intensity,intensity_err,theta_err)
-# plt.grid()
-# plt.show()
+d1 = d_linear[2]
+theta1 = []
+theta_err1 = []
+V1 = []
+V_err1 = [] 
 
-# #linear polarization
+
+fig1=plt.figure()
+ax1=plt.axes(polar=True)
+theta1 = np.array(theta1)*np.pi/180
+theta_err1 = np.array(theta_err1)*np.pi/180
+V1 = np.array(V1)
+V_err1 = np.array(V_err1)
+
+ax1.errorbar(theta1,V1,V_err1,theta_err1,"o")
+plt.grid(True)
+plt.show()
+
+#########
+d2 = d_linear[0]
+theta2 = []
+theta_err2 = []
+V2 = []
+V_err2 = [] 
+
+
+fig2=plt.figure()
+ax2=plt.axes(polar=True)
+theta2 = np.array(theta2)*np.pi/180
+theta_err2 = np.array(theta_err2)*np.pi/180
+V2 = np.array(V2)
+V_err2 = np.array(V_err2)
+
+ax2.errorbar(theta,intensity,intensity_err,theta_err,"o")
+plt.grid(True)
+plt.show()
+
+#%%
+#cyclic polarization
 L = 15e-2
 L_err = 0
 wavelen = 2.8e-2
 wavelen_err = 0
+d_of_phi = lambda phi : 1/(2*np.sqrt(phi/(np.pi*L*wavelen)-(phi/(2*np.pi*L))**2))
 d_circler = np.array([d_of_phi(np.pi/2),d_of_phi(3*np.pi/2),d_of_phi(5*np.pi/2)])
 
 
 
-# fig16b=plt.figure()
-# ax16b=plt.axes(polar=True)
-# theta = np.array(theta)*np.pi/180
-# theta_err = np.array(theta_err)*np.pi/180
-# intensity= np.array(intensity)
-# intensity_err= np.array(intensity_err)
+d1 = d_circler[2]
+theta1 = []
+theta_err1 = []
+V1 = []
+V_err1 = [] 
 
-# ax16b.plot(theta,intensity,"ro")
-# ax16b.errorbar(theta,intensity,intensity_err,theta_err)
-# plt.grid()
-# plt.show()
 
-#18 - make impormvements and repeat
+fig1=plt.figure()
+ax1=plt.axes(polar=True)
+theta1 = np.array(theta1)*np.pi/180
+theta_err1 = np.array(theta_err1)*np.pi/180
+V1 = np.array(V1)
+V_err1 = np.array(V_err1)
+
+ax1.errorbar(theta1,V1,V_err1,theta_err1,"o")
+plt.grid(True)
+plt.show()
+
+#########
+d2 = d_circler[0]
+theta2 = []
+theta_err2 = []
+V2 = []
+V_err2 = [] 
+
+
+fig2=plt.figure()
+ax2=plt.axes(polar=True)
+theta2 = np.array(theta2)*np.pi/180
+theta_err2 = np.array(theta_err2)*np.pi/180
+V2 = np.array(V2)
+V_err2 = np.array(V_err2)
+
+ax2.errorbar(theta,intensity,intensity_err,theta_err,"o")
+plt.grid(True)
+plt.show()
+
