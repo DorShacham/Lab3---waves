@@ -161,25 +161,16 @@ plt.show()
 fig12.savefig("fig/plot11")
 
 '''
-
-
-
 theta = [0,10,20,30,40,50,60,70,80,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300,315,330,345,360] #dgree
 theta_err= [5] * len(theta) 
 intensity = [0.007,0.077,0.082,0.105,0.156,0.253,0.337,0.424,0.495,0.522,0.497,0.405,0.277,0.15,0.066,0.05,0.058,0.085,0.147,0.317,0.43,0.44,0.464,0.361,0.27,0.099,0.052,0.06]
 intensity_err= [0.05/10] * len(theta)
 intensity = unumpy.uarray(intensity,intensity_err)
-
-
 theta= np.array(theta)*np.pi/180
 theta_err= np.array(theta_err)*np.pi/180
 theta = unumpy.uarray(theta,theta_err) 
-
-
 cos_theta_pow_4= unumpy.cos(theta)**4
-
 #cos_theta_squared_err=theta_err*2*np.size_of_En(2*theta)*np.cos(theta)**2
-
 (fig2,fit2)=one4all(uval(cos_theta_pow_4),uval(intensity),uerr(intensity),uerr(cos_theta_pow_4),"linear",None,r"$cos(\theta)^4$","$V [V]$")
 print(fit2)
 (fig22,fit22)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta[rad]$","$V [V]$")
@@ -328,9 +319,9 @@ print("lambda found=",lambda_found,"m")
 
 # #16 
 
-L = 15e-2
-L_err = 0
-wavelen = 2.8e-2
+L = 15 #cm
+L_err = 0.2 #cm
+wavelen = 2.8 #cm
 wavelen_err = 0
 d_of_phi = lambda phi : 1/(2*np.sqrt(phi/(np.pi*L*wavelen)-(phi/(2*np.pi*L))**2))
 
@@ -339,10 +330,10 @@ d_linear = np.array([d_of_phi(2*np.pi),d_of_phi(2*2*np.pi),d_of_phi(3*2*np.pi)])
 #linear polarization
 
 d1 = d_linear[2]
-theta1 = []
-theta_err1 = []
-V1 = []
-V_err1 = [] 
+theta1 = [0,15,30,45,60,75,90,105,120,135,150,165,180,195,210,225,240,255,270,285,300]
+theta_err1 = 5
+V1 = [0.297,0.207,0.158,0.214,0.275,0.312,0.328,0.259,0.244,0.192,0.255,0.303,0.348,0.226,0.153,0.218,0.269,0.292,0.133,0.123,0.272]
+V_err1 = 0.001
 
 
 fig1=plt.figure()
@@ -352,16 +343,16 @@ theta_err1 = np.array(theta_err1)*np.pi/180
 V1 = np.array(V1)
 V_err1 = np.array(V_err1)
 
-ax1.errorbar(theta1,V1,V_err1,theta_err1,"o")
+ax1.errorbar(theta1,V1,V_err1,theta_err1,"-o")
 plt.grid(True)
 plt.show()
 
 #########
-d2 = d_linear[0]
-theta2 = []
-theta_err2 = []
-V2 = []
-V_err2 = [] 
+d2  = 3.32 
+theta2 = [0,30,60,90,120,150,180,210,240,270,300,330,360,45,165,225,345]
+theta_err2 = 5
+V2 = [0.503,0.53,0.408,0.335,0.225,0.128,0.484,0.540,0.378,0.333,0.23,0.1,0.503,0.459,0.29,0.447,0.3]
+V_err2 = 0.005
 
 
 fig2=plt.figure()
@@ -371,26 +362,26 @@ theta_err2 = np.array(theta_err2)*np.pi/180
 V2 = np.array(V2)
 V_err2 = np.array(V_err2)
 
-ax2.errorbar(theta,intensity,intensity_err,theta_err,"o")
+ax2.errorbar(theta2,V2,V_err2,theta_err2,"o")
 plt.grid(True)
-plt.show()
+#plt.show()
 
 #%%
 #cyclic polarization
-L = 15e-2
-L_err = 0
-wavelen = 2.8e-2
+L = 15
+L_err = 0.8
+wavelen = 2.8
 wavelen_err = 0
 d_of_phi = lambda phi : 1/(2*np.sqrt(phi/(np.pi*L*wavelen)-(phi/(2*np.pi*L))**2))
 d_circler = np.array([d_of_phi(np.pi/2),d_of_phi(3*np.pi/2),d_of_phi(5*np.pi/2)])
 
 
 
-d1 = d_circler[2]
-theta1 = []
-theta_err1 = []
-V1 = []
-V_err1 = [] 
+d1 = 2.18 #cm
+theta1 = [0,30,45,60,90,120,150,180,210,240,270,300,330,360]
+theta_err1 = 5
+V1 = [0.37,0.345,0.286,0.3,0.317,0.287,0.223,0.328,0.335,0.346,0.32,0.255,0.144,0.26]
+V_err1 = 0.005
 
 
 fig1=plt.figure()
@@ -405,21 +396,20 @@ plt.grid(True)
 plt.show()
 
 #########
-d2 = d_circler[0]
-theta2 = []
-theta_err2 = []
-V2 = []
-V_err2 = [] 
+# d2 = d_circler[0]
+# theta2 = []
+# theta_err2 = []
+# V2 = []
+# V_err2 = [] 
 
 
-fig2=plt.figure()
-ax2=plt.axes(polar=True)
-theta2 = np.array(theta2)*np.pi/180
-theta_err2 = np.array(theta_err2)*np.pi/180
-V2 = np.array(V2)
-V_err2 = np.array(V_err2)
+# fig2=plt.figure()
+# ax2=plt.axes(polar=True)
+# theta2 = np.array(theta2)*np.pi/180
+# theta_err2 = np.array(theta_err2)*np.pi/180
+# V2 = np.array(V2)
+# V_err2 = np.array(V_err2)
 
-ax2.errorbar(theta,intensity,intensity_err,theta_err,"o")
-plt.grid(True)
-plt.show()
-
+# ax2.errorbar(theta,intensity,intensity_err,theta_err,"o")
+# plt.grid(True)
+# plt.show()
