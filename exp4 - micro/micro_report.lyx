@@ -3391,23 +3391,14 @@ status open
 \end_inset
 
 ניתן לראות שהגרף תואם לגרף לינארי בהצגה הפולרית, שכן צורתו היא 
-\begin_inset Formula $\cos\left(\theta\right)$
+\begin_inset Formula $\cos^{2}\left(\theta\right)$
 \end_inset
 
  מבחינה איכותית, וגרף לינארי בהצגה פולרית פרופורציוני ל
-\begin_inset Formula $\cos\left(\theta\right)$
+\begin_inset Formula $\cos^{2}\left(\theta\right)$
 \end_inset
 
  .
- 
-\series bold
-)אמור להיות 
-\begin_inset Formula $\cos^{2}\theta$
-\end_inset
-
-, לא?(
-\series default
-
 \begin_inset Newline newline
 \end_inset
 
@@ -3541,9 +3532,9 @@ noprefix "false"
 
 \end_inset
 
-( ולכן ציפינו לפונקצית מדרגות.
- בגרף זה ניתן לראות מדרגה אחת בהתאם לתאוריה, כמו כן ניתן לשים לב שהמפתח
- הקטן ביותר עבורו יש קריאה משמעותית של הגלאי הוא 
+( ולכן ציפינו לפונקציה לא רציפה.
+ בגרף זה ניתן לראות קפיצה בקריאת הגלאי בהתאם לתאוריה, כמו כן ניתן לשים לב
+ שהמפתח הקטן ביותר עבורו יש קריאה משמעותית של הגלאי הוא 
 \begin_inset Formula 
 \[
 d_{min}=0.014\pm0.001m

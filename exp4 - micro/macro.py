@@ -276,7 +276,7 @@ print("The wavelen is",lambda_for_d,"m")
 #10
 d = 2e-2 # meter
 x_err = 2e-3
-x = np.array([12,10.2,8.5,6.6,4.6]) *1e-2 #meter
+x = np.array([12,10.2,8.5,6.6,4.6][::-1]) *1e-2 #meter
 distance_between_nodes = np.abs(np.diff(x))
 distance_between_nodes_err= sqrt(2) * x_err
 I = np.array([0.383,0.39,0.395,0.395,0.395])
@@ -285,7 +285,7 @@ I_err =0.005
 n = np.arange(0,len(x))
 fig,fit = one4all(n,x,x_err,0,"linear",xlabel="n",ylabel="x [m]")
 
-#one4all(distance_between_nodes, I,I_err,distance_between_nodes_err,mode="none",None,"X","I")
+
 
 distance_between_nodes= distance_between_nodes.mean()
 distance_between_nodes_err = distance_between_nodes_err/np.sqrt(np.size(distance_between_nodes))
