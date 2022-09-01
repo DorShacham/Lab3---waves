@@ -1803,7 +1803,39 @@ status open
 \noun default
 \color inherit
 )הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה,המדידות מיוצגות בנקודות כחולות
- עם קווי.
+ עם קווי שגיאה.
+ בנוסף ניתן לראות פונקציות רגרסיה הבאות:
+\end_layout
+
+\begin_layout Plain Layout
+בכתום:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+y=\left(0.53\pm0.01\right)\left|\cos\left(\left(1.0119\pm0.007\right)\theta\right)\right|,\ R^{2}=0.997
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+ובשחור:
+\begin_inset Formula 
+\[
+y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ R^{2}=0.952
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כאשר השגיאות נלקחו מתנתוני הרגרסיה.
 \end_layout
 
 \end_inset
@@ -2408,9 +2440,32 @@ status open
 \align center
 
 \series bold
-גרפים 
+גרפים
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
 \numeric on
-1-4
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7-10
 \numeric off
 :
 \series default

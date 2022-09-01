@@ -13,7 +13,7 @@ from uncertainties.unumpy import std_devs as uerr
 
 
 # helper function for plotting data and regression
-def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",ylabel="y"):
+def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",ylabel="y",show=True):
     fig = plt.figure(dpi=300)
     plt.errorbar(xdata,ydata,yerr,xerr,"o",label="Data")
 
@@ -54,25 +54,31 @@ def one4all(xdata,ydata,yerr=0,xerr=0,mode="general function",f=None,xlabel="x",
     plt.grid()
     if mode != "none":
         plt.legend()
-
-    plt.show()
+        
+    if show:
+        plt.show()
     
     return (fig,fit)
 
-#prep question 7
-theta=np.array(range(0,9,1))*np.pi/4
-#E1=E2
-E2=1
-E1=1
-size_of_E = np.sqrt((E1*np.sin(theta))**2 +(E2*np.sin(theta+np.pi/2))**2)
-dir_of_E= np.arccos(E1*np.sin(theta)/size_of_E)
-fig0, ax0 = plt.subplots(subplot_kw={'projection': 'polar'})
-ax0.plot(dir_of_E,size_of_E)
-ax0.set_rmax(2)
-ax0.set_rlabel_position(-22.5)
-ax0.grid(True)
-ax0.set_title("axial plot of E for multiple values of wt")
-plt.show()
+def Rsqrue(x,y):
+    RSS = np.sum((y-x)**2)
+    TSS = np.sum(y**2)
+    return 1 - RSS/TSS
+#%%
+# #prep question 7
+# theta=np.array(range(0,9,1))*np.pi/4
+# #E1=E2
+# E2=1
+# E1=1
+# size_of_E = np.sqrt((E1*np.sin(theta))**2 +(E2*np.sin(theta+np.pi/2))**2)
+# dir_of_E= np.arccos(E1*np.sin(theta)/size_of_E)
+# fig0, ax0 = plt.subplots(subplot_kw={'projection': 'polar'})
+# ax0.plot(dir_of_E,size_of_E)
+# ax0.set_rmax(2)
+# ax0.set_rlabel_position(-22.5)
+# ax0.grid(True)
+# ax0.set_title("axial plot of E for multiple values of wt")
+# plt.show()
 
 # part 1 - lattice as a polarizor
 # wo lattice
@@ -108,16 +114,31 @@ for fig in fig_array:
     fname =str( "fig/plot" + str(fig_array.index(fig) + 1))
     fig.savefig(fname)
 
+f1 = lambda x,a,b: a*np.abs(np.cos(b*x))
+f2 = lambda x,a,b: a*np.cos(b*x)**2
+fit_f1 = cfit(f1,uval(theta*np.pi/180),uval(intensity))
+fit_f2 = cfit(f2,uval(theta*np.pi/180),uval(intensity))
+Rsqrue1 = Rsqrue(f1(uval(theta*np.pi/180),*fit_f1[0]),uval(intensity))
+Rsqrue2 = Rsqrue(f2(uval(theta*np.pi/180),*fit_f2[0]),uval(intensity))
+
 #cos_theta_squared_err=theta_err*np.sin(2*theta)
 fig4=plt.figure()
 ax4=plt.axes(polar=True)
 #ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
 ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"o")
+ax4.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"$|a\cos(b\theta)|$")
+ax4.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-.",color="black",label=r"$a\cos^2(b\theta)$")
+
 plt.grid(True)
+ax4.legend()
 plt.show()
 fig4.savefig("fig/plot6")
 
-(fig12,fit12)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta [rad]$","$V [V]$")
+(fig12,fit12)=one4all(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"none",None,r"$\theta [rad]$","$V [V]$",show=False)
+plt.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"$|a\cos(b\theta)|$")
+plt.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-d",color="black",label=r"$a\cos^2(b\theta)$")
+plt.legend()
+plt.show()
 fig12.savefig("fig/plot5")
 #%%
 
@@ -149,16 +170,18 @@ for fig in fig_array:
     fname =str( "fig/plot" + str(fig_array.index(fig) + 7))
     fig.savefig(fname)
 
+
+
+
 fig4=plt.figure()
 ax4=plt.axes(polar=True)
 #ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
 ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"o")
 plt.grid(True)
-plt.show()
 fig4.savefig("fig/plot12")
 
 
-(fig12,fit12)=one4all(uval(theta),uval(intensity),uerr(intensity),uerr(theta),"none",None,r"$\theta [rad]$","$V [V]$")
+(fig12,fit12)=one4all(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"none",None,r"$\theta [rad]$","$V [V]$")
 fig12.savefig("fig/plot11")
 
 '''
@@ -193,7 +216,7 @@ plt.xlabel("d [m]", fontsize=14)
 plt.ylabel("$V [V]$", fontsize=14)
 plt.grid()
 plt.show()
-fig.savefig("fig/plot13")
+fig3.savefig("fig/plot13")
 
 
 # (fig,fit) = one4all(d[3:],intensity[3:],0,0,"linear")
