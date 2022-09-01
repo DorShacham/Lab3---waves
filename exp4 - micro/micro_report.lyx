@@ -3158,7 +3158,7 @@ noprefix "false"
 \begin_inset Formula $1mm$
 \end_inset
 
-.
+ , המרחק נמדד מקצה הלוחות הקרוב לגלאי )כך גם בשאר המדידות בניסוי(.
  מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים:
 \end_layout
 
@@ -4210,6 +4210,227 @@ noprefix "false"
 \end_inset
 
 , ניתן לשים לב שהוא מוכל בתחום השגיאה של אורך הגל שהתקבל כצפוי מהתאוריה.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לבסוף, כדי לנסות ליצור קרינה מקוטבת לינארית ומעגלית ביציאה מהגלבו, כוון
+ המשדר לזווית של 
+\begin_inset Formula $45$
+\end_inset
+
+ מעלות ביחס למישור לוחות הגלבו, כדי שרכיבי השדה החשמלי של הגל בכיוונים 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ ו
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ יהיו שווים בקירוב בכניסה לגלבו.
+ 
+\begin_inset Newline newline
+\end_inset
+
+כדי ליצור קיטוב לינארי חישבנו בעזרת נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d(phi)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ את המרחק המתאים בין הלוחות להפרש פאזה של כפולה שלמה של 
+\begin_inset Formula $2\pi$
+\end_inset
+
+ .כדי למצוא את המרחק הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל הצבנו בנוסחא 
+\begin_inset Formula $\Delta\phi=2\pi,\,L=0.15m,\,\lambda=0.028m$
+\end_inset
+
+ , וקיבלנו שעבור 
+\begin_inset Formula $d_{linear}=0.0332m$
+\end_inset
+
+ צפוי להתקבל קיטוב לינארי.
+ 
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק האם אכן מתקבל קיטוב לינארי קבענו את המרחק בין הלוחות להיות 
+\begin_inset Formula $d=0.033\pm0.001m$
+\end_inset
+
+ )עקב יכולת רזולוצית הדיוק המתקבלת משיטת המדידה בעזרת סרגל( ומדדנו את המתח
+ כתלות בזווית היחסית כפי שנעשה קודם לכן בחלקים הקודמים של הניסוי.
+\end_layout
+
+\begin_layout Standard
+בגרף הבא מוצג המתח על הגלאי כתלות בזווית היחסית בין הגלאים בהצגה פולרית:
+\end_layout
+
+\begin_layout Standard
+)הכנס גרף(
+\end_layout
+
+\begin_layout Standard
+ממבט איכותי בגרף נראה שאין התאמה למצופה מגרף של עוצמת קרינה עם קיטוב לינארי,
+ זאת על סמך כך שמעטפת הנקודות לא סימטרית סביב זווית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+45
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעלות כצפוי מגרף של עוצמה של קיטוב לינארי ב
+\numeric on
+45
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעלות כתלות בזווית המדידה.
+ כלומר המדידות לא תואמות לציפיה מהתיאוריה.
+ על פער זה נדון בהרחבה בדיון.
+\end_layout
+
+\begin_layout Standard
+כדי ליצור קיטוב מעגלי חישבנו בעזרת נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:d(phi)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ את המרחק המתאים בין הלוחות להפרש פאזה של 
+\begin_inset Formula $\pi/2$
+\end_inset
+
+ ועוד כפולה שלמה של 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ כדי למצוא את המרחק הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל הצבנו בנוסחא 
+\begin_inset Formula $\Delta\phi=\pi/2,\,L=0.15m,\,\lambda=0.028m$
+\end_inset
+
+ , וקבלנו 
+\begin_inset Formula $d_{polar}=0.0218m$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק האם אכן מתקבל קיטוב לינארי קבענו את המרחק בין הלוחות להיות 
+\begin_inset Formula $d=0.022\pm0.001m$
+\end_inset
+
+ ומדדנו את המתח כתלות בזווית היחסית כפי שנעשה קודם לכן בחלקים הקודמים של
+ הניסוי.
+\end_layout
+
+\begin_layout Standard
+בגרף הבא מוצג המתח על הגלאי כתלות בזווית היחסית בין הגלאים בהצגה פולרית:
+\end_layout
+
+\begin_layout Standard
+)הכנס גרף(
+\end_layout
+
+\begin_layout Standard
+ממבט איכותי בגרף נראה שאין התאמה למצופה מגרף של עוצמת קרינה עם קיטוב מעגלי.
+ זאת על סמך כל שהמתחים הנמדדים השתנו כתלות בזווית המדידה, בעוד שבגרף עוצמה
+ של קיטוב מעגלי כתלות בזווית אמורה להמדד עוצמה קבועה עבור כל הזוויות.
+ כלומר המדידות לא תואמות לציפיה מהתיאוריה.
+ על פער זה נדון בדיון בתוצאות.
 \end_layout
 
 \begin_layout Standard
