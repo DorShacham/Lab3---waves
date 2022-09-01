@@ -3573,7 +3573,7 @@ noprefix "false"
 
 \begin_layout Standard
 תוצאה זו מסדרת יפה עם ערך אורך הגל הרשום על המשדר 
-\begin_inset Formula $\lambda_{theory}=0.028m$
+\begin_inset Formula $\lambda_{expected}=0.028m$
 \end_inset
 
 .
@@ -3598,7 +3598,7 @@ noprefix "false"
 
 \begin_layout Standard
 לשם מדידת מיקומי הנקודות, הוזז הפרספקס לאורך הגלבו ונלקחה מדידת המיקום )לפי
- מיקום קצה הפרספקס ביחס לקצה הגלבו הקרוב למשדר, כפי שמוצגת בסרגל של הגלבו
+ מיקום קצה הפרספקס ביחס לקצה הגלבו הקרוב למשדר, כפי שמוצג בסרגל של הגלבו
  שלו רזולוזצית מדידה של
 \family roman
 \series medium
@@ -3704,10 +3704,37 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-)הכנס גרף(
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot16.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Box Boxed
 position "t"
 hor_pos "c"
@@ -3774,7 +3801,7 @@ status open
  הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים:
 \begin_inset Formula 
 \[
-y=(\pm)x+(\pm)
+y=(0.0184\pm0.0007)x+(0.047\pm0.002)
 \]
 
 \end_inset
@@ -3783,8 +3810,8 @@ y=(\pm)x+(\pm)
 \begin_inset Formula $95\%$
 \end_inset
 
- בר סמך שנלקח מנתוני הרגרסיה ומתקיים 
-\begin_inset Formula $R^{2}=$
+ בר סמך שנלקח מנתוני הרגרסיה וכמו כן מתקיים 
+\begin_inset Formula $R^{2}=0.999$
 \end_inset
 
 .
@@ -3795,10 +3822,15 @@ y=(\pm)x+(\pm)
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 שיפוע הגרף שהתקבל מהרגרסיה הוא המרחק בין שני צמתים סמוכים המשוקלל מכלל המדידות.
- התקבל שאורך הגל העובר בגלבו הוא 
-\begin_inset Formula $0.036\pm0.001m$
+ לכן אורך הגל הוא פעמיים ערך זה ומכאן שאורך גל הגלבו הוא 
+\begin_inset Formula $\lambda_{g}=0.037\pm0.001m$
 \end_inset
 
  .
@@ -3810,15 +3842,6 @@ y=(\pm)x+(\pm)
 
 \begin_layout Standard
 להלן גרף המציג את מרחקי האקסטרמות כתלות בסדר שלהם:
-\end_layout
-
-\begin_layout Standard
-באותו אופן כמו ההסקה מהטבלה הקודמת, ממנה ניתן להסיק שאורך הגל העובר בגלבו
- הוא:  .
-\end_layout
-
-\begin_layout Standard
-לאחר מכן, שינינו את d , ועבור מספר d שונים ביצאנו את אותן מדידות 
 \end_layout
 
 \begin_layout Standard
@@ -3843,7 +3866,178 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename fig/plot16.png
+	filename fig/plot17.png
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+17
+\numeric off
+: 
+\begin_inset Formula $x$
+\end_inset
+
+ מרחק הצמתים מתחילת הגלבו במטרים כתלות ב
+\begin_inset Formula $n$
+\end_inset
+
+ אינדקס הצומת )חסר יחידות(
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים:
+\begin_inset Formula 
+\[
+y=(0.0184\pm0.0001)x+(0.0559\pm0.0004)
+\]
+
+\end_inset
+
+ כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה וכמו כן מתקיים 
+\begin_inset Formula $R^{2}=0.999$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שיפוע הגרף שהתקבל מהרגרסיה הוא המרחק בין שני האקסטרמות סמוכות המשוקלל מכלל
+ המדידות.
+ לכן אורך הגל הוא פעמיים ערך זה ומכאן שאורך גל הגלבו הוא 
+\begin_inset Formula $\lambda_{g}=0.0368\pm0.0002m$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+נשים לב שיש חפיפה בין תחומי ה
+\begin_inset Formula $\lambda_{g}$
+\end_inset
+
+ שקיבלנו עבור הצמתים והאקסטרימות.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לאחר מכן, שינינו את 
+\begin_inset Formula $d$
+\end_inset
+
+ , ועבור מספר 
+\begin_inset Formula $d$
+\end_inset
+
+ שונים ביצענו את אותן מדידות, עבור כל 
+\begin_inset Formula $d$
+\end_inset
+
+ חילצנו את 
+\begin_inset Formula $\lambda_{g}$
+\end_inset
+
+ באותו אופן כמו בחלק האחרון.
+ להלן גרף המציג את התוצאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot18.png
 	lyxscale 30
 	scale 40
 
@@ -3954,11 +4148,68 @@ y=(-0.96\pm0.12)x+(1.29\pm0.07)10^{3}
 \end_layout
 
 \begin_layout Standard
-קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה 
-\begin_inset Newline newline
+לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lambda_g"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ צריך להתקבל קשר לינארי בגרף הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל עם שיפוע 
+\begin_inset Formula $-1$
+\end_inset
+
+ ונקודת חיתוך עם ציר 
+\begin_inset Formula $y$
+\end_inset
+
+ שמקיימת 
+\begin_inset Formula $intercept=\frac{1}{\lambda^{2}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+ניתן לראות שמתקיים קשר לינארי הן מבחינה איכותית משום שהרגרסיה בתחום השגיאה
+ של כל הנקודות והן מבחינה כמותית היות ועל פי מדד 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ קיבלנו 
+\begin_inset Formula $0.988$
+\end_inset
+
+ ושיפוע הגרף מכיל את 
+\begin_inset Formula $-1$
+\end_inset
+
+ בתחום כמצופה מהתאוריה.
+ מנקודת החיתוך נחלץ את אורך הגל:
+\begin_inset Formula 
+\[
+\lambda=0.0279\pm0.0008m
+\]
+
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+אורך הגל המופיע על הגלאי הוא 
+\begin_inset Formula $\lambda_{expected}=0.028m$
+\end_inset
+
+, ניתן לשים לב שהוא מוכל בתחום השגיאה של אורך הגל שהתקבל כצפוי מהתאוריה.
 \end_layout
 
 \begin_layout Standard

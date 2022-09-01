@@ -64,6 +64,11 @@ def Rsqrue(x,y):
     RSS = np.sum((y-x)**2)
     TSS = np.sum(y**2)
     return 1 - RSS/TSS
+
+def Reg_print(fit):
+    m = ufloat(fit.slope,fit.stderr*2)
+    b = ufloat(fit.intercept,fit.intercept_stderr*2)
+    print("==> y =(",m,")x + (",b,") , R^2=",fit.rvalue**2)
 #%%
 # #prep question 7
 # theta=np.array(range(0,9,1))*np.pi/4
@@ -279,39 +284,51 @@ x_err = 2e-3
 x = np.array([12,10.2,8.5,6.6,4.6][::-1]) *1e-2 #meter
 distance_between_nodes = np.abs(np.diff(x))
 distance_between_nodes_err= sqrt(2) * x_err
-I = np.array([0.383,0.39,0.395,0.395,0.395])
+I = np.array([0.383,0.39,0.395,0.395,0.395][::-1])
 I_err =0.005
 
 n = np.arange(0,len(x))
 fig,fit = one4all(n,x,x_err,0,"linear",xlabel="n",ylabel="x [m]")
+fig.savefig("fig/plot16")
+Reg_print(fit)
+m = ufloat(fit.slope,2*fit.stderr)
+lambda_g_from_distance_between_nodes=2*m
 
 
-
-distance_between_nodes= distance_between_nodes.mean()
-distance_between_nodes_err = distance_between_nodes_err/np.sqrt(np.size(distance_between_nodes))
-distance_between_nodes = ufloat(distance_between_nodes,distance_between_nodes_err)
-lambda_g_from_distance_between_nodes=distance_between_nodes*2
+# distance_between_nodes= distance_between_nodes.mean()
+# distance_between_nodes_err = distance_between_nodes_err/np.sqrt(np.size(distance_between_nodes))
+# distance_between_nodes = ufloat(distance_between_nodes,distance_between_nodes_err)
+# lambda_g_from_distance_between_nodes=distance_between_nodes*2
 print("Lambda g according to the diff in nodes is",lambda_g_from_distance_between_nodes,"m")
 
 
 d = 2e-2 # meter
 x_err = 2e-3
-x = np.array([14.8,13,11.1,9.3,7.4,5.6]) *1e-2 #meter
+x = np.array([14.8,13,11.1,9.3,7.4,5.6][::-1]) *1e-2 #meter
 distance_between_max = np.abs(np.diff(x))
 distance_between_max_err= sqrt(2) * x_err
 
 distance_between_nodes_max=np.array([])
-I = np.array([0.528,0.522,0.512,0.503,0.504,0.51])
+I = np.array([0.528,0.522,0.512,0.503,0.504,0.51][::-1])
 I_err =0.005
+
+n = np.arange(0,len(x))
+fig,fit = one4all(n,x,x_err,0,"linear",xlabel="n",ylabel="x [m]")
+fig.savefig("fig/plot17")
+Reg_print(fit)
+m = ufloat(fit.slope,2*fit.stderr)
+lambda_g_from_distance_between_max=2*m
+
 
 #one4all(distance_between_nodes, I,I_err,distance_between_nodes_err,mode="none",None,"X","I")
 
-distance_between_max= distance_between_max.mean()
-distance_between_max_err = distance_between_max_err/np.sqrt(np.size(distance_between_max))
-distance_between_max = ufloat(distance_between_max,distance_between_max_err)
+# distance_between_max= distance_between_max.mean()
+# distance_between_max_err = distance_between_max_err/np.sqrt(np.size(distance_between_max))
+# distance_between_max = ufloat(distance_between_max,distance_between_max_err)
 
 
-lambda_g_from_distance_between_max=distance_between_max*2
+
+
 print("Lambda g according to the diff in picks is",lambda_g_from_distance_between_max,"m")
 
 #%%
@@ -320,6 +337,14 @@ print("Lambda g according to the diff in picks is",lambda_g_from_distance_betwee
 #13
 d=np.array([1.6,2,2.3,2.5,2.7]) * 1e-2 #meter
 d_err=1e-3 #meter
+
+# d = unumpy.uarray(d,d_err)
+# f = lambda x: ufloat(linregress(range(0,len(x)),x[::-1]).slope,2*linregress(range(0,len(x)),x[::-1]).stderr)
+# distance_between_nodes = np.array([
+#    f([13,10.3,7.5]),f([12,10.2,8.5,6.6,4.6]),f([13.5,12.6,10,8.3]),f([12.5,11.7,9,7.5]),f([12.3,10.7,9,7.4])
+#    ]
+#     ) * 1e-2
+
 d = unumpy.uarray(d,d_err)
 distance_between_nodes = np.array([
     np.abs(np.diff(np.array([13,10.3,7.5]))).mean(),
@@ -327,21 +352,21 @@ distance_between_nodes = np.array([
     np.abs(np.diff(np.array([13.5,12.6,10,8.3]))).mean(),
     np.abs(np.diff(np.array([12.5,11.7,9,7.5]))).mean(),
     np.abs(np.diff(np.array([12.3,10.7,9,7.4]))).mean()
-   ]
+    ]
     ) * 1e-2
 distance_between_nodes_err = np.array([2e-3,2e-3,3e-3,3e-3,3e-3]) * sqrt(2) / np.sqrt(np.array([3,5,4,4,4])-1) # the sqrt(2) is from the diff and the other is from the mean
 distance_between_nodes = unumpy.uarray(distance_between_nodes,distance_between_nodes_err)
 lambda_g= distance_between_nodes*2
 y = 1/lambda_g**2
-y_err= 2*uerr(lambda_g)/uval(lambda_g)**3
+#y_err= 2*uerr(lambda_g)/uval(lambda_g)**3
 
 x=1/(2*d)**2
-x_err=4*d_err/(2*d)**3
+#x_err=4*d_err/(2*d)**3
 
 (fig13,fit13)= one4all(uval(x),uval(y),uerr(y),uerr(x),"linear",None,r"$\frac{1}{(2d)^2}[\frac{1}{m^2}]$",r"$\frac{1}{\lambda_g^2}[\frac{1}{m^2}]$")
 slope = ufloat(fit13.slope,2*fit13.stderr)
 intercept = ufloat(fit13.intercept,2*fit13.intercept_stderr)
-fig13.savefig("fig/plot16",bbox_inches='tight')
+fig13.savefig("fig/plot18",bbox_inches='tight')
 print("==> ","y=(",slope,")x","+(",intercept,")"," R^2=",fit13.rvalue**2)
 
 lambda_found = 1/sqrt(intercept)
