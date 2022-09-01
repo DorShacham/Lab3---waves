@@ -899,272 +899,61 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 \end_layout
 
 \begin_layout Standard
-תחילה מיקמנו גלבו באורך 
-\begin_inset Formula $L=0.15m$
+תחילה, על מנת לגרום לכך שהמשדר והגלאי יהיו אחד מול השני עם כמה שפחות הסחות
+ לצדדים )כלומר ציר הפליטה והקליטה יהיה ציר 
+\begin_inset Formula $z$
 \end_inset
 
- בין הגלאי למשדר וקירבנו את המשדר לגלאי כך שהשפופרות שלהם קרובות ככל הניתן
- ללוחות הגלבו.
- כמו כן וידאנו שהמרכז השפופרות עובר במחצית גובה הגלבו.
- כיוונו את קיטוב המשדר להיות בניצב ללוח )ודאגנו לכך שהגלאי יהיה באותה זווית
- כמוהו( ומדדנו את המתח כתלות במפתח לוחות הגלבו 
-\begin_inset Formula $d$
+ מוגדר ויחיד( הוצמדו השפופרות שלהם וסודרו כך שיחפפו אחת לשניה.
+ לאחר מכן הורחקו המשדר והגלאי אחד מהשני לאורך ציר z למרחק של 
+\begin_inset Formula $L=0.55m$
 \end_inset
 
-.
- את 
-\begin_inset Formula $d$
+ בין קצות השפופרות.
+ הגלאי היה מחובר לוולטמטר כך שיתן אינדיקציה לעוצמה של הקרינה המתקבלת בו
+ - לאורך הניסויים השונים נתייחס אל המתח המתקבל בוולטמטר כפרופורציונלי לעוצמת
+ הקרינה 
+\begin_inset Formula $I\propto V$
 \end_inset
 
- מדדנו בעזרת סרגל עם הערכת שגיאת מדידה ברזולוצית המדידה של הסרגל - כ
-\begin_inset Formula $1mm$
-\end_inset
-
-.
- מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/plot13.png
-	lyxscale 20
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\series bold
-גרף
-\family roman
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-13
-\numeric off
-: מתח הגלאי ב
+ ,
 \begin_inset Formula $V$
 \end_inset
 
- כתלות במרחק בין לוחות הגלבו ב
-\begin_inset Formula $m$
+ מתח המתקבל בוולטמטר ב
+\begin_inset Formula $Volt$
 \end_inset
 
- עבור גל מקוטב בניצב ללוחות הגלבו
-\end_layout
-
-\begin_layout Plain Layout
-המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
-\end_layout
-
+ ו
+\begin_inset Formula $I$
 \end_inset
 
-
-\end_layout
-
+ עוצמת הקרינה ב
+\begin_inset Formula $Watt/m^{2}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה.
-\end_layout
-
-\begin_layout Standard
-\begin_inset space \space{}
+.
+ הפעלנו תחילה את הגלאי כאשר המשדר כבוי, הרחקנו ממנו גופים אנושיים )על מנת
+ להקטין השפעות של קרינה מהגוף( וראינו שנמדד על הגלאי מתח קבוע )לאורך זמן(
+ של 
+\begin_inset Formula $0.014V$
 \end_inset
 
-
-\begin_inset Newline newline
+ , כנראה עקב רעשים קונסיסטנטיים מהסביבה.
+ לאחר מכן הפעלנו את המשדר כדי לראות את קנה המידה של המתחים המתקבלים, עקב
+ כך קבענו את הוולטמטר להיות ברגישות של 
+\begin_inset Formula $\pm0.001V$
 \end_inset
 
-לאחר מכן, עבור מפתח קבוע 
-\begin_inset Formula $d=0.04m$
-\end_inset
-
- מדדנו את העוצמה הנקלטת כתלות בזווית היחסית בין המשדר והגלאי.
- נציג את העוצמה הנקלטת כתלות בזווית בגרף פולארי: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/plot14.png
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\series bold
-גרף
-\family roman
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
+.
+ כעת נתאר את תוצאות שני הניסויים השונים בנפרד.
  
-\family default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-14
-\numeric off
-: מתח הגלאי ב
-\begin_inset Formula $V$
-\end_inset
-
- כתלות בזווית היחסית בין המשדר לגלאי
 \end_layout
 
-\begin_layout Plain Layout
-בגרף פולרי זה המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-ניתן לראות שהגרף תואם לגרף לינארי בהצגה הפולרית, שכן צורתו היא 
-\begin_inset Formula $\cos\left(\theta\right)$
-\end_inset
-
- מבחינה איכותית, וגרף לינארי בהצגה פולרית פרופורציוני ל
-\begin_inset Formula $\cos\left(\theta\right)$
-\end_inset
-
- .
- לאחר מכך כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון x ומדדנו את המתח
- כתלות במפתח לוחות הגלבו.
- מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים: (עוצמה כתלות בd עבור
- גל מקוטב בכיוון x) קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה 
-\end_layout
-
-\begin_layout Standard
+\begin_layout Subsection*
 ניסוי
 \family roman
-\series medium
+\series bold
 \shape up
 \size normal
 \emph off
@@ -1191,7 +980,7 @@ status open
 \color inherit
 1
 \family roman
-\series medium
+\series bold
 \shape up
 \size normal
 \emph off
@@ -1216,7 +1005,42 @@ status open
 \uwave default
 \noun default
 \color inherit
-- בלי סריג
+- בחינת סריג מתכתי כמקטב לינארי של גלים אלקטרומגנטיים
+\end_layout
+
+\begin_layout Standard
+תחילה, קבענו את המרחק בין המשדר והגלאי להיות 
+\begin_inset Formula $L=0.55m$
+\end_inset
+
+ וביצענו מדידה של המתח על הגלאי ב
+\begin_inset Formula $Volt$
+\end_inset
+
+ כתלות בזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ בניסוי זה, תחילה מדדנו את המתח על הגלאי 
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות בזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ כשאין סריג בין המשדר והמקלט.
+ כש
+\begin_inset Formula $\theta$
+\end_inset
+
+ הוגדרה להיות הזווית היחסית בין המשדר והגלאי.
+ תוצאות מדידת המתח כתלות ב
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות ברבעון אחר: 
 \end_layout
 
 \begin_layout Standard
@@ -1698,6 +1522,79 @@ status open
 \end_layout
 
 \begin_layout Standard
+לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cos^2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ אמור להתקיים יחס ישר בין I ל
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ בעוד שלפי תוצאות הרגרסיות נראה שלא מתקיימת התאמה ליחס לינארי בין העוצמה
+ ל
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ באף אחת מהן, הן ממבט איכותי מעצם כך שגרף הרגרסיה לא נופל בתחום קווי השגיאה
+ והן לפי ערך מדד 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ שכולם קטנים מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $0.96$
+\end_inset
+
+
+\numeric off
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+נציג גם גרפים של עוצמת הקרינה כתלות בזווית :
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1920,6 +1817,30 @@ status open
 \end_layout
 
 \begin_layout Standard
+מגרפים אלה מסתמן שיכולה להיות התאמה טובה דווקא ליחס ישר בין I ל 
+\begin_inset Formula $\left|\cos\theta\right|$
+\end_inset
+
+ קוסינוס בגרף פולרי 
+\end_layout
+
+\begin_layout Standard
+נראה שיש פער מהותי בין התיאוריה למתקבל מחלק זה של הניסוי.
+ על פער זה נדון בהרחבה בדיון בתוצאות.
+ לאחר מכך, מיקמנו סריג שהחריצים שלו הם לאורך ציר x בין המשדר והגלאי וביצענו
+ שוב את מדידת עוצמת הקרינה כתלות בזווית .
+ תוצאות המדידה מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות
+ ברבעון אחר:
+\end_layout
+
+\begin_layout Standard
+לפי נוסחא 2 אמור להתקיים יחס ישר בין I ל cos^4(theta) בעוד שלפי תוצאות הרגרסיות
+ נראה שאין התאמה ליחס לינארי בין העוצמה לcos^4(theta) באף אחת מהן, עם אותם
+ פערים כמו שהתקבלו מהמדידות ללא הסריג.
+ גם על פער זה נדון בדיון בתוצאות.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage pagebreak
 \end_inset
 
@@ -2105,11 +2026,11 @@ status open
 
 \size tiny
 הרגרסיה הלינארית: 
-\begin_inset Formula $y=(-0.43\pm0.13)x+(0.41\pm0.07)$
+\begin_inset Formula $y=(0.447\pm0.014)x+(0.065\pm0.008)$
 \end_inset
 
  עם 
-\begin_inset Formula $R^{2}=0.841$
+\begin_inset Formula $R^{2}=0.997$
 \end_inset
 
 
@@ -2227,11 +2148,11 @@ status open
 
 \size tiny
 הרגרסיה הלינארית: 
-\begin_inset Formula $y=(-0.43\pm0.13)x+(0.41\pm0.07)$
+\begin_inset Formula $y=(0.46\pm0.09)x+(0.09\pm0.05)$
 \end_inset
 
  עם 
-\begin_inset Formula $R^{2}=0.932$
+\begin_inset Formula $R^{2}=0.950$
 \end_inset
 
 
@@ -2353,11 +2274,11 @@ status open
 
 \size tiny
 הרגרסיה הלניארית: 
-\begin_inset Formula $y=(-0.37\pm0.16)x+(0.36\pm0.09)$
+\begin_inset Formula $y=(0.41\pm0.04)x+(0.043\pm0.022)$
 \end_inset
 
  עם 
-\begin_inset Formula $R^{2}=0.807$
+\begin_inset Formula $R^{2}=0.988$
 \end_inset
 
 
@@ -2475,11 +2396,11 @@ status open
 
 \size tiny
 הרגרסיה הלניארית: 
-\begin_inset Formula $y=(-0.41\pm0.11)x+(0.41\pm0.06)$
+\begin_inset Formula $y=(0.41\pm0.10)x+(0.07\pm0.06)$
 \end_inset
 
  עם 
-\begin_inset Formula $R^{2}=0.916$
+\begin_inset Formula $R^{2}=0.925$
 \end_inset
 
 
@@ -2644,7 +2565,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-10-11
+11-12
 \numeric off
 : מתח בגלאי ב
 \begin_inset Formula $V$
@@ -2781,6 +2702,270 @@ status open
 \end_layout
 
 \begin_layout Standard
+גלבו - 
+\end_layout
+
+\begin_layout Standard
+תחילה מיקמנו גלבו באורך 
+\begin_inset Formula $L=0.15m$
+\end_inset
+
+ בין הגלאי למשדר וקירבנו את המשדר לגלאי כך שהשפופרות שלהם קרובות ככל הניתן
+ ללוחות הגלבו.
+ כמו כן וידאנו שהמרכז השפופרות עובר במחצית גובה הגלבו.
+ כיוונו את קיטוב המשדר להיות בניצב ללוח )ודאגנו לכך שהגלאי יהיה באותה זווית
+ כמוהו( ומדדנו את המתח כתלות במפתח לוחות הגלבו 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ את 
+\begin_inset Formula $d$
+\end_inset
+
+ מדדנו בעזרת סרגל עם הערכת שגיאת מדידה ברזולוצית המדידה של הסרגל - כ
+\begin_inset Formula $1mm$
+\end_inset
+
+.
+ מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot13.png
+	lyxscale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+13
+\numeric off
+: מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות במרחק בין לוחות הגלבו ב
+\begin_inset Formula $m$
+\end_inset
+
+ עבור גל מקוטב בניצב ללוחות הגלבו
+\end_layout
+
+\begin_layout Plain Layout
+המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן, עבור מפתח קבוע 
+\begin_inset Formula $d=0.04m$
+\end_inset
+
+ מדדנו את העוצמה הנקלטת כתלות בזווית היחסית בין המשדר והגלאי.
+ נציג את העוצמה הנקלטת כתלות בזווית בגרף פולארי: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot14.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+14
+\numeric off
+: מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות בזווית היחסית בין המשדר לגלאי
+\end_layout
+
+\begin_layout Plain Layout
+בגרף פולרי זה המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ניתן לראות שהגרף תואם לגרף לינארי בהצגה הפולרית, שכן צורתו היא 
+\begin_inset Formula $\cos\left(\theta\right)$
+\end_inset
+
+ מבחינה איכותית, וגרף לינארי בהצגה פולרית פרופורציוני ל
+\begin_inset Formula $\cos\left(\theta\right)$
+\end_inset
+
+ .
+ לאחר מכך כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון x ומדדנו את המתח
+ כתלות במפתח לוחות הגלבו.
+ מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים: (עוצמה כתלות בd עבור
+ גל מקוטב בכיוון x) קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה 
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
