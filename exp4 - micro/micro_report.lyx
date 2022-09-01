@@ -3594,18 +3594,231 @@ noprefix "false"
  ומיקמנו רכיב לוח פרספקס דק התלוי על פס פרספקס שניתן להזזה לאורך הגלבו.
  הזזנו את הרכיב לאורך הגלבו ומצאנו מיקומים עבורם מתקבל אקסטרמום או צומת
  של עוצמה.
- להלן טבלה המכילה את המרחקים בין נקודות הקיצון: 
 \end_layout
 
 \begin_layout Standard
-ממנה ניתן להסיק לפי נוסחה (הכנס נוסחה מתאימה, לא נראה לי היא רשומה במבוא
- כי היא די טריוויאלית) שאורך הגל העובר בגלבו הוא 0.37m להלן טבלה המכילה את
- המרחקים בין נקודות הצומת: באותו אופן כמו ההסקה מהטבלה הקודמת, ממנה ניתן
- להסיק שאורך הגל העובר בגלבו הוא: 0.37m .
+לשם מדידת מיקומי הנקודות, הוזז הפרספקס לאורך הגלבו ונלקחה מדידת המיקום )לפי
+ מיקום קצה הפרספקס ביחס לקצה הגלבו הקרוב למשדר, כפי שמוצגת בסרגל של הגלבו
+ שלו רזולוזצית מדידה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1mm$
+\end_inset
+
+
+\numeric off
+(, שעבורה הסטה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1mm$
+\end_inset
+
+
+\numeric off
+ ימינה או שמאלה הגדילה את המתח על הגלאי כך שהערכת שגיאת המדידה נקבעה להיות
+ 
+\begin_inset Formula $\pm1mm$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
 \end_layout
 
 \begin_layout Standard
-לאחר מכן, שינינו את d , ועבור מספר d שונים ביצאנו את אותן מדידום 
+להלן גרף המציג את המרחקי הצמתים כתלות בסדר שלהם:
+\end_layout
+
+\begin_layout Standard
+)הכנס גרף(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+16
+\numeric off
+: 
+\begin_inset Formula $x$
+\end_inset
+
+ מרחק הצמתים מתחילת הגלבו במטרים כתלות ב
+\begin_inset Formula $n$
+\end_inset
+
+ אינדקס הצומת )חסר יחידות( 
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים:
+\begin_inset Formula 
+\[
+y=(\pm)x+(\pm)
+\]
+
+\end_inset
+
+ כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה ומתקיים 
+\begin_inset Formula $R^{2}=$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שיפוע הגרף שהתקבל מהרגרסיה הוא המרחק בין שני צמתים סמוכים המשוקלל מכלל המדידות.
+ התקבל שאורך הגל העובר בגלבו הוא 
+\begin_inset Formula $0.036\pm0.001m$
+\end_inset
+
+ .
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+להלן גרף המציג את מרחקי האקסטרמות כתלות בסדר שלהם:
+\end_layout
+
+\begin_layout Standard
+באותו אופן כמו ההסקה מהטבלה הקודמת, ממנה ניתן להסיק שאורך הגל העובר בגלבו
+ הוא:  .
+\end_layout
+
+\begin_layout Standard
+לאחר מכן, שינינו את d , ועבור מספר d שונים ביצאנו את אותן מדידות 
 \end_layout
 
 \begin_layout Standard
