@@ -126,7 +126,7 @@ fig4=plt.figure()
 ax4=plt.axes(polar=True)
 #ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
 ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"o")
-ax4.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"$|a\cos(b\theta)|$")
+ax4.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"a$|\cos(b\theta)|$")
 ax4.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-.",color="black",label=r"$a\cos^2(b\theta)$")
 
 plt.grid(True)
@@ -135,7 +135,7 @@ plt.show()
 fig4.savefig("fig/plot6")
 
 (fig12,fit12)=one4all(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"none",None,r"$\theta [rad]$","$V [V]$",show=False)
-plt.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"$|a\cos(b\theta)|$")
+plt.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"$a|\cos(b\theta)|$")
 plt.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-d",color="black",label=r"$a\cos^2(b\theta)$")
 plt.legend()
 plt.show()
@@ -158,7 +158,7 @@ fit_array=[]
 for (theta_i,intensity_i) in zip(theta_array,intensity_array):
    cos_theta_power4 =(unumpy.cos((theta_i+90)*np.pi/180))**4
    print("\n-----\n")
-   (fig,fit)=one4all(uval(cos_theta_power4),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_power4),"linear",None,r"$cos(\theta)^4$","$V [V]$")
+   (fig,fit)=one4all(uval(cos_theta_power4),uval(intensity_i),uerr(intensity_i),uerr(cos_theta_power4),"linear",None,r"$cos(\theta+\frac{\pi}{2})^4$","$V [V]$")
    fig_array.append(fig)
    fit_array.append(fit)
    slope = ufloat(fit.slope,2*fit.stderr)
@@ -260,7 +260,7 @@ plt.xlabel("d [m]", fontsize=14)
 plt.ylabel("$V [V]$", fontsize=14)
 plt.grid()
 plt.show()
-fig4.savefig("fig/plot15")
+fig3.savefig("fig/plot15")
 
 
 #%%
@@ -281,6 +281,9 @@ distance_between_nodes = np.abs(np.diff(x))
 distance_between_nodes_err= sqrt(2) * x_err
 I = np.array([0.383,0.39,0.395,0.395,0.395])
 I_err =0.005
+
+n = np.arange(0,len(x))
+fig,fit = one4all(n,x,x_err,0,"linear",xlabel="n",ylabel="x [m]")
 
 #one4all(distance_between_nodes, I,I_err,distance_between_nodes_err,mode="none",None,"X","I")
 
@@ -338,7 +341,7 @@ x_err=4*d_err/(2*d)**3
 (fig13,fit13)= one4all(uval(x),uval(y),uerr(y),uerr(x),"linear",None,r"$\frac{1}{(2d)^2}[\frac{1}{m^2}]$",r"$\frac{1}{\lambda_g^2}[\frac{1}{m^2}]$")
 slope = ufloat(fit13.slope,2*fit13.stderr)
 intercept = ufloat(fit13.intercept,2*fit13.intercept_stderr)
-fig13.savefig("fig/plot16")
+fig13.savefig("fig/plot16",bbox_inches='tight')
 print("==> ","y=(",slope,")x","+(",intercept,")"," R^2=",fit13.rvalue**2)
 
 lambda_found = 1/sqrt(intercept)

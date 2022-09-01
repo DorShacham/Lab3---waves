@@ -657,6 +657,63 @@ status open
 \end_layout
 
 \begin_layout Standard
+בנוסף, משום שלוחות הגלבו מגדירים תנאי שפה, עבור גל מקוטב בכיוון 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ מתקיים:
+\begin_inset Formula 
+\begin{equation}
+\sin\theta_{m}=m\frac{\lambda}{2d}\label{eq:sin(theta m )}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $m=1,2,3,\ldots$
+\end_inset
+
+ הוא סדר ההתאבכות, 
+\begin_inset Formula $\theta_{m}$
+\end_inset
+
+ היא זווית )מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+( בין ציר 
+\begin_inset Formula $z$
+\end_inset
+
+ לכיוון ההתקדמות של הגל הא
+\begin_inset Quotes erd
+\end_inset
+
+מ המקיימת את תנאי השפה, 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ אורך הגל ב
+\begin_inset Formula $m$
+\end_inset
+
+ ו
+\begin_inset Formula $d$
+\end_inset
+
+ המרחק בין לוחות הגלבו ב
+\begin_inset Formula $m$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
 בחלק מניסוי 2, כאשר הקיטוב הוא בכיוון 
 \begin_inset Formula $\hat{x}$
 \end_inset
@@ -3211,7 +3268,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה.
+קיבלנו שהמתח עולה בצורה רציפה ביחס למפתח לוחות הגלבו.
+ תוצאה זו מתכנסת עם התאוריה היות ואין אילוץ על קיטוב בציר 
+\begin_inset Formula $y$
+\end_inset
+
+ ציפינו שהגדלת המפתח תאפשר כניסה של יותר גלי מיקרו ולכן קריאת גלאי יותר
+ חזקה וניתן לראות שזה מה שקרה על פי הגרף.
 \end_layout
 
 \begin_layout Standard
@@ -3336,17 +3399,222 @@ status open
 \end_inset
 
  .
+ 
+\series bold
+)אמור להיות 
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+, לא?(
+\series default
+
 \begin_inset Newline newline
 \end_inset
 
- לאחר מכך כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון x ומדדנו את המתח
- כתלות במפתח לוחות הגלבו.
- מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים: )עוצמה כתלות בd עבור
- גל מקוטב בכיוון 
-\begin_inset Formula $\hat{x}$
+ לאחר מכך כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון 
+\begin_inset Formula $x$
 \end_inset
 
-( 
+ ומדדנו את המתח כתלות במפתח לוחות הגלבו.
+ להלן התוצאות בגרפים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot15.png
+	lyxscale 20
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+15
+\numeric off
+: מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות במרחק בין לוחות הגלבו ב
+\begin_inset Formula $m$
+\end_inset
+
+ עבור גל מקוטב בניצב ללוחות הגלבו
+\end_layout
+
+\begin_layout Plain Layout
+המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו שהמתח עולה בצורה לא רציפה ביחס למפתח לוחות הגלבו.
+ תוצאה זו מתכנסת עם התאוריה היות ויש אילוץ על קיטוב בציר 
+\begin_inset Formula $x$
+\end_inset
+
+ ציפינו שהגדלת המפתח תאפשר כניסה של יותר גלי מיקרו עבור גדלים ספציפים )בהתאם
+ לסדרי ההתאבכות לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sin(theta m )"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+( ולכן ציפינו לפונקצית מדרגות.
+ בגרף זה ניתן לראות מדרגה אחת בהתאם לתאוריה, כמו כן ניתן לשים לב שהמפתח
+ הקטן ביותר עבורו יש קריאה משמעותית של הגלאי הוא 
+\begin_inset Formula 
+\[
+d_{min}=0.014\pm0.001m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מגודל זה ניתן להסיק לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:sin(theta m )"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ו
+\begin_inset Formula $m=1$
+\end_inset
+
+ שאורך הגל הוא 
+\begin_inset Formula 
+\[
+\lambda=2d_{min}=0.028\pm0.002m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תוצאה זו מסדרת יפה עם ערך אורך הגל הרשום על המשדר 
+\begin_inset Formula $\lambda_{theory}=0.028m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כעת, קבענו 
+\begin_inset Formula $d=0.02m$
+\end_inset
+
+ ומיקמנו רכיב לוח פרספקס דק התלוי על פס פרספקס שניתן להזזה לאורך הגלבו.
+ הזזנו את הרכיב לאורך הגלבו ומצאנו מיקומים עבורם מתקבל אקסטרמום או צומת
+ של עוצמה.
+ להלן טבלה המכילה את המרחקים בין נקודות הקיצון: 
+\end_layout
+
+\begin_layout Standard
+ממנה ניתן להסיק לפי נוסחה (הכנס נוסחה מתאימה, לא נראה לי היא רשומה במבוא
+ כי היא די טריוויאלית) שאורך הגל העובר בגלבו הוא 0.37m להלן טבלה המכילה את
+ המרחקים בין נקודות הצומת: באותו אופן כמו ההסקה מהטבלה הקודמת, ממנה ניתן
+ להסיק שאורך הגל העובר בגלבו הוא: 0.37m .
+\end_layout
+
+\begin_layout Standard
+לאחר מכן, שינינו את d , ועבור מספר d שונים ביצאנו את אותן מדידום 
 \end_layout
 
 \begin_layout Standard
@@ -3372,7 +3640,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fig/plot16.png
-	lyxscale 20
+	lyxscale 30
 	scale 40
 
 \end_inset
@@ -3487,47 +3755,6 @@ y=(-0.96\pm0.12)x+(1.29\pm0.07)10^{3}
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-אחר כך, שינינו את d את לנקודה שעבורה העוצמה יורדת משמעותית.
- מצאנו ש
-\begin_inset Formula $d_{min}=0.014m$
-\end_inset
-
- הוא המרחק עבורו זה קורה.
- מכך ניתן להסיק מנוסחה )הכנס נוסחא מתאימה( שאורך הגל הוא 
-\begin_inset Formula $0.028m$
-\end_inset
-
- .
- תוצאה המסתדרת יפה עם הערך של אורך הגדל הרשום על המשדר שהוא 
-\begin_inset Formula $\lambda_{theory}=0.028m$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-כעת, קבענו 
-\begin_inset Formula $d=0.02m$
-\end_inset
-
- ומיקמנו רכיב לוח פרספקס דק התלוי על פס פרספקס שניתן להזזה לאורך הגלבו.
- הזזנו את הרכיב לאורך הגלבו ומצאנו מיקומים עבורם מתקבל אקסטרמום או צומת
- של עוצמה.
- להלן טבלה המכילה את המרחקים בין נקודות הקיצון: 
-\end_layout
-
-\begin_layout Standard
-ממנה ניתן להסיק לפי נוסחה (הכנס נוסחה מתאימה, לא נראה לי היא רשומה במבוא
- כי היא די טריוויאלית) שאורך הגל העובר בגלבו הוא 0.37m להלן טבלה המכילה את
- המרחקים בין נקודות הצומת: באותו אופן כמו ההסקה מהטבלה הקודמת, ממנה ניתן
- להסיק שאורך הגל העובר בגלבו הוא: 0.37m .
-\end_layout
-
-\begin_layout Standard
-לאחר מכן, שינינו את d , ועבור מספר d שונים ביצאנו את אותן מדידום 
 \end_layout
 
 \begin_layout Standard
