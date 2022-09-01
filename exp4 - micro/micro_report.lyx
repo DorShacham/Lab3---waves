@@ -1591,7 +1591,7 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
-נציג גם גרפים של עוצמת הקרינה כתלות בזווית :
+נציג גם גרפים של עוצמת המתח כתלות בזווית :
 \end_layout
 
 \begin_layout Standard
@@ -1827,78 +1827,47 @@ status open
 \begin_layout Standard
 נראה שיש פער מהותי בין התיאוריה למתקבל מחלק זה של הניסוי.
  על פער זה נדון בהרחבה בדיון בתוצאות.
- לאחר מכך, מיקמנו סריג שהחריצים שלו הם לאורך ציר x בין המשדר והגלאי וביצענו
+\end_layout
+
+\begin_layout Standard
+לאחר מכך, מיקמנו סריג שהחריצים שלו הם לאורך ציר x בין המשדר והגלאי וביצענו
  שוב את מדידת עוצמת הקרינה כתלות בזווית .
  תוצאות המדידה מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות
  ברבעון אחר:
 \end_layout
 
 \begin_layout Standard
-לפי נוסחא 2 אמור להתקיים יחס ישר בין I ל cos^4(theta) בעוד שלפי תוצאות הרגרסיות
- נראה שאין התאמה ליחס לינארי בין העוצמה לcos^4(theta) באף אחת מהן, עם אותם
- פערים כמו שהתקבלו מהמדידות ללא הסריג.
+לפי נוסחא 2 אמור להתקיים יחס ישר בין I ל 
+\begin_inset Formula $\cos^{4}(\theta)$
+\end_inset
+
+ בעוד שלפי תוצאות הרגרסיות נראה שאין התאמה ליחס לינארי בין העוצמה לcos^4(theta)
+ באף אחת מהן, עם אותם פערים כמו שהתקבלו מהמדידות ללא הסריג.
  גם על פער זה נדון בדיון בתוצאות.
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage pagebreak
+לאחר מכך, מיקמנו סריג שחריציו בכיוון ציר 
+\begin_inset Formula $x$
 \end_inset
 
-ניסוי
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-2
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-- עם סריג
+ בין המשדר והגלאי וביצענו שוב את מדידת עוצמת הקרינה כתלות בזווית .
+ נציין במדידות סביב הזווית 
+\begin_inset Formula $\theta=\dfrac{3\pi}{2}$
+\end_inset
+
+ התרחשה הסטה של הגלאי בסיבוב סביב ציר 
+\begin_inset Formula $x$
+\end_inset
+
+, בעקבותה ניסינו להחזיר לזווית המקורית אך לצערנו ניתן לחוש בהבדל ממבט על
+ המדידות.
+ תוצאות המדידה מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות
+ ברבעון אחר:
 \end_layout
 
 \begin_layout Standard
@@ -2480,6 +2449,281 @@ status open
 \end_layout
 
 \begin_layout Standard
+לפי נוסחא 2 אמור להתקיים יחס ישר בין I ל 
+\begin_inset Formula $\cos^{4}(\theta)$
+\end_inset
+
+ .
+ התקבלה התאמה שונה בתחומים השונים המוצגים בגרפים השונים.
+ התאמה טובה מאוד של המדידות לרגרסיה לינארית התקבלה במדידות המוצגות בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עם התאמה של 
+\begin_inset Formula $R^{2}=0.997$
+\end_inset
+
+ ותחומי שגיאה שמכילים את עקום הרגרסיה .
+ התאמה טובה )אך פחות טובה משל גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+( התקבלה במדידות המוצגות בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+9
+\numeric off
+, עם 
+\begin_inset Formula $R^{2}=0.988$
+\end_inset
+
+ ותחומי שגיאה שמכילים את עקום הרגרסיה.
+ בתחומים של גרפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+התקבל מהרגרסיות 
+\begin_inset Formula $R^{2}<0.96$
+\end_inset
+
+, כשעקום הרגרסיה חורג מתחומי השגיאה.
+ גם על פער זה נדון בדיון בתוצאות.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציג גם גרפים של עוצמת המתח כתלות בזווית :
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -2702,7 +2946,14 @@ status open
 \end_layout
 
 \begin_layout Standard
-גלבו - 
+נראה שיש התאמה טובה בחלק מתחומי הזוויות ובחלק אחר פחות.
+ נדון על הפערים בדיון ותוצאות.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ניסוי 2 - תכונות גלים אלקטרומגנטיים במעבר דרך גלבו
 \end_layout
 
 \begin_layout Standard
