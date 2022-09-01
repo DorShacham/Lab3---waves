@@ -1853,29 +1853,42 @@ y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ 
 \begin_inset Formula $\left|\cos\theta\right|$
 \end_inset
 
- קוסינוס בגרף פולרי 
-\end_layout
-
-\begin_layout Standard
-נראה שיש פער מהותי בין התיאוריה למתקבל מחלק זה של הניסוי.
- על פער זה נדון בהרחבה בדיון בתוצאות.
-\end_layout
-
-\begin_layout Standard
-לאחר מכך, מיקמנו סריג שהחריצים שלו הם לאורך ציר x בין המשדר והגלאי וביצענו
- שוב את מדידת עוצמת הקרינה כתלות בזווית .
- תוצאות המדידה מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות
- ברבעון אחר:
-\end_layout
-
-\begin_layout Standard
-לפי נוסחא 2 אמור להתקיים יחס ישר בין I ל 
-\begin_inset Formula $\cos^{4}(\theta)$
+ שכן ההתאמה של הנתונים לרגרסיה לפונקציה מהצורה 
+\begin_inset Formula $f(\theta)=a\cdot|\cos b\theta|$
 \end_inset
 
- בעוד שלפי תוצאות הרגרסיות נראה שאין התאמה ליחס לינארי בין העוצמה לcos^4(theta)
- באף אחת מהן, עם אותם פערים כמו שהתקבלו מהמדידות ללא הסריג.
- גם על פער זה נדון בדיון בתוצאות.
+ היא טובה לפי מדד 
+\begin_inset Formula $R^{2}$
+\end_inset
+
+ -מתקבל הערך 
+\begin_inset Formula $R^{2}=0.997$
+\end_inset
+
+.
+ זאת בעוד שההתאמה לפונקציה מהצורה 
+\begin_inset Formula $f(\theta)=a\cdot\cos^{2}b\theta$
+\end_inset
+
+ היא לא טובה ומתקבל הערך 
+\begin_inset Formula $R^{2}=0.952$
+\end_inset
+
+.
+ נוסף על כך ממבט איכותי ברור שההתאמה ל
+\begin_inset Formula $|cos\theta|$
+\end_inset
+
+ טובה בהרבה משל 
+\begin_inset Formula $cos^{2}\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר, נראה שיש פער מהותי בין התיאוריה למתקבל מחלק זה של הניסוי.
+ על פער זה נדון בהרחבה בדיון בתוצאות.
 \begin_inset Newline newline
 \end_inset
 
@@ -1887,7 +1900,24 @@ y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ 
 \begin_inset Formula $x$
 \end_inset
 
- בין המשדר והגלאי וביצענו שוב את מדידת עוצמת הקרינה כתלות בזווית .
+ בין המשדר והגלאי וביצענו שוב את מדידת עוצמת הקרינה כתלות בזווית .הפעם הזווית
+ נמדדה כזווית בין קיטוב המשדר ל
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+, כשעל מנת לשנות את הזווית ב
+\begin_inset Formula $\Delta\theta$
+\end_inset
+
+, סובבנו את שתי השפופרות ב
+\begin_inset Formula $\Delta\theta$
+\end_inset
+
+ כאשר פסי הסריג נותרו בכיוון 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+.
  נציין במדידות סביב הזווית 
 \begin_inset Formula $\theta=\dfrac{3\pi}{2}$
 \end_inset
@@ -1897,7 +1927,36 @@ y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ 
 \end_inset
 
 , בעקבותה ניסינו להחזיר לזווית המקורית אך לצערנו ניתן לחוש בהבדל ממבט על
- המדידות.
+ המדידות כפי שמוצג בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\numeric off
+ .
  תוצאות המדידה מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות
  ברבעון אחר:
 \end_layout
@@ -2012,7 +2071,7 @@ status open
 \end_inset
 
  כתלות ב
-\begin_inset Formula $\cos^{4}\theta$
+\begin_inset Formula $\cos^{4}(\theta+\frac{\pi}{2})$
 \end_inset
 
  עבור 
@@ -2134,7 +2193,7 @@ status open
 \end_inset
 
  כתלות ב
-\begin_inset Formula $\cos^{4}\theta$
+\begin_inset Formula $\cos^{4}(\theta+\frac{\pi}{2})$
 \end_inset
 
  עבור 
@@ -2260,7 +2319,7 @@ status open
 \end_inset
 
  כתלות ב
-\begin_inset Formula $\cos^{4}\theta$
+\begin_inset Formula $\cos^{4}(\theta+\frac{\pi}{2})$
 \end_inset
 
  עבור 
@@ -2382,7 +2441,7 @@ status open
 \end_inset
 
  כתלות ב
-\begin_inset Formula $\cos^{4}\theta$
+\begin_inset Formula $\cos^{4}(\theta+\frac{\pi}{2})$
 \end_inset
 
  עבור 
@@ -2504,11 +2563,248 @@ status open
 \end_layout
 
 \begin_layout Standard
-לפי נוסחא 2 אמור להתקיים יחס ישר בין I ל 
-\begin_inset Formula $\cos^{4}(\theta)$
+נציג גם גרפים של עוצמת המתח כתלות בזווית :
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot12.png
+	scale 60
+
 \end_inset
 
- .
+
+\begin_inset Graphics
+	filename fig/plot11.png
+	lyxscale 20
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרפים
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11-12
+\numeric off
+: מתח בגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות ב
+\begin_inset Formula $\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)השמאלי( ובגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה,המדידות מיוצגות בנקודות כחולות
+ עם קווי.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cos^4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ אמור להתקיים יחס ישר בין I ל 
+\begin_inset Formula $\cos^{4}(\theta+\frac{\pi}{2})$
+\end_inset
+
+)כיוון ש 
+\begin_inset Formula $\theta$
+\end_inset
+
+ בנוסחא מוגדרת ביחס לניצב לסריג ובמדידות ביחס לכיוון הסריג(.
  התקבלה התאמה שונה בתחומים השונים המוצגים בגרפים השונים.
  התאמה טובה מאוד של המדידות לרגרסיה לינארית התקבלה במדידות המוצגות בגרף
 \family roman
@@ -2778,234 +3074,6 @@ status open
 \end_layout
 
 \begin_layout Standard
-נציג גם גרפים של עוצמת המתח כתלות בזווית :
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename fig/plot12.png
-	scale 60
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename fig/plot11.png
-	lyxscale 20
-	scale 50
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-thickness "0.4pt"
-separation "3pt"
-shadowsize "4pt"
-framecolor "black"
-backgroundcolor "none"
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\series bold
-גרפים
-\family roman
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-11-12
-\numeric off
-: מתח בגלאי ב
-\begin_inset Formula $V$
-\end_inset
-
- כתלות ב
-\begin_inset Formula $\theta$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-בגרף
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-5
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-)השמאלי( ובגרף
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-6
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה,המדידות מיוצגות בנקודות כחולות
- עם קווי.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-נראה שיש התאמה טובה בחלק מתחומי הזוויות ובחלק אחר פחות.
- נדון על הפערים בדיון ותוצאות.
-\end_layout
-
-\begin_layout Standard
 
 \series bold
 ניסוי 2 - תכונות גלים אלקטרומגנטיים במעבר דרך גלבו
@@ -3268,10 +3336,20 @@ status open
 \end_inset
 
  .
+\begin_inset Newline newline
+\end_inset
+
  לאחר מכך כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון x ומדדנו את המתח
  כתלות במפתח לוחות הגלבו.
- מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים: (עוצמה כתלות בd עבור
- גל מקוטב בכיוון x) קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה 
+ מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים: )עוצמה כתלות בd עבור
+ גל מקוטב בכיוון 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+( 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -3293,7 +3371,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename fig/plot13.png
+	filename fig/plot16.png
 	lyxscale 20
 	scale 40
 
@@ -3350,7 +3428,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-13
+16
 \numeric off
 : 
 \begin_inset Formula $\frac{1}{\lambda_{g}^{2}}$
@@ -3401,6 +3479,55 @@ y=(-0.96\pm0.12)x+(1.29\pm0.07)10^{3}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+קיבלנו בלהבלהבלה בהתאמה לכך שציפינו ש בלהבלהבלה 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחר כך, שינינו את d את לנקודה שעבורה העוצמה יורדת משמעותית.
+ מצאנו ש
+\begin_inset Formula $d_{min}=0.014m$
+\end_inset
+
+ הוא המרחק עבורו זה קורה.
+ מכך ניתן להסיק מנוסחה )הכנס נוסחא מתאימה( שאורך הגל הוא 
+\begin_inset Formula $0.028m$
+\end_inset
+
+ .
+ תוצאה המסתדרת יפה עם הערך של אורך הגדל הרשום על המשדר שהוא 
+\begin_inset Formula $\lambda_{theory}=0.028m$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כעת, קבענו 
+\begin_inset Formula $d=0.02m$
+\end_inset
+
+ ומיקמנו רכיב לוח פרספקס דק התלוי על פס פרספקס שניתן להזזה לאורך הגלבו.
+ הזזנו את הרכיב לאורך הגלבו ומצאנו מיקומים עבורם מתקבל אקסטרמום או צומת
+ של עוצמה.
+ להלן טבלה המכילה את המרחקים בין נקודות הקיצון: 
+\end_layout
+
+\begin_layout Standard
+ממנה ניתן להסיק לפי נוסחה (הכנס נוסחה מתאימה, לא נראה לי היא רשומה במבוא
+ כי היא די טריוויאלית) שאורך הגל העובר בגלבו הוא 0.37m להלן טבלה המכילה את
+ המרחקים בין נקודות הצומת: באותו אופן כמו ההסקה מהטבלה הקודמת, ממנה ניתן
+ להסיק שאורך הגל העובר בגלבו הוא: 0.37m .
+\end_layout
+
+\begin_layout Standard
+לאחר מכן, שינינו את d , ועבור מספר d שונים ביצאנו את אותן מדידום 
 \end_layout
 
 \begin_layout Standard
