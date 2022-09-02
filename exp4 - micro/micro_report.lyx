@@ -372,7 +372,7 @@ today
 
 \begin_layout Standard
 בניסוי הראשון, בחנו את השפעת סריג מתכתי שמוקם בין משדר וגלאי על עוצמת הגל
- ובדקנו האם היאתואמת להשפעה של מקטב לינארי .
+ ובדקנו האם היא תואמת להשפעה הצפויה ממקטב לינארי.
  תחילה מדדנו את עוצמת הגל הנקלטת כתלות בזווית החסית בין הגלאי והמשדר ללא
  סריג ביניהם.
  לאחר מכן מדדנו את עוצמת הגל הנקלטת כשסריג מוקם בין המשדר והגלאי כתלות בזווית
@@ -389,7 +389,7 @@ today
  קיטוב השדה החשמלי מקביל ללוחות הגלבו.
  בעזרת המדידות האחרונות מצאנו את הרוחב המינימלי עבורו העוצמה יורדת משמעותית
  וחישבנו ממנו את אורך הגל הנכנס לגלבו.
- בעזרת מיקום לוח פרספקס בין לוחות הגלבו במקומות שונים, זיהנו נקודות צומת
+ בעזרת מיקום לוח פרספקס בין לוחות הגלבו במקומות שונים, זיהינו נקודות צומת
  ונקודת אקסטרימום בגל עומד המתפתח בתוך הגלבו ובעזרת המרחקים בינהם חישבנו
  את אורך הגל המתקדם בגלבו עבור מרחקים שונים בין לוחות הגלבו.
  כפונקציה של אורכי הגל בגלבו כתלות במרחק בין הלוחות חילצנו את אורך הגל של
@@ -996,7 +996,8 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 \begin_inset Formula $0.014V$
 \end_inset
 
- , כנראה עקב רעשים קונסיסטנטיים מהסביבה.
+ , כנראה עקב רעשים קונסיסטנטיים מהסביבה, את גודל זה הפחתנו מכל מדידות המתח
+ שהתבצעו לאחר מכן.
  לאחר מכן הפעלנו את המשדר כדי לראות את קנה המידה של המתחים המתקבלים, עקב
  כך קבענו את הוולטמטר להיות ברגישות של 
 \begin_inset Formula $\pm0.001V$
@@ -1097,7 +1098,16 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 \begin_inset Formula $\cos^{2}\theta$
 \end_inset
 
- מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות ברבעון אחר: 
+ מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות ברבעון אחר )כל
+ גרף ברבעון אחר כיוון ש 
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ לא חד ערכית בתחום 
+\begin_inset Formula $[0,2\pi]$
+\end_inset
+
+, לכן נציג את התוצאות בנפרד עבור כל ענף של הפונקציה ההופכית(: 
 \end_layout
 
 \begin_layout Standard
@@ -1865,7 +1875,11 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-בכתום:
+בכתום- התאמה של המדידות לפונקציה מהצורה 
+\begin_inset Formula $y=a\cdot|\cos(b\cdot\theta)|$
+\end_inset
+
+:
 \end_layout
 
 \begin_layout Plain Layout
@@ -1880,7 +1894,11 @@ y=\left(0.53\pm0.01\right)\left|\cos\left(\left(1.0119\pm0.007\right)\theta\righ
 \end_layout
 
 \begin_layout Plain Layout
-ובשחור:
+ובשחור- התאמה של המדידות לפונקציה מהצורה 
+\begin_inset Formula $y=a\cdot\cos^{2}(b\cdot\theta)$
+\end_inset
+
+:
 \begin_inset Formula 
 \[
 y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ R^{2}=0.952
@@ -1957,8 +1975,8 @@ y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ 
 \begin_inset Formula $x$
 \end_inset
 
- בין המשדר והגלאי וביצענו שוב את מדידת עוצמת הקרינה כתלות בזווית .הפעם הזווית
- נמדדה כזווית בין קיטוב המשדר ל
+ בין המשדר והגלאי וביצענו שוב את מדידת עוצמת הקרינה כתלות בזווית.
+ הפעם הזווית נמדדה כזווית בין קיטוב המשדר ל
 \begin_inset Formula $\hat{x}$
 \end_inset
 
@@ -2013,7 +2031,7 @@ y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ 
 \color inherit
 12
 \numeric off
- .
+.
  תוצאות המדידה מוצגות בגרפים הבאים, כשכל גרף מציג את התוצאות עבור זוויות
  ברבעון אחר:
 \end_layout
@@ -4442,6 +4460,141 @@ noprefix "false"
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+נדון בתוצאות הניסויים השונים בנפרד.
+\end_layout
+
+\begin_layout Subsection*
+ניסוי
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+- בחינת סריג מתכתי כמקטב לינארי של גלים אלקטרומגנטיים
+\end_layout
+
+\begin_layout Standard
+במדידות מתח הגלאי כתלות בזווית היחסית בין המשדר והגלאי קבלנו תוצאות החורגות
+ מהמצופה מהתיאוריה.
+ ציפינו שיתקבל יחס ישר בין המתח על הגלאי 
+\begin_inset Formula $V$
+\end_inset
+
+ ל 
+\begin_inset Formula $\cos^{2}\theta$
+\end_inset
+
+ , אולם מן המדידות התקבל שבכל התחומים בנפרד לא הייתה התאמה טובה של רגרסיה
+ לינארית למדידות , בכולם התקבל ערך 
+\begin_inset Formula $R^{2}<0.96$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בענף 
+\begin_inset Formula $\theta\in[0,\pi/2]$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.881$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בענף 
+\begin_inset Formula $\theta\in[\pi/2,\pi]$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.914$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בענף 
+\begin_inset Formula $\theta\in[\pi,3\pi/2]$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.957$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בענף 
+\begin_inset Formula $\theta\in[3\pi/2,2\pi]$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.908$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+ניסוי 2 - תכונות גלים אלקטרומגנטיים במעבר דרך גלבו
 \end_layout
 
 \begin_layout Standard
