@@ -4847,6 +4847,16 @@ noprefix "false"
 \begin_layout Standard
 במדידות מתח הגלאי כתלות בזווית עם הסריג קבלנו תוצאות החורגות מהמצופה מהתיאוריה
  גם כן.
+ מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cos^4"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  ציפינו שיתקבל יחס ישר בין המתח על הגלאי 
 \begin_inset Formula $V$
 \end_inset
