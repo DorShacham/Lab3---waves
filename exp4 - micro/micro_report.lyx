@@ -4264,7 +4264,7 @@ noprefix "false"
 \end_inset
 
  את המרחק המתאים בין הלוחות להפרש פאזה של כפולה שלמה של 
-\begin_inset Formula $2\pi$
+\begin_inset Formula $\pi$
 \end_inset
 
  .כדי למצוא את המרחק הנ
@@ -4272,7 +4272,7 @@ noprefix "false"
 \end_inset
 
 ל הצבנו בנוסחא 
-\begin_inset Formula $\Delta\phi=2\pi,\,L=0.15m,\,\lambda=0.028m$
+\begin_inset Formula $\Delta\phi=\pi,\,L=0.15m,\,\lambda=0.028m$
 \end_inset
 
  , וקיבלנו שעבור 
@@ -4415,7 +4415,7 @@ noprefix "false"
 \end_inset
 
 ל הצבנו בנוסחא 
-\begin_inset Formula $\Delta\phi=\pi/2,\,L=0.15m,\,\lambda=0.028m$
+\begin_inset Formula $\Delta\phi=\frac{5}{2}\pi,\,L=0.15m,\,\lambda=0.028m$
 \end_inset
 
  , וקבלנו 
@@ -4525,8 +4525,8 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-במדידות מתח הגלאי כתלות בזווית היחסית בין המשדר והגלאי קבלנו תוצאות החורגות
- מהמצופה מהתיאוריה.
+במדידות מתח הגלאי כתלות בזווית היחסית בין המשדר והגלאי ללא הסריג קבלנו תוצאות
+ החורגות מהמצופה מהתיאוריה.
  ציפינו שיתקבל יחס ישר בין המתח על הגלאי 
 \begin_inset Formula $V$
 \end_inset
@@ -4535,12 +4535,41 @@ noprefix "false"
 \begin_inset Formula $\cos^{2}\theta$
 \end_inset
 
- , אולם מן המדידות התקבל שבכל התחומים בנפרד לא הייתה התאמה טובה של רגרסיה
- לינארית למדידות , בכולם התקבל ערך 
+ , אולם מן המדידות המוצגות בגרפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1-4
+\numeric off
+ התקבל שבכל התחומים בנפרד לא הייתה התאמה טובה של רגרסיה לינארית למדידות
+ , בכולם התקבל ערך 
 \begin_inset Formula $R^{2}<0.96$
 \end_inset
 
-.
+:
 \end_layout
 
 \begin_layout Standard
@@ -4552,11 +4581,7 @@ noprefix "false"
 \begin_inset Formula $R^{2}=0.881$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-בענף 
+, בענף 
 \begin_inset Formula $\theta\in[\pi/2,\pi]$
 \end_inset
 
@@ -4564,31 +4589,337 @@ noprefix "false"
 \begin_inset Formula $R^{2}=0.914$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-בענף 
-\begin_inset Formula $\theta\in[\pi,3\pi/2]$
+, בענף 
+\begin_inset Formula $\theta\in[\pi,\frac{3}{2}\pi]$
 \end_inset
 
  התקבל 
 \begin_inset Formula $R^{2}=0.957$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-בענף 
-\begin_inset Formula $\theta\in[3\pi/2,2\pi]$
+ ובענף 
+\begin_inset Formula $\theta\in[\frac{3}{2}\pi,2\pi]$
 \end_inset
 
  התקבל 
 \begin_inset Formula $R^{2}=0.908$
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Standard
+גם מההצגה של המתח כתלות ב 
+\begin_inset Formula $\theta$
+\end_inset
+
+ באופן ישיר המוצגת בגרפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+קבלנו שאין התאמה טובה של הנתונים לפונקציה מהצורה 
+\begin_inset Formula $a\cdot\cos^{2}\theta$
+\end_inset
+
+, מהרגרסיה של הנתונים לפונקציה מהצורה התקבל 
+\begin_inset Formula $R^{2}=$
+\end_inset
+
+, ערך זה מראה התאמה לא טובה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+יש לציין שמהתבוננות בנתונים המוצגים בגרפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ו
+\numeric on
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+עלה החשד שאכן יש התאמה לפונקציה מחזורית אחרת, ואכן מבדיקה להתאמה עם פונקציה
+ מהצורה 
+\begin_inset Formula $a\cdot|cos\theta|$
+\end_inset
+
+ ראינו התאמה טובה - מהרגרסיה של הנתונים לפונקציה מהצורה התקבל 
+\begin_inset Formula $R^{2}=$
+\end_inset
+
+ , ערך זה מראה התאמה טובה מאוד.
+\end_layout
+
+\begin_layout Standard
+בסך הכל לא התקבל הערך הצפוי מהתיאוריה, אנו משערים שהסיבה לפער זה היא התנהגות
+ של הגלאי באופן שונה משחשבנו - כך שההנחה שהעוצמה המתקבל בגלאי היא ביחס ישר
+ למתח המתקבל 
+\begin_inset Formula $I\propto V$
+\end_inset
+
+ אולי לא נכונה עבור כל עוצמה.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במדידות מתח הגלאי כתלות בזווית עם הסריג קבלנו תוצאות החורגות מהמצופה מהתיאוריה
+ גם כן.
+ ציפינו שיתקבל יחס ישר בין המתח על הגלאי 
+\begin_inset Formula $V$
+\end_inset
+
+ ל 
+\begin_inset Formula $\cos^{4}\theta$
+\end_inset
+
+ בכל התחומים, אולם ההתאמה הייתה טובה רק בחלק מהתחומים.
+\end_layout
+
+\begin_layout Standard
+בענפים 
+\begin_inset Formula $\theta\in[0,\pi/2]$
+\end_inset
+
+ ו 
+\begin_inset Formula $\theta\in[\pi,\frac{3}{2}\pi]$
+\end_inset
+
+ התקבלה התאמה טובה.
+ בענף 
+\begin_inset Formula $\theta\in[0,\pi/2]$
+\end_inset
+
+ התקבלה התאמה טובה מאוד עם ערך 
+\begin_inset Formula $R^{2}=0.997$
+\end_inset
+
+ ונקודות המדידה ותחומי השגיאה שלהן הכילו את עקום הרגרסיה.
+ גם בענף 
+\begin_inset Formula $\theta\in[\pi,\frac{3}{2}\pi]$
+\end_inset
+
+ התקבלה התאמה טובה עם ערך 
+\begin_inset Formula $R^{2}=0.988$
+\end_inset
+
+כשתחומי השגיאה של הנתונים מכילים את עקום הרגרסיה.
+ 
+\end_layout
+
+\begin_layout Standard
+אולם בענפים 
+\begin_inset Formula $\theta\in[\pi/2,\pi]$
+\end_inset
+
+ ו
+\begin_inset Formula $\theta\in[\frac{3}{2}\pi,2\pi]$
+\end_inset
+
+ התקבלה התאמה לא טובה, בענף 
+\begin_inset Formula $\theta\in[\pi/2,\pi]$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.950$
+\end_inset
+
+ ו ובענף 
+\begin_inset Formula $\theta\in[\frac{3}{2}\pi,2\pi]$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.925$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר ישנה חריגה בין המתקבל מהמדידות לציפיה מהתיאוריה.
+ אנו משערים שהסיבה לחריגה זו היא 
 \end_layout
 
 \begin_layout Standard
