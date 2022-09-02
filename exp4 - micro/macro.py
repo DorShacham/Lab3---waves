@@ -119,20 +119,28 @@ for fig in fig_array:
     fname =str( "fig/plot" + str(fig_array.index(fig) + 1))
     fig.savefig(fname)
 
-f1 = lambda x,a,b: a*np.abs(np.cos(b*x))
-f2 = lambda x,a,b: a*np.cos(b*x)**2
+f1 = lambda x,a: a*np.abs(np.cos(x))
+f2 = lambda x,a: a*np.cos(x)**2
 fit_f1 = cfit(f1,uval(theta*np.pi/180),uval(intensity))
 fit_f2 = cfit(f2,uval(theta*np.pi/180),uval(intensity))
 Rsqrue1 = Rsqrue(f1(uval(theta*np.pi/180),*fit_f1[0]),uval(intensity))
 Rsqrue2 = Rsqrue(f2(uval(theta*np.pi/180),*fit_f2[0]),uval(intensity))
+
+a = ufloat(fit_f1[0][0],2*np.sqrt(np.diag(fit_f1[1])[0]))
+print("f1==> y = (",a,")|cos(x)|, R^2=",Rsqrue1)
+
+a = ufloat(fit_f2[0][0],2*np.sqrt(np.diag(fit_f2[1])[0]))
+print("f2==> y = (",a,")cos^2(x), R^2=",Rsqrue2)
+
+
 
 #cos_theta_squared_err=theta_err*np.sin(2*theta)
 fig4=plt.figure()
 ax4=plt.axes(polar=True)
 #ax4.plot(uval(theta*np.pi/180),uval(intensity),"ro")
 ax4.errorbar(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"o")
-ax4.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"a$|\cos(b\theta)|$")
-ax4.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-.",color="black",label=r"$a\cos^2(b\theta)$")
+ax4.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"a$|\cos(\theta)|$")
+ax4.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-.",color="black",label=r"$a\cos^2(\theta)$")
 
 plt.grid(True)
 ax4.legend()
@@ -140,8 +148,8 @@ plt.show()
 fig4.savefig("fig/plot6")
 
 (fig12,fit12)=one4all(uval(theta*np.pi/180),uval(intensity),uerr(intensity),uerr(theta*np.pi/180),"none",None,r"$\theta [rad]$","$V [V]$",show=False)
-plt.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"$a|\cos(b\theta)|$")
-plt.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-d",color="black",label=r"$a\cos^2(b\theta)$")
+plt.plot(uval(theta*np.pi/180),f1(uval(theta*np.pi/180),*fit_f1[0]),"-.",label=r"$a|\cos(\theta)|$")
+plt.plot(uval(theta*np.pi/180),f2(uval(theta*np.pi/180),*fit_f2[0]),"-d",color="black",label=r"$a\cos^2(\theta)$")
 plt.legend()
 plt.show()
 fig12.savefig("fig/plot5")
@@ -382,7 +390,7 @@ wavelen = 2.8 #cm
 wavelen_err = 0
 d_of_phi = lambda phi : 1/(2*np.sqrt(phi/(np.pi*L*wavelen)-(phi/(2*np.pi*L))**2))
 
-d_linear = np.array([d_of_phi(2*np.pi),d_of_phi(2*2*np.pi),d_of_phi(3*2*np.pi)])
+d_linear = np.array([d_of_phi(np.pi*n) for n in range(1,5)])
 
 #linear polarization
 
@@ -411,6 +419,8 @@ theta_err2 = 5
 V2 = [0.503,0.53,0.408,0.335,0.225,0.128,0.484,0.540,0.378,0.333,0.23,0.1,0.503,0.459,0.29,0.447,0.3]
 V_err2 = 0.005
 
+theta2, V2 = zip(*sorted(zip(theta2,V2)))
+
 
 fig2=plt.figure()
 ax2=plt.axes(polar=True)
@@ -419,10 +429,20 @@ theta_err2 = np.array(theta_err2)*np.pi/180
 V2 = np.array(V2)
 V_err2 = np.array(V_err2)
 
-ax2.errorbar(theta2,V2,V_err2,theta_err2,"o")
+f = lambda x,a,phi: a*np.cos(x+phi)**2
+fit_f = cfit(f,theta2,V2)
+Rsqrue_f = Rsqrue(f(theta2,*fit_f[0]),V2)
+a = ufloat(fit_f[0][0],2*np.sqrt(np.diag(fit_f[1])[0]))
+phi = ufloat(fit_f[0][1],2*np.sqrt(np.diag(fit_f[1])[1]))
+print("==> y = (",a,")cos^2(x +(",phi,")), R^2=",Rsqrue_f)
+
+ax2.errorbar(theta2,V2,V_err2,theta_err2,"o",label="Data")
+ax2.plot(theta2,f(theta2,*fit_f[0]),"-.",label=r"$a\cos^2(\theta)$")
+
 plt.grid(True)
+plt.legend(loc="upper left")
 plt.show()
-fig2.savefig("fig/plot17")
+fig2.savefig("fig/plot19")
 #%%
 #cyclic polarization
 L = 15
@@ -431,7 +451,7 @@ wavelen = 2.8
 wavelen_err = 0
 d_of_phi = lambda phi : 1/(2*np.sqrt(phi/(np.pi*L*wavelen)-(phi/(2*np.pi*L))**2))
 d_circler = np.array([d_of_phi(np.pi/2),d_of_phi(3*np.pi/2),d_of_phi(5*np.pi/2)])
-
+d_circler = np.array([d_of_phi(np.pi/2+n*np.pi) for n in range(0,5)])
 
 
 d1 = 2.18 #cm
@@ -448,10 +468,20 @@ theta_err1 = np.array(theta_err1)*np.pi/180
 V1 = np.array(V1)
 V_err1 = np.array(V_err1)
 
-ax1.errorbar(theta1,V1,V_err1,theta_err1,"o")
+f = lambda x,a: a*np.ones(len(x))
+fit_f = cfit(f,theta1,V1)
+Rsqrue_f = Rsqrue(f(theta1,*fit_f[0]),V1)
+a = ufloat(fit_f[0][0],2*np.sqrt(np.diag(fit_f[1])[0]))
+print("==> y = (",a,"), R^2=",Rsqrue_f)
+
+
+ax1.errorbar(theta1,V1,V_err1,theta_err1,"o", label="Data")
+ax1.plot(theta1,f(theta1,*fit_f[0]),"-.",label=r"$y=a$")
+
 plt.grid(True)
+plt.legend(loc="upper left",fontsize=8)
 plt.show()
-fig1.savefig("fig/plot18")
+fig1.savefig("fig/plot20")
 #########
 # d2 = d_circler[0]
 # theta2 = []

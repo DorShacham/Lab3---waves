@@ -1876,7 +1876,7 @@ status open
 
 \begin_layout Plain Layout
 בכתום- התאמה של המדידות לפונקציה מהצורה 
-\begin_inset Formula $y=a\cdot|\cos(b\cdot\theta)|$
+\begin_inset Formula $y=a\cdot|\cos(\theta)|$
 \end_inset
 
 :
@@ -1885,7 +1885,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-y=\left(0.53\pm0.01\right)\left|\cos\left(\left(1.0119\pm0.007\right)\theta\right)\right|,\ R^{2}=0.997
+y=\left(0.532\pm0.012\right)\left|cos\left(\theta\right)\right|,\ R^{2}=0.995
 \]
 
 \end_inset
@@ -1895,13 +1895,13 @@ y=\left(0.53\pm0.01\right)\left|\cos\left(\left(1.0119\pm0.007\right)\theta\righ
 
 \begin_layout Plain Layout
 ובשחור- התאמה של המדידות לפונקציה מהצורה 
-\begin_inset Formula $y=a\cdot\cos^{2}(b\cdot\theta)$
+\begin_inset Formula $y=a\cdot\cos^{2}(\theta)$
 \end_inset
 
 :
 \begin_inset Formula 
 \[
-y=\left(0.58\pm0.05\right)\cos^{2}\left(\left(1.02\pm0.03\right)\theta\right),\ R^{2}=0.952
+y=\left(0.59\pm0.05\right)cos^{2}\left(\theta\right),\ R^{2}=0.950
 \]
 
 \end_inset
@@ -4297,7 +4297,125 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-)הכנס גרף(
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot19.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+19
+\numeric off
+: מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות בזווית היחסית בין המשדר לגלאי
+\end_layout
+
+\begin_layout Plain Layout
+בגרף פולרי זה המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
+ הקו המקווקו הכתום מתאר את הרגרסיה לפונקציה 
+\begin_inset Formula $a\cos^{2}\left(\theta\right)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y=\left(0.57\pm0.09\right)cos^{2}\left(\theta-\left(0.53\pm0.14\right)\right)
+\]
+
+\end_inset
+
+ כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה ומתקיים 
+\begin_inset Formula $R^{2}=0.917$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4329,7 +4447,11 @@ noprefix "false"
 \uwave default
 \noun default
 \color inherit
-45
+
+\begin_inset Formula $45$
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4358,7 +4480,11 @@ noprefix "false"
 \color inherit
 מעלות כצפוי מגרף של עוצמה של קיטוב לינארי ב
 \numeric on
-45
+
+\begin_inset Formula $45$
+\end_inset
+
+
 \family roman
 \series medium
 \shape up
@@ -4386,7 +4512,15 @@ noprefix "false"
 \noun default
 \color inherit
 מעלות כתלות בזווית המדידה.
- כלומר המדידות לא תואמות לציפיה מהתיאוריה.
+ בנוסף מנתוני רגרסיה לפונקציה מהצורה 
+\begin_inset Formula $a\cdot\cos^{2}\theta$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.917$
+\end_inset
+
+ , כלומר ההתאמה לא טובה ולכן ניתן לומר כי המדידות לא תואמות לציפייה מהתיאוריה.
  על פער זה נדון בהרחבה בדיון.
 \end_layout
 
@@ -4440,7 +4574,125 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-)הכנס גרף(
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot20.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+20
+\numeric off
+: מתח הגלאי ב
+\begin_inset Formula $V$
+\end_inset
+
+ כתלות בזווית היחסית בין המשדר לגלאי
+\end_layout
+
+\begin_layout Plain Layout
+בגרף פולרי זה המדידות מסמונות בנקודות כחולות עם קווי שגיאה.
+ הקו המקווקו הכתום מתאר את הרגרסיה לפונקציה קבועה 
+\begin_inset Formula $a$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+y=\left(0.294\pm0.032\right)
+\]
+
+\end_inset
+
+ כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה ומתקיים 
+\begin_inset Formula $R^{2}=0.963$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4527,6 +4779,16 @@ noprefix "false"
 \begin_layout Standard
 במדידות מתח הגלאי כתלות בזווית היחסית בין המשדר והגלאי ללא הסריג קבלנו תוצאות
  החורגות מהמצופה מהתיאוריה.
+ מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cos^2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
  ציפינו שיתקבל יחס ישר בין המתח על הגלאי 
 \begin_inset Formula $V$
 \end_inset
@@ -4726,7 +4988,7 @@ noprefix "false"
 \end_inset
 
 , מהרגרסיה של הנתונים לפונקציה מהצורה התקבל 
-\begin_inset Formula $R^{2}=$
+\begin_inset Formula $R^{2}=0.950$
 \end_inset
 
 , ערך זה מראה התאמה לא טובה.
@@ -4823,7 +5085,7 @@ noprefix "false"
 \end_inset
 
  ראינו התאמה טובה - מהרגרסיה של הנתונים לפונקציה מהצורה התקבל 
-\begin_inset Formula $R^{2}=$
+\begin_inset Formula $R^{2}=0.995$
 \end_inset
 
  , ערך זה מראה התאמה טובה מאוד.
@@ -4836,7 +5098,7 @@ noprefix "false"
 \begin_inset Formula $I\propto V$
 \end_inset
 
- אולי לא נכונה עבור כל עוצמה.
+ אולי לא נכונה עבור כל תחומי העוצמה שנמדדו בניסוי.
  
 \begin_inset Newline newline
 \end_inset
@@ -4929,10 +5191,71 @@ noprefix "false"
 
 \begin_layout Standard
 כלומר ישנה חריגה בין המתקבל מהמדידות לציפיה מהתיאוריה.
- אנו משערים שהסיבה לחריגה זו היא 
+ אנו משערים שהסיבה לחריגה זו בנוסף לסיבה שכתבנו מקודם ומשפיעה על כל תוצאות
+ הניסוי היא בעיה בביצוע הניסוי הספציפי הזה.
+ במהלך הניסוי ביצענו סיבוב של הגלאי והמשדר וכנראה נוצרה הטייה בינהם.
+ באמצע הניסוי ביצענו תיקון להטייה אשר ניתן לראות בתוצאות בשיא ה
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בגרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+11
+\numeric off
+.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Subsection*
 
 \series bold
 ניסוי 2 - תכונות גלים אלקטרומגנטיים במעבר דרך גלבו
