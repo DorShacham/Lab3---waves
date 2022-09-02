@@ -373,7 +373,7 @@ today
 \begin_layout Standard
 בניסוי הראשון, בחנו את השפעת סריג מתכתי שמוקם בין משדר וגלאי על עוצמת הגל
  ובדקנו האם היא תואמת להשפעה הצפויה ממקטב לינארי.
- תחילה מדדנו את עוצמת הגל הנקלטת כתלות בזווית החסית בין הגלאי והמשדר ללא
+ תחילה מדדנו את עוצמת הגל הנקלטת כתלות בזווית היחסית בין הגלאי והמשדר ללא
  סריג ביניהם.
  לאחר מכן מדדנו את עוצמת הגל הנקלטת כשסריג מוקם בין המשדר והגלאי כתלות בזווית
  היחסית בין הסריג למשדר ולגלאי שאלו מוקמו באותה זווית אחד ביחס לשני.
@@ -1006,6 +1006,13 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 .
  כעת נתאר את תוצאות שני הניסויים השונים בנפרד.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -1658,6 +1665,14 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 נציג גם גרפים של עוצמת המתח כתלות בזווית :
 \end_layout
 
@@ -1692,7 +1707,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot5.png
 	lyxscale 20
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -1968,10 +1983,14 @@ y=\left(0.59\pm0.05\right)cos^{2}\left(\theta\right),\ R^{2}=0.950
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-לאחר מכך, מיקמנו סריג שחריציו בכיוון ציר 
+לאחר מכן, מיקמנו סריג שחריציו בכיוון ציר 
 \begin_inset Formula $x$
 \end_inset
 
@@ -2638,7 +2657,25 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 נציג גם גרפים של עוצמת המתח כתלות בזווית :
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -2669,7 +2706,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot11.png
 	lyxscale 20
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -3146,6 +3183,10 @@ noprefix "false"
 \end_inset
 
 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -3334,6 +3375,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fig/plot14.png
+	scale 70
 
 \end_inset
 
@@ -3452,6 +3494,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot15.png
 	lyxscale 20
+	scale 70
 
 \end_inset
 
@@ -3587,6 +3630,20 @@ noprefix "false"
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+)לפי חישוב שגיאה 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: wavelen=2*d_min"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(
 \end_layout
 
 \begin_layout Standard
@@ -3745,7 +3802,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot16.png
 	lyxscale 30
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -3851,8 +3908,22 @@ y=(0.0184\pm0.0007)x+(0.047\pm0.002)
 \begin_inset Formula $\lambda_{g}=0.037\pm0.001m$
 \end_inset
 
- .
+ )לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: wavelen=2*m"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(.
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -3886,7 +3957,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot17.png
 	lyxscale 30
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -3993,7 +4064,17 @@ y=(0.0184\pm0.0001)x+(0.0559\pm0.0004)
 \begin_inset Formula $\lambda_{g}=0.0368\pm0.0002m$
 \end_inset
 
- .
+ )לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: wavelen=2*m"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(.
 \end_layout
 
 \begin_layout Standard
@@ -4007,6 +4088,10 @@ y=(0.0184\pm0.0001)x+(0.0559\pm0.0004)
 
 
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -4057,7 +4142,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot18.png
 	lyxscale 30
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -4112,7 +4197,7 @@ status open
 \uwave default
 \noun default
 \color inherit
-16
+18
 \numeric off
 : 
 \begin_inset Formula $\frac{1}{\lambda_{g}^{2}}$
@@ -4135,7 +4220,28 @@ status open
 
 \begin_layout Plain Layout
 \align right
-הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
+הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן )השגיאות חושבו לפי
+ חישובים 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: 1/lambda_g^2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ו
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: 1/(2d)^2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בהתאמה בנספח(.
  הקו המקווקו הכתום מתאר את הרגרסיה הלינארית:
 \begin_inset Formula 
 \[
@@ -4223,6 +4329,20 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+)השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: wavelen from intercept"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(
+\end_layout
+
+\begin_layout Standard
 אורך הגל המופיע על הגלאי הוא 
 \begin_inset Formula $\lambda_{expected}=0.028m$
 \end_inset
@@ -4272,14 +4392,24 @@ noprefix "false"
 \end_inset
 
 ל הצבנו בנוסחא 
-\begin_inset Formula $\Delta\phi=\pi,\,L=0.15m,\,\lambda=0.028m$
+\begin_inset Formula $\Delta\phi=\pi,\,L=0.15\pm0.01m,\,\lambda=0.028m$
 \end_inset
 
  , וקיבלנו שעבור 
-\begin_inset Formula $d_{linear}=0.0332m$
+\begin_inset Formula $d_{linear}=0.033\pm0.001m$
 \end_inset
 
- צפוי להתקבל קיטוב לינארי.
+ )השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: d from phi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח( צפוי להתקבל קיטוב לינארי.
  
 \end_layout
 
@@ -4290,6 +4420,13 @@ noprefix "false"
 
  )עקב יכולת רזולוצית הדיוק המתקבלת משיטת המדידה בעזרת סרגל( ומדדנו את המתח
  כתלות בזווית היחסית כפי שנעשה קודם לכן בחלקים הקודמים של הניסוי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -4319,7 +4456,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fig/plot19.png
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -4553,15 +4690,32 @@ noprefix "false"
 \end_inset
 
  , וקבלנו 
-\begin_inset Formula $d_{polar}=0.0218m$
+\begin_inset Formula $d_{polar}=0.0218\pm0.0008m$
 \end_inset
 
- .
+ )השגיאה חושבה לפי חישוב 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: d from phi"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח(.
  
 \end_layout
 
 \begin_layout Standard
-כדי לבדוק האם אכן מתקבל קיטוב לינארי קבענו את המרחק בין הלוחות להיות 
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק האם אכן מתקבל קיטוב מעגלי קבענו את המרחק בין הלוחות להיות 
 \begin_inset Formula $d=0.022\pm0.001m$
 \end_inset
 
@@ -4596,7 +4750,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename fig/plot20.png
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -5262,6 +5416,279 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+בחלק שבו קיטוב המשדר היה ניצב ללוחות הגלבו ומדדנו את המתח על הגלאי כתלות
+ ב
+\begin_inset Formula $d$
+\end_inset
+
+ המרחק בין לוחות הגלבו, מהתבוננות איכותית ניתן לראות מגרף 
+\begin_inset Formula $13$
+\end_inset
+
+ שהחל מ
+\begin_inset Formula $d$
+\end_inset
+
+ מסוים מתקבלת עלייה המזכירה עלייה לינארית במתח.
+ ציפינו לכך שגדלת המפתח תאפשר כניסה של יותר קרינה לגלבו ולכן גם ליותר קרינה
+ שתגיע אל הגלאי.
+ כלומר מבחינה איכותית יש התאמה בין המדידות לציפיה מהתיאוריה.
+ עבור מפתח קבוע של 
+\begin_inset Formula $d=0.04\pm0.001m$
+\end_inset
+
+, כשמדדנו את העוצמה הנקלטת בתלות בזווית היחסית בין המשדר לגלאי כפי שמוצג
+ בגרף 
+\begin_inset Formula $14$
+\end_inset
+
+ ציפינו להתאמה לגרף של קיטוב לינארי, מבחינה איכותית נראה שיש התנהגות שמזכירה
+ לינארית, שכן יש דעיכה לעוצמה 
+\begin_inset Formula $0$
+\end_inset
+
+ בזוויות שהן 
+\begin_inset Formula $\pm90$
+\end_inset
+
+ מעלות והצורה של הגרף בהצגה פולרית סימטרית סביב זווית ה
+\begin_inset Formula $0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+בחלק שבו קיטוב המשדר היה מקביל ללוחות ומדדנו את המתח על הגלאי כתלות ב
+\begin_inset Formula $d$
+\end_inset
+
+ - תוצאות המוצגות בגרף 
+\begin_inset Formula $15$
+\end_inset
+
+, ניתן לראות שאכן ישנה נקודת אי רציפות , קיים 
+\begin_inset Formula $d$
+\end_inset
+
+ עבורו יש קפיצה משמעותית בעוצמה הנמדדת בגלאי.
+ מצאנו שעברו מפתח 
+\begin_inset Formula $d_{min}=0.014\pm0.001m$
+\end_inset
+
+ התקבל מתח משמעותי בעוד שעבור כל מפתח קטן ממנו התקבל מתח 
+\begin_inset Formula $0$
+\end_inset
+
+.
+ מהתיאוריה ציפינו שגם תהיה קפיצה כזאת בכמחצית מאורך הגל של המשדר, ואכן ממדידה
+ זו אני מסיקים שאורך הגל הוא 
+\begin_inset Formula $\lambda=2d_{min}=0.028\pm0.002m$
+\end_inset
+
+ כשהערך המצופה לפי אורך הגל הרשום על המשדר הוא 
+\begin_inset Formula $\lambda_{expected}=0.028m$
+\end_inset
+
+, ערך המוכל בתחום השגיאה של הערך שקיבלנו.
+ עם שגיאה יחסית של:
+\begin_inset Formula $\frac{\delta\lambda}{\lambda}=7.14\%$
+\end_inset
+
+ כלומר יש התאמה טובה לתיאוריה עם תחום שגיאה קטן.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בעזרת הפרספקס זיהינו גלים עומדים בתוך הגלבו עבור מפתח של 
+\begin_inset Formula $d=0.02m$
+\end_inset
+
+.
+ מדדנו את מיקום הצמתים ומיקום האקסטרימות של גלים אלו.
+ מכיוון שגל עומד הוא גל מחזורי במקום ציפנו לקבל גרף לינארי של הצמתים ושל
+ האקסטרימות כתלות בסדר )מספר הצומת/אקסטרימה(, ואומנם קיבלנו התאמות מצויינות
+ לגרף לינארי, על פי מדד 
+\begin_inset Formula $R^{2}=0.999$
+\end_inset
+
+ לשני הגרפים.
+ משיפוע הגרפים חילצנו את אורך גל הגלבו, עבור גרף הצמתים:
+\begin_inset Formula 
+\[
+\lambda_{g}^{nodes}=0.037\pm0.001m,\ \frac{\delta\lambda_{g}^{nodes}}{\lambda_{g}^{nodes}}=27.02\%
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ועבור גרף האקסטרימות:
+\begin_inset Formula 
+\[
+\lambda_{g}^{picks}=0.0368\pm0.0002m,\ \frac{\delta\lambda_{g}^{picks}}{\lambda_{g}^{picks}}=5.43\%
+\]
+
+\end_inset
+
+ נשים לב שתחום השגיאה של 
+\begin_inset Formula $\lambda_{g}^{nodes}$
+\end_inset
+
+ עבור הצמתים מכיל את 
+\begin_inset Formula $\lambda_{g}^{picks}$
+\end_inset
+
+ עבור האקסטרימות, כמו כן השגיאה היחסית עבור מדידת הצמתים גדולה כמעט בסדר
+ גודל מהשגיאה היחסית שהתקבלה עבור מדידת האקסטרימות, אנו מייחסים שגיאה זו
+ לכך שעבור צמתים האות חלש במיוחד ולכן הפרעות ורעשים במדידה מורגשים יותר
+ ומגדלים את השגיאה.
+ בנוסף, נלקחה מדידה אחת יותר עבור האקסטרימות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן חזרנו על הניסוי הנ
+\begin_inset Quotes erd
+\end_inset
+
+ל עבור מפתחי גלבו שונים ויצרנו התאמה לינארית בהתאם לנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:lambda_g"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+.
+ מבחינה איכותית הייתה התאמה טובה היות והרגרסיה הוכלה בתחומי השגיאה של כל
+ המדידות ומבחינה איכותית גם כן היות ו
+\begin_inset Formula $R^{2}=0.988$
+\end_inset
+
+.
+ כמו כן, ציפנו מהנוסחא ששיפוע הגרף יהיה 
+\begin_inset Formula $-1$
+\end_inset
+
+ ואכן שיפוע זה הוכל בתחום השיפוע שהתקבל מהרגרסיה 
+\begin_inset Formula $-0.96\pm0.12$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מנקודת החיתוך יכולנו לחלץ את אורך הגל וקיבלנו 
+\begin_inset Formula 
+\[
+\lambda=0.0279\pm0.0008m
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום זה מכיל את אורך הגל אשר רשום על המשדר והגלאי 
+\begin_inset Formula $\lambda_{expected}=0.028m$
+\end_inset
+
+ והשגיאה היחסית שלו הינה 
+\begin_inset Formula $\frac{\delta\lambda}{\lambda}=2.87\%$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+בחלק שבו ניסינו ליצור קרינה מקוטבת לינארית בעזרת הגלבו, התקבל שעבור המפתח
+ שנקבע והיה צפוי להתקבל ממנו קרינה בקיטוב לינארי לא התקבלה התאמה לזו של
+ קרינה מקוטבת לינארית.
+ מקרינה מקוטבת לינארית היינו מצפים שיהיה יחס ישר בין העוצמה ל
+\begin_inset Formula $cos^{2}\theta$
+\end_inset
+
+ אולם מגרף 
+\begin_inset Formula $19$
+\end_inset
+
+ ומהרגרסיה של מדידות המתח כתלות בזווית לפונקציה מהצורה 
+\begin_inset Formula $a\cdot cos^{2}\theta$
+\end_inset
+
+ התקבל ערך 
+\begin_inset Formula $R^{2}=0.917$
+\end_inset
+
+, כלומר התאמה לא טובה ולכן מתקיימת חריגה מהציפייה התיאורטית.
+ 
+\end_layout
+
+\begin_layout Standard
+גם כשניסינו ליצור קרינה מקוטבת מעגלית בעזרת הגלבו, התקבל שעבור המפתח הצפוי
+ לא התקבלה התנהגות רצויה.
+ ציפינו שהמתח הנמדד על הגלאי לא ישתנה כתלות בזווית, כיאה לקיטוב מעגלי בעוד
+ שלפי גרף 
+\begin_inset Formula $20$
+\end_inset
+
+ והרגרסיה לפונקציה קבועה 
+\begin_inset Formula $a$
+\end_inset
+
+ התקבל 
+\begin_inset Formula $R^{2}=0.963$
+\end_inset
+
+, כלומר ההתאמה לא טובה ולכן גם כאן חריגה מציפיה התיאורטית.
+ 
+\end_layout
+
+\begin_layout Standard
+אנו מעריכים שהסיבה לחריגה היא שהצורה האיכותית של הגרפים רגישה לשינויים בהפרש
+ הפאזה בין הגלים היוצאים, שהיא פונקציה של המפתח בין הלוחות 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ המפתח נקבע עד כדי דיוק מסוים שיתכן שלא מספיק על מנת ליצור את ההתאבכויות
+ הרצויות.
+ יתכן גם שישנה עקמומיות מסוימת של לוחות הגלבו, עקמומיות הגורמת לכך ש
+\begin_inset Formula $d$
+\end_inset
+
+ לא מוגדר באופן חד משמעי ולכן עלולות להתרחש חריגות בצבירת הפאזה של רכיבי
+ השדה בתוך הגלבו מהצפוי לפי התיאוריה.
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
@@ -5270,6 +5697,176 @@ noprefix "false"
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+בשני הניסויים בחנו את ההתנהגות של גלים אלקטרומגנטים בתחום המיקרו, בחלקים
+ השונים בכל אחד מהם התקבלו לעיתים תוצאות להן ציפינו ולעיתים תוצאות מפתיעות.
+ 
+\end_layout
+
+\begin_layout Standard
+בניסוי הראשון, בו בחנו את התנהגות סריג כמקטב לינארי, התקבלו חריגות מהציפייה
+ התיאורטית.
+ כשלא היה סריג בין המשדר והגלאי ציפינו לקיטוב לינארי, זאת בעוד שמהמדידות
+ נראה שאין התאמה לציפיה זו - התאמה של רגרסיה למדידות התואמת למצופה מקיטוב
+ לינארי )יחס ישר בין 
+\begin_inset Formula $V$
+\end_inset
+
+ ל 
+\begin_inset Formula $cos^{2}\theta$
+\end_inset
+
+( הניבה ערך 
+\begin_inset Formula $R^{2}=0.950$
+\end_inset
+
+.
+ נצייין שהתאמה של המדידות לרגרסיה התואמת ליחס ישר בין 
+\begin_inset Formula $V$
+\end_inset
+
+ ל
+\begin_inset Formula $|\cos\theta|$
+\end_inset
+
+ הניבה תוצאות טובות בהרבה - 
+\begin_inset Formula $R^{2}=0.995$
+\end_inset
+
+.
+ גם כאשר מוקם סריג בין המשדר והגלאי התקבלה חריגה מהציפייה התיאורטית, ציפינו
+ שיהיה יחס ישר בין 
+\begin_inset Formula $V$
+\end_inset
+
+ ל 
+\begin_inset Formula $cos^{4}\theta$
+\end_inset
+
+ אולם מהרגסיה למדידות התקבלה התאמה טובה רק בתחומים
+\begin_inset Formula $[0,\pi/2]$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.997$
+\end_inset
+
+ ו 
+\begin_inset Formula $[\pi,3/2\pi]$
+\end_inset
+
+ עם 
+\begin_inset Formula $R^{2}=0.988$
+\end_inset
+
+ בעוד שבשני התחומים הנותרים התקבלה התאמה לקויה עם 
+\begin_inset Formula $R^{2}>0.96$
+\end_inset
+
+.
+ אנו חושדים שהפער נובע מכך שההנחה שהמתח על הגלאי פרופורציוני לעוצמה המתקבלת
+ אינה מתקיימת עבור כל העוצמות שאיתן נערך הניסוי.
+ 
+\end_layout
+
+\begin_layout Standard
+בניסוי השני, כשבחנו את תכונות הגלים במעבר דרך גלבו, התקבלו הן התאמות בחלקים
+ מסוימים והן חריגות בחלקים אחרים.
+ ראינו שישנה התאמה מבחינה איכותית לציפיה התיאורטית בקשר שבין המתח המתקבל
+ על הגלאי למרחק בין לוחות הגלבו.
+ עבור קיטוב ניצב ללוחות ראינו שהגדלת המפתח מגדילה לינארית את המתח הנמדד
+ החל מרוחב מרוחב מפתח מסוים סביב ה
+\begin_inset Formula $0.028m$
+\end_inset
+
+.
+ כמו כן, ראינו שעבור קיטוב זה מתקבל מבחינה איכותית קשר שמזכיר התנהגות של
+ מקטב לינארי במעבר דרך הגלבו.
+ עבור קיטוב מקביל ללוחות ראינו שישנה נקודת אי רציפות ב
+\begin_inset Formula $0.014\pm0.001m$
+\end_inset
+
+ שהחל ממנה מתקבלת מדידה של מתח משמעותי על הגלאי, בהתאם לציפייה התיאורטית
+ שהמפתח המינימלי הוא כחצי אורך גל המשדר שהוא 
+\begin_inset Formula $0.028m$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+בעזרת מיקום לוח פרספקס במקומות שונים לאורך הגלבו זיהנו נקודות צומת ואקסטרימות
+ בגלים עומדים הנוצרים בגלבו ומתוכם מצאנו את אורך גל הגלבו.
+ עבור הצמתים קיבלנו 
+\begin_inset Formula $\lambda_{g}^{nodes}=0.037\pm0.001m$
+\end_inset
+
+ עם שגיאה יחסית של 
+\begin_inset Formula $27.02%\%
+$
+\end_inset
+
+ ועבור האקסטרימות קיבלנו 
+\begin_inset Formula $\lambda_{g}^{picks}=0.0368\pm0.0002m$
+\end_inset
+
+ עם שגיאה יחסית של 
+\begin_inset Formula $5.43\%$
+\end_inset
+
+.
+ כפונקציה של אורכי הגל בגלבו כתלות במרחק בין הלוחות חילצנו את אורך הגל של
+ המשדר וקיבלנו 
+\begin_inset Formula $\lambda=0.0279\pm0.0008m$
+\end_inset
+
+ עם שגיאה יחסית של 
+\begin_inset Formula $2.87\%$
+\end_inset
+
+.
+ ערך זה מכיל את הערך הרשום על המשדר והגלאי ובנוסף שגיאתו היחיסית קטנה.
+ 
+\end_layout
+
+\begin_layout Standard
+לבסוף, חקרנו את התופעה של צבירת פאזה, על ידי בחירת מרחקים מתאימים בין לוחות
+ הגלבו ציפינו ליצור קיטובים לינארי ומעגלי, לא הייתה התאמה טובה לתאוריה הן
+ מבחינה איכותית )לא קיבלנו בגרף הפולרי צורת שמתאימות לקיטוב לינארי ומעגלי(
+ והן מבחינה כמותית בעזרת התאמה לרגרסיה קיבלנו 
+\begin_inset Formula $R^{2}=0.917$
+\end_inset
+
+ ו
+\begin_inset Formula $R^{2}=0.963$
+\end_inset
+
+ עבור לינארי ומעגלי בהתאמה.
+ ייתכן שהפער נבע מכך שהניסוי רגיש מאוד לחריגות במפתח 
+\begin_inset Formula $d$
+\end_inset
+
+ ולא הייתה לנו יכולת לקבוע אותו בדיוק שכזה.
+ דרך אפשרית לשפר את הניסוי היא לחזור על המדידות עם מפתחים שונים עבור שני
+ הקיטובים )לכל קיטוב יש מספר סדרים שמתאימים לו(.
+\end_layout
+
+\begin_layout Standard
+במהלך הניסוי מצאנו את אורך הגל של המשדר במספר דרכים שונות.
+ הדרך הכי מדוייקת עם דיוק יחסי של פחות מ
+\begin_inset Formula $3\%$
+\end_inset
+
+ הייתה בעזרת מציאת אורך הגל בגלבו כפונקציה של המרחק בין הלוחות וחילוץ אורך
+ הגל ממשוואת הרגרסיה, אך שווה לציין שבעזרת מדדית המפתח המינמלי עבורו יש
+ קריאה משמעותית של הגלאי, חישבנו את אורך הגל בדיוק של כ
+\begin_inset Formula $7\%$
+\end_inset
+
+ במדידה מהירה בהרבה.
 \end_layout
 
 \begin_layout Standard
@@ -5284,14 +5881,91 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Newpage newpage
+תדריך גלי-מיקרו.
+\end_layout
+
+\begin_layout Section*
+נספח
+\end_layout
+
+\begin_layout Subsection*
+חישוב שגיאות נגררות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\lambda=2\delta d_{min}\label{err: wavelen=2*d_min}
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{equation}
+\delta\lambda_{g}=2\delta m\label{err: wavelen=2*m}
+\end{equation}
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\delta m$
+\end_inset
+
+ הוא השגיאה של שיפוע הגרף שהתקבל מהרגרסיה.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\frac{1}{\lambda_{g}^{2}}=2\frac{\delta\lambda_{g}}{\lambda_{g}^{3}}\label{err: 1/lambda_g^2}
+\end{equation}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Section*
-נספח
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\frac{1}{\left(2d\right)^{2}}=2\frac{\delta d}{4d^{3}}\label{err: 1/(2d)^2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta\lambda=\frac{\delta b}{2b^{\frac{3}{2}}}\label{err: wavelen from intercept}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $b$
+\end_inset
+
+ הוא נקודת החיתוך שהתקבל מהרגרסיה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\delta d=\left|\frac{1}{4\left(\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L}\right)^{2}\right)^{\frac{3}{2}}}\cdot\left(-\frac{\Delta\phi}{\pi L^{2}\lambda}+\left(\frac{\Delta\phi}{2\pi}\right)^{2}\cdot\frac{2L}{L^{3}}\right)\delta L\right|\label{err: d from phi}
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \end_body
