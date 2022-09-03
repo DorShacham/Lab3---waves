@@ -514,7 +514,7 @@ I=I_{0}\cos^{2}\left(\theta_{1}\right)\cos^{2}\left(\theta_{2}\right)\label{eq:c
 \end_inset
 
  היא העוצמה הנמדדת ב
-\begin_inset Formula $\theta=0^{\circ}$
+\begin_inset Formula $\theta_{1}=\theta_{2}=0^{\circ}$
 \end_inset
 
 .
@@ -529,7 +529,7 @@ I=I_{0}\cos^{2}\left(\theta_{1}\right)\cos^{2}\left(\theta_{2}\right)\label{eq:c
 
 \begin_layout Standard
 בניסוי השני מוקם בין המשדר לגלאי גלבו המורכב משני לוחות מתכתיים עם מרחק
- בר שינוי ביניהם כמתואר באיור הבא :
+ בר שינוי ביניהם כמתואר באיור הבא:
 \end_layout
 
 \begin_layout Standard
@@ -907,7 +907,7 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 
 \begin_layout Standard
 כאשר הפרש הפאזה הוא כפולה שלמה של 
-\begin_inset Formula $2\pi$
+\begin_inset Formula $\pi$
 \end_inset
 
  נקבל קיטוב לינארי וכאשר הפרש הפאזה הוא 
@@ -1023,6 +1023,10 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 \series bold
 
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage pagebreak
 \end_inset
 
 
@@ -1849,8 +1853,8 @@ status open
 \uwave default
 \noun default
 \color inherit
-)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה,המדידות מיוצגות בנקודות כחולות
- עם קווי שגיאה.
+)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה.
+ המדידות מיוצגות בנקודות כחולות עם קווי שגיאה.
  בנוסף ניתן לראות פונקציות רגרסיה הבאות:
 \end_layout
 
@@ -1890,7 +1894,7 @@ y=\left(0.59\pm0.05\right)cos^{2}\left(\theta\right),\ R^{2}=0.950
 \end_layout
 
 \begin_layout Plain Layout
-כאשר השגיאות נלקחו מתנתוני הרגרסיה.
+כאשר השגיאות נלקחו מנתוני הרגרסיה.
 \end_layout
 
 \end_inset
@@ -2848,8 +2852,8 @@ status open
 \uwave default
 \noun default
 \color inherit
-)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה,המדידות מיוצגות בנקודות כחולות
- עם קווי.
+)הימני( ניתן לראות בהצגה קרטזית ופולרית בהתאמה.
+ המדידות מיוצגות בנקודות כחולות עם קווי.
 \end_layout
 
 \end_inset
@@ -2877,7 +2881,7 @@ noprefix "false"
 \begin_inset Formula $\cos^{4}(\theta+\frac{\pi}{2})$
 \end_inset
 
-)כיוון ש 
+ )כיוון ש 
 \begin_inset Formula $\theta$
 \end_inset
 
@@ -2941,7 +2945,7 @@ noprefix "false"
 \begin_inset Formula $R^{2}=0.997$
 \end_inset
 
- ותחומי שגיאה שמכילים את עקום הרגרסיה .
+ ותחומי שגיאה שמכילים את עקום הרגרסיה.
  התאמה טובה )אך פחות טובה משל גרף
 \family roman
 \series medium
@@ -2970,32 +2974,7 @@ noprefix "false"
 \noun default
 \color inherit
 7
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
 \numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 ( התקבלה במדידות המוצגות בגרף
 \family roman
 \series medium
@@ -3420,6 +3399,10 @@ status open
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 ניתן לראות שהגרף תואם לגרף לינארי בהצגה הפולרית, שכן צורתו היא 
 \begin_inset Formula $\cos^{2}\left(\theta\right)$
 \end_inset
@@ -3428,7 +3411,17 @@ status open
 \begin_inset Formula $\cos^{2}\left(\theta\right)$
 \end_inset
 
- .
+ )כתוצאה מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:cos^2"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+(.
 \begin_inset Newline newline
 \end_inset
 
@@ -3529,7 +3522,7 @@ status open
 \begin_inset Formula $m$
 \end_inset
 
- עבור גל מקוטב בניצב ללוחות הגלבו
+ עבור גל מקוטב במקביל ללוחות הגלבו
 \end_layout
 
 \begin_layout Plain Layout
@@ -3564,8 +3557,19 @@ noprefix "false"
 \end_inset
 
 ( ולכן ציפינו לפונקציה לא רציפה.
- בגרף זה ניתן לראות קפיצה בקריאת הגלאי בהתאם לתאוריה, כמו כן ניתן לשים לב
- שהמפתח הקטן ביותר עבורו יש קריאה משמעותית של הגלאי הוא 
+ בגרף זה ניתן לראות קפיצה בקריאת הגלאי בהתאם לתאוריה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן ניתן לשים לב שהמפתח הקטן ביותר עבורו יש קריאה משמעותית של הגלאי הוא
+ 
 \begin_inset Formula 
 \[
 d_{min}=0.014\pm0.001m
@@ -3844,14 +3848,23 @@ status open
 \align right
 הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
  הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים:
-\begin_inset Formula 
-\[
-y=(0.0184\pm0.0007)x+(0.047\pm0.002)
-\]
+\end_layout
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $y=\left(0.0184\pm0.0007\right)x+\left(0.047\pm0.002\right)$
 \end_inset
 
- כאשר תחום השגיאה הוא תחום ה
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+כאשר תחום השגיאה הוא תחום ה
 \begin_inset Formula $95\%$
 \end_inset
 
@@ -3988,7 +4001,7 @@ status open
 \begin_inset Formula $x$
 \end_inset
 
- מרחק הצמתים מתחילת הגלבו במטרים כתלות ב
+ מרחק האקסטרימות מתחילת הגלבו במטרים כתלות ב
 \begin_inset Formula $n$
 \end_inset
 
@@ -3999,14 +4012,23 @@ status open
 \align right
 הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
  הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים:
-\begin_inset Formula 
-\[
-y=(0.0184\pm0.0001)x+(0.0559\pm0.0004)
-\]
+\end_layout
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $y=\left(0.0184\pm0.0001\right)x+\left(0.0559\pm0.0004\right)$
 \end_inset
 
- כאשר תחום השגיאה הוא תחום ה
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+כאשר תחום השגיאה הוא תחום ה
 \begin_inset Formula $95\%$
 \end_inset
 
@@ -4028,7 +4050,7 @@ y=(0.0184\pm0.0001)x+(0.0559\pm0.0004)
 \end_layout
 
 \begin_layout Standard
-שיפוע הגרף שהתקבל מהרגרסיה הוא המרחק בין שני האקסטרמות סמוכות המשוקלל מכלל
+שיפוע הגרף שהתקבל מהרגרסיה הוא המרחק בין שתי אקסטרמות סמוכות המשוקלל מכלל
  המדידות.
  לכן אורך הגל הוא פעמיים ערך זה ומכאן שאורך גל הגלבו הוא 
 \begin_inset Formula $\lambda_{g}=0.0368\pm0.0002m$
@@ -4213,14 +4235,23 @@ noprefix "false"
 
  בהתאמה בנספח(.
  הקו המקווקו הכתום מתאר את הרגרסיה הלינארית:
-\begin_inset Formula 
-\[
-y=(-0.96\pm0.12)x+(1.29\pm0.07)10^{3}
-\]
+\end_layout
 
+\begin_layout Plain Layout
+\align center
+\begin_inset Formula $y=\left(-0.96\pm0.12\right)x+\left(1.29\pm0.07\right)10^{3}$
 \end_inset
 
- כאשר תחום השגיאה הוא תחום ה
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align right
+כאשר תחום השגיאה הוא תחום ה
 \begin_inset Formula $95\%$
 \end_inset
 
@@ -4357,7 +4388,8 @@ noprefix "false"
 \begin_inset Formula $\pi$
 \end_inset
 
- .כדי למצוא את המרחק הנ
+.
+ כדי למצוא את המרחק הנ
 \begin_inset Quotes erd
 \end_inset
 
@@ -4365,7 +4397,10 @@ noprefix "false"
 \begin_inset Formula $\Delta\phi=\pi,\,L=0.15\pm0.01m,\,\lambda=0.028m$
 \end_inset
 
- , וקיבלנו שעבור 
+ , וקיבלנו שעבור
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $d_{linear}=0.033\pm0.001m$
 \end_inset
 
@@ -4390,13 +4425,6 @@ noprefix "false"
 
  )עקב יכולת רזולוצית הדיוק המתקבלת משיטת המדידה בעזרת סרגל( ומדדנו את המתח
  כתלות בזווית היחסית כפי שנעשה קודם לכן בחלקים הקודמים של הניסוי.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -5212,7 +5240,7 @@ noprefix "false"
 \begin_inset Formula $R^{2}=0.995$
 \end_inset
 
- , ערך זה מראה התאמה טובה מאוד.
+, ערך זה מראה התאמה טובה מאוד.
 \end_layout
 
 \begin_layout Standard
@@ -5318,7 +5346,7 @@ noprefix "false"
  אנו משערים שהסיבה לחריגה זו, בנוסף לסיבה שכתבנו מקודם ומשפיעה על כל תוצאות
  הניסוי היא בעיה בביצוע הניסוי הספציפי הזה.
  במהלך הניסוי ביצענו סיבוב של הגלאי והמשדר וכנראה נוצרה הטייה בינהם.
- באמצע הניסוי ביצענו תיקון להטייה, שבמדידות שלאחיה ניתן לראות חריגה מהאופי
+ באמצע הניסוי ביצענו תיקון להטייה, במדידות שלאחריה ניתן לראות חריגה מהאופי
  של שאר המדידות, הן המדידות בסביבות השיא ה
 \numeric on
 2
@@ -5455,7 +5483,11 @@ noprefix "false"
 .
  מהתיאוריה ציפינו שגם תהיה קפיצה כזאת בכמחצית מאורך הגל של המשדר, ואכן ממדידה
  זו אני מסיקים שאורך הגל הוא 
-\begin_inset Formula $\lambda=2d_{min}=0.028\pm0.002m$
+\begin_inset Formula 
+\[
+\lambda=2d_{min}=0.028\pm0.002m
+\]
+
 \end_inset
 
  כשהערך המצופה לפי אורך הגל הרשום על המשדר הוא 
@@ -5716,7 +5748,7 @@ noprefix "false"
 \begin_inset Formula $cos^{4}\theta$
 \end_inset
 
- אולם מהרגסיה למדידות התקבלה התאמה טובה רק בתחומים
+ אולם מהרגרסיה למדידות התקבלה התאמה טובה רק בתחומים 
 \begin_inset Formula $[0,\pi/2]$
 \end_inset
 
@@ -5733,7 +5765,7 @@ noprefix "false"
 \end_inset
 
  בעוד שבשני התחומים הנותרים התקבלה התאמה לקויה עם 
-\begin_inset Formula $R^{2}>0.96$
+\begin_inset Formula $R^{2}<0.96$
 \end_inset
 
 .
@@ -5754,7 +5786,7 @@ noprefix "false"
 
 .
  כמו כן, ראינו שעבור קיטוב זה מתקבל מבחינה איכותית קשר שמזכיר התנהגות של
- מקטב לינארי במעבר דרך הגלבו.
+ גל מקוטב לינארית במעבר דרך הגלבו.
  עבור קיטוב מקביל ללוחות ראינו שישנה נקודת אי רציפות ב
 \begin_inset Formula $0.014\pm0.001m$
 \end_inset
@@ -5776,8 +5808,7 @@ noprefix "false"
 \end_inset
 
  עם שגיאה יחסית של 
-\begin_inset Formula $27.02%\%
-$
+\begin_inset Formula $27.02\%$
 \end_inset
 
  ועבור האקסטרימות קיבלנו 
@@ -5832,7 +5863,7 @@ $
 \end_inset
 
  הייתה בעזרת מציאת אורך הגל בגלבו כפונקציה של המרחק בין הלוחות וחילוץ אורך
- הגל ממשוואת הרגרסיה, אך שווה לציין שבעזרת מדדית המפתח המינמלי עבורו יש
+ הגל ממשוואת הרגרסיה, אך שווה לציין שבעזרת מדידת המפתח המינמלי עבורו יש
  קריאה משמעותית של הגלאי, חישבנו את אורך הגל בדיוק של כ
 \begin_inset Formula $7\%$
 \end_inset

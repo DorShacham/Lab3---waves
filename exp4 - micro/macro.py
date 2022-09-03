@@ -181,7 +181,7 @@ plt.show()
 
 for fig in fig_array:
     fname =str( "fig/plot" + str(fig_array.index(fig) + 7))
-    fig.savefig(fname)
+    fig.savefig(fname,bbox_inches='tight')
 
 
 
