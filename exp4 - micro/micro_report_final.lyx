@@ -154,7 +154,7 @@ End
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "C:/Users/dorsh/AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+filename "C:/Program Files (x86)/LyX 2.3/Resources/templates/MacrosHeb.lyx"
 
 \end_inset
 
@@ -1981,7 +1981,7 @@ y=\left(0.59\pm0.05\right)cos^{2}\left(\theta\right),\ R^{2}=0.950
 \end_inset
 
 .
- נציין במדידות סביב הזווית 
+ נציין שבמדידות סביב הזווית 
 \begin_inset Formula $\theta=\dfrac{3\pi}{2}$
 \end_inset
 
@@ -3403,11 +3403,144 @@ status open
 \end_layout
 
 \begin_layout Standard
-ניתן לראות שהגרף תואם לגרף לינארי בהצגה הפולרית, שכן צורתו היא 
+ניתן לראות שהגרף תואם לגרף לינארי בהצגה הפולרית, שכן צורתו דומה ל
 \begin_inset Formula $\cos^{2}\left(\theta\right)$
 \end_inset
 
- מבחינה איכותית, וגרף לינארי בהצגה פולרית פרופורציוני ל
+ מבחינה איכותית )העוצמה שואפת ל
+\begin_inset Formula $0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+בזווית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $90$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+מעלות ומקסימלית ב
+\numeric on
+
+\begin_inset Formula $0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+כשצורת הגרף סימטרית בצורת 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+(, וגרף לינארי בהצגה פולרית פרופורציוני ל
 \begin_inset Formula $\cos^{2}\left(\theta\right)$
 \end_inset
 
@@ -3425,7 +3558,7 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
- לאחר מכך כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון 
+ לאחר מכן כיוונו את קיטוב המשדר להיות במקביל ללוח, בכיוון 
 \begin_inset Formula $x$
 \end_inset
 
@@ -4425,6 +4558,13 @@ noprefix "false"
 
  )עקב יכולת רזולוצית הדיוק המתקבלת משיטת המדידה בעזרת סרגל( ומדדנו את המתח
  כתלות בזווית היחסית כפי שנעשה קודם לכן בחלקים הקודמים של הניסוי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
