@@ -3844,14 +3844,18 @@ status open
 \align right
 הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
  הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים:
-\begin_inset Formula 
-\[
-y=(0.0184\pm0.0007)x+(0.047\pm0.002)
-\]
-
+\begin_inset Newline newline
 \end_inset
 
- כאשר תחום השגיאה הוא תחום ה
+
+\begin_inset Formula $y=(0.0184\pm0.0007)x+(0.047\pm0.002)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+כאשר תחום השגיאה הוא תחום ה
 \begin_inset Formula $95\%$
 \end_inset
 
@@ -3998,15 +4002,15 @@ status open
 \begin_layout Plain Layout
 \align right
 הנקודות הכחולות מייצגות את המדידות עם קווי השגיאה שלהן.
- הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים:
-\begin_inset Formula 
-\[
-y=(0.0184\pm0.0001)x+(0.0559\pm0.0004)
-\]
-
+ הקו המקווקו הכתום מתאר את הרגרסיה הלינארית המתאימה לנתונים: 
+\begin_inset Formula $y=(0.0184\pm0.0001)x+(0.0559\pm0.0004)$
 \end_inset
 
- כאשר תחום השגיאה הוא תחום ה
+ 
+\begin_inset Newline newline
+\end_inset
+
+כאשר תחום השגיאה הוא תחום ה
 \begin_inset Formula $95\%$
 \end_inset
 
@@ -4213,14 +4217,18 @@ noprefix "false"
 
  בהתאמה בנספח(.
  הקו המקווקו הכתום מתאר את הרגרסיה הלינארית:
-\begin_inset Formula 
-\[
-y=(-0.96\pm0.12)x+(1.29\pm0.07)10^{3}
-\]
-
+\begin_inset Newline newline
 \end_inset
 
- כאשר תחום השגיאה הוא תחום ה
+
+\begin_inset Formula $y=(-0.96\pm0.12)x+(1.29\pm0.07)10^{3}$
+\end_inset
+
+ 
+\begin_inset Newline newline
+\end_inset
+
+כאשר תחום השגיאה הוא תחום ה
 \begin_inset Formula $95\%$
 \end_inset
 
@@ -5776,8 +5784,7 @@ noprefix "false"
 \end_inset
 
  עם שגיאה יחסית של 
-\begin_inset Formula $27.02%\%
-$
+\begin_inset Formula $27.02\%$
 \end_inset
 
  ועבור האקסטרימות קיבלנו 
