@@ -154,7 +154,7 @@ End
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+filename "C:/Program Files (x86)/LyX 2.3/Resources/templates/MacrosHeb.lyx"
 
 \end_inset
 
@@ -372,7 +372,7 @@ today
 
 \begin_layout Standard
 בניסוי הראשון, בחנו את השפעת סריג מתכתי שמוקם בין משדר וגלאי על עוצמת הגל
- ובדקנו האם היא תואמת להשפעה הצפויה ממקטב לינארי.
+ הנמדדת בגלאי ובדקנו האם היא תואמת להשפעה הצפויה ממקטב לינארי.
  תחילה מדדנו את עוצמת הגל הנקלטת כתלות בזווית היחסית בין הגלאי והמשדר ללא
  סריג ביניהם.
  לאחר מכן מדדנו את עוצמת הגל הנקלטת כשסריג מוקם בין המשדר והגלאי כתלות בזווית
@@ -518,6 +518,13 @@ I=I_{0}\cos^{2}\left(\theta_{1}\right)\cos^{2}\left(\theta_{2}\right)\label{eq:c
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -816,6 +823,13 @@ status open
 \end_layout
 
 \begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 בנוסף, כאשר משודר גל המקוטב גם בכיוון 
 \begin_inset Formula $\hat{x}$
 \end_inset
@@ -1006,71 +1020,22 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 .
  כעת נתאר את תוצאות שני הניסויים השונים בנפרד.
  
-\end_layout
+\series bold
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
+\begin_inset Newline newline
 \end_inset
 
 
 \end_layout
 
-\begin_layout Subsection*
-ניסוי
-\family roman
+\begin_layout Standard
+
 \series bold
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
+ניסוי 
 \numeric on
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
 1
-\family roman
-\series bold
-\shape up
-\size normal
-\emph off
 \numeric off
-\bar no
-\strikeout off
-\xout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\xout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
-- בחינת סריג מתכתי כמקטב לינארי של גלים אלקטרומגנטיים
+ - בחינת סריג מתכתי כמקטב לינארי של גלים אלקטרומגנטיים
 \end_layout
 
 \begin_layout Standard
@@ -1114,7 +1079,7 @@ d=\frac{1}{2\sqrt{\frac{\Delta\phi}{\pi L\lambda}-\left(\frac{\Delta\phi}{2\pi L
 \begin_inset Formula $[0,2\pi]$
 \end_inset
 
-, לכן נציג את התוצאות בנפרד עבור כל ענף של הפונקציה ההופכית(: 
+, לכן נציג את התוצאות בנפרד עבור כל ענף של הפונקציה ההופכית(.
 \end_layout
 
 \begin_layout Standard
@@ -1616,11 +1581,11 @@ noprefix "false"
 \end_inset
 
  באף אחת מהן, הן ממבט איכותי מעצם כך שגרף הרגרסיה לא נופל בתחום קווי השגיאה
- והן לפי ערך מדד 
+ והן לפי ערכי מדד 
 \begin_inset Formula $R^{2}$
 \end_inset
 
- שכולם קטנים מ
+ שבכל התחומים קטנים מ
 \family roman
 \series medium
 \shape up
@@ -1944,7 +1909,7 @@ y=\left(0.59\pm0.05\right)cos^{2}\left(\theta\right),\ R^{2}=0.950
 \end_inset
 
  שכן ההתאמה של הנתונים לרגרסיה לפונקציה מהצורה 
-\begin_inset Formula $f(\theta)=a\cdot|\cos b\theta|$
+\begin_inset Formula $f(\theta)=a\cdot|\cos\theta|$
 \end_inset
 
  היא טובה לפי מדד 
@@ -1952,16 +1917,16 @@ y=\left(0.59\pm0.05\right)cos^{2}\left(\theta\right),\ R^{2}=0.950
 \end_inset
 
  -מתקבל הערך 
-\begin_inset Formula $R^{2}=0.997$
+\begin_inset Formula $R^{2}=0.995$
 \end_inset
 
 .
  זאת בעוד שההתאמה לפונקציה מהצורה 
-\begin_inset Formula $f(\theta)=a\cdot\cos^{2}b\theta$
+\begin_inset Formula $f(\theta)=a\cdot\cos^{2}\theta$
 \end_inset
 
  היא לא טובה ומתקבל הערך 
-\begin_inset Formula $R^{2}=0.952$
+\begin_inset Formula $R^{2}=0.950$
 \end_inset
 
 .
@@ -3217,7 +3182,11 @@ noprefix "false"
 \begin_inset Formula $1mm$
 \end_inset
 
- , המרחק נמדד מקצה הלוחות הקרוב לגלאי )כך גם בשאר המדידות בניסוי(.
+ , המרחק נמדד מקצה הלוחות הקרוב לגלאי )כך גם בשאר המדידות של 
+\begin_inset Formula $d$
+\end_inset
+
+ בניסוי(.
  מהמתח הנמדד הסקנו את העוצמה ולהלן התוצאות בגרפים:
 \end_layout
 
@@ -3245,6 +3214,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot13.png
 	lyxscale 20
+	scale 70
 
 \end_inset
 
@@ -3337,13 +3307,13 @@ status open
 \end_layout
 
 \begin_layout Standard
-\begin_inset space \space{}
+\begin_inset Newpage pagebreak
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 לאחר מכן, עבור מפתח קבוע 
 \begin_inset Formula $d=0.04m$
 \end_inset
@@ -5345,10 +5315,11 @@ noprefix "false"
 
 \begin_layout Standard
 כלומר ישנה חריגה בין המתקבל מהמדידות לציפיה מהתיאוריה.
- אנו משערים שהסיבה לחריגה זו בנוסף לסיבה שכתבנו מקודם ומשפיעה על כל תוצאות
+ אנו משערים שהסיבה לחריגה זו, בנוסף לסיבה שכתבנו מקודם ומשפיעה על כל תוצאות
  הניסוי היא בעיה בביצוע הניסוי הספציפי הזה.
  במהלך הניסוי ביצענו סיבוב של הגלאי והמשדר וכנראה נוצרה הטייה בינהם.
- באמצע הניסוי ביצענו תיקון להטייה אשר ניתן לראות בתוצאות בשיא ה
+ באמצע הניסוי ביצענו תיקון להטייה, שבמדידות שלאחיה ניתן לראות חריגה מהאופי
+ של שאר המדידות, הן המדידות בסביבות השיא ה
 \numeric on
 2
 \family roman
