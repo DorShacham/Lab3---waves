@@ -58,7 +58,7 @@ explanation of how we found it or why that is the polarization:
 '''
 
 #5
-n = np.tan(brooster_deg)
+n = np.tan(brooster_deg * np.pi / 180)
 
 #6
 '''
