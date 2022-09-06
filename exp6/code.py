@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Aug 25 22:39:55 2022
-
-@author: dorsh
-"""
-
 
 import numpy as np
 import scipy
@@ -70,3 +63,21 @@ def Reg_print(fit):
     m = ufloat(fit.slope,fit.stderr*2)
     b = ufloat(fit.intercept,fit.intercept_stderr*2)
     print("==> y =(",m,")x + (",b,") , R^2=",fit.rvalue**2)
+    
+    
+    
+#%% prep
+L = 62 #mm
+x = np.linspace(0, 62,1000)
+wavelen0 = 2*L / 32
+wavelen = [n*wavelen0 for n in [1,2,4,8,16,32]]
+wave = [np.sin(2*np.pi/l*x) for l in wavelen]
+plt.figure()
+tot_wave = 0
+for w in wave:
+ #   plt.plot(x,w,"-.")
+    tot_wave +=w
+plt.plot(x,tot_wave,label="superposition")
+plt.grid()
+plt.legend()
+plt.show()
