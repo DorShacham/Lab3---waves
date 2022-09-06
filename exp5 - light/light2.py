@@ -113,8 +113,8 @@ print("n CO2 is:",n_CO2)
 
 #%% He
 print_seciont("He")
-p = np.array([0,1]) # need to notice units and do conversion to cmHg or other the other way around
-p_err = np.array([0.1,0.1])
+p = np.array([0,1,20]) # need to notice units and do conversion to cmHg or other the other way around
+p_err = np.array([0.1,0.1,0.1])
 F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
 fig,fit = one4all(p, F,0,p_err,"linear",None,"p [pressure unit]","F")
@@ -128,8 +128,8 @@ print("n He is:",n_He)
 
 #%% Mixture of CO2 and He
 print_seciont("Mixture of CO2 and He")
-p = np.array([0,1]) # need to notice units and do conversion to cmHg or other the other way around
-p_err = np.array([0.1,0.1])
+p = np.array([0,1,0.2]) # need to notice units and do conversion to cmHg or other the other way around
+p_err = np.array([0.1,0.1,0.1])
 F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
 fig,fit = one4all(p, F,0,p_err,"linear",None,"p [pressure unit]","F")
@@ -141,6 +141,6 @@ n = 1 + alpha * p_nom / (2 * kb * T_nom * wavelen0)
 print("n mixture is:",n)
 
 CO2overHe = (n_He - n)/(n - n_CO2)
-CO2_part = CO2overHe * 100 #percent
-He_part = 0 # to be contintinued
+CO2_part = CO2overHe/(1 + CO2overHe) * 100 #percent
+He_part =  1/(1 + CO2overHe) * 100 #percent #100 -  CO2_part
 print("There is %.2f%% CO2 and %.2f%% He in the mixture"%(CO2_part,He_part))
