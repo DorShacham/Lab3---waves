@@ -1454,7 +1454,7 @@ noprefix "false"
  ונקבל:
 \begin_inset Formula 
 \[
-n_{He}=1.00044\pm0.00002
+n_{CO2}=1.00044\pm0.00002
 \]
 
 \end_inset
@@ -1464,7 +1464,7 @@ n_{He}=1.00044\pm0.00002
 
 \begin_layout Standard
 תחום זה מכיל את תחום התוצאה התאורטית שנלקחה מהטבלה בתדריך 
-\begin_inset Formula $n_{He}^{theory}\in\left(1.000449,1.000450\right)$
+\begin_inset Formula $n_{CO2}^{theory}\in\left(1.000449,1.000450\right)$
 \end_inset
 
 .
