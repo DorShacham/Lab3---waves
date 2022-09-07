@@ -183,7 +183,7 @@ status open
 
 \series bold
 \size huge
-כותרת
+מדידת מקדמי השבירה של אור דרך גזים שונים בעזרת אינטרפרומטר מאך-זנדר
 \end_layout
 
 \begin_layout Plain Layout
@@ -1028,7 +1028,12 @@ y=\left(0.161\pm0.008\right)x+\left(-68\pm5\right)
 \begin_inset Newline newline
 \end_inset
 
+ניתן לשים לב שהנתונים מתאימים לרגרסיה הן מבחינה איכותית, כל הנקודות על קו
+ הרגרסיה או משיקות לקו והן מבחניה כמותית לפי מדד ההתאמה 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
 
+ יש התאמה טובה במיוחד.
 \end_layout
 
 \begin_layout Standard
@@ -1271,7 +1276,13 @@ y=\left(0.055\pm0.005\right)x+\left(0.6\pm2\right)
 \begin_inset Newline newline
 \end_inset
 
+ניתן לשים לב שהנתונים לא מתאימים לרגרסיה הן מבחינה איכותית, חלק גדול מהנקודות
+ לא על קו הרגרסיה )וגם לא בתחום השגיאה( והן מבחניה כמותית לפי מדד ההתאמה
+ 
+\begin_inset Formula $R^{2}=0.971$
+\end_inset
 
+ אין התאמה טובה במיוחד.
 \end_layout
 
 \begin_layout Standard
@@ -1519,7 +1530,12 @@ y=\left(0.249\pm0.011\right)x+\left(-41\pm7\right)
 \begin_inset Newline newline
 \end_inset
 
+ניתן לשים לב שהנתונים מתאימים לרגרסיה הן מבחינה איכותית, כמעט כל הנקודות
+ על קו הרגרסיה או משיקות לקו והן מבחניה כמותית לפי מדד ההתאמה 
+\begin_inset Formula $R^{2}=0.996$
+\end_inset
 
+ יש התאמה טובה.
 \end_layout
 
 \begin_layout Standard
@@ -1763,7 +1779,13 @@ y=\left(0.13\pm0.01\right)x+\left(-5.6\pm3.3\right)
 \begin_inset Newline newline
 \end_inset
 
+ניתן לשים לב שהנתונים מתאימים חלקית לרגרסיה הן מבחינה איכותית, רוב הנקודות
+ על קו הרגרסיה אך חלק לא מבוטל אינו על הקו ואינו בטווח השגיאה של קו הרגרסיה,
+ והן מבחניה כמותית לפי מדד ההתאמה 
+\begin_inset Formula $R^{2}=0.991$
+\end_inset
 
+ התאמה לא טובה במיוחד אך גם לא רעה מאוד.
 \end_layout
 
 \begin_layout Standard
@@ -1891,7 +1913,7 @@ noprefix "false"
 מתוך יחס זה קיבלנו חילצנו:
 \begin_inset Formula 
 \[
-N_{CO2}=46\pm4\%,N_{He}=54\pm4\%
+\frac{N_{CO2}}{N}=46\pm4\%,\frac{N_{He}}{N}=54\pm4\%,\ N=N_{CO2}+N_{He}
 \]
 
 \end_inset
@@ -2074,6 +2096,17 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 עבור המדידות שנעשו בגז הליום גם כן ציפינו ליחס ישר בין 
 \begin_inset Formula $p$
 \end_inset
@@ -2124,6 +2157,110 @@ noprefix "false"
 
 .
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור המדידות בגז הפחמן דו-חמצני קיבלנו שהתאמה של רגרסיה לנארית לנתונים היא
+ 
+\begin_inset Formula $y=\left(0.249\pm0.011\right)x+\left(-41\pm7\right)$
+\end_inset
+
+ כשהתאמה של הרגרסיה היא 
+\begin_inset Formula $R^{2}=0.996$
+\end_inset
+
+ התאמה טובה.
+ משיפוע שהתקבל הסקנו את 
+\begin_inset Formula $\alpha_{CO_{2}}=\left(4.38\pm0.23\right)\cdot10^{-27}\frac{J}{mmHg}$
+\end_inset
+
+ ו ממנו חישבנו את 
+\begin_inset Formula $n_{CO_{2}\,measured}=1.00044\pm0.00002$
+\end_inset
+
+.
+ זאת בעוד שהערך המקובל בספרות נמצא בתחום 
+\begin_inset Formula $n_{CO_{2}\,expected}\in\left(1.000449,1.000450\right)$
+\end_inset
+
+ כך שהערך הצפוי מוכל בערך המתקבל מהמדידות כשהשגיאה היחסית היא 
+\begin_inset Formula $\frac{\delta n}{n_{CO2\ measured}}=0.002\%$
+\end_inset
+
+.
+ כלומר יש התאמה טובה בין המדידות לתיאוריה.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במדידות שנעשו בגז התערובת )הליום יחד עם פחמן דו-חמצני( קבלנו שהתאמה של רגרסיה
+ לינארית למדידות היא 
+\begin_inset Formula $y=\left(0.13\pm0.01\right)x+\left(-5.6\pm3.3\right)$
+\end_inset
+
+ כש
+\begin_inset Formula $R^{2}=0.991$
+\end_inset
+
+ .
+ משיפוע הגרף הסקנו ש 
+\begin_inset Formula $\alpha_{mixture}=\left(2.26\pm0.17\right)\cdot10^{-27}\frac{J}{mmHg}$
+\end_inset
+
+ וממנו חישבו את 
+\begin_inset Formula $n_{mixture}=1.00022\pm0.00002$
+\end_inset
+
+.
+ מ
+\begin_inset Formula $n_{mixture}$
+\end_inset
+
+ ונוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: N2/N1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חושב היחס בין הפחמן הדו-חמצני להליום שבצינור והתקבל ש 
+\begin_inset Formula $\frac{N_{CO2}}{N}=46\pm4\%,\frac{N_{He}}{N}=54\pm4\%$
+\end_inset
+
+ כש 
+\begin_inset Formula $N=N_{CO2}+N_{He}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נציין שלא קיים ערך צפוי של מקדם השבירה )ספרותי או תיאורטי( להשוות איתו.
 \end_layout
 
 \begin_layout Section*
