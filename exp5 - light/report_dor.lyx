@@ -1113,7 +1113,7 @@ noprefix "false"
 
 \begin_layout Standard
 תחום זה מכיל את התוצאה התאורטית שנלקחה מהטבלה בתדריך 
-\begin_inset Formula $n_{air}^{theory}=1.0002926$
+\begin_inset Formula $n_{air\ expected}=1.0002926$
 \end_inset
 
 .
@@ -1356,7 +1356,7 @@ noprefix "false"
 
 \begin_layout Standard
 תחום זה אינו מכיל את התוצאה התאורטית שנלקחה מהטבלה בתדריך 
-\begin_inset Formula $n_{He}^{theory}=1.000036$
+\begin_inset Formula $n_{He\ expected}=1.000036$
 \end_inset
 
 .
@@ -1604,7 +1604,7 @@ noprefix "false"
 
 \begin_layout Standard
 תחום זה מכיל את תחום התוצאה התאורטית שנלקחה מהטבלה בתדריך 
-\begin_inset Formula $n_{CO2}^{theory}\in\left(1.000449,1.000450\right)$
+\begin_inset Formula $n_{CO2\ expected}\in\left(1.000449,1.000450\right)$
 \end_inset
 
 .
@@ -1927,6 +1927,206 @@ noprefix "false"
 
 \begin_layout Section*
 דיון בתוצאות
+\end_layout
+
+\begin_layout Standard
+נדון בתוצאות הניסוי עבור הגזים השונים בנפרד.
+ ההשוואה בין הערך הנמדד והצפוי של מקדמי השבירה בוצעה כש
+\begin_inset Formula $T_{0}=293.15{}^{\circ}K$
+\end_inset
+
+ והלחץ הוא 
+\begin_inset Formula $p_{0}=760mmHg$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עבור האוויר כגז בצינור, נלקחו מדידות של מספר הפסים 
+\begin_inset Formula $F$
+\end_inset
+
+ כתלות בלחץ 
+\begin_inset Formula $p$
+\end_inset
+
+.
+ מנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: F(p)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ צפינו ליחס לינארי בין 
+\begin_inset Formula $p$
+\end_inset
+
+ ל 
+\begin_inset Formula $F$
+\end_inset
+
+ ואכן רגרסיה לינארית לנתוני המדידות הניבה התאמה טובה של 
+\begin_inset Formula $y=\left(0.161\pm0.008\right)x+\left(-68\pm5\right)$
+\end_inset
+
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+וההתאמה של הרגרסיה היא 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
+
+, התאמה טובה מאוד.
+ משיפוע הגרף שהתקבל הסקנו לפי אותה נוסחא ש 
+\begin_inset Formula $\alpha_{air}=\left(2.84\pm0.14\right)\cdot10^{-27}\frac{J}{mmHg}$
+\end_inset
+
+ )כשהערכת שגיאת המדידה נקבעה לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: alpha"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח חישובי שגיאות( ומנוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: n(alpha)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חישבנו שמקדם השבירה המתקבל מהמדידות הוא 
+\begin_inset Formula $n_{air\,measured}=1.00028\pm0.000014$
+\end_inset
+
+ )הערכת השגיאה לפי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "err: n"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ בנספח חישובי שגיאות(.
+ זאת בעוד שהערך המקובל בספרות )ונלקח מהתדריך( עבור 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+ ו 
+\begin_inset Formula $p_{0}$
+\end_inset
+
+ הוא: 
+\begin_inset Formula $n_{air\,expected}=1.0002926$
+\end_inset
+
+ .
+ ניתן לראות ש
+\begin_inset Formula $n_{air\,measured}$
+\end_inset
+
+ מכיל את 
+\begin_inset Formula $n_{air\,expected}$
+\end_inset
+
+ בתחום השגיאה שלו כאשר השגיאה היחסית מקיימת 
+\begin_inset Formula $\frac{\delta n}{n_{air\,expected}}=0.001\%$
+\end_inset
+
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+.
+ בסך הכל התאמה טובה בין המדידות לתיאוריה.
+\end_layout
+
+\begin_layout Standard
+עבור המדידות שנעשו בגז הליום גם כן ציפינו ליחס ישר בין 
+\begin_inset Formula $p$
+\end_inset
+
+ ל
+\begin_inset Formula $F$
+\end_inset
+
+.
+ הרגרסיה הלינארית שהותאמה לנתונים היא 
+\begin_inset Formula $y=\left(0.055\pm0.005\right)x+\left(0.6\pm2\right)$
+\end_inset
+
+ כשההתאמה של הרגרסיה היא 
+\begin_inset Formula $R^{2}=0.971$
+\end_inset
+
+, התאמה לא טובה במיוחד.
+ משיפוע הגרף שהתקבל הסקנו את 
+\begin_inset Formula $\alpha_{He}=\left(9.7\pm0.9\right)\cdot10^{-28}\frac{J}{mmHg}$
+\end_inset
+
+ וממנו חישבנו את 
+\begin_inset Formula $n_{He\,measured}=1.000098\pm0.000009$
+\end_inset
+
+ זאת בעוד שהערך המקובל בספרות הוא 
+\begin_inset Formula $n_{He\,expected}=1.000036$
+\end_inset
+
+.
+ ניתן לראות שהערך הצפוי חורג מטווח השגיאה של הערך המתקבל מהמדידות כש השגיאה
+ היחסית בין הערכים היא 
+\begin_inset Formula $\frac{\left|n_{He\ expected}-n_{He\ measured}\right|}{n_{He\ expected}}=0.025\%$
+\end_inset
+
+.
+ כלומר ישנו פער בין הצפוי מהתיאוריה למצוי מהמדידות.
+ אנו משערים שהמדידות נלקחו בצורה לקויה - ספירת פסי החושך נעשתה קשה מאוד
+ ומבלבלת בתחומים מסוימים של השינוי בלחץ עקב רגישות לא עקבית של השסתום שדרכו
+ קבענו את הלחץ.
+ עבור תחומים שונים של סיבוב השסתום התקבל שינוי בקצב שונה של הלחץ, לעיתים
+ מהיר מידי כדי לספור בצורה מדויקת את מספר הפסים שעוברים בנקודה הראשית -
+ כך שסביר מאוד להניח שהתרחשה טעות בספירת סדר פסי החושך עבור ערכים שונים
+ של הלחץ, זאת בעוד שלא נלקחה בחשבון הערכת שגיאה של 
+\begin_inset Formula $F$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
 
@@ -1949,7 +2149,7 @@ noprefix "false"
 \end_layout
 
 \begin_layout Standard
-תדריך גלי אור
+תדריך גלי אור.
 \end_layout
 
 \begin_layout Section*
