@@ -102,6 +102,7 @@ print("Alpha air is:",alpha)
 n = 1 + alpha * p_nom / (2 * kb * T_nom )
 print("n air is:",n)
 Reg_print(fit)
+fig.savefig("fig/plot_air")
 
 #%% CO2
 p_env=761
@@ -119,7 +120,7 @@ print("Alpha CO2 is:",alpha)
 n_CO2 = 1 + alpha * p_nom / (2 * kb * T_nom )
 print("n CO2 is:",n_CO2)
 Reg_print(fit)
-
+fig.savefig("fig/plot_CO2")
 #%% He
 print_seciont("He")
 
@@ -145,6 +146,7 @@ print("Alpha He is:",alpha)
 n_He = 1 + alpha * p_nom / (2 * kb * T_nom )
 print("n He is:",n_He)
 Reg_print(fit)
+fig.savefig("fig/plot_He")
 
 #%% Mixture of CO2 and He
 print_seciont("Mixture of CO2 and He")
@@ -182,3 +184,4 @@ CO2overHe = (n_He - n)/(n - n_CO2)
 CO2_part = CO2overHe/(1 + CO2overHe) * 100 #percent
 He_part =  1/(1 + CO2overHe) * 100 #percent #100 -  CO2_part
 print("There is %.2f%% CO2 and %.2f%% He in the mixture"%(CO2_part,He_part))
+fig.savefig("fig/plot_mixture")
