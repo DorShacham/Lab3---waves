@@ -154,7 +154,7 @@ End
 \begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
-filename "../../../../../AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
+filename "C:/Users/dorsh/AppData/Local/LyX 2.3/Resources/templates/_templates/MacrosHeb.lyx"
 
 \end_inset
 
@@ -352,13 +352,6 @@ today
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section*
 תקציר
 \end_layout
@@ -391,7 +384,7 @@ status open
 \begin_inset Graphics
 	filename fig/exp_system.jpg
 	lyxscale 50
-	scale 75
+	scale 50
 
 \end_inset
 
@@ -482,7 +475,8 @@ status open
 תוצאות הניסוי
 \end_layout
 
-\begin_layout Section*
+\begin_layout Standard
+—-אוויר —–
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -505,8 +499,8 @@ status open
 \align center
 \begin_inset Graphics
 	filename fig/plot_air.png
-	lyxscale 40
-	scale 40
+	lyxscale 30
+	scale 80
 
 \end_inset
 
@@ -563,17 +557,420 @@ status open
 \color inherit
 1
 \numeric off
-: מספר קווי ההתאבכות ההורסת באוויר כתלות בלחץ האוויר
+: מספר קווי ההתאבכות ההורסת כתלות בלחץ האוויר בצינור
 \end_layout
 
 \begin_layout Plain Layout
-\align center
-תיאור מערכת האינטרופמטר למדידת מקדם שבירה בגזים אשר נעשה בו שימוש בניסוי.
+המדידות מייוצגות כנקודות כחולות עם קווי שגיאה בציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ )קווי השגיאה קטנים מדי בכדי לראותם(.
+ הקו המקווקו הכתום מייצג את הרגרסיה הלינארית שבוצעה לנתונים:
 \end_layout
 
 \begin_layout Plain Layout
+\begin_inset Formula 
+\[
+y=\left(0.161\pm0.008\right)x+\left(-0.6\pm1.4\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+ כמו כן התאמת הרגרסיה היא 
+\begin_inset Formula $R^{2}=0.998$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+—הליום —–
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
 \align center
-נלקח מהתדריך.
+\begin_inset Graphics
+	filename fig/plot_He.png
+	lyxscale 30
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+2
+\numeric off
+: מספר קווי ההתאבכות ההורסת כתלות בלחץ ההליום בצינור
+\end_layout
+
+\begin_layout Plain Layout
+המדידות מייוצגות כנקודות כחולות עם קווי שגיאה בציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ )קווי השגיאה קטנים מדי בכדי לראותם(.
+ הקו המקווקו הכתום מייצג את הרגרסיה הלינארית שבוצעה לנתונים:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+y=\left(0.033\pm0.002\right)x+\left(-13\pm1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+ כמו כן התאמת הרגרסיה היא 
+\begin_inset Formula $R^{2}=0.997$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+—פחמן דו-חמצני —–
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot_CO2.png
+	lyxscale 30
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+3
+\numeric off
+: מספר קווי ההתאבכות ההורסת כתלות בלחץ הפחמן דו-חמצני בצינור
+\end_layout
+
+\begin_layout Plain Layout
+המדידות מייוצגות כנקודות כחולות עם קווי שגיאה בציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ )קווי השגיאה קטנים מדי בכדי לראותם(.
+ הקו המקווקו הכתום מייצג את הרגרסיה הלינארית שבוצעה לנתונים:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+y=\left(0.200\pm0.008\right)x+\left(-11\pm4\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+ כמו כן התאמת הרגרסיה היא 
+\begin_inset Formula $R^{2}=0.992$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+—תערובת —–
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename fig/plot_mixture.png
+	lyxscale 30
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\series bold
+גרף
+\family roman
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+4
+\numeric off
+: מספר קווי ההתאבכות ההורסת כתלות בלחץ התערובת בצינור
+\end_layout
+
+\begin_layout Plain Layout
+המדידות מייוצגות כנקודות כחולות עם קווי שגיאה בציר ה
+\begin_inset Formula $x$
+\end_inset
+
+ )קווי השגיאה קטנים מדי בכדי לראותם(.
+ הקו המקווקו הכתום מייצג את הרגרסיה הלינארית שבוצעה לנתונים:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+y=\left(0.13\pm0.01\right)x+\left(-5.6\pm3.3\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+כאשר תחום השגיאה הוא תחום ה
+\begin_inset Formula $95\%$
+\end_inset
+
+ בר סמך שנלקח מנתוני הרגרסיה.
+ כמו כן התאמת הרגרסיה היא 
+\begin_inset Formula $R^{2}=0.991$
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -603,6 +1000,9 @@ status open
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
