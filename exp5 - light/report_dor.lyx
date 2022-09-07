@@ -356,8 +356,33 @@ today
 תקציר
 \end_layout
 
+\begin_layout Standard
+בניסוי זה מטרתנו הייתה למצוא את מקדם השבירה של אור דרך הגזים - אוויר, פחמן
+ דו-חמצני, הליום, ובתערובת של הליום ופחמן דו חמצני יחד.
+ לשם כך הרכבנו אינטרפרומטר מאך-זנדר המפצל קרן לייזר לקרניים מקבילות בעזרת
+ לוח זכוכית, אחת הקרניים עוברת דרך האוויר והשניה דרך צינור המכיל כל פעם
+ גז אחר.
+ הקרניים רוכזו יחד דרך לוח זכוכית אחרת כך שהתאחדו לקרן אחד שוב, קרן שמוקדה
+ אל תוך עינית מצלמה.
+ צג המצלמה הציג נקודה שבמרכזה הופיע פס שחור כאשר הפרש הפאזה בין הקרניים
+ לפני האיחוד הוא 
+\backslash
+pi.
+ כאשר התבצע שינוי לחץ הגז בצינור, תמונת הפסים החלה לנוע, כך שעל ידי מדידת
+ הלחץ כתלות במספר הפסים שעברו את הנקודה והפרמטרים של המערכת ( אורך צינור
+ הגז וטמפרטורת החדר) הסקנו את מקדם השבירה של הגז בצינור.
+ לאחר מכן, עבור הגזים שאינם התערובת, השוונו את מקדמי השבירה שהתקבלו לאלה
+ המקובלים בספרות.
+ לבסוף בעזרת מקדם השבירה של התערובות, ההליום והפחמן הדו-חמצני חישבנו את
+ כמות ההליום והפחמן הדו-חמצני בתערובת.
+\end_layout
+
 \begin_layout Section*
 מבוא
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי הורכבה מאינטרפרומטר מאך-זנדר המתואר באיור הבא:
 \end_layout
 
 \begin_layout Standard
@@ -377,7 +402,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -465,6 +490,67 @@ status open
 \end_layout
 
 \begin_layout Standard
+האינטרפורמטר מפצל קרן לייזר לשתי קרניים מקבילות בעזרת לוח זכוכית, אחת הקרניים
+ עוברת דרך צינור המכיל גז כלשהו והשניה באוויר.
+ לאחר מעבר הקרן הראשונה בצינור אוחדו הקרניים דרך לוח זכוכית שני )המקביל
+ לראשון( שביציאתו שתי הקרניים עברו את אותו המרחק מרגע הפיצול.
+ בעקבות כך נוצר הפרש פאזה בין שתי הקרניים ולכן נוצרת התאבכות בקרן המאוחדת.
+ הקרן המאוחדת מוקדה אל תוך מצלמה שהציגה את תמונת ההתאבכות.
+ הפרש הפאזה תלוי באורך הצינור, בטמפרטורת החדר, באורך הגל של קרן הלייזר,
+ מקדם הקטביות של הגז והלחץ בצינור.
+ כך שבעת העלאת לחץ הגז )כששאר הפרמטרים קבועים( תמונת ההתאבכות נעה בצורה
+ כזו שמספר פסי ההתאבכות שחלפו על פני מרכז הנקודה הראשית )
+\begin_inset Formula $F$
+\end_inset
+
+( מקיים את הנוסחא הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $F$
+\end_inset
+
+ מספר פסי ההתאבכות ההורסת שעברו )חסר יחידות(, 
+\begin_inset Formula $L$
+\end_inset
+
+ אורך המרחק שעוברת הקרן בגז הנבחן ב
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{0}$
+\end_inset
+
+ אורך הגל של הלייזר בריק ב
+\begin_inset Formula $m$
+\end_inset
+
+ והשאר כמקודם.
+\end_layout
+
+\begin_layout Standard
+מקשר זה ניתן לחלץ את 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ שאיתו יחד עם הנוסחא הבאה ניתן למצוא את מקדם השבירה של החומר עבור לחצים
+ שונים וטמפרטורות שונות:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
@@ -516,38 +602,7 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-כאשר 
-\begin_inset Formula $F$
-\end_inset
-
- מספר פסי ההתאבכות ההורסת שעברו )חסר יחידות(, 
-\begin_inset Formula $L$
-\end_inset
-
- אורך המרחק שעוברת הקרן בגז הנבחן ב
-\begin_inset Formula $m$
-\end_inset
-
-, 
-\begin_inset Formula $\lambda_{0}$
-\end_inset
-
- אורך הגל של הלייזר בריק ב
-\begin_inset Formula $m$
-\end_inset
-
- והשאר כמקודם.
+כמו כן, עבור גזי תערובת מתקיים הקשר הבא:
 \end_layout
 
 \begin_layout Standard
@@ -631,7 +686,8 @@ F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
 \begin_inset Formula $\lambda_{0}=532nm$
 \end_inset
 
- ולאחריו צמצם, עדשה מפזרת ומרכזת כך שאלומת הלייזר תגדל אך תשאר בגודל קבוע.
+ ולאחריו צמצם, עדשה מפזרת ומרכזת כך שאלומת הלייזר תגדל אך תשאר בגודל קבוע
+ לאחר המעבר בהם.
  לאחר מכן כיוון את הקרן בעזרת מראה מתקפלת ללוח זכוכית שהוטה בזווית.
  משום שלוח הזכוכית חצי שקוף חלק מהקרן הוחזרה וחלק חדרה את הפאה הראשונה והוחזרה
  מהפאה השנייה ולכן נוצרו
@@ -665,7 +721,41 @@ F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
 \begin_inset Formula $L=24.8\pm0.1cm$
 \end_inset
 
- כך שקרן אחת תעבור בחלקו החיצוני של הצינור והקרן השנייה תעבור בתוך הצינור.
+ )שאורכו נמדד בעזרת סרגל שרזולוצית המדידה שלו היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $0.1cm$
+\end_inset
+
+
+\numeric off
+, וכך נקבעה הערכת שגיאת המדידה( כך שקרן אחת תעבור בחלקו החיצוני של הצינור
+ והקרן השנייה תעבור בתוך הצינור.
  לאחר הצינור הצבנו לוח זכוכית נוסף בזווית בה נוצרה קרן אור מהתאבכות שתי
  הקרניים שנכנסו ללוח הזכוכית.
  לאורך הצבת כל רכיב דאגנו עד כמה שיכולנו שקרן האור מקבילה לשולחן האופטי.
@@ -678,12 +768,48 @@ F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
 \begin_inset Formula $T=297.3^{\circ}\pm0.1^{\circ}K$
 \end_inset
 
+ )נלקחה על ידי מד טמפרטורה שחובר למחשב שלו רזולוצית מדידה של 
+\begin_inset Formula $0.1^{\circ}K$
+\end_inset
+
+ ונקבע לפי הטמפרטורה הממוצעת בזמן המדידה, כך גם נקבעה הערכת שגיאת המדידה(
  ואת הלחץ בחדר 
 \begin_inset Formula $p=761\pm1mmHg$
 \end_inset
 
-.
- לאחר מכן בעזרת משאבה רוקנו את הצינור מאוויר )עד לחץ של 
+ )נלקח על ידי מד לחץ שחובר לצינור - בזמן שהצינור מחובר לאוויר החדר.
+ למד רזולוצית מדידה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1mmHg$
+\end_inset
+
+ וכך נקבעה הערכת שגיאת המדידה של מדידות הלחץ(.
+ לאחר מכן בעזרת משאבה רוקנו את הצינור מאוויר )עד ללחץ מינימלי של 
 \begin_inset Formula $27mmHg$
 \end_inset
 
@@ -747,8 +873,8 @@ F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
 \begin_inset Formula $400mmHg$
 \end_inset
 
- היה מאוד קשה לשלוט בלחץ בצינור ולמרות ולכן הפסים עברו מהר מדי מכדי שהיה
- אפשר לספור אותם )לכן המדידה התחילה מ
+ היה מאוד קשה לשלוט בלחץ בצינור ולכן הפסים עברו מהר מדי מכדי שהיה אפשר לספור
+ אותם )לכן המדידה התחילה מ
 \begin_inset Formula $400mmHg$
 \end_inset
 
@@ -884,7 +1010,79 @@ y=\left(0.161\pm0.008\right)x+\left(-0.6\pm1.4\right)
 \end_layout
 
 \begin_layout Standard
-—הליום —–
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: F(p)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ניתן לחלץ משיפוע הגרף )ומנתוני המערכת והסביבה שנמדדו( את הקוטביות ולקבל
+\begin_inset Formula 
+\[
+\alpha=\left(2.84\pm0.14\right)\cdot10^{-27}\frac{J}{mmHg}
+\]
+
+\end_inset
+
+ מתוך נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: n(alpha)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, בעזרת הקוטביות שחישבנו נחשב את מקדם השבירה של אוויר בלחץ 
+\begin_inset Formula $p=760mmHg$
+\end_inset
+
+ וטמפ' 
+\begin_inset Formula $T=273.15^{\circ}K$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+n_{air}=1.00028\pm0.000014
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום זה מכיל את התוצאה התאורטית שנלקחה מהטבלה בתדריך 
+\begin_inset Formula $n_{air}^{theory}=1.0002926$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן חזרנו על התהליך עבור הליום.
+ רוקנו את האוויר, מילאנו בצינור הליום, הורדנו את הלחץ באמצעות המשאבה ואז
+ מילאנו הליום בהדרגה בזמן שאנו סופרים פסים ומודדים את הלחץ בצינור.
+\end_layout
+
+\begin_layout Standard
+עבור הליום התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -901,7 +1099,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -980,7 +1178,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-y=\left(0.033\pm0.002\right)x+\left(-13\pm1\right)
+y=\left(0.055\pm0.005\right)x+\left(0.6\pm2\right)
 \]
 
 \end_inset
@@ -995,7 +1193,7 @@ y=\left(0.033\pm0.002\right)x+\left(-13\pm1\right)
 
  בר סמך שנלקח מנתוני הרגרסיה.
  כמו כן התאמת הרגרסיה היא 
-\begin_inset Formula $R^{2}=0.997$
+\begin_inset Formula $R^{2}=0.971$
 \end_inset
 
 
@@ -1008,7 +1206,88 @@ y=\left(0.033\pm0.002\right)x+\left(-13\pm1\right)
 
 \end_inset
 
-—פחמן דו-חמצני —–
+
+\end_layout
+
+\begin_layout Standard
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: F(p)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ניתן לחלץ משיפוע הגרף )ומנתוני המערכת והסביבה שנמדדו( את הקוטביות ולקבל
+\begin_inset Formula 
+\[
+\alpha=\left(9.7\pm0.9\right)\cdot10^{-28}\frac{J}{mmHg}
+\]
+
+\end_inset
+
+ מתוך נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: n(alpha)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, בעזרת הקוטביות שחישבנו נחשב את מקדם השבירה של הליום בלחץ 
+\begin_inset Formula $p=760mmHg$
+\end_inset
+
+ וטמפ' 
+\begin_inset Formula $T=273.15^{\circ}K$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+n_{He}=1.000098\pm0.000009
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום זה אינו מכיל את התוצאה התאורטית שנלקחה מהטבלה בתדריך 
+\begin_inset Formula $n_{He}^{theory}=1.000036$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן חזרנו על התהליך עבור פחמן דו-חמצני.
+ רוקנו את ההליום, מילאנו בצינור פחמן דו-חמצני, הורדנו את הלחץ באמצעות המשאבה
+ ואז מילאנו פחמן דו-חמצני בהדרגה בזמן שאנו סופרים פסים ומודדים את הלחץ בצינור.
+ כמו בחלק עם האוויר גם בחלק זה לא הצלחנו לספור את הפסים בלחץ קטן מ
+\begin_inset Formula $400mmHg$
+\end_inset
+
+ ולכן המדידות מתחילות מלחץ זה.
+\end_layout
+
+\begin_layout Standard
+עבור הליום התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1025,7 +1304,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1104,7 +1383,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-y=\left(0.200\pm0.008\right)x+\left(-11\pm4\right)
+y=\left(0.249\pm0.011\right)x+\left(-41\pm7\right)
 \]
 
 \end_inset
@@ -1119,7 +1398,7 @@ y=\left(0.200\pm0.008\right)x+\left(-11\pm4\right)
 
  בר סמך שנלקח מנתוני הרגרסיה.
  כמו כן התאמת הרגרסיה היא 
-\begin_inset Formula $R^{2}=0.992$
+\begin_inset Formula $R^{2}=0.996$
 \end_inset
 
 
@@ -1136,7 +1415,80 @@ y=\left(0.200\pm0.008\right)x+\left(-11\pm4\right)
 \end_layout
 
 \begin_layout Standard
-—תערובת —–
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: F(p)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ניתן לחלץ משיפוע הגרף )ומנתוני המערכת והסביבה שנמדדו( את הקוטביות ולקבל
+\begin_inset Formula 
+\[
+\alpha=\left(4.38\pm0.23\right)\cdot10^{-27}\frac{J}{mmHg}
+\]
+
+\end_inset
+
+ מתוך נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: n(alpha)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, בעזרת הקוטביות שחישבנו נחשב את מקדם השבירה של פחמן דו-חמצני בלחץ 
+\begin_inset Formula $p=760mmHg$
+\end_inset
+
+ וטמפ' 
+\begin_inset Formula $T=273.15^{\circ}K$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+n_{He}=1.00044\pm0.00002
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום זה מכיל את תחום התוצאה התאורטית שנלקחה מהטבלה בתדריך 
+\begin_inset Formula $n_{He}^{theory}\in\left(1.000449,1.000450\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+לאחר מכן חזרנו על התהליך עבור תערובת של פחמן דו-חמצני והליום.
+ רוקנו את הפחמן דו-חמצני, מילאנו בצינור את התערובת, הורדנו את הלחץ באמצעות
+ המשאבה ואז מילאנו את התערבות בהדרגה בזמן שאנו סופרים פסים ומודדים את הלחץ
+ בצינור.
+\end_layout
+
+\begin_layout Standard
+עבור התערובת התקבלו התוצאות הבאות:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -1153,7 +1505,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1261,6 +1613,90 @@ y=\left(0.13\pm0.01\right)x+\left(-5.6\pm3.3\right)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+על פי נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: F(p)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ ניתן לחלץ משיפוע הגרף )ומנתוני המערכת והסביבה שנמדדו( את הקוטביות ולקבל
+\begin_inset Formula 
+\[
+\alpha=\left(2.26\pm0.17\right)\cdot10^{-27}\frac{J}{mmHg}
+\]
+
+\end_inset
+
+ מתוך נוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: n(alpha)"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+, בעזרת הקוטביות שחישבנו נחשב את מקדם השבירה של התערובת בלחץ 
+\begin_inset Formula $p=760mmHg$
+\end_inset
+
+ וטמפ' 
+\begin_inset Formula $T=273.15^{\circ}K$
+\end_inset
+
+ ונקבל:
+\begin_inset Formula 
+\[
+n_{mixture}=1.00022\pm0.00002
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתוך הערכים התאורטיים מהטבלה בתדריך עבור פחמן דו-חמצני והליום ובעזרת נוסחא
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: N2/N1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ נציב את 
+\begin_inset Formula $n_{mixture}$
+\end_inset
+
+ ונקבל את היחס בין החומרים בצינור
+\begin_inset Formula 
+\[
+\frac{N_{CO2}}{N_{He}}=0.86\pm0.14
+\]
+
+\end_inset
+
+ מתוך יחס זה קיבלנו חילצנו:
+\begin_inset Formula 
+\[
+N_{CO2}=46\pm4\%,N_{He}=54\pm4\%
+\]
+
+\end_inset
+
+ כאשר האחוזים הם אחוזים מתוך התכולה של הצינור, כלומר הצינור היה מלא בקירוב
+ בכמות שווה של שני הגזים.
 \end_layout
 
 \begin_layout Section*
