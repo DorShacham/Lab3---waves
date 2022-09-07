@@ -374,7 +374,7 @@ pi.
  לאחר מכן, עבור הגזים שאינם התערובת, השוונו את מקדמי השבירה שהתקבלו לאלה
  המקובלים בספרות.
  לבסוף בעזרת מקדם השבירה של התערובות, ההליום והפחמן הדו-חמצני חישבנו את
- כמות ההליום והפחמן הדו-חמצני בתערובת.
+ היחס בין כמות ההליום והפחמן הדו-חמצני בתערובת.
 \end_layout
 
 \begin_layout Section*
@@ -1591,6 +1591,89 @@ noprefix "false"
 
 .
  
+\end_layout
+
+\begin_layout Standard
+עבור המדידות בגז הפחמן דו חמצני קיבלנו שהתאמה של רגרסיה לנארית לנתונים היא
+ 
+\begin_inset Formula $y=$
+\end_inset
+
+ כשהתאמה של הרגרסיה היא 
+\begin_inset Formula $R^{2}=$
+\end_inset
+
+ התאמה טובה.
+ משיפוע שהתקבל הסקנו את 
+\begin_inset Formula $\alpha_{CO_{2}}=$
+\end_inset
+
+ ו ממנו חישבנו את 
+\begin_inset Formula $n_{CO_{2}\,measured}=$
+\end_inset
+
+.
+ זאת בעוד שהערך המקובל בספרות הוא 
+\begin_inset Formula $n_{CO_{2}\,expected}=$
+\end_inset
+
+ כך שהערך הצפוי מוכל בערך המתקבל מהמדידות כשהשגיאה היחסית היא .כלומר יש התאמה
+ טובה בין המדידות לתיאוריה.
+ 
+\end_layout
+
+\begin_layout Standard
+במדידות שנעשו בגז התערובת )הליום יחד עם פחמן דו-חמצני( קבלנו שהתאמה של רגרסיה
+ לינארית למדידות היא 
+\begin_inset Formula $y=$
+\end_inset
+
+ כש
+\begin_inset Formula $R^{2}=$
+\end_inset
+
+ .
+ משיפוע הגרף הסקנו ש 
+\begin_inset Formula $n_{mix}=$
+\end_inset
+
+.
+ מ
+\begin_inset Formula $n_{mix}$
+\end_inset
+
+ ונוסחא 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq: N2/N1"
+plural "false"
+caps "false"
+noprefix "false"
+
+\end_inset
+
+ חושב היחס בין הפחמן הדו-חמצני להליום שבצינור והתקבל ש 
+\begin_inset Formula $\frac{N_{1}}{N}=$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{N_{2}}{N}=$
+\end_inset
+
+ כש 
+\begin_inset Formula $N=N_{1}+N_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נציין שלא קיים ערך צפוי של מקדם השבירה )ספרותי או תיאורטי( להשוות איתו את
+ המתקבל מהמדידה אך מההתאמה של הרגרסיה למדידות נראה שההתאמה בין המדידות.
+ 
+\end_layout
+
+\begin_layout Standard
 \begin_inset Newpage newpage
 \end_inset
 
