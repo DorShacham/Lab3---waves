@@ -113,9 +113,9 @@ fig.savefig("fig/plot_air")
 #%% CO2
 p_env= ufloat(761,1)
 print_seciont("CO2")
-p = np.array([30,57,92,99,103,108,129,133,151,275,343,433,474,516,553,589,632,688,740,760]) # need to notice units and do conversion to cmHg or other the other way around
+p = np.array([30,57,92,99,103,108,129,133,151,275,343,433,474,516,553,589,632,688,740,760])[-9:] # need to notice units and do conversion to cmHg or other the other way around
 p_err = 1
-F= np.array([0,2,8,9,10,11,16,17,24,39,52,65,76,87,98,108,119,129,142,147])
+F= np.array([0,2,8,9,10,11,16,17,24,39,52,65,76,87,98,108,119,129,142,147])[-9:]
 #F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
 fig,fit = one4all(p, F,0,p_err,"linear",None,"p [mmHg]","F")
