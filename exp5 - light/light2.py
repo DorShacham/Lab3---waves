@@ -69,23 +69,23 @@ def print_seciont(str):
     print("\n\n==================",str,"====================\n\n")
     
 #%% init
-T_env = 0 + 273.15 # in Kelvin!!
+T_env = 24.2 + 273.15 # in Kelvin!!
 T_env_err = 1
-p_env  = 1
+p_env  = 741 #torr
 P_env_err = 1
-L = 1
-L_err = 1
-wavelen0 = 1
+L = 24.8e-2 #m
+L_err = 1e-3 #m
+wavelen0 = 532e-9 #m
 kb = scipy.constants.k # Boltzmann const in J/k
 
-p_nom = 76 # cmHg
+p_nom = 760 # mmHg
 T_nom = 273.15 # K, 0 C
 
 
 #%% air
 print_seciont("Air")
-p = np.array([0,1]) # need to notice units and do conversion to cmHg or other the other way around
-p_err = np.array([0.1,0.1])
+p = np.array([ 426, 489,537,605,670,737]) # need to notice units and do conversion to cmHg or other the other way around
+p_err = 1#np.array([0.1,0.1])
 F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
 fig,fit = one4all(p, F,0,p_err,"linear",None,"p [pressure unit]","F")
@@ -93,51 +93,78 @@ m = fit.slope
 alpha = m * 2 * kb * T_env * wavelen0 / L
 print("Alpha air is:",alpha)
 
-n = 1 + alpha * p_nom / (2 * kb * T_nom * wavelen0)
+n = 1 + alpha * p_nom / (2 * kb * T_nom )
 print("n air is:",n)
 
 #%% CO2
+P_nom=764
 print_seciont("CO2")
-p = np.array([0,1]) # need to notice units and do conversion to cmHg or other the other way around
-p_err = np.array([0.1,0.1])
-F = np.arange(0,len(p)) * 10 # lines that passes over the screen
+p = np.array([30,57,92,99,103,108,129,133,151,275,343,433,474,516,553,589,632,688,740,760]) # need to notice units and do conversion to cmHg or other the other way around
+p_err = 1
+F= np.array([0,2,8,9,10,11,16,17,24,39,52,65,76,87,98,108,119,129,142,147])
+#F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
 fig,fit = one4all(p, F,0,p_err,"linear",None,"p [pressure unit]","F")
 m = fit.slope
 alpha = m * 2 * kb * T_env * wavelen0 / L
 print("Alpha CO2 is:",alpha)
 
-n_CO2 = 1 + alpha * p_nom / (2 * kb * T_nom * wavelen0)
+n_CO2 = 1 + alpha * p_nom / (2 * kb * T_nom )
 print("n CO2 is:",n_CO2)
 
 
 #%% He
 print_seciont("He")
-p = np.array([0,1,20]) # need to notice units and do conversion to cmHg or other the other way around
-p_err = np.array([0.1,0.1,0.1])
-F = np.arange(0,len(p)) * 10 # lines that passes over the screen
+
+#p = np.array([34,41,49,55]) # need to notice units and do conversion to cmHg or other the other way around
+'''
+first measurements
+p = np.array([400,502,558,586,615,651,752]) # need to notice units and do conversion to cmHg or other the other way around
+F_del=np.array([3,2,1,1,2])
+F=np.array([0,3,5,6,7,9])
+'''
+p_nom=762
+p = np.array([32,41,60,78,137,175,193,204,304,380,414,557,616,662,697]) # need to notice units and do conversion to cmHg or other the other way around
+F_del=np.array([])
+F=np.array([0,1,3,5,8,10,11,12,22,25,27,32,34,35,36])
+p_err = 1
+#F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
 fig,fit = one4all(p, F,0,p_err,"linear",None,"p [pressure unit]","F")
 m = fit.slope
 alpha = m * 2 * kb * T_env * wavelen0 / L
 print("Alpha He is:",alpha)
 
-n_He = 1 + alpha * p_nom / (2 * kb * T_nom * wavelen0)
+n_He = 1 + alpha * p_nom / (2 * kb * T_nom )
 print("n He is:",n_He)
 
 
 #%% Mixture of CO2 and He
 print_seciont("Mixture of CO2 and He")
-p = np.array([0,1,0.2]) # need to notice units and do conversion to cmHg or other the other way around
-p_err = np.array([0.1,0.1,0.1])
-F = np.arange(0,len(p)) * 10 # lines that passes over the screen
+p_nom=769
+'''
+first measurments
+p = np.array([29,86,159,232,258]) # need to notice units and do conversion to cmHg or other the other way around
+p_err = 1
+F= np.array([0,9,19,29,34])
+p=[155,227,305,402,]
+# after jump
+p = np.array([551,568,613]) # need to notice units and do conversion to cmHg or other the other way around
+p_err = 1
+F= np.array([0,3,11])
+'''
+p = np.array([30,112,142,270,335,398,481,565]) # need to notice units and do conversion to cmHg or other the other way around
+p_err = 1
+F= np.array([0,6,16,26,36,46,57,68])
+
+#F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
 fig,fit = one4all(p, F,0,p_err,"linear",None,"p [pressure unit]","F")
 m = fit.slope
 alpha = m * 2 * kb * T_env * wavelen0 / L
 print("Alpha mixture is:",alpha)
 
-n = 1 + alpha * p_nom / (2 * kb * T_nom * wavelen0)
+n = 1 + alpha * p_nom / (2 * kb * T_nom )
 print("n mixture is:",n)
 
 CO2overHe = (n_He - n)/(n - n_CO2)
