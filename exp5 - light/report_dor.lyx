@@ -352,6 +352,13 @@ today
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 תקציר
 \end_layout
@@ -917,7 +924,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot_air.png
 	lyxscale 30
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -1094,7 +1101,7 @@ noprefix "false"
  ונקבל:
 \begin_inset Formula 
 \[
-n_{air}=1.00028\pm0.000014
+n_{air}=1.000286\pm0.000014
 \]
 
 \end_inset
@@ -1165,7 +1172,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot_He.png
 	lyxscale 30
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -1419,7 +1426,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot_CO2.png
 	lyxscale 30
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -1668,7 +1675,7 @@ status open
 \begin_inset Graphics
 	filename fig/plot_mixture.png
 	lyxscale 30
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -1772,11 +1779,7 @@ y=\left(0.13\pm0.01\right)x+\left(-5.6\pm3.3\right)
 \end_layout
 
 \begin_layout Standard
-\begin_inset space \space{}
-\end_inset
-
-
-\begin_inset Newline newline
+\begin_inset Newpage pagebreak
 \end_inset
 
 ניתן לשים לב שהנתונים מתאימים חלקית לרגרסיה הן מבחינה איכותית, רוב הנקודות
@@ -1954,6 +1957,9 @@ noprefix "false"
 \begin_layout Standard
 נדון בתוצאות הניסוי עבור הגזים השונים בנפרד.
  ההשוואה בין הערך הנמדד והצפוי של מקדמי השבירה בוצעה כש
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $T_{0}=293.15{}^{\circ}K$
 \end_inset
 
@@ -1992,7 +1998,10 @@ noprefix "false"
 \begin_inset Formula $F$
 \end_inset
 
- ואכן רגרסיה לינארית לנתוני המדידות הניבה התאמה טובה של 
+ ואכן רגרסיה לינארית לנתוני המדידות הניבה התאמה טובה של
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $y=\left(0.161\pm0.008\right)x+\left(-68\pm5\right)$
 \end_inset
 
@@ -2014,7 +2023,23 @@ noprefix "false"
 \end_inset
 
 , התאמה טובה מאוד.
- משיפוע הגרף שהתקבל הסקנו לפי אותה נוסחא ש 
+ משיפוע הגרף שהתקבל הסקנו לפי אותה נוסחא ש
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \begin_inset Formula $\alpha_{air}=\left(2.84\pm0.14\right)\cdot10^{-27}\frac{J}{mmHg}$
 \end_inset
 
@@ -2039,7 +2064,7 @@ noprefix "false"
 \end_inset
 
  חישבנו שמקדם השבירה המתקבל מהמדידות הוא 
-\begin_inset Formula $n_{air\,measured}=1.00028\pm0.000014$
+\begin_inset Formula $n_{air\,measured}=1.000286\pm0.000014$
 \end_inset
 
  )הערכת השגיאה לפי נוסחא 
@@ -2103,10 +2128,6 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 עבור המדידות שנעשו בגז הליום גם כן ציפינו ליחס ישר בין 
 \begin_inset Formula $p$
 \end_inset
@@ -2116,7 +2137,10 @@ noprefix "false"
 \end_inset
 
 .
- הרגרסיה הלינארית שהותאמה לנתונים היא 
+ הרגרסיה הלינארית שהותאמה לנתונים היא
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $y=\left(0.055\pm0.005\right)x+\left(0.6\pm2\right)$
 \end_inset
 
@@ -2167,10 +2191,6 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
 עבור המדידות בגז הפחמן דו-חמצני קיבלנו שהתאמה של רגרסיה לנארית לנתונים היא
  
 \begin_inset Formula $y=\left(0.249\pm0.011\right)x+\left(-41\pm7\right)$
@@ -2211,12 +2231,11 @@ noprefix "false"
 \begin_inset Newline newline
 \end_inset
 
-
+במדידות שנעשו בגז התערובת )הליום יחד עם פחמן דו-חמצני( קבלנו שהתאמה של רגרסיה
+ לינארית למדידות היא 
 \end_layout
 
 \begin_layout Standard
-במדידות שנעשו בגז התערובת )הליום יחד עם פחמן דו-חמצני( קבלנו שהתאמה של רגרסיה
- לינארית למדידות היא 
 \begin_inset Formula $y=\left(0.13\pm0.01\right)x+\left(-5.6\pm3.3\right)$
 \end_inset
 
@@ -2263,6 +2282,21 @@ noprefix "false"
 נציין שלא קיים ערך צפוי של מקדם השבירה )ספרותי או תיאורטי( להשוות איתו.
 \end_layout
 
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+שווה לציין שביצענו לכל אחד מהחלקים נסיונות רבים של מדידה בשביל לקבל מדידה
+ מדיוקת של מספר הפסים והלחץ לכל תחום הלחצים.
+ למרות הנסיונות הרבים, לא הצלחנו ליצור כניסה מבוקרת של הלחץ בכל התחום ולכן
+ עבור האוויר והפחמן הדו-חמצני המדידות נמצאות רק על חלק מהתחום.
+ כמו כן עבור ההליום כנראה שיש טעויות בספירת הפסים כפי שציינו.
+\end_layout
+
 \begin_layout Section*
 \begin_inset Newpage newpage
 \end_inset
@@ -2272,6 +2306,65 @@ noprefix "false"
 
 \begin_layout Section*
 מסקנות
+\end_layout
+
+\begin_layout Standard
+מהמדידות בניסוי התקבל שמקדם השבירה באוויר הוא 
+\begin_inset Formula $n_{air\,measured}=1.000286\pm0.000014$
+\end_inset
+
+ כשהערך המקובל בספרות הוא 
+\begin_inset Formula $n_{air\,expected}=1.0002926$
+\end_inset
+
+ כשהערך הצפוי מתקבל בטווח השגיאה של הערך המתקבל מהמדידות.
+ מקדם השבירה בהליום הוא 
+\begin_inset Formula $n_{He\,measured}=1.000098\pm0.000009$
+\end_inset
+
+ כשהערך המקובל בספרות הוא 
+\begin_inset Formula $n_{He\,expected}=1.000036$
+\end_inset
+
+, הערך הצפוי לא מתקבל בטווח השגיאה של הערך המתקבל מהמדידות.
+ מקדם השבירה של הפחמן דו-חמצני שהתקבל הינו 
+\begin_inset Formula $n_{CO_{2}\,measured}=1.00044\pm0.00002$
+\end_inset
+
+ כש
+\begin_inset Formula $n_{CO_{2}\,expected}\in\left(1.000449,1.000450\right)$
+\end_inset
+
+ כלומר תחום הערך המתקבל מהמדידות מכיל את תחום הערך הצפוי.
+\end_layout
+
+\begin_layout Standard
+נציין שהיה הבדל מהותי בשיטות המדידה בין המדידות שנעשו באוויר ובפחמן הדו-חמצני
+ ואלו של ההליום.
+ בעוד שבאוויר ובפחמן הדו-חמצני נלקחו רק מדידות שהיינו בטוחים בספירה שלהם
+ - נלקחו בתחומים שבהם הלחץ אפשר רגישות שמאפשרת מעקב אחרי פסי ההתאבכות, בעוד
+ שבהליום נעשה ניסיון לבצע מדידות לאורך כל הטווח, אך עקב קפיצות מהירות בלחץ
+ בחלק מטווח הלחצים איבדנו ספירה של הפסים וכתוצאה מכך המדידות נלקחו בצורה
+ שגויה.
+\end_layout
+
+\begin_layout Standard
+כמסקנה משיטת המדידה בניסוי, הצעה לשיפור הניסוי הינה שימוש במערכת המאפשרת
+ בקרה עדינה יותר של הלחץ- ניתן ליישם זאת על ידי שסתום רגיש יותר או על ידי
+ שיפור מיומנות הנסיין בשליטה בשסתום.
+\end_layout
+
+\begin_layout Standard
+נוסף על כך, מהמדידות שהתבצעו בתערובת הגזים התקבל שמקדם השבירה הוא 
+\begin_inset Formula $n_{mixture}=1.00022\pm0.00002$
+\end_inset
+
+ וממנו הוסק שהיחסים החלקיים של הגזים המרכיבים את התערובת הם 
+\begin_inset Formula $\frac{N_{CO2}}{N}=46\pm4\%,\frac{N_{He}}{N}=54\pm4\%$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
