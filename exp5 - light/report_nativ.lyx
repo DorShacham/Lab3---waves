@@ -686,7 +686,8 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \begin_inset Formula $\lambda_{0}=532nm$
 \end_inset
 
- ולאחריו צמצם, עדשה מפזרת ומרכזת כך שאלומת הלייזר תגדל אך תשאר בגודל קבוע.
+ ולאחריו צמצם, עדשה מפזרת ומרכזת כך שאלומת הלייזר תגדל אך תשאר בגודל קבוע
+ לאחר המעבר בהם.
  לאחר מכן כיוון את הקרן בעזרת מראה מתקפלת ללוח זכוכית שהוטה בזווית.
  משום שלוח הזכוכית חצי שקוף חלק מהקרן הוחזרה וחלק חדרה את הפאה הראשונה והוחזרה
  מהפאה השנייה ולכן נוצרו
@@ -720,7 +721,41 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \begin_inset Formula $L=24.8\pm0.1cm$
 \end_inset
 
- כך שקרן אחת תעבור בחלקו החיצוני של הצינור והקרן השנייה תעבור בתוך הצינור.
+ )שאורכו נמדד בעזרת סרגל שרזולוצית המדידה שלו היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $0.1cm$
+\end_inset
+
+
+\numeric off
+, וכך נקבעה הערכת שגיאת המדידה( כך שקרן אחת תעבור בחלקו החיצוני של הצינור
+ והקרן השנייה תעבור בתוך הצינור.
  לאחר הצינור הצבנו לוח זכוכית נוסף בזווית בה נוצרה קרן אור מהתאבכות שתי
  הקרניים שנכנסו ללוח הזכוכית.
  לאורך הצבת כל רכיב דאגנו עד כמה שיכולנו שקרן האור מקבילה לשולחן האופטי.
@@ -733,12 +768,48 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \begin_inset Formula $T=297.3^{\circ}\pm0.1^{\circ}K$
 \end_inset
 
+ )נלקחה על ידי מד טמפרטורה שחובר למחשב שלו רזולוצית מדידה של 
+\begin_inset Formula $0.1^{\circ}K$
+\end_inset
+
+ ונקבע לפי הטמפרטורה הממוצעת בזמן המדידה, כך גם נקבעה הערכת שגיאת המדידה(
  ואת הלחץ בחדר 
 \begin_inset Formula $p=761\pm1mmHg$
 \end_inset
 
-.
- לאחר מכן בעזרת משאבה רוקנו את הצינור מאוויר )עד לחץ של 
+ )נלקח על ידי מד לחץ שחובר לצינור - בזמן שהצינור מחובר לאוויר החדר.
+ למד רזולוצית מדידה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $1mmHg$
+\end_inset
+
+ וכך נקבעה הערכת שגיאת המדידה של מדידות הלחץ(.
+ לאחר מכן בעזרת משאבה רוקנו את הצינור מאוויר )עד ללחץ מינימלי של 
 \begin_inset Formula $27mmHg$
 \end_inset
 
@@ -802,8 +873,8 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \begin_inset Formula $400mmHg$
 \end_inset
 
- היה מאוד קשה לשלוט בלחץ בצינור ולמרות ולכן הפסים עברו מהר מדי מכדי שהיה
- אפשר לספור אותם )לכן המדידה התחילה מ
+ היה מאוד קשה לשלוט בלחץ בצינור ולכן הפסים עברו מהר מדי מכדי שהיה אפשר לספור
+ אותם )לכן המדידה התחילה מ
 \begin_inset Formula $400mmHg$
 \end_inset
 
