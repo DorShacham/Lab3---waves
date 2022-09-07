@@ -365,7 +365,7 @@ today
 
 \begin_layout Standard
 בניסוי זה מטרתנו הייתה למצוא את מקדם השבירה של אור דרך הגזים - אוויר, פחמן
- דו-חמצני, הליום, ובתערובת של הליום ופחמן דו חמצני יחד.
+ דו-חמצני, הליום, ובתערובת של הליום ופחמן דו-חמצני יחד.
  לשם כך הרכבנו אינטרפרומטר מאך-זנדר המפצל קרן לייזר לקרניים מקבילות בעזרת
  לוח זכוכית, אחת הקרניים עוברת דרך האוויר והשניה דרך צינור המכיל כל פעם
  גז אחר.
@@ -373,15 +373,26 @@ today
  אל תוך עינית מצלמה.
  צג המצלמה הציג נקודה שבמרכזה הופיע פס שחור כאשר הפרש הפאזה בין הקרניים
  לפני האיחוד הוא 
-\backslash
-pi.
+\begin_inset Formula $\pi$
+\end_inset
+
+.
  כאשר התבצע שינוי לחץ הגז בצינור, תמונת הפסים החלה לנוע, כך שעל ידי מדידת
- הלחץ כתלות במספר הפסים שעברו את הנקודה והפרמטרים של המערכת ( אורך צינור
- הגז וטמפרטורת החדר) הסקנו את מקדם השבירה של הגז בצינור.
+ הלחץ כתלות במספר הפסים שעברו את הנקודה והפרמטרים של המערכת )אורך צינור
+ הגז וטמפרטורת החדר( הסקנו את מקדם השבירה של הגז בצינור.
  לאחר מכן, עבור הגזים שאינם התערובת, השוונו את מקדמי השבירה שהתקבלו לאלה
- המקובלים בספרות.
+ המקובלים בספרות - כשההשוואה בין הערך הנמדד והצפוי של מקדמי השבירה בוצעה
+ כש
+\begin_inset Formula $T_{0}=273.15{}^{\circ}K$
+\end_inset
+
+ והלחץ הוא 
+\begin_inset Formula $p_{0}=760mmHg$
+\end_inset
+
+.
  לבסוף בעזרת מקדם השבירה של התערובות, ההליום והפחמן הדו-חמצני חישבנו את
- כמות ההליום והפחמן הדו-חמצני בתערובת.
+ היחס בין כמות ההליום והפחמן הדו-חמצני בתערובת.
 \end_layout
 
 \begin_layout Section*
@@ -556,40 +567,12 @@ F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
 \begin_inset Formula $m$
 \end_inset
 
- והשאר כמקודם.
-\end_layout
-
-\begin_layout Standard
-מקשר זה ניתן לחלץ את 
-\begin_inset Formula $\alpha$
-\end_inset
-
- שאיתו יחד עם הנוסחא הבאה ניתן למצוא את מקדם השבירה של החומר עבור לחצים
- שונים וטמפרטורות שונות:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-כאשר 
-\begin_inset Formula $n$
-\end_inset
-
- מקדם השבירה של החמורה הנמדד )חסר יחידות(, 
+, 
 \begin_inset Formula $\alpha$
 \end_inset
 
  הקוטביות של החומר ביחידות 
-\begin_inset Formula $m^{3}$
+\begin_inset Formula $\frac{J}{mmHg}$
 \end_inset
 
 , 
@@ -620,6 +603,34 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \end_layout
 
 \begin_layout Standard
+מקשר זה ניתן לחלץ את 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ שאיתו יחד עם הנוסחא הבאה ניתן למצוא את מקדם השבירה של החומר עבור לחצים
+ שונים וטמפרטורות שונות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ מקדם השבירה של החמורה הנמדד )חסר יחידות( והשאר כמקודם.
+\end_layout
+
+\begin_layout Standard
 כמו כן, עבור גזי תערובת מתקיים הקשר הבא:
 \end_layout
 
@@ -635,7 +646,7 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \begin_inset Formula $N_{1},N_{2}$
 \end_inset
 
- הם צפיות החלקיקים של הגזים 
+ הם צפיפויות החלקיקים של הגזים 
 \begin_inset Formula $1,2$
 \end_inset
 
@@ -1378,6 +1389,7 @@ noprefix "false"
 \end_inset
 
 .
+ על חוסר התאמה זה נפרט בדיון.
 \end_layout
 
 \begin_layout Standard
@@ -1498,7 +1510,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Formula 
 \[
-y=\left(0.249\pm0.011\right)x+\left(-41\pm7\right)
+y=\left(0.25\pm0.01\right)x+\left(-41\pm7\right)
 \]
 
 \end_inset
@@ -1732,7 +1744,7 @@ status open
 \color inherit
 4
 \numeric off
-: מספר קווי ההתאבכות ההורסת כתלות בלחץ התערובת בצינור
+: מספר קווי ההתאבכות ההורסת כתלות בלחץ תערובת של פחמן דו-חמצני והליום בצינור
 \end_layout
 
 \begin_layout Plain Layout
@@ -2162,7 +2174,7 @@ noprefix "false"
 \end_inset
 
 .
- ניתן לראות שהערך הצפוי חורג מטווח השגיאה של הערך המתקבל מהמדידות כש השגיאה
+ ניתן לראות שהערך הצפוי חורג מטווח השגיאה של הערך המתקבל מהמדידות כשהשגיאה
  היחסית בין הערכים היא 
 \begin_inset Formula $\frac{\left|n_{He\ expected}-n_{He\ measured}\right|}{n_{He\ expected}}=0.025\%$
 \end_inset
@@ -2205,16 +2217,22 @@ noprefix "false"
 \begin_inset Formula $\alpha_{CO_{2}}=\left(4.38\pm0.23\right)\cdot10^{-27}\frac{J}{mmHg}$
 \end_inset
 
- ו ממנו חישבנו את 
+ וממנו חישבנו את 
 \begin_inset Formula $n_{CO_{2}\,measured}=1.00044\pm0.00002$
 \end_inset
 
 .
- זאת בעוד שהערך המקובל בספרות נמצא בתחום 
+ זאת בעוד שהערך המקובל בספרות נמצא בתחום
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $n_{CO_{2}\,expected}\in\left(1.000449,1.000450\right)$
 \end_inset
 
- כך שהערך הצפוי מוכל בערך המתקבל מהמדידות כשהשגיאה היחסית היא 
+ כך שהערך הצפוי מוכל בערך המתקבל מהמדידות כשהשגיאה היחסית היא
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\frac{\delta n}{n_{CO2\ measured}}=0.002\%$
 \end_inset
 
