@@ -356,8 +356,33 @@ today
 תקציר
 \end_layout
 
+\begin_layout Standard
+בניסוי זה מטרתנו הייתה למצוא את מקדם השבירה של אור דרך הגזים - אוויר, פחמן
+ דו-חמצני, הליום, ובתערובת של הליום ופחמן דו חמצני יחד.
+ לשם כך הרכבנו אינטרפרומטר מאך-זנדר המפצל קרן לייזר לקרניים מקבילות בעזרת
+ לוח זכוכית, אחת הקרניים עוברת דרך האוויר והשניה דרך צינור המכיל כל פעם
+ גז אחר.
+ הקרניים רוכזו יחד דרך לוח זכוכית אחרת כך שהתאחדו לקרן אחד שוב, קרן שמוקדה
+ אל תוך עינית מצלמה.
+ צג המצלמה הציג נקודה שבמרכזה הופיע פס שחור כאשר הפרש הפאזה בין הקרניים
+ לפני האיחוד הוא 
+\backslash
+pi.
+ כאשר התבצע שינוי לחץ הגז בצינור, תמונת הפסים החלה לנוע, כך שעל ידי מדידת
+ הלחץ כתלות במספר הפסים שעברו את הנקודה והפרמטרים של המערכת ( אורך צינור
+ הגז וטמפרטורת החדר) הסקנו את מקדם השבירה של הגז בצינור.
+ לאחר מכן, עבור הגזים שאינם התערובת, השוונו את מקדמי השבירה שהתקבלו לאלה
+ המקובלים בספרות.
+ לבסוף בעזרת מקדם השבירה של התערובות, ההליום והפחמן הדו-חמצני חישבנו את
+ כמות ההליום והפחמן הדו-חמצני בתערובת.
+\end_layout
+
 \begin_layout Section*
 מבוא
+\end_layout
+
+\begin_layout Standard
+מערכת הניסוי הורכבה מאינטרפרומטר מאך-זנדר המתואר באיור הבא:
 \end_layout
 
 \begin_layout Standard
@@ -377,7 +402,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -465,6 +490,67 @@ status open
 \end_layout
 
 \begin_layout Standard
+האינטרפורמטר מפצל קרן לייזר לשתי קרניים מקבילות בעזרת לוח זכוכית, אחת הקרניים
+ עוברת דרך צינור המכיל גז כלשהו והשניה באוויר.
+ לאחר מעבר הקרן הראשונה בצינור אוחדו הקרניים דרך לוח זכוכית שני )המקביל
+ לראשון( שביציאתו שתי הקרניים עברו את אותו המרחק מרגע הפיצול.
+ בעקבות כך נוצר הפרש פאזה בין שתי הקרניים ולכן נוצרת התאבכות בקרן המאוחדת.
+ הקרן המאוחדת מוקדה אל תוך מצלמה שהציגה את תמונת ההתאבכות.
+ הפרש הפאזה תלוי באורך הצינור, בטמפרטורת החדר, באורך הגל של קרן הלייזר,
+ מקדם הקטביות של הגז והלחץ בצינור.
+ כך שבעת העלאת לחץ הגז )כששאר הפרמטרים קבועים( תמונת ההתאבכות נעה בצורה
+ כזו שמספר פסי ההתאבכות שחלפו על פני מרכז הנקודה הראשית )
+\begin_inset Formula $F$
+\end_inset
+
+( מקיים את הנוסחא הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $F$
+\end_inset
+
+ מספר פסי ההתאבכות ההורסת שעברו )חסר יחידות(, 
+\begin_inset Formula $L$
+\end_inset
+
+ אורך המרחק שעוברת הקרן בגז הנבחן ב
+\begin_inset Formula $m$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda_{0}$
+\end_inset
+
+ אורך הגל של הלייזר בריק ב
+\begin_inset Formula $m$
+\end_inset
+
+ והשאר כמקודם.
+\end_layout
+
+\begin_layout Standard
+מקשר זה ניתן לחלץ את 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ שאיתו יחד עם הנוסחא הבאה ניתן למצוא את מקדם השבירה של החומר עבור לחצים
+ שונים וטמפרטורות שונות:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
 n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
@@ -516,38 +602,7 @@ n=1+\frac{\alpha p}{2k_{B}T}\label{eq: n(alpha)}
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula 
-\begin{equation}
-F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
-\end{equation}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-כאשר 
-\begin_inset Formula $F$
-\end_inset
-
- מספר פסי ההתאבכות ההורסת שעברו )חסר יחידות(, 
-\begin_inset Formula $L$
-\end_inset
-
- אורך המרחק שעוברת הקרן בגז הנבחן ב
-\begin_inset Formula $m$
-\end_inset
-
-, 
-\begin_inset Formula $\lambda_{0}$
-\end_inset
-
- אורך הגל של הלייזר בריק ב
-\begin_inset Formula $m$
-\end_inset
-
- והשאר כמקודם.
+כמו כן, עבור גזי תערובת מתקיים הקשר הבא:
 \end_layout
 
 \begin_layout Standard
