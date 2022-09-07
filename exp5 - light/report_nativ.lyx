@@ -597,7 +597,166 @@ F=p\frac{\alpha L}{2k_{B}T\lambda_{0}}\label{eq: F(p)}
 \end_layout
 
 \begin_layout Standard
-—-אוויר —–
+בתחילת הניסוי הרכבנו את המערכת לפי איור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ מיקמנו לייזר בעל אורך גל 
+\begin_inset Formula $\lambda_{0}=532nm$
+\end_inset
+
+ ולאחריו צמצם, עדשה מפזרת ומרכזת כך שאלומת הלייזר תגדל אך תשאר בגודל קבוע.
+ לאחר מכן כיוון את הקרן בעזרת מראה מתקפלת ללוח זכוכית שהוטה בזווית.
+ משום שלוח הזכוכית חצי שקוף חלק מהקרן הוחזרה וחלק חדרה את הפאה הראשונה והוחזרה
+ מהפאה השנייה ולכן נוצרו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+שתי קרני אור.
+ העברנו את קרני האור דרך צינור באורך 
+\begin_inset Formula $L=24.8\pm0.1cm$
+\end_inset
+
+ כך שקרן אחת תעבור בחלקו החיצוני של הצינור והקרן השנייה תעבור בתוך הצינור.
+ לאחר הצינור הצבנו לוח זכוכית נוסף בזווית בה נוצרה קרן אור מהתאבכות שתי
+ הקרניים שנכנסו ללוח הזכוכית.
+ לאורך הצבת כל רכיב דאגנו עד כמה שיכולנו שקרן האור מקבילה לשולחן האופטי.
+ לבסוף כיוונו את קרן האור לתוך מצלמת 
+\begin_inset Formula $CCD$
+\end_inset
+
+.
+ מדדנו את הטמפ' בחדר וקיבלנו 
+\begin_inset Formula $T=297.3^{\circ}\pm0.1^{\circ}K$
+\end_inset
+
+ ואת הלחץ בחדר 
+\begin_inset Formula $p=761\pm1mmHg$
+\end_inset
+
+.
+ לאחר מכן בעזרת משאבה רוקנו את הצינור מאוויר )עד לחץ של 
+\begin_inset Formula $27mmHg$
+\end_inset
+
+(.
+ בתום הוצאת האוויר הכנסו אוויר בהדרגה ולקחנו מדידה של הלחץ בקירוב כל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+פסים.
+ שווה לציין שבלחצים קטנים מ
+\begin_inset Formula $400mmHg$
+\end_inset
+
+ היה מאוד קשה לשלוט בלחץ בצינור ולמרות ולכן הפסים עברו מהר מדי מכדי שהיה
+ אפשר לספור אותם )לכן המדידה התחילה מ
+\begin_inset Formula $400mmHg$
+\end_inset
+
+(.
+ להלן התוצאות:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -742,7 +901,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -866,7 +1025,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -994,7 +1153,7 @@ separation "3pt"
 shadowsize "4pt"
 framecolor "black"
 backgroundcolor "none"
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
