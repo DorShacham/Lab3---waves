@@ -189,5 +189,5 @@ n_CO2 = 1.00045
 CO2overHe = (n_He - n)/(n - n_CO2)
 CO2_part = CO2overHe/(1 + CO2overHe) * 100 #percent
 He_part =  1/(1 + CO2overHe) * 100 #percent #100 -  CO2_part
-print("There is %.2f%% CO2 and %.2f%% He in the mixture"%(CO2_part,He_part))
+print("There is %s%% CO2 and %s%% He in the mixture"%(CO2_part,He_part))
 fig.savefig("fig/plot_mixture")
