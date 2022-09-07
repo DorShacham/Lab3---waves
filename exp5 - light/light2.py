@@ -133,14 +133,14 @@ print_seciont("He")
 #p = np.array([34,41,49,55]) # need to notice units and do conversion to cmHg or other the other way around
 
 #first measurements
-p = np.array([400,502,558,586,615,651,752])[:-2] # need to notice units and do conversion to cmHg or other the other way around
+#*****p = np.array([400,502,558,586,615,651,752])[:-1] # need to notice units and do conversion to cmHg or other the other way around
 #F_del=np.array([3,2,1,1,2])
-F=np.array([0,3,5,6,7,9])[:-1]
+#****F=np.array([0,3,5,6,7,9])
 
 p_env= ufloat(762,1)
-#p = np.array([32,41,60,78,137,175,193,204,304,380,414,557,616,662,697]) # need to notice units and do conversion to cmHg or other the other way around
+p = np.array([32,41,60,78,137,175,193,204,304,380,414,557,616,662,697]) # need to notice units and do conversion to cmHg or other the other way around
 F_del=np.array([])
-#F=np.array([0,1,3,5,8,10,11,12,22,25,27,32,34,35,36])
+F=np.array([0,1,3,5,8,10,11,12,22,25,27,32,34,35,36])
 p_err = 1
 #F = np.arange(0,len(p)) * 10 # lines that passes over the screen
 
