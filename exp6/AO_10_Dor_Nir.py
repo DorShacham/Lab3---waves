@@ -4,6 +4,12 @@ import matplotlib.pyplot as plt
 from scipy.stats import linregress
 from scipy import constants
 
+from uncertainties import unumpy
+from uncertainties import ufloat
+from uncertainties.umath import *
+from uncertainties.unumpy import nominal_values as uval
+from uncertainties.unumpy import std_devs as uerr
+
 # FUNCTIONS
 
 # PRETTY PRINT
@@ -22,8 +28,8 @@ def PlotRegression(x,y,xerror,yerror,xlabel,ylabel,do_reg):
     plt.figure(dpi=300)
     plt.grid()
     plt.plot(x,y,'m.',label="Data",markersize=10)
-    plt.xlabel(xlabel)
-    plt.ylabel(ylabel)
+    plt.xlabel(xlabel, fontsize=12)
+    plt.ylabel(ylabel, fontsize=12)
     # Errorbars
     if xerror.all() == 0 and yerror.all() != 0:
         plt.errorbar(x,y,xerr=None,yerr=yerror,ls="none",label="Error",color="black")
@@ -44,50 +50,64 @@ def PlotRegression(x,y,xerror,yerror,xlabel,ylabel,do_reg):
         plt.legend()
         return
     
+def PrintReg(reg,Round):
+    print("R^2=%f :: y = (%f +/- %f)x + (%f +/- %f)"%(round(reg[4],Round),round(reg[0],Round),round(2*reg[2],Round),round(reg[1],Round),round(2*reg[3],Round)))
+    
 #%%
 Noerror = np.array([0])
+T = 273 + 23    # Kelvin
+T_err = 1       # Kelvin
+T = ufloat(T,T_err)
 
-#%%
-# PART 2
-print("\n=================PART 2===================\n")
+v_theory_at_20_degree = 1160.02 #m/s
 
-d2_tot = 5               # [um]
-d2_tot_err = 0           # [um]
-num_d2 = 10
-d2_av = d2_tot/10
-PrettyPrint("Average d is: ",d2_av,0,"[um]",2)
+T_theory = 293.204 # Kelvin
 
-#%%
-# PART 3
-print("=================PART 3===================\n")
-
-d3_tot = np.array([15,30,60,90,150])           # [um]
-d3_tot_err = np.array([1,1,1,1,1])             # [um]
-num_d3 = np.array([1,2,3,4,5])
-d3_av = d3_tot/num_d3                         # [um]
-freq3 = np.array([2,4,6,8,10])                # [MHz]
-freq3_err = np.array([1,1,1,1,1])             # [MHz]
-
-reg3= PlotRegression(d3_av,freq3,Noerror,freq3_err,r"d Average $[\mu m]$","Frequency [MHz]",True)
-v3 = 1/(reg3[0]*1e-6)                         # [m/s]
-PrettyPrint("Speed of Sound 3 is: ",v3,0,"[m/s]",3)
+v = sqrt(293.204/T) * v_theory_at_20_degree
+PrettyPrint("v theory :", v.n, v.s, "m/s", 5)
 
 #%%
 # PART 4
-print("=================PART 4===================\n")
-
+print("=================PART 4 FF===================\n")
 lambd4 = 6328e-10                                 # [m]
-f3 = 300e-3                                       # [m]
+f3 = 300e-3
 
-x4_tot = np.array([15,30,60,90,150])              # [um]
-x4_tot_err = np.array([1,1,1,1,1])                # [um]
-x4 = x4_tot/2                                     # [um]
-x4_err = x4_tot_err/2                             # [um]
-freq4 = np.array([3,6,9,12,15])                   # [Hz]
-freq4_err = np.array([1,1,1,1,1])                 # [Hz]
-reg4 = PlotRegression(x4,freq4,x4_err,freq4_err,r"$\Delta x$ $[\mu m]$","Frequency [MHz]",True)
+x4_tot = np.array([502,195,126,540,148,203,446,727,262,306,286])*5.2                                      # [um]
+x4_tot_err = np.ones(len(x4_tot))*4*5.2                                                                   # [um]
+num_x4 = np.array([6,4,2,6,2,2,4,6,2,2,2])
+x4_av = x4_tot/num_x4                                                                                     # [um]
+freq4 = np.array([2.6446,1.5446,1.9446,2.8446,2.3446,3.2446,3.5446,3.8446,4.1446,4.8446,4.5446])               # [MHz]
+freq4_err = np.ones(len(freq4))*1e-5              # [MHz]
 
-v4 = (reg4[0]*1e6)*f3*lambd4                     # [m/s]
-PrettyPrint("Speed of Sound 4 is: ",v4,0,"[m/s]",3)
+reg4 = PlotRegression(x4_av,freq4,x4_tot_err,freq4_err,r"$\Delta x$ $[\mu m]$","Frequency [MHz]",True)
+
+slope =ufloat(reg4[0],2*reg4[2])
+v4 = (slope*1e12)*f3*lambd4                     # [m/s]
+PrettyPrint("Speed of Sound 4 is: ",v4.n,v4.s,"[m/s]",5)
+PrintReg(reg4, 5)
 
 
+#%%
+# PART 3
+print("=================PART 3 NF===================\n")
+
+d3_tot = np.array([374,511,210,172,280,290,436,290,299,250])*5.2                                   # [um]
+d3_tot_err = np.ones(len(d3_tot))*8*5.2   
+d3_tot = unumpy.uarray(d3_tot,d3_tot_err)              # [um]
+
+num_d3 = np.array([8,13,5,5,9,10,6,5,3,3])
+d3_av = d3_tot/num_d3                                   # [um]
+freq3 = np.array([2.3957,2.8336,2.6414430,3.243188,3.540463,3.84386,1.549243,1.94664,1.129863,1.319723])                         # [MHz]
+freq3_err = np.ones(len(freq3))*1e-5                       # [MHz]
+
+x = 1 / d3_av
+reg3= PlotRegression(uval(x),freq3,uerr(x),freq3_err,r"$\frac{1}{d}$ $[\frac{1}{\mu m}]$","Frequency [MHz]",True)
+
+slope =ufloat(reg3[0],2*reg3[2])
+
+v3 = 2 * slope                      # [m/s]
+PrettyPrint("Speed of Sound 3 is: ",v3.n,v3.s,"[m/s]",5)
+
+PrintReg(reg3, 5)
+
+# HALF WAVELENGTH
